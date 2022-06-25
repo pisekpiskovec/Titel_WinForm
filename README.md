@@ -9,7 +9,6 @@ Titel is writtem in .NET Framework since it supports User Interface, that means 
 ## To-Do
 
 * [x] File loading
-
 - [x] Basic metadata loading
 
 - [x] Picture loading
@@ -25,3 +24,9 @@ Titel is writtem in .NET Framework since it supports User Interface, that means 
 - [ ] Saving file as
 
 - [ ] Close file
+
+- [ ] Change positions of elements
+
+- [ ] Icon
+
+- [ ] Play audio
