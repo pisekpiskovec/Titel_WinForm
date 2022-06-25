@@ -110,7 +110,7 @@
             // tsbOpen
             // 
             this.tsbOpen.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbOpen.Image = global::Titel__WinFrorm_.Properties.Resources.opened_folder_96px;
+            this.tsbOpen.Image = global::Titel_WinFrorm.Properties.Resources.opened_folder_96px;
             this.tsbOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbOpen.Name = "tsbOpen";
             this.tsbOpen.Size = new System.Drawing.Size(23, 22);
@@ -124,7 +124,7 @@
             this.tssbSave.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.toolStripMenuItem2});
-            this.tssbSave.Image = global::Titel__WinFrorm_.Properties.Resources.save_96px;
+            this.tssbSave.Image = global::Titel_WinFrorm.Properties.Resources.save_96px;
             this.tssbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tssbSave.Name = "tssbSave";
             this.tssbSave.Size = new System.Drawing.Size(32, 22);
@@ -134,7 +134,7 @@
             // 
             // toolStripMenuItem1
             // 
-            this.toolStripMenuItem1.Image = global::Titel__WinFrorm_.Properties.Resources.save_96px;
+            this.toolStripMenuItem1.Image = global::Titel_WinFrorm.Properties.Resources.save_96px;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(114, 22);
             this.toolStripMenuItem1.Text = "Save";
@@ -142,7 +142,7 @@
             // 
             // toolStripMenuItem2
             // 
-            this.toolStripMenuItem2.Image = global::Titel__WinFrorm_.Properties.Resources.save_as_96px;
+            this.toolStripMenuItem2.Image = global::Titel_WinFrorm.Properties.Resources.save_as_96px;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(114, 22);
             this.toolStripMenuItem2.Text = "Save As";
@@ -151,7 +151,7 @@
             // tsbCloseFile
             // 
             this.tsbCloseFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbCloseFile.Image = global::Titel__WinFrorm_.Properties.Resources.close_tab_96px;
+            this.tsbCloseFile.Image = global::Titel_WinFrorm.Properties.Resources.close_tab_96px;
             this.tsbCloseFile.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbCloseFile.Name = "tsbCloseFile";
             this.tsbCloseFile.Size = new System.Drawing.Size(23, 22);
