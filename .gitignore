@@ -177,7 +177,7 @@ DocProject/Help/Html2
 DocProject/Help/html
 
 # Click-Once directory
-publish/
+publish/x
 
 # Publish Web Output
 *.[Pp]ublish.xml
@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+readme_resources/
