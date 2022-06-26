@@ -42,7 +42,6 @@ namespace Titel__WinFrorm_
             }
         }
 
-
         public void tsbtnOpen_Click(object sender, EventArgs e)
         {
             fileStatus(1);
@@ -99,6 +98,7 @@ namespace Titel__WinFrorm_
 
                 tFileChanged.Start();
             }
+            else { fileStatus(0); }
         }
 
         private void numRating_ValueChanged(object sender, EventArgs e)
