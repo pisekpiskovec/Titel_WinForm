@@ -51,13 +51,10 @@ namespace Titel__WinFrorm_
             openFileDiMP3.InitialDirectory = MusicFolder;
             if(openFileDiMP3.ShowDialog() == DialogResult.OK)
                 {
-                //var musFile = TagLib.File.Create(openFileDiMP3.FileName);
                 TagLib.File musFile = TagLib.File.Create(openFileDiMP3.FileName);
                 tbFileName.Text = openFileDiMP3.SafeFileName;
 
-                MemoryStream ms = new MemoryStream(musFile.Tag.Pictures[0].Data.Data);
-                System.Drawing.Image albumImage = System.Drawing.Image.FromStream(ms);
-                pBoxAlbum.BackgroundImage = albumImage;
+                pBoxAlbum.BackgroundImage = System.Drawing.Image.FromStream(new MemoryStream(musFile.Tag.Pictures[0].Data.Data));
                 lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
 
                 string[] musArtistArr = musFile.Tag.Performers;
@@ -178,8 +175,7 @@ namespace Titel__WinFrorm_
             string[] musComposersArr = musFileTag.Composers;
             string musComposers = string.Join("|", musComposersArr);
 
-            MemoryStream ms = new MemoryStream(musFileTag.Pictures[0].Data.Data);
-            System.Drawing.Image albumImage = System.Drawing.Image.FromStream(ms);
+            System.Drawing.Image albumImage = System.Drawing.Image.FromStream(new MemoryStream(musFileTag.Pictures[0].Data.Data));
 
             TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
             var usrBlank = "";
@@ -192,7 +188,7 @@ namespace Titel__WinFrorm_
             TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
             
             if (tbAlbum.Text != musFileTag.Album || tbAlbumArtist.Text != musAlbumArtist || tbArtist.Text != musArtist || tbComposer.Text != musComposers || tbFileName.Text != openFileDiMP3.SafeFileName || tbGenre.Text != musGenre || tbTitle.Text != musFileTag.Title || numDate.Value != musFileTag.Year || numTrackNumber.Value != musFileTag.Track || numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating || 
-                //pBoxAlbum.BackgroundImage != albumImage || 
+                pBoxAlbum.BackgroundImage != albumImage || 
                 numDiscNumber.Value != musFile.Tag.Disc
                 )
             { fileStatus(3); }
