@@ -6,6 +6,8 @@ Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make yo
 
 Titel is writtem in .NET Framework since it supports User Interface, that means its Windows-only. 😕
 
+⚠This project was made for learning and my own personal purporse. I just wanted to share it with you.⚠
+
 ## To-Do
 
 * [x] File loading
@@ -29,4 +31,30 @@ Titel is writtem in .NET Framework since it supports User Interface, that means 
 
 - [ ] Icon
 
-- [ ] Play audio
+- [ ] Play audio?
+
+- [ ] Rating calculator?
+
+
+
+## Screenshots
+
+![Image]{.\readme_resources\titel_new_window.png![](.\Titel%20(WinFrorm)\readme_resources\titel_new_window.png)
+
+(Newly opened window)
+
+![**](.\Titel%20(WinFrorm)\readme_resources\audio_loaded_unchanged.png)
+
+(Window with a song loaded)
+
+
+
+## Feaures
+
+* Changing file name
+
+* Editing file's song metadata
+
+* Adding rating from main streaming sources
+
+* Replacing and adding album art
