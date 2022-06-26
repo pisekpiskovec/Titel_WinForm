@@ -162,6 +162,7 @@ namespace Titel__WinFrorm_
         {
             var musFileTag = TagLib.File.Create(openFileDiMP3.FileName).Tag;
             var musFile = TagLib.File.Create(openFileDiMP3.FileName);
+            var bin = (byte[])(musFileTag.Pictures[0].Data.Data);
 
             string[] musAlbumArtistArr = musFileTag.AlbumArtists;
             string musAlbumArtist = string.Join("|", musAlbumArtistArr);
@@ -187,12 +188,14 @@ namespace Titel__WinFrorm_
             var usrSoundCloud = "soundcloud.com";
             TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
             
-            if (tbAlbum.Text != musFileTag.Album || tbAlbumArtist.Text != musAlbumArtist || tbArtist.Text != musArtist || tbComposer.Text != musComposers || tbFileName.Text != openFileDiMP3.SafeFileName || tbGenre.Text != musGenre || tbTitle.Text != musFileTag.Title || numDate.Value != musFileTag.Year || numTrackNumber.Value != musFileTag.Track || numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating || 
-                pBoxAlbum.BackgroundImage != albumImage || 
+            if (tbAlbum.Text != musFileTag.Album || tbAlbumArtist.Text != musAlbumArtist || tbArtist.Text != musArtist || tbComposer.Text != musComposers || tbFileName.Text != openFileDiMP3.SafeFileName || tbGenre.Text != musGenre || tbTitle.Text != musFileTag.Title || numDate.Value != musFileTag.Year || numTrackNumber.Value != musFileTag.Track || numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating ||
+                pBoxAlbum.BackgroundImage != Image.FromStream(new MemoryStream(bin)) || 
                 numDiscNumber.Value != musFile.Tag.Disc
                 )
             { fileStatus(3); }
             else { fileStatus(2); }
+
+            //albumArtworkChanged();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -422,6 +425,19 @@ namespace Titel__WinFrorm_
             TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrYouTube, true);
             var usrSoundCloud = "soundcloud.com";
             TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
+        }
+
+        public void pBoxAlbum_BackgroundImageChanged(object sender, EventArgs e)
+        {
+            albumArtworkChanged();
+        }
+
+        void albumArtworkChanged() {
+            var musFileTag = TagLib.File.Create(openFileDiMP3.FileName).Tag;
+            var bin = (byte[])(musFileTag.Pictures[0].Data.Data);
+
+            if (pBoxAlbum.BackgroundImage == Image.FromStream(new MemoryStream(bin))) { fileStatus(2); }
+            else if (pBoxAlbum.BackgroundImage != Image.FromStream(new MemoryStream(bin))) { fileStatus(3); }
         }
     }
 }

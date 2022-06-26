@@ -526,6 +526,7 @@
             this.pBoxAlbum.Size = new System.Drawing.Size(100, 100);
             this.pBoxAlbum.TabIndex = 18;
             this.pBoxAlbum.TabStop = false;
+            this.pBoxAlbum.BackgroundImageChanged += new System.EventHandler(this.pBoxAlbum_BackgroundImageChanged);
             // 
             // numDiscNumber
             // 
