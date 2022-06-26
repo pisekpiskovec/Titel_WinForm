@@ -39,11 +39,11 @@ Titel is writtem in .NET Framework since it supports User Interface, that means 
 
 ## Screenshots
 
-![Image]{.\readme_resources\titel_new_window.png![](.\Titel%20(WinFrorm)\readme_resources\titel_new_window.png)
+![Newly opened window](./Titel (WinFrorm)/readme_resources/titel_new_window.png)
 
 (Newly opened window)
 
-![**](.\Titel%20(WinFrorm)\readme_resources\audio_loaded_unchanged.png)
+![Window with a song loaded](./Titel (WinFrorm)/readme_resources/audio_loaded_unchanged.png)
 
 (Window with a song loaded)
 
