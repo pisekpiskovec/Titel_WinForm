@@ -77,6 +77,7 @@
             this.saveFileDiSaveAS = new System.Windows.Forms.SaveFileDialog();
             this.pBoxAlbum = new System.Windows.Forms.PictureBox();
             this.numDiscNumber = new System.Windows.Forms.NumericUpDown();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.tsTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numRatingBlank)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbStarsBlank)).BeginInit();
@@ -172,6 +173,7 @@
             // 
             this.openFileDiMP3.DefaultExt = "mp3";
             this.openFileDiMP3.Filter = "MP3 Audio Files|*.mp3";
+            this.openFileDiMP3.RestoreDirectory = true;
             this.openFileDiMP3.Title = "Open MP3 file...";
             // 
             // lFileName
@@ -351,6 +353,7 @@
             // openFileDiJPGPNG
             // 
             this.openFileDiJPGPNG.Filter = "PNG image|*.png|JPG image|*.jpg";
+            this.openFileDiJPGPNG.RestoreDirectory = true;
             this.openFileDiJPGPNG.Title = "Open image file...";
             // 
             // numDate
@@ -526,6 +529,10 @@
             this.pBoxAlbum.Size = new System.Drawing.Size(100, 100);
             this.pBoxAlbum.TabIndex = 18;
             this.pBoxAlbum.TabStop = false;
+            this.toolTip.SetToolTip(this.pBoxAlbum, "Right Click to Reset");
+            this.pBoxAlbum.DragDrop += new System.Windows.Forms.DragEventHandler(this.pBoxAlbum_DragDrop);
+            this.pBoxAlbum.DragEnter += new System.Windows.Forms.DragEventHandler(this.pBoxAlbum_DragEnter);
+            this.pBoxAlbum.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseClick);
             // 
             // numDiscNumber
             // 
@@ -662,6 +669,7 @@
         private System.Windows.Forms.ToolStripButton tsbCloseFile;
         private System.Windows.Forms.SaveFileDialog saveFileDiSaveAS;
         private System.Windows.Forms.NumericUpDown numDiscNumber;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }
 

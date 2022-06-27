@@ -183,7 +183,7 @@ namespace Titel__WinFrorm_
             if (tbAlbum.Text != musFileTag.Album || tbAlbumArtist.Text != musAlbumArtist || tbArtist.Text != musArtist || tbComposer.Text != musComposers || tbFileName.Text != openFileDiMP3.SafeFileName || tbGenre.Text != musGenre || tbTitle.Text != musFileTag.Title || numDate.Value != musFileTag.Year || numTrackNumber.Value != musFileTag.Track || numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating || albumArtworkURL != "Album artwork♪" || numDiscNumber.Value != musFile.Tag.Disc) {fileStatus(3); } else {fileStatus(2); }
         }
 
-        private void Form1_Load(object sender, EventArgs e) {fileStatus(0); }
+        private void Form1_Load(object sender, EventArgs e) {fileStatus(0); pBoxAlbum.AllowDrop = true; }
 
         private void numRatingSpotify_ValueChanged(object sender, EventArgs e)
         {
@@ -409,5 +409,35 @@ namespace Titel__WinFrorm_
             TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
         }
 
+        private void pBoxAlbum_DragDrop(object sender, DragEventArgs e)
+        {
+            var data = e.Data.GetData(DataFormats.FileDrop);
+            if (data != null)
+            {
+                var fileNames = data as string[];
+                if (fileNames.Length > 0) pBoxAlbum.BackgroundImage = Image.FromFile(fileNames[0]); albumArtworkURL = fileNames[0]; lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
+            }
+        }
+
+        private void pBoxAlbum_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        private void pBoxAlbum_MouseClick(object sender, MouseEventArgs e)
+        {
+            switch (e.Button) { 
+                case MouseButtons.Right: 
+                    {
+                        if(pBoxAlbum.BackgroundImage != null)
+                        {
+                            var musFileTag = TagLib.File.Create(openFileDiMP3.FileName).Tag;
+                            pBoxAlbum.BackgroundImage = System.Drawing.Image.FromStream(new MemoryStream(musFileTag.Pictures[0].Data.Data));
+                            lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
+                            albumArtworkURL = "Album artwork♪";
+                        }
+                    } break;
+            }
+        }
     }
 }
