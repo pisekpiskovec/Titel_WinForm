@@ -16,10 +16,7 @@ namespace Titel__WinFrorm_
     {
         string albumArtworkURL;
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() {InitializeComponent(); }
 
         private void fileStatus(int status)
         {
@@ -46,8 +43,7 @@ namespace Titel__WinFrorm_
         public void tsbtnOpen_Click(object sender, EventArgs e)
         {
             fileStatus(1);
-            if(openFileDiMP3.ShowDialog() == DialogResult.OK)
-                {
+            if(openFileDiMP3.ShowDialog() == DialogResult.OK) {
                 TagLib.File musFile = TagLib.File.Create(openFileDiMP3.FileName);
                 tbFileName.Text = openFileDiMP3.SafeFileName;
 
@@ -90,7 +86,6 @@ namespace Titel__WinFrorm_
                 numRatingSpotify.Value = frameSpotify.Rating;
                 numRatingYouTube.Value = frameYouTube.Rating;
                 numRatingSoundcloud.Value = frameSoundcloud.Rating;
-
 
                 fileStatus(2);
                 this.Text = "Titel | " + openFileDiMP3.SafeFileName;
@@ -162,7 +157,6 @@ namespace Titel__WinFrorm_
         {
             var musFileTag = TagLib.File.Create(openFileDiMP3.FileName).Tag;
             var musFile = TagLib.File.Create(openFileDiMP3.FileName);
-            var bin = (byte[])(musFileTag.Pictures[0].Data.Data);
 
             string[] musAlbumArtistArr = musFileTag.AlbumArtists;
             string musAlbumArtist = string.Join("|", musAlbumArtistArr);
@@ -189,10 +183,7 @@ namespace Titel__WinFrorm_
             if (tbAlbum.Text != musFileTag.Album || tbAlbumArtist.Text != musAlbumArtist || tbArtist.Text != musArtist || tbComposer.Text != musComposers || tbFileName.Text != openFileDiMP3.SafeFileName || tbGenre.Text != musGenre || tbTitle.Text != musFileTag.Title || numDate.Value != musFileTag.Year || numTrackNumber.Value != musFileTag.Track || numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating || albumArtworkURL != "Album artwork♪" || numDiscNumber.Value != musFile.Tag.Disc) {fileStatus(3); } else {fileStatus(2); }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            fileStatus(0);
-        }
+        private void Form1_Load(object sender, EventArgs e) {fileStatus(0); }
 
         private void numRatingSpotify_ValueChanged(object sender, EventArgs e)
         {
