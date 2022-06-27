@@ -11,29 +11,18 @@ Titel is written in .NET Framework since it supports User Interface, which means
 ## To-Do
 
 * [x] File loading
-- [x] Basic metadata loading
-
-- [x] Picture loading
-
-- [x] Rating loading
-
-- [x] Custom picture loading (+ resolution)
-
-- [x] Indicator of changes
-
-- [ ] Saving file
-
-- [ ] Saving file as
-
-- [ ] Close file
-
-- [ ] Change positions of elements
-
-- [ ] Icon
-
-- [ ] Play audio?
-
-- [ ] Rating calculator?
+* [x] Basic metadata loading
+* [x] Picture loading
+* [x] Rating loading
+* [x] Custom picture loading (+ resolution)
+* [x] Indicator of changes
+* [ ] Saving file
+* [ ] Saving file as
+* [ ] Close file
+* [ ] Change positions of elements
+* [ ] Icon
+* [ ] Play audio?
+* [ ] Rating calculator?
 
 ## Screenshots
 
@@ -48,9 +37,6 @@ Titel is written in .NET Framework since it supports User Interface, which means
 ## Feaures
 
 * Changing file name
-
 * Editing file's song metadata
-
 * Adding rating from main streaming sources
-
 * Replacing and adding album art
