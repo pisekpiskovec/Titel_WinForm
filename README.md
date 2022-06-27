@@ -19,7 +19,7 @@ Titel is writtem in .NET Framework since it supports User Interface, that means 
 
 - [x] Custom picture loading (+ resolution)
 
-- [ ] Indicator of changes
+- [x] Indicator of changes
 
 - [ ] Saving file
 
@@ -35,8 +35,6 @@ Titel is writtem in .NET Framework since it supports User Interface, that means 
 
 - [ ] Rating calculator?
 
-
-
 ## Screenshots
 
 ![Newly opened window](https://github.com/pisekpiskovec/Titel_WinFrorm/blob/master/Titel%20(WinFrorm)/readme_resources/titel_new_window.png)
@@ -46,8 +44,6 @@ Titel is writtem in .NET Framework since it supports User Interface, that means 
 ![Window with a song loaded](https://github.com/pisekpiskovec/Titel_WinFrorm/blob/master/Titel%20(WinFrorm)/readme_resources/audio_loaded_unchanged.png)
 
 (Window with a song loaded)
-
-
 
 ## Feaures
 

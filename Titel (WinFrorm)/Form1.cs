@@ -12,9 +12,10 @@ using System.IO;
 
 namespace Titel__WinFrorm_
 {
-    
     public partial class Form1 : Form
     {
+        string albumArtworkURL;
+
         public Form1()
         {
             InitializeComponent();
@@ -55,6 +56,7 @@ namespace Titel__WinFrorm_
 
                 pBoxAlbum.BackgroundImage = System.Drawing.Image.FromStream(new MemoryStream(musFile.Tag.Pictures[0].Data.Data));
                 lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
+                albumArtworkURL = "Album artwork♪";
 
                 string[] musArtistArr = musFile.Tag.Performers;
                 string musArtist = string.Join("|", musArtistArr);
@@ -91,7 +93,7 @@ namespace Titel__WinFrorm_
                 numRatingSpotify.Value = frameSpotify.Rating;
                 numRatingYouTube.Value = frameYouTube.Rating;
                 numRatingSoundcloud.Value = frameSoundcloud.Rating;
-                
+
 
                 fileStatus(2);
                 this.Text = "Titel | " + openFileDiMP3.SafeFileName;
@@ -154,6 +156,7 @@ namespace Titel__WinFrorm_
             if (openFileDiJPGPNG.ShowDialog() == DialogResult.OK)
             {
                 pBoxAlbum.BackgroundImage = new Bitmap(openFileDiJPGPNG.FileName);
+                albumArtworkURL = openFileDiJPGPNG.FileName;
                 lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
             }
         }
@@ -176,8 +179,6 @@ namespace Titel__WinFrorm_
             string[] musComposersArr = musFileTag.Composers;
             string musComposers = string.Join("|", musComposersArr);
 
-            System.Drawing.Image albumImage = System.Drawing.Image.FromStream(new MemoryStream(musFileTag.Pictures[0].Data.Data));
-
             TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
             var usrBlank = "";
             TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, true);
@@ -187,15 +188,8 @@ namespace Titel__WinFrorm_
             TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrYouTube, true);
             var usrSoundCloud = "soundcloud.com";
             TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
-            
-            if (tbAlbum.Text != musFileTag.Album || tbAlbumArtist.Text != musAlbumArtist || tbArtist.Text != musArtist || tbComposer.Text != musComposers || tbFileName.Text != openFileDiMP3.SafeFileName || tbGenre.Text != musGenre || tbTitle.Text != musFileTag.Title || numDate.Value != musFileTag.Year || numTrackNumber.Value != musFileTag.Track || numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating ||
-                pBoxAlbum.BackgroundImage != Image.FromStream(new MemoryStream(bin)) || 
-                numDiscNumber.Value != musFile.Tag.Disc
-                )
-            { fileStatus(3); }
-            else { fileStatus(2); }
 
-            //albumArtworkChanged();
+            if (tbAlbum.Text != musFileTag.Album || tbAlbumArtist.Text != musAlbumArtist || tbArtist.Text != musArtist || tbComposer.Text != musComposers || tbFileName.Text != openFileDiMP3.SafeFileName || tbGenre.Text != musGenre || tbTitle.Text != musFileTag.Title || numDate.Value != musFileTag.Year || numTrackNumber.Value != musFileTag.Track || numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating || albumArtworkURL != "Album artwork♪" || numDiscNumber.Value != musFile.Tag.Disc) {fileStatus(3); } else {fileStatus(2); }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -427,17 +421,5 @@ namespace Titel__WinFrorm_
             TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
         }
 
-        public void pBoxAlbum_BackgroundImageChanged(object sender, EventArgs e)
-        {
-            albumArtworkChanged();
-        }
-
-        void albumArtworkChanged() {
-            var musFileTag = TagLib.File.Create(openFileDiMP3.FileName).Tag;
-            var bin = (byte[])(musFileTag.Pictures[0].Data.Data);
-
-            if (pBoxAlbum.BackgroundImage == Image.FromStream(new MemoryStream(bin))) { fileStatus(2); }
-            else if (pBoxAlbum.BackgroundImage != Image.FromStream(new MemoryStream(bin))) { fileStatus(3); }
-        }
     }
 }
