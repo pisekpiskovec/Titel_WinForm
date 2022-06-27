@@ -4,9 +4,9 @@
 
 Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make your music library fancier.
 
-Titel is writtem in .NET Framework since it supports User Interface, that means its Windows-only. 😕
+Titel is written in .NET Framework since it supports User Interface, which means it's Windows-only. 😕
 
-⚠This project was made for learning and my own personal purporse. I just wanted to share it with you.⚠
+⚠This project was created for learning and my personal purpose. I just wanted to share it with you.⚠
 
 ## To-Do
 
