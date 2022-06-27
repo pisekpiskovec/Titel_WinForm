@@ -15,7 +15,7 @@ Titel is written in .NET Framework since it supports User Interface, which means
 
 - [x] Picture loading
 
-- [ ] Rating loading
+- [x] Rating loading
 
 - [x] Custom picture loading (+ resolution)
 
