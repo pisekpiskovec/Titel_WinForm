@@ -46,9 +46,6 @@ namespace Titel__WinFrorm_
         public void tsbtnOpen_Click(object sender, EventArgs e)
         {
             fileStatus(1);
-            string userProfileFolder = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            string MusicFolder = userProfileFolder + "\\Music\\";
-            openFileDiMP3.InitialDirectory = MusicFolder;
             if(openFileDiMP3.ShowDialog() == DialogResult.OK)
                 {
                 TagLib.File musFile = TagLib.File.Create(openFileDiMP3.FileName);
