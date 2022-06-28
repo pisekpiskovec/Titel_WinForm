@@ -362,30 +362,56 @@ namespace Titel__WinFrorm_
 
         private void tssbSave_ButtonClick(object sender, EventArgs e)
         {
-            var musFileTag = TagLib.File.Create(openFileDiMP3.FileName).Tag;
-            var musFile = TagLib.File.Create(openFileDiMP3.FileName);
+            if (tbFileName.Text != "")
+            {
+                //tFileChanged.Stop();
+                TagLib.File musFile = TagLib.File.Create(openFileDiMP3.FileName);
 
-            string[] musAlbumArtistArr = musFileTag.AlbumArtists;
-            string musAlbumArtist = string.Join("|", musAlbumArtistArr);
+                pBoxAlbum.BackgroundImage = System.Drawing.Image.FromStream(new MemoryStream(musFile.Tag.Pictures[0].Data.Data));
+                lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
+                albumArtworkURL = "Album artwork♪";
 
-            string[] musArtistArr = musFileTag.Performers;
-            string musArtist = string.Join("|", musArtistArr);
+                string[] musArtistArr = musFile.Tag.Performers;
+                string musArtist = string.Join("|", musArtistArr);
+                tbArtist.Text = musArtist;
 
-            string[] musGenreArr = musFileTag.Genres;
-            string musGenre = string.Join("|", musGenreArr);
+                tbTitle.Text = musFile.Tag.Title;
+                tbAlbum.Text = musFile.Tag.Album;
+                numDate.Value = musFile.Tag.Year;
+                numTrackNumber.Value = musFile.Tag.Track;
+                numDiscNumber.Value = musFile.Tag.Disc;
 
-            string[] musComposersArr = musFileTag.Composers;
-            string musComposers = string.Join("|", musComposersArr);
+                string[] musGenreArr = musFile.Tag.Genres;
+                string musGenre = string.Join("|", musGenreArr);
+                tbGenre.Text = musGenre;
 
-            TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
-            var usrBlank = "";
-            TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, true);
-            var usrSpotify = "open.spotify.com";
-            TagLib.Id3v2.PopularimeterFrame frameSpotify = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSpotify, true);
-            var usrYouTube = "youtube.com";
-            TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrYouTube, true);
-            var usrSoundCloud = "soundcloud.com";
-            TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
+                string[] musAlbumArtistArr = musFile.Tag.AlbumArtists;
+                string musAlbumArtist = string.Join("|", musAlbumArtistArr);
+                tbAlbumArtist.Text = musAlbumArtist;
+
+                string[] musComposersArr = musFile.Tag.Composers;
+                string musComposers = string.Join("|", musComposersArr);
+                tbComposer.Text = musComposers;
+
+                TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
+                var usrBlank = "";
+                TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, true);
+                var usrSpotify = "open.spotify.com";
+                TagLib.Id3v2.PopularimeterFrame frameSpotify = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSpotify, true);
+                var usrYouTube = "youtube.com";
+                TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrYouTube, true);
+                var usrSoundCloud = "soundcloud.com";
+                TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
+                numRatingBlank.Value = frameBlank.Rating;
+                numRatingSpotify.Value = frameSpotify.Rating;
+                numRatingYouTube.Value = frameYouTube.Rating;
+                numRatingSoundcloud.Value = frameSoundcloud.Rating;
+
+                if (tbFileName.Text != openFileDiMP3.SafeFileName)
+                {
+                    
+                }
+            }
         }
 
         private void tsmiSaveAs_Click(object sender, EventArgs e)
