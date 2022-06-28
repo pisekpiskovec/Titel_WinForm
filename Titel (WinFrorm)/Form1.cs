@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TagLib;
 using System.IO;
+using Titel_WinFrorm.Properties;
 
 namespace Titel__WinFrorm_
 {
@@ -42,8 +43,11 @@ namespace Titel__WinFrorm_
 
         public void tsbtnOpen_Click(object sender, EventArgs e)
         {
+            openFileDiMP3.InitialDirectory = Settings.Default.ofdMp3;
             fileStatus(1);
             if(openFileDiMP3.ShowDialog() == DialogResult.OK) {
+                System.IO.FileInfo fInfo = new System.IO.FileInfo(openFileDiMP3.FileName);
+                Settings.Default.ofdMp3 = fInfo.DirectoryName;
                 TagLib.File musFile = TagLib.File.Create(openFileDiMP3.FileName);
                 tbFileName.Text = openFileDiMP3.SafeFileName;
 
@@ -145,8 +149,11 @@ namespace Titel__WinFrorm_
 
         private void bOpenPicture_Click(object sender, EventArgs e)
         {
+            openFileDiJPGPNG.InitialDirectory = Settings.Default.ofdPic;   
             if (openFileDiJPGPNG.ShowDialog() == DialogResult.OK)
             {
+                System.IO.FileInfo fInfo = new System.IO.FileInfo(openFileDiJPGPNG.FileName);
+                Settings.Default.ofdPic = fInfo.DirectoryName;
                 pBoxAlbum.BackgroundImage = new Bitmap(openFileDiJPGPNG.FileName);
                 albumArtworkURL = openFileDiJPGPNG.FileName;
                 lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
@@ -381,7 +388,7 @@ namespace Titel__WinFrorm_
             TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
         }
 
-        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        private void tsmiSaveAs_Click(object sender, EventArgs e)
         {
             var musFileTag = TagLib.File.Create(openFileDiMP3.FileName).Tag;
             var musFile = TagLib.File.Create(openFileDiMP3.FileName);

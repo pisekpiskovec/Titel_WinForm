@@ -22,5 +22,29 @@ namespace Titel_WinFrorm.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ofdMp3 {
+            get {
+                return ((string)(this["ofdMp3"]));
+            }
+            set {
+                this["ofdMp3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ofdPic {
+            get {
+                return ((string)(this["ofdPic"]));
+            }
+            set {
+                this["ofdPic"] = value;
+            }
+        }
     }
 }

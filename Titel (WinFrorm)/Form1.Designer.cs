@@ -32,8 +32,8 @@
             this.tsTop = new System.Windows.Forms.ToolStrip();
             this.tsbOpen = new System.Windows.Forms.ToolStripButton();
             this.tssbSave = new System.Windows.Forms.ToolStripSplitButton();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.tsbCloseFile = new System.Windows.Forms.ToolStripButton();
             this.tsSp1 = new System.Windows.Forms.ToolStripSeparator();
             this.tslChanges = new System.Windows.Forms.ToolStripLabel();
@@ -123,8 +123,8 @@
             // 
             this.tssbSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tssbSave.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2});
+            this.tsmiSave,
+            this.tsmiSaveAs});
             this.tssbSave.Image = global::Titel_WinFrorm.Properties.Resources.save_96px;
             this.tssbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tssbSave.Name = "tssbSave";
@@ -133,21 +133,21 @@
             this.tssbSave.ToolTipText = "Save... or Save as...";
             this.tssbSave.ButtonClick += new System.EventHandler(this.tssbSave_ButtonClick);
             // 
-            // toolStripMenuItem1
+            // tsmiSave
             // 
-            this.toolStripMenuItem1.Image = global::Titel_WinFrorm.Properties.Resources.save_96px;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(114, 22);
-            this.toolStripMenuItem1.Text = "Save";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.tssbSave_ButtonClick);
+            this.tsmiSave.Image = global::Titel_WinFrorm.Properties.Resources.save_96px;
+            this.tsmiSave.Name = "tsmiSave";
+            this.tsmiSave.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSave.Text = "Save";
+            this.tsmiSave.Click += new System.EventHandler(this.tssbSave_ButtonClick);
             // 
-            // toolStripMenuItem2
+            // tsmiSaveAs
             // 
-            this.toolStripMenuItem2.Image = global::Titel_WinFrorm.Properties.Resources.save_as_96px;
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(114, 22);
-            this.toolStripMenuItem2.Text = "Save As";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            this.tsmiSaveAs.Image = global::Titel_WinFrorm.Properties.Resources.save_as_96px;
+            this.tsmiSaveAs.Name = "tsmiSaveAs";
+            this.tsmiSaveAs.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSaveAs.Text = "Save As";
+            this.tsmiSaveAs.Click += new System.EventHandler(this.tsmiSaveAs_Click);
             // 
             // tsbCloseFile
             // 
@@ -664,8 +664,8 @@
         private System.Windows.Forms.ToolStripSeparator tsSp1;
         public System.Windows.Forms.Timer tFileChanged;
         private System.Windows.Forms.ToolStripSplitButton tssbSave;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSave;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSaveAs;
         private System.Windows.Forms.ToolStripButton tsbCloseFile;
         private System.Windows.Forms.SaveFileDialog saveFileDiSaveAS;
         private System.Windows.Forms.NumericUpDown numDiscNumber;
