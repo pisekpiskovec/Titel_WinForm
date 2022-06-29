@@ -365,33 +365,22 @@ namespace Titel__WinFrorm_
             if (tbFileName.Text != "")
             {
                 //tFileChanged.Stop();
+                TagLib.Id3v2.Tag.DefaultVersion = 3;
+                TagLib.Id3v2.Tag.ForceDefaultVersion = true;
+                TagLib.Id3v2.Tag.UseNumericGenres = false;
                 TagLib.File musFile = TagLib.File.Create(openFileDiMP3.FileName);
 
-                pBoxAlbum.BackgroundImage = System.Drawing.Image.FromStream(new MemoryStream(musFile.Tag.Pictures[0].Data.Data));
-                lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
-                albumArtworkURL = "Album artwork♪";
+                if (albumArtworkURL != "Album artwork♪") {musFile.Tag.Pictures = new TagLib.IPicture[] {new TagLib.Picture(new TagLib.ByteVector((byte[])new System.Drawing.ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiJPGPNG.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
 
-                string[] musArtistArr = musFile.Tag.Performers;
-                string musArtist = string.Join("|", musArtistArr);
-                tbArtist.Text = musArtist;
-
-                tbTitle.Text = musFile.Tag.Title;
-                tbAlbum.Text = musFile.Tag.Album;
-                numDate.Value = musFile.Tag.Year;
-                numTrackNumber.Value = musFile.Tag.Track;
-                numDiscNumber.Value = musFile.Tag.Disc;
-
-                string[] musGenreArr = musFile.Tag.Genres;
-                string musGenre = string.Join("|", musGenreArr);
-                tbGenre.Text = musGenre;
-
-                string[] musAlbumArtistArr = musFile.Tag.AlbumArtists;
-                string musAlbumArtist = string.Join("|", musAlbumArtistArr);
-                tbAlbumArtist.Text = musAlbumArtist;
-
-                string[] musComposersArr = musFile.Tag.Composers;
-                string musComposers = string.Join("|", musComposersArr);
-                tbComposer.Text = musComposers;
+                musFile.Tag.Performers = tbArtist.Text.Split('|');
+                musFile.Tag.Title = tbTitle.Text;
+                musFile.Tag.Album = tbAlbum.Text;
+                musFile.Tag.Year = Convert.ToUInt32(numDate.Value);
+                musFile.Tag.Track = Convert.ToUInt32(numTrackNumber.Value);
+                musFile.Tag.Disc = Convert.ToUInt32(numDiscNumber.Value);
+                musFile.Tag.Genres = tbGenre.Text.Split('|');
+                musFile.Tag.AlbumArtists = tbAlbumArtist.Text.Split('|');
+                musFile.Tag.Composers = tbComposer.Text.Split('|');
 
                 TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
                 var usrBlank = "";
@@ -402,10 +391,13 @@ namespace Titel__WinFrorm_
                 TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrYouTube, true);
                 var usrSoundCloud = "soundcloud.com";
                 TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
-                numRatingBlank.Value = frameBlank.Rating;
-                numRatingSpotify.Value = frameSpotify.Rating;
-                numRatingYouTube.Value = frameYouTube.Rating;
-                numRatingSoundcloud.Value = frameSoundcloud.Rating;
+                frameBlank.Rating = Convert.ToByte(numRatingBlank.Value);
+                frameSpotify.Rating = Convert.ToByte(numRatingSpotify.Value);
+                frameYouTube.Rating = Convert.ToByte(numRatingYouTube.Value);
+                frameSoundcloud.Rating = Convert.ToByte(numRatingSoundcloud.Value);
+
+                musFile.RemoveTags(TagTypes.Id3v1);
+                musFile.Save();
 
                 if (tbFileName.Text != openFileDiMP3.SafeFileName)
                 {
