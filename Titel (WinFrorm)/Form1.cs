@@ -46,8 +46,7 @@ namespace Titel__WinFrorm_
             openFileDiMP3.InitialDirectory = Settings.Default.ofdMp3;
             fileStatus(1);
             if(openFileDiMP3.ShowDialog() == DialogResult.OK) {
-                System.IO.FileInfo fInfo = new System.IO.FileInfo(openFileDiMP3.FileName);
-                Settings.Default.ofdMp3 = fInfo.DirectoryName;
+                Settings.Default.ofdMp3 = new System.IO.FileInfo(openFileDiMP3.FileName).DirectoryName;
                 TagLib.File musFile = TagLib.File.Create(openFileDiMP3.FileName);
                 tbFileName.Text = openFileDiMP3.SafeFileName;
 
@@ -55,37 +54,21 @@ namespace Titel__WinFrorm_
                 lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
                 albumArtworkURL = "Album artwork♪";
 
-                string[] musArtistArr = musFile.Tag.Performers;
-                string musArtist = string.Join("|", musArtistArr);
-                tbArtist.Text = musArtist;
-
+                tbArtist.Text = string.Join("|", musFile.Tag.Performers);
                 tbTitle.Text = musFile.Tag.Title;
                 tbAlbum.Text = musFile.Tag.Album;
                 numDate.Value = musFile.Tag.Year;
                 numTrackNumber.Value = musFile.Tag.Track;
                 numDiscNumber.Value = musFile.Tag.Disc;
-
-                string[] musGenreArr = musFile.Tag.Genres;
-                string musGenre = string.Join("|", musGenreArr);
-                tbGenre.Text = musGenre;
-
-                string[] musAlbumArtistArr = musFile.Tag.AlbumArtists;
-                string musAlbumArtist = string.Join("|", musAlbumArtistArr);
-                tbAlbumArtist.Text = musAlbumArtist;
-
-                string[] musComposersArr = musFile.Tag.Composers;
-                string musComposers = string.Join("|", musComposersArr);
-                tbComposer.Text = musComposers;
+                tbGenre.Text = string.Join("|", musFile.Tag.Genres);
+                tbAlbumArtist.Text = string.Join("|", musFile.Tag.AlbumArtists);
+                tbComposer.Text = string.Join("|", musFile.Tag.Composers);
 
                 TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
-                var usrBlank = "";
-                TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, true);
-                var usrSpotify = "open.spotify.com";
-                TagLib.Id3v2.PopularimeterFrame frameSpotify = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSpotify, true);
-                var usrYouTube = "youtube.com";
-                TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrYouTube, true);
-                var usrSoundCloud = "soundcloud.com";
-                TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
+                TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, "", true);
+                TagLib.Id3v2.PopularimeterFrame frameSpotify = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, "open.spotify.com", true);
+                TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, "youtube.com", true);
+                TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, "soundcloud.com", true);
                 numRatingBlank.Value = frameBlank.Rating;
                 numRatingSpotify.Value = frameSpotify.Rating;
                 numRatingYouTube.Value = frameYouTube.Rating;
@@ -364,7 +347,6 @@ namespace Titel__WinFrorm_
         {
             if (tbFileName.Text != "")
             {
-                //tFileChanged.Stop();
                 TagLib.Id3v2.Tag.DefaultVersion = 3;
                 TagLib.Id3v2.Tag.ForceDefaultVersion = true;
                 TagLib.Id3v2.Tag.UseNumericGenres = false;
