@@ -17,7 +17,7 @@ namespace Titel__WinFrorm_
     {
         string albumArtworkURL;
 
-        public Form1() {InitializeComponent(); }
+        public Form1() { InitializeComponent(); }
 
         private void fileStatus(int status)
         {
@@ -43,15 +43,22 @@ namespace Titel__WinFrorm_
 
         public void tsbtnOpen_Click(object sender, EventArgs e)
         {
+            tFileChanged.Stop();
             openFileDiMP3.InitialDirectory = Settings.Default.ofdMp3;
             fileStatus(1);
-            if(openFileDiMP3.ShowDialog() == DialogResult.OK) {
+            if (openFileDiMP3.ShowDialog() == DialogResult.OK) {
                 Settings.Default.ofdMp3 = new System.IO.FileInfo(openFileDiMP3.FileName).DirectoryName;
                 TagLib.File musFile = TagLib.File.Create(openFileDiMP3.FileName);
                 tbFileName.Text = openFileDiMP3.SafeFileName;
 
-                pBoxAlbum.BackgroundImage = System.Drawing.Image.FromStream(new MemoryStream(musFile.Tag.Pictures[0].Data.Data));
-                lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
+                if (musFile.Tag.Pictures.Length >= 1) { 
+                pBoxAlbum.BackgroundImage = Image.FromStream(new MemoryStream(musFile.Tag.Pictures[0].Data.Data));
+                } else { pBoxAlbum.BackgroundImage = null; }
+                if (pBoxAlbum.BackgroundImage != null)
+                {
+                    lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
+                }
+                else {lResulution.Text = "null"; }
                 albumArtworkURL = "Album artwork♪";
 
                 tbArtist.Text = string.Join("|", musFile.Tag.Performers);
@@ -78,7 +85,7 @@ namespace Titel__WinFrorm_
                 this.Text = "Titel | " + openFileDiMP3.SafeFileName;
 
                 tFileChanged.Start();
-            }
+            } 
             else { fileStatus(0); }
         }
 
@@ -347,6 +354,8 @@ namespace Titel__WinFrorm_
         {
             if (tbFileName.Text != "")
             {
+                tFileChanged.Stop();
+
                 TagLib.Id3v2.Tag.DefaultVersion = 3;
                 TagLib.Id3v2.Tag.ForceDefaultVersion = true;
                 TagLib.Id3v2.Tag.UseNumericGenres = false;
@@ -385,6 +394,8 @@ namespace Titel__WinFrorm_
                 {
                     
                 }
+
+                tFileChanged.Start();
             }
         }
 
