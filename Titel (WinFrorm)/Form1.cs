@@ -361,7 +361,7 @@ namespace Titel__WinFrorm_
                 TagLib.Id3v2.Tag.UseNumericGenres = false;
                 TagLib.File musFile = TagLib.File.Create(openFileDiMP3.FileName);
 
-                if (albumArtworkURL != "Album artwork♪") {musFile.Tag.Pictures = new TagLib.IPicture[] {new TagLib.Picture(new TagLib.ByteVector((byte[])new System.Drawing.ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiJPGPNG.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
+                if (albumArtworkURL != "Album artwork♪") { musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiJPGPNG.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
 
                 musFile.Tag.Performers = tbArtist.Text.Split('|');
                 musFile.Tag.Title = tbTitle.Text;
@@ -374,18 +374,10 @@ namespace Titel__WinFrorm_
                 musFile.Tag.Composers = tbComposer.Text.Split('|');
 
                 TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
-                var usrBlank = "";
-                TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, true);
-                var usrSpotify = "open.spotify.com";
-                TagLib.Id3v2.PopularimeterFrame frameSpotify = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSpotify, true);
-                var usrYouTube = "youtube.com";
-                TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrYouTube, true);
-                var usrSoundCloud = "soundcloud.com";
-                TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
-                frameBlank.Rating = Convert.ToByte(numRatingBlank.Value);
-                frameSpotify.Rating = Convert.ToByte(numRatingSpotify.Value);
-                frameYouTube.Rating = Convert.ToByte(numRatingYouTube.Value);
-                frameSoundcloud.Rating = Convert.ToByte(numRatingSoundcloud.Value);
+                if (numRatingBlank.Value != 0) {var usrBlank = ""; TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, numRatingBlank.Value != 0) ; frameBlank.Rating = Convert.ToByte(numRatingBlank.Value); }
+                if (numRatingSpotify.Value != 0) {var usrSpotify = "open.spotify.com"; TagLib.Id3v2.PopularimeterFrame frameSpotify = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSpotify, true); frameSpotify.Rating = Convert.ToByte(numRatingSpotify.Value); }
+                if (numRatingYouTube.Value != 0) { var usrYouTube = "youtube.com"; TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrYouTube, true); frameYouTube.Rating = Convert.ToByte(numRatingYouTube.Value); }
+                if (numRatingSoundcloud.Value != 0) {var usrSoundCloud = "soundcloud.com"; TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true); frameSoundcloud.Rating = Convert.ToByte(numRatingSoundcloud.Value); }
 
                 musFile.RemoveTags(TagTypes.Id3v1);
                 musFile.Save();
