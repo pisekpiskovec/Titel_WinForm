@@ -82,7 +82,7 @@ namespace Titel__WinFrorm_
                 fileStatus(2);
                 this.Text = "Titel | " + openFileDiMP3.SafeFileName;
 
-                
+                tFileChanged.Start();
             } 
             else {fileStatus(0); tFileChanged.Start(); }
         }
