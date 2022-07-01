@@ -16,6 +16,8 @@ namespace Titel__WinFrorm_
     public partial class Form1 : Form
     {
         string albumArtworkURL;
+        string musFileName;
+        string musFilePath;
 
         public Form1() { InitializeComponent(); }
 
@@ -48,43 +50,57 @@ namespace Titel__WinFrorm_
             fileStatus(1);
             if (openFileDiMP3.ShowDialog() == DialogResult.OK) {
                 Settings.Default.ofdMp3 = new System.IO.FileInfo(openFileDiMP3.FileName).DirectoryName;
-                TagLib.File musFile = TagLib.File.Create(openFileDiMP3.FileName);
-                tbFileName.Text = openFileDiMP3.SafeFileName;
 
-                if (musFile.Tag.Pictures.Length >= 1) {
-                    pBoxAlbum.BackgroundImage = Image.FromStream(new MemoryStream(musFile.Tag.Pictures[0].Data.Data));
-                    lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
-                } else {
-                    //pBoxAlbum.BackgroundImage = null; 
-                    lResulution.Text = "null"; }
-                albumArtworkURL = "Album artwork♪";
+                musicFileLoadPlz(openFileDiMP3.FileName, openFileDiMP3.SafeFileName);
 
-                tbArtist.Text = string.Join("|", musFile.Tag.Performers);
-                tbTitle.Text = musFile.Tag.Title;
-                tbAlbum.Text = musFile.Tag.Album;
-                numDate.Value = musFile.Tag.Year;
-                numTrackNumber.Value = musFile.Tag.Track;
-                numDiscNumber.Value = musFile.Tag.Disc;
-                tbGenre.Text = string.Join("|", musFile.Tag.Genres);
-                tbAlbumArtist.Text = string.Join("|", musFile.Tag.AlbumArtists);
-                tbComposer.Text = string.Join("|", musFile.Tag.Composers);
-
-                TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
-                TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, "", true);
-                TagLib.Id3v2.PopularimeterFrame frameSpotify = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, "open.spotify.com", true);
-                TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, "youtube.com", true);
-                TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, "soundcloud.com", true);
-                numRatingBlank.Value = frameBlank.Rating;
-                numRatingSpotify.Value = frameSpotify.Rating;
-                numRatingYouTube.Value = frameYouTube.Rating;
-                numRatingSoundcloud.Value = frameSoundcloud.Rating;
-
-                fileStatus(2);
-                this.Text = "Titel | " + openFileDiMP3.SafeFileName;
-
-                tFileChanged.Start();
             } 
-            else {fileStatus(0); tFileChanged.Start(); }
+            else {fileStatus(0); }
+            tFileChanged.Start();
+        }
+
+        public void musicFileLoadPlz(string ofdFileName, string ofdSFileName)
+        {
+            TagLib.File musFile = TagLib.File.Create(ofdFileName);
+
+            tbFileName.Text = ofdSFileName;
+            musFilePath = new System.IO.FileInfo(ofdFileName).DirectoryName + "\\";
+            musFileName = tbFileName.Text;
+
+
+            if (musFile.Tag.Pictures.Length >= 1)
+            {
+                pBoxAlbum.BackgroundImage = Image.FromStream(new MemoryStream(musFile.Tag.Pictures[0].Data.Data));
+                lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
+            }
+            else
+            {
+                //pBoxAlbum.BackgroundImage = null; 
+                lResulution.Text = "null";
+            }
+            albumArtworkURL = "Album artwork♪";
+
+            tbArtist.Text = string.Join("|", musFile.Tag.Performers);
+            tbTitle.Text = musFile.Tag.Title;
+            tbAlbum.Text = musFile.Tag.Album;
+            numDate.Value = musFile.Tag.Year;
+            numTrackNumber.Value = musFile.Tag.Track;
+            numDiscNumber.Value = musFile.Tag.Disc;
+            tbGenre.Text = string.Join("|", musFile.Tag.Genres);
+            tbAlbumArtist.Text = string.Join("|", musFile.Tag.AlbumArtists);
+            tbComposer.Text = string.Join("|", musFile.Tag.Composers);
+
+            TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
+            TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, "", true);
+            TagLib.Id3v2.PopularimeterFrame frameSpotify = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, "open.spotify.com", true);
+            TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, "youtube.com", true);
+            TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, "soundcloud.com", true);
+            numRatingBlank.Value = frameBlank.Rating;
+            numRatingSpotify.Value = frameSpotify.Rating;
+            numRatingYouTube.Value = frameYouTube.Rating;
+            numRatingSoundcloud.Value = frameSoundcloud.Rating;
+
+            fileStatus(2);
+            this.Text = "Titel | " + ofdSFileName;
         }
 
         private void numRating_ValueChanged(object sender, EventArgs e)
@@ -150,8 +166,40 @@ namespace Titel__WinFrorm_
 
         private void tFileSelected_Tick(object sender, EventArgs e)
         {
-            var musFileTag = TagLib.File.Create(openFileDiMP3.FileName).Tag;
-            var musFile = TagLib.File.Create(openFileDiMP3.FileName);
+            //var musFileTag = TagLib.File.Create(openFileDiMP3.FileName).Tag;
+            //var musFile = TagLib.File.Create(openFileDiMP3.FileName);
+
+            //string[] musAlbumArtistArr = musFileTag.AlbumArtists;
+            //string musAlbumArtist = string.Join("|", musAlbumArtistArr);
+
+            //string[] musArtistArr = musFileTag.Performers;
+            //string musArtist = string.Join("|", musArtistArr);
+
+            //string[] musGenreArr = musFileTag.Genres;
+            //string musGenre = string.Join("|", musGenreArr);
+
+            //string[] musComposersArr = musFileTag.Composers;
+            //string musComposers = string.Join("|", musComposersArr);
+
+            //TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
+            //var usrBlank = "";
+            //TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, true);
+            //var usrSpotify = "open.spotify.com";
+            //TagLib.Id3v2.PopularimeterFrame frameSpotify = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSpotify, true);
+            //var usrYouTube = "youtube.com";
+            //TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrYouTube, true);
+            //var usrSoundCloud = "soundcloud.com";
+            //TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
+
+            //if (tbAlbum.Text != musFileTag.Album || tbAlbumArtist.Text != musAlbumArtist || tbArtist.Text != musArtist || tbComposer.Text != musComposers || tbFileName.Text != openFileDiMP3.SafeFileName || tbGenre.Text != musGenre || tbTitle.Text != musFileTag.Title || numDate.Value != musFileTag.Year || numTrackNumber.Value != musFileTag.Track || numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating || albumArtworkURL != "Album artwork♪" || numDiscNumber.Value != musFile.Tag.Disc) {fileStatus(3); } else {fileStatus(2); }
+
+            checkFileChanged(musFilePath + musFileName, musFileName);
+        }
+
+        public void checkFileChanged(string ofdFileName, string ofdSFileName)
+        {
+            var musFileTag = TagLib.File.Create(ofdFileName).Tag;
+            var musFile = TagLib.File.Create(ofdFileName);
 
             string[] musAlbumArtistArr = musFileTag.AlbumArtists;
             string musAlbumArtist = string.Join("|", musAlbumArtistArr);
@@ -175,7 +223,7 @@ namespace Titel__WinFrorm_
             var usrSoundCloud = "soundcloud.com";
             TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
 
-            if (tbAlbum.Text != musFileTag.Album || tbAlbumArtist.Text != musAlbumArtist || tbArtist.Text != musArtist || tbComposer.Text != musComposers || tbFileName.Text != openFileDiMP3.SafeFileName || tbGenre.Text != musGenre || tbTitle.Text != musFileTag.Title || numDate.Value != musFileTag.Year || numTrackNumber.Value != musFileTag.Track || numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating || albumArtworkURL != "Album artwork♪" || numDiscNumber.Value != musFile.Tag.Disc) {fileStatus(3); } else {fileStatus(2); }
+            if (tbAlbum.Text != musFileTag.Album || tbAlbumArtist.Text != musAlbumArtist || tbArtist.Text != musArtist || tbComposer.Text != musComposers || tbFileName.Text != ofdSFileName || tbGenre.Text != musGenre || tbTitle.Text != musFileTag.Title || numDate.Value != musFileTag.Year || numTrackNumber.Value != musFileTag.Track || numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating || albumArtworkURL != "Album artwork♪" || numDiscNumber.Value != musFile.Tag.Disc) { fileStatus(3); } else { fileStatus(2); }
         }
 
         private void Form1_Load(object sender, EventArgs e) {fileStatus(0); pBoxAlbum.AllowDrop = true; }
@@ -380,13 +428,13 @@ namespace Titel__WinFrorm_
                 musFile.RemoveTags(TagTypes.Id3v1);
                 musFile.Save();
 
-                if (tbFileName.Text != openFileDiMP3.SafeFileName)
-                {
-                    
-                }
+                if (tbFileName.Text != openFileDiMP3.SafeFileName ) {
+                    System.IO.File.Move(musFilePath + openFileDiMP3.SafeFileName, musFilePath + tbFileName.Text);
+                    musicFileLoadPlz(musFilePath + tbFileName.Text, tbFileName.Text);
+                        }
 
                 tFileChanged.Start();
-            }
+            } else if (tbFileName.Text == "") { MessageBox.Show("Invalid file name", "Enter file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
         private void tsmiSaveAs_Click(object sender, EventArgs e)
