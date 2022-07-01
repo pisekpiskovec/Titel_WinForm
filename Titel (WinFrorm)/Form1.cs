@@ -51,14 +51,12 @@ namespace Titel__WinFrorm_
                 TagLib.File musFile = TagLib.File.Create(openFileDiMP3.FileName);
                 tbFileName.Text = openFileDiMP3.SafeFileName;
 
-                if (musFile.Tag.Pictures.Length >= 1) { 
-                pBoxAlbum.BackgroundImage = Image.FromStream(new MemoryStream(musFile.Tag.Pictures[0].Data.Data));
-                } else { pBoxAlbum.BackgroundImage = null; }
-                if (pBoxAlbum.BackgroundImage != null)
-                {
+                if (musFile.Tag.Pictures.Length >= 1) {
+                    pBoxAlbum.BackgroundImage = Image.FromStream(new MemoryStream(musFile.Tag.Pictures[0].Data.Data));
                     lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
-                }
-                else {lResulution.Text = "null"; }
+                } else {
+                    //pBoxAlbum.BackgroundImage = null; 
+                    lResulution.Text = "null"; }
                 albumArtworkURL = "Album artwork♪";
 
                 tbArtist.Text = string.Join("|", musFile.Tag.Performers);
