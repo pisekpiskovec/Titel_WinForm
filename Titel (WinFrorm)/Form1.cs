@@ -15,9 +15,10 @@ namespace Titel__WinFrorm_
 {
     public partial class Form1 : Form
     {
-        string albumArtworkURL;
-        string musFileName;
-        string musFilePath;
+        string albumArtworkURL; //set album artwork path or default || done
+        string musFileSName; //get file safe name
+        string musFilePath; //get song's path || done
+        string musFileName; //get song's full path (file path + save file name)
 
         public Form1() { InitializeComponent(); }
 
@@ -51,20 +52,20 @@ namespace Titel__WinFrorm_
             if (openFileDiMP3.ShowDialog() == DialogResult.OK) {
                 Settings.Default.ofdMp3 = new System.IO.FileInfo(openFileDiMP3.FileName).DirectoryName;
 
-                musicFileLoadPlz(openFileDiMP3.FileName, openFileDiMP3.SafeFileName);
+                musicFileLoadPlz();
 
             } 
             else {fileStatus(0); }
             tFileChanged.Start();
         }
 
-        public void musicFileLoadPlz(string ofdFileName, string ofdSFileName)
+        public void musicFileLoadPlz()
         {
-            TagLib.File musFile = TagLib.File.Create(ofdFileName);
+            TagLib.File musFile = TagLib.File.Create(musFileName);
 
-            tbFileName.Text = ofdSFileName;
-            musFilePath = new System.IO.FileInfo(ofdFileName).DirectoryName + "\\";
-            musFileName = tbFileName.Text;
+            tbFileName.Text = musFileSName;
+            musFilePath = new System.IO.FileInfo(musFileName).DirectoryName + "\\";
+            musFileSName = tbFileName.Text;
 
 
             if (musFile.Tag.Pictures.Length >= 1)
@@ -100,7 +101,7 @@ namespace Titel__WinFrorm_
             numRatingSoundcloud.Value = frameSoundcloud.Rating;
 
             fileStatus(2);
-            this.Text = "Titel | " + ofdSFileName;
+            this.Text = "Titel | " + musFileSName;
         }
 
         private void numRating_ValueChanged(object sender, EventArgs e)
@@ -193,7 +194,7 @@ namespace Titel__WinFrorm_
 
             //if (tbAlbum.Text != musFileTag.Album || tbAlbumArtist.Text != musAlbumArtist || tbArtist.Text != musArtist || tbComposer.Text != musComposers || tbFileName.Text != openFileDiMP3.SafeFileName || tbGenre.Text != musGenre || tbTitle.Text != musFileTag.Title || numDate.Value != musFileTag.Year || numTrackNumber.Value != musFileTag.Track || numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating || albumArtworkURL != "Album artwork♪" || numDiscNumber.Value != musFile.Tag.Disc) {fileStatus(3); } else {fileStatus(2); }
 
-            checkFileChanged(musFilePath + musFileName, musFileName);
+            checkFileChanged(musFilePath + musFileSName, musFileSName);
         }
 
         public void checkFileChanged(string ofdFileName, string ofdSFileName)
@@ -430,7 +431,7 @@ namespace Titel__WinFrorm_
 
                 if (tbFileName.Text != openFileDiMP3.SafeFileName ) {
                     System.IO.File.Move(musFilePath + openFileDiMP3.SafeFileName, musFilePath + tbFileName.Text);
-                    musicFileLoadPlz(musFilePath + tbFileName.Text, tbFileName.Text);
+                    musicFileLoadPlz();
                         }
 
                 tFileChanged.Start();

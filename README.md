@@ -10,12 +10,12 @@ Titel is written in .NET Framework since it supports User Interface, which means
 
 ## To-Do
 
-* [x] File loading
-* [x] Basic metadata loading
-* [x] Picture loading
-* [x] Rating loading
+* [ ] File loading
+* [ ] Basic metadata loading
+* [ ] Picture loading
+* [ ] Rating loading
 * [x] Custom picture loading (+ resolution)
-* [x] Indicator of changes
+* [ ] Indicator of changes
 * [ ] Saving file
 * [ ] Saving file as
 * [ ] Close file
