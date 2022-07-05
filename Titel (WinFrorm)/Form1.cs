@@ -88,9 +88,9 @@ namespace Titel__WinFrorm_
                 numRatingSoundcloud.Value = frameSoundcloud.Rating;
 
                 fileStatus(2);
+                tFileChanged.Start();
             } 
             else {fileStatus(0); }
-            tFileChanged.Start();
         }
 
         private void numRating_ValueChanged(object sender, EventArgs e)
