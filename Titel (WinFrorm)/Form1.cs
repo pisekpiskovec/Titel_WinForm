@@ -159,7 +159,7 @@ namespace Titel__WinFrorm_
             }
         }
 
-        private void tFileSelected_Tick(object sender, EventArgs e)
+        private void tFileChanged_Tick(object sender, EventArgs e)
         {
             var musFileTag = TagLib.File.Create(musFileName).Tag;
             var musFile = TagLib.File.Create(musFileName);
@@ -404,8 +404,11 @@ namespace Titel__WinFrorm_
 
         private void tsmiSaveAs_Click(object sender, EventArgs e)
         {
-            if (tbFileName.Text != "")
+            if (tbFileName.Text != "" && musFileSName != tbFileName.Text)
             {
+                System.IO.File.Copy(musFilePath + musFileSName, musFilePath + tbFileName.Text);
+                musFileSName = tbFileName.Text;
+                musFileName = musFilePath + musFileSName;
                 tFileChanged.Stop();
 
                 TagLib.Id3v2.Tag.DefaultVersion = 3;
@@ -434,15 +437,9 @@ namespace Titel__WinFrorm_
                 musFile.RemoveTags(TagTypes.Id3v1);
                 musFile.Save();
 
-                if (tbFileName.Text != musFileSName)
-                {
-                    System.IO.File.Move(musFilePath + musFileSName, musFilePath + tbFileName.Text);
-                    musFileSName = tbFileName.Text;
-                    musFileName = musFilePath + musFileSName;
-                }
 
                 tFileChanged.Start();
-            } else if (tbFileName.Text == "") { MessageBox.Show("Invalid file name", "Enter file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            } else if (tbFileName.Text == "") { MessageBox.Show("Invalid file name", "Enter valid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
         private void pBoxAlbum_DragDrop(object sender, DragEventArgs e)

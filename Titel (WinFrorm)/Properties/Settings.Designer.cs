@@ -46,5 +46,17 @@ namespace Titel_WinFrorm.Properties {
                 this["ofdPic"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string sfdMp3 {
+            get {
+                return ((string)(this["sfdMp3"]));
+            }
+            set {
+                this["sfdMp3"] = value;
+            }
+        }
     }
 }

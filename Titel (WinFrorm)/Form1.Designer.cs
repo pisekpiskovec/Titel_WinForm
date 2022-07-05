@@ -74,7 +74,7 @@
             this.tbComposer = new System.Windows.Forms.TextBox();
             this.lDiscNumber = new System.Windows.Forms.Label();
             this.tFileChanged = new System.Windows.Forms.Timer(this.components);
-            this.saveFileDiSaveAS = new System.Windows.Forms.SaveFileDialog();
+            this.saveFileDiSaveAs = new System.Windows.Forms.SaveFileDialog();
             this.pBoxAlbum = new System.Windows.Forms.PictureBox();
             this.numDiscNumber = new System.Windows.Forms.NumericUpDown();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
@@ -137,7 +137,7 @@
             // 
             this.tsmiSave.Image = global::Titel_WinFrorm.Properties.Resources.save_96px;
             this.tsmiSave.Name = "tsmiSave";
-            this.tsmiSave.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSave.Size = new System.Drawing.Size(114, 22);
             this.tsmiSave.Text = "Save";
             this.tsmiSave.Click += new System.EventHandler(this.tssbSave_ButtonClick);
             // 
@@ -145,7 +145,7 @@
             // 
             this.tsmiSaveAs.Image = global::Titel_WinFrorm.Properties.Resources.save_as_96px;
             this.tsmiSaveAs.Name = "tsmiSaveAs";
-            this.tsmiSaveAs.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSaveAs.Size = new System.Drawing.Size(114, 22);
             this.tsmiSaveAs.Text = "Save As";
             this.tsmiSaveAs.Click += new System.EventHandler(this.tsmiSaveAs_Click);
             // 
@@ -515,11 +515,13 @@
             // tFileChanged
             // 
             this.tFileChanged.Interval = 1000;
-            this.tFileChanged.Tick += new System.EventHandler(this.tFileSelected_Tick);
+            this.tFileChanged.Tick += new System.EventHandler(this.tFileChanged_Tick);
             // 
-            // saveFileDiSaveAS
+            // saveFileDiSaveAs
             // 
-            this.saveFileDiSaveAS.Title = "Save as...";
+            this.saveFileDiSaveAs.DefaultExt = "mp3";
+            this.saveFileDiSaveAs.Filter = "MP3 Audio Files|*.mp3";
+            this.saveFileDiSaveAs.Title = "Save as...";
             // 
             // pBoxAlbum
             // 
@@ -668,7 +670,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiSave;
         private System.Windows.Forms.ToolStripMenuItem tsmiSaveAs;
         private System.Windows.Forms.ToolStripButton tsbCloseFile;
-        private System.Windows.Forms.SaveFileDialog saveFileDiSaveAS;
+        private System.Windows.Forms.SaveFileDialog saveFileDiSaveAs;
         private System.Windows.Forms.NumericUpDown numDiscNumber;
         private System.Windows.Forms.ToolTip toolTip;
     }
