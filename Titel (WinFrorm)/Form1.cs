@@ -399,10 +399,6 @@ namespace Titel__WinFrorm_
                     openFileDiMP3.FileName = musFileName;
                 }
 
-                MessageBox.Show(musFilePath, "Full file path", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                MessageBox.Show(musFileSName, "Safe file name", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                MessageBox.Show(musFileName, "Full file name", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 tFileChanged.Start();
             } else if (tbFileName.Text == "") { MessageBox.Show("Invalid file name", "Enter file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
