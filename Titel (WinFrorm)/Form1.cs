@@ -57,17 +57,12 @@ namespace Titel__WinFrorm_
 
                 TagLib.File musFile = TagLib.File.Create(musFileName);
 
-
                 if (musFile.Tag.Pictures.Length >= 1)
                 {
                     pBoxAlbum.BackgroundImage = Image.FromStream(new MemoryStream(musFile.Tag.Pictures[0].Data.Data));
                     lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
                 }
-                else
-                {
-                    //pBoxAlbum.BackgroundImage = null; 
-                    lResulution.Text = "null";
-                }
+                else {lResulution.Text = "null"; }
                 albumArtworkURL = "Album artwork♪";
 
                 tbFileName.Text = musFileSName;
@@ -399,14 +394,14 @@ namespace Titel__WinFrorm_
                 }
 
                 tFileChanged.Start();
-            }else if (tbFileName.Text == "") { MessageBox.Show("Enter file name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            }else if (tbFileName.Text == "") { MessageBox.Show("Enter file name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); tbFileName.Text = musFileSName; }
         }
 
         private void tsmiSaveAs_Click(object sender, EventArgs e)
         {
-            if (tbFileName.Text != "" && musFileSName != tbFileName.Text && !System.IO.File.Exists(@musFileName))
+            if (tbFileName.Text != "" && musFileSName != tbFileName.Text && !System.IO.File.Exists(@musFilePath + tbFileName.Text))
             {
-                System.IO.File.Copy(musFilePath + musFileSName, musFilePath + tbFileName.Text);
+                System.IO.File.Copy(musFileName, musFilePath + tbFileName.Text);
                 musFileSName = tbFileName.Text;
                 musFileName = musFilePath + musFileSName;
                 tFileChanged.Stop();
@@ -437,12 +432,11 @@ namespace Titel__WinFrorm_
                 musFile.RemoveTags(TagTypes.Id3v1);
                 musFile.Save();
 
-
                 tFileChanged.Start();
             }
             else if (musFileSName == tbFileName.Text) { MessageBox.Show("New file's name can't match the orgiginal's name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             else if (System.IO.File.Exists(@musFilePath + tbFileName.Text)) {MessageBox.Show("File already exists.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-            else if (tbFileName.Text == "") { MessageBox.Show("Enter file name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            else if (tbFileName.Text == "") { MessageBox.Show("Enter file name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); tbFileName.Text = musFileSName; }
         }
 
         private void pBoxAlbum_DragDrop(object sender, DragEventArgs e)
@@ -455,10 +449,7 @@ namespace Titel__WinFrorm_
             }
         }
 
-        private void pBoxAlbum_DragEnter(object sender, DragEventArgs e)
-        {
-            e.Effect = DragDropEffects.Copy;
-        }
+        private void pBoxAlbum_DragEnter(object sender, DragEventArgs e) {e.Effect = DragDropEffects.Copy; }
 
         private void pBoxAlbum_MouseClick(object sender, MouseEventArgs e)
         {
