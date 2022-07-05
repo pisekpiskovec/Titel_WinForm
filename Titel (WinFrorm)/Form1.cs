@@ -181,10 +181,10 @@ namespace Titel__WinFrorm_
             var usrSoundCloud = "soundcloud.com";
             TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
 
-            if (tbAlbum.Text != musFileTag.Album || tbAlbumArtist.Text != musAlbumArtist || tbArtist.Text != musArtist || tbComposer.Text != musComposers || tbFileName.Text != musFileSName || tbGenre.Text != musGenre || tbTitle.Text != musFileTag.Title || numDate.Value != musFileTag.Year || numTrackNumber.Value != musFileTag.Track || numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating || albumArtworkURL != "Album artwork♪" || numDiscNumber.Value != musFile.Tag.Disc) { fileStatus(3); } else { fileStatus(2); }
+            if (tbAlbum.Text != musFileTag.Album || tbAlbumArtist.Text != musAlbumArtist || tbArtist.Text != musArtist || tbComposer.Text != musComposers || tbFileName.Text != musFileSName || tbGenre.Text != musGenre || tbTitle.Text != musFileTag.Title || numDate.Value != musFileTag.Year || numTrackNumber.Value != musFileTag.Track || numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating || albumArtworkURL != "Album artwork♪" || numDiscNumber.Value != musFile.Tag.Disc) {fileStatus(3); tsbCloseFile.Enabled = false; } else {fileStatus(2); tsbCloseFile.Enabled = true; }
         }
 
-        private void Form1_Load(object sender, EventArgs e) {fileStatus(0); pBoxAlbum.AllowDrop = true; }
+        private void Form1_Load(object sender, EventArgs e) {fileStatus(0); pBoxAlbum.AllowDrop = true; tsbCloseFile.Enabled = false; }
 
         private void numRatingSpotify_ValueChanged(object sender, EventArgs e)
         {
@@ -468,5 +468,36 @@ namespace Titel__WinFrorm_
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e) {Settings.Default.Save(); }
+
+        private void tsbCloseFile_Click(object sender, EventArgs e)
+        {
+            if (tslChanges.Text == "No changes")
+            {                
+                tFileChanged.Stop();
+                albumArtworkURL = null;
+                musFileSName = null;
+                musFilePath = null;
+                musFileName = null;
+                pBoxAlbum.BackgroundImage = null;
+                lResulution.Text = "null";
+                tbFileName.Text = null;
+                tbArtist.Text = null;
+                tbTitle.Text = null;
+                tbAlbum.Text = null;
+                numDate.Value = DateTime.Today.Year;
+                numTrackNumber.Value = 1;
+                numDiscNumber.Value = 1;
+                tbGenre.Text = null;
+                tbAlbumArtist.Text = null;
+                tbComposer.Text = null;
+                numRatingBlank.Value = 0;
+                numRatingSpotify.Value = 0;
+                numRatingYouTube.Value = 0;
+                numRatingSoundcloud.Value = 0;
+                this.Text = "Titel | File not loaded";
+                fileStatus(0);
+                tsbCloseFile.Enabled = false;
+            }
+        }
     }   
 }

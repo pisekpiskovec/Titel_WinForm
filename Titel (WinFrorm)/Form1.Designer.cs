@@ -157,6 +157,7 @@
             this.tsbCloseFile.Name = "tsbCloseFile";
             this.tsbCloseFile.Size = new System.Drawing.Size(23, 22);
             this.tsbCloseFile.Text = "Close file";
+            this.tsbCloseFile.Click += new System.EventHandler(this.tsbCloseFile_Click);
             // 
             // tsSp1
             // 
