@@ -399,12 +399,12 @@ namespace Titel__WinFrorm_
                 }
 
                 tFileChanged.Start();
-            } else if (tbFileName.Text == "") { MessageBox.Show("Invalid file name", "Enter file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            }else if (tbFileName.Text == "") { MessageBox.Show("Enter file name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
         private void tsmiSaveAs_Click(object sender, EventArgs e)
         {
-            if (tbFileName.Text != "" && musFileSName != tbFileName.Text)
+            if (tbFileName.Text != "" && musFileSName != tbFileName.Text && !System.IO.File.Exists(@musFileName))
             {
                 System.IO.File.Copy(musFilePath + musFileSName, musFilePath + tbFileName.Text);
                 musFileSName = tbFileName.Text;
@@ -429,17 +429,20 @@ namespace Titel__WinFrorm_
                 musFile.Tag.Composers = tbComposer.Text.Split('|');
 
                 TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
-                if (numRatingBlank.Value != 0) {var usrBlank = ""; TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, numRatingBlank.Value != 0); frameBlank.Rating = Convert.ToByte(numRatingBlank.Value); }
-                if (numRatingSpotify.Value != 0) {var usrSpotify = "open.spotify.com"; TagLib.Id3v2.PopularimeterFrame frameSpotify = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSpotify, numRatingSpotify.Value != 0); frameSpotify.Rating = Convert.ToByte(numRatingSpotify.Value); }
+                if (numRatingBlank.Value != 0) { var usrBlank = ""; TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, numRatingBlank.Value != 0); frameBlank.Rating = Convert.ToByte(numRatingBlank.Value); }
+                if (numRatingSpotify.Value != 0) { var usrSpotify = "open.spotify.com"; TagLib.Id3v2.PopularimeterFrame frameSpotify = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSpotify, numRatingSpotify.Value != 0); frameSpotify.Rating = Convert.ToByte(numRatingSpotify.Value); }
                 if (numRatingYouTube.Value != 0) { var usrYouTube = "youtube.com"; TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrYouTube, numRatingYouTube.Value != 0); frameYouTube.Rating = Convert.ToByte(numRatingYouTube.Value); }
-                if (numRatingSoundcloud.Value != 0) {var usrSoundCloud = "soundcloud.com"; TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, numRatingSoundcloud.Value != 0); frameSoundcloud.Rating = Convert.ToByte(numRatingSoundcloud.Value); }
+                if (numRatingSoundcloud.Value != 0) { var usrSoundCloud = "soundcloud.com"; TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, numRatingSoundcloud.Value != 0); frameSoundcloud.Rating = Convert.ToByte(numRatingSoundcloud.Value); }
 
                 musFile.RemoveTags(TagTypes.Id3v1);
                 musFile.Save();
 
 
                 tFileChanged.Start();
-            } else if (tbFileName.Text == "") { MessageBox.Show("Invalid file name", "Enter valid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            }
+            else if (musFileSName == tbFileName.Text) { MessageBox.Show("New file's name can't match the orgiginal's name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            else if (System.IO.File.Exists(@musFilePath + tbFileName.Text)) {MessageBox.Show("File already exists.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            else if (tbFileName.Text == "") { MessageBox.Show("Enter file name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
         private void pBoxAlbum_DragDrop(object sender, DragEventArgs e)
@@ -474,6 +477,5 @@ namespace Titel__WinFrorm_
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e) {Settings.Default.Save(); }
-
     }   
 }
