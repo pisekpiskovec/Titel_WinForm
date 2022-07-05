@@ -24,22 +24,23 @@ namespace Titel__WinFrorm_
 
         private void fileStatus(int status)
         {
-            Form1 wnF = new Form1();
             switch (status)
             {
                 case 0:
                     tslChanges.Text = "File not loaded.";
-                    wnF.Text = "Titel | File not loaded";
+                    this.Text = "Titel | File not loaded";
                     break;
                 case 1:
                     tslChanges.Text = "File loading...";
-                    wnF.Text = "Titel | File loading...";
+                    this.Text = "Titel | File loading...";
                     break;
                 case 2:
                     tslChanges.Text = "No changes";
+                    this.Text = "Titel | " + musFileSName;
                     break;
                 case 3:
                     tslChanges.Text = "Unsaved change(s)";
+                    this.Text = "Titel | " + musFileSName;
                     break;
             }
         }
@@ -87,7 +88,6 @@ namespace Titel__WinFrorm_
                 numRatingSoundcloud.Value = frameSoundcloud.Rating;
 
                 fileStatus(2);
-                this.Text = "Titel | " + musFileSName;
             } 
             else {fileStatus(0); }
             tFileChanged.Start();
@@ -494,7 +494,6 @@ namespace Titel__WinFrorm_
                 numRatingSpotify.Value = 0;
                 numRatingYouTube.Value = 0;
                 numRatingSoundcloud.Value = 0;
-                this.Text = "Titel | File not loaded";
                 fileStatus(0);
                 tsbCloseFile.Enabled = false;
             }
