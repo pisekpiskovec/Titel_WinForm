@@ -18,7 +18,7 @@ Titel is written in .NET Framework since it supports User Interface, which means
 * [x] Indicator of changes
 * [x] Saving file
 * [x] Saving file as
-* [ ] Close file
+* [x] Close file
 * [ ] Change positions of elements
 * [ ] Icon
 * [ ] Play audio?
