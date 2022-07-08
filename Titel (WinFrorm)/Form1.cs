@@ -184,7 +184,7 @@ namespace Titel__WinFrorm_
             if (tbAlbum.Text != musFileTag.Album || tbAlbumArtist.Text != musAlbumArtist || tbArtist.Text != musArtist || tbComposer.Text != musComposers || tbFileName.Text != musFileSName || tbGenre.Text != musGenre || tbTitle.Text != musFileTag.Title || numDate.Value != musFileTag.Year || numTrackNumber.Value != musFileTag.Track || numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating || albumArtworkURL != "Album artwork♪" || numDiscNumber.Value != musFile.Tag.Disc) {fileStatus(3); tsbCloseFile.Enabled = false; } else {fileStatus(2); tsbCloseFile.Enabled = true; }
         }
 
-        private void Form1_Load(object sender, EventArgs e) {fileStatus(0); pBoxAlbum.AllowDrop = true; numDate.Value = DateTime.Today.Year; tsbCloseFile.Enabled = false; }
+        private void Form1_Load(object sender, EventArgs e) { fileStatus(0); pBoxAlbum.AllowDrop = true; numDate.Value = DateTime.Today.Year; tsbCloseFile.Enabled = false; albumArtworkURL = "null♪"; }
 
         private void numRatingSpotify_ValueChanged(object sender, EventArgs e)
         {
@@ -365,7 +365,8 @@ namespace Titel__WinFrorm_
                 TagLib.Id3v2.Tag.UseNumericGenres = false;
                 TagLib.File musFile = TagLib.File.Create(musFileName);
 
-                if (albumArtworkURL != "Album artwork♪") { musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiJPGPNG.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
+                if (albumArtworkURL != "Album artwork♪" && albumArtworkURL != "null♪") {musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiJPGPNG.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
+                else if (albumArtworkURL == "null♪") { musFile.Tag.Pictures = null; }
 
                 musFile.Tag.Performers = tbArtist.Text.Split('|');
                 musFile.Tag.Title = tbTitle.Text;
@@ -411,7 +412,8 @@ namespace Titel__WinFrorm_
                 TagLib.Id3v2.Tag.UseNumericGenres = false;
                 TagLib.File musFile = TagLib.File.Create(musFileName);
 
-                if (albumArtworkURL != "Album artwork♪") { musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiJPGPNG.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
+                if (albumArtworkURL != "Album artwork♪" && albumArtworkURL != "null♪") { musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiJPGPNG.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
+                else if (albumArtworkURL == "null♪") { musFile.Tag.Pictures = null; }
 
                 musFile.Tag.Performers = tbArtist.Text.Split('|');
                 musFile.Tag.Title = tbTitle.Text;
