@@ -387,15 +387,17 @@ namespace Titel__WinFrorm_
                 musFile.RemoveTags(TagTypes.Id3v1);
                 musFile.Save();
 
-                if (tbFileName.Text != musFileSName)
+                if (tbFileName.Text != musFileSName && !System.IO.File.Exists(@musFilePath + tbFileName.Text))
                 {
                     System.IO.File.Move(musFilePath + musFileSName, musFilePath + tbFileName.Text);
                     musFileSName = tbFileName.Text;
                     musFileName = musFilePath + musFileSName;
                 }
+                else if (System.IO.File.Exists(@musFilePath + tbFileName.Text)) { MessageBox.Show("File already exists.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
                 tFileChanged.Start();
-            }else if (tbFileName.Text == "") { MessageBox.Show("Enter file name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); tbFileName.Text = musFileSName; }
+            }
+            else if (tbFileName.Text == "") { MessageBox.Show("Enter file name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); tbFileName.Text = musFileSName; }
         }
 
         private void tsmiSaveAs_Click(object sender, EventArgs e)
