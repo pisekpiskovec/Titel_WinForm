@@ -453,21 +453,29 @@ namespace Titel__WinFrorm_
 
         private void pBoxAlbum_MouseClick(object sender, MouseEventArgs e)
         {
-            switch (e.Button) { 
-                case MouseButtons.Right: 
+            switch (e.Button) 
+            { 
+                case MouseButtons.Right:
+                    if (musFileName != null)
                     {
-                        if (musFileName != null)
+                        var musFileTag = TagLib.File.Create(musFileName).Tag;
+                        if (musFileTag.Pictures.Length >= 1)
                         {
-                            var musFileTag = TagLib.File.Create(musFileName).Tag;
-                            if (musFileTag.Pictures.Length >= 1)
-                            {
-                                pBoxAlbum.BackgroundImage = Image.FromStream(new MemoryStream(musFileTag.Pictures[0].Data.Data));
-                                lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
-                                albumArtworkURL = "Album artwork♪";
-                            }
-                            else { pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px; lResulution.Text = "null"; }
+                            pBoxAlbum.BackgroundImage = Image.FromStream(new MemoryStream(musFileTag.Pictures[0].Data.Data));
+                            lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
+                            albumArtworkURL = "Album artwork♪";
                         }
-                    } break;
+                        else { pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px; lResulution.Text = "null"; }
+                    }
+                    break;
+                        
+                case MouseButtons.Left:
+                    {
+                        pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px;
+                        lResulution.Text = "null";
+                        albumArtworkURL = "null♪";
+                    }
+                    break;
             }
         }
 
