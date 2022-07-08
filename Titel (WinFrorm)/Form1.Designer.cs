@@ -78,8 +78,8 @@
             this.numDiscNumber = new System.Windows.Forms.NumericUpDown();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.pBoxAlbum = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lRemixer = new System.Windows.Forms.Label();
+            this.tbRemixer = new System.Windows.Forms.TextBox();
             this.tsTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numRatingBlank)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbStarsBlank)).BeginInit();
@@ -467,24 +467,24 @@
             this.pBoxAlbum.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseClick);
             this.pBoxAlbum.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseDoubleClick);
             // 
-            // label1
+            // lRemixer
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            this.toolTip.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
+            resources.ApplyResources(this.lRemixer, "lRemixer");
+            this.lRemixer.Name = "lRemixer";
+            this.toolTip.SetToolTip(this.lRemixer, resources.GetString("lRemixer.ToolTip"));
             // 
-            // textBox1
+            // tbRemixer
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            this.toolTip.SetToolTip(this.textBox1, resources.GetString("textBox1.ToolTip"));
+            resources.ApplyResources(this.tbRemixer, "tbRemixer");
+            this.tbRemixer.Name = "tbRemixer";
+            this.toolTip.SetToolTip(this.tbRemixer, resources.GetString("tbRemixer.ToolTip"));
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tbRemixer);
+            this.Controls.Add(this.lRemixer);
             this.Controls.Add(this.numDiscNumber);
             this.Controls.Add(this.lDiscNumber);
             this.Controls.Add(this.lComposer);
@@ -597,8 +597,8 @@
         private System.Windows.Forms.ToolStripButton tsbCloseFile;
         private System.Windows.Forms.NumericUpDown numDiscNumber;
         private System.Windows.Forms.ToolTip toolTip;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lRemixer;
+        private System.Windows.Forms.TextBox tbRemixer;
     }
 }
 

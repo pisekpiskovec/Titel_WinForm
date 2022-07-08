@@ -120,6 +120,19 @@
   <data name="tsbOpen.ToolTipText" xml:space="preserve">
     <value>Otevřít MP3 soubor...</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tsmiSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 22</value>
+  </data>
+  <data name="tsmiSave.Text" xml:space="preserve">
+    <value>Uložit</value>
+  </data>
+  <data name="tsmiSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 22</value>
+  </data>
+  <data name="tsmiSaveAs.Text" xml:space="preserve">
+    <value>Uložit jako</value>
+  </data>
   <data name="tssbSave.Text" xml:space="preserve">
     <value>Uložit</value>
   </data>
@@ -129,7 +142,6 @@
   <data name="tsbCloseFile.Text" xml:space="preserve">
     <value>Zavřít soubor</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tslChanges.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 22</value>
   </data>
@@ -374,21 +386,6 @@
   <data name="numDiscNumber.Size" type="System.Drawing.Size, System.Drawing">
     <value>372, 20</value>
   </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 13</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Autor míchání hudebních skladeb:</value>
-  </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 318</value>
-  </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 20</value>
-  </data>
   <data name="pBoxAlbum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -396,17 +393,17 @@
     <value>Pravým kliknutím resetujete
 Dvojtým pravým kliknutím smažete</value>
   </data>
-  <data name="tsmiSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+  <data name="lRemixer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 13</value>
   </data>
-  <data name="tsmiSave.Text" xml:space="preserve">
-    <value>Uložit</value>
+  <data name="lRemixer.Text" xml:space="preserve">
+    <value>Autor míchání hudebních skladeb:</value>
   </data>
-  <data name="tsmiSaveAs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+  <data name="tbRemixer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>191, 318</value>
   </data>
-  <data name="tsmiSaveAs.Text" xml:space="preserve">
-    <value>Uložit jako</value>
+  <data name="tbRemixer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 20</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -431,8 +428,5 @@ Dvojtým pravým kliknutím smažete</value>
         AAAAAAAA//8AAP//AAD//wAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAP//
         AAD//wAA//8AAA==
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
 </root>

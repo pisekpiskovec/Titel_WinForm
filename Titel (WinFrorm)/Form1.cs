@@ -76,6 +76,7 @@ namespace Titel__WinFrorm_
                 tbGenre.Text = string.Join("|", musFile.Tag.Genres);
                 tbAlbumArtist.Text = string.Join("|", musFile.Tag.AlbumArtists);
                 tbComposer.Text = string.Join("|", musFile.Tag.Composers);
+                tbRemixer.Text = musFile.Tag.RemixedBy;
 
                 TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
                 TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, "", true);
@@ -181,7 +182,7 @@ namespace Titel__WinFrorm_
             var usrSoundCloud = "soundcloud.com";
             TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
 
-            if (tbAlbum.Text != musFileTag.Album || tbAlbumArtist.Text != musAlbumArtist || tbArtist.Text != musArtist || tbComposer.Text != musComposers || tbFileName.Text != musFileSName || tbGenre.Text != musGenre || tbTitle.Text != musFileTag.Title || numDate.Value != musFileTag.Year || numTrackNumber.Value != musFileTag.Track || numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating || albumArtworkURL != "Album artwork♪" || numDiscNumber.Value != musFile.Tag.Disc) {fileStatus(3); tsbCloseFile.Enabled = false; } else {fileStatus(2); tsbCloseFile.Enabled = true; }
+            if (tbAlbum.Text != musFileTag.Album || tbAlbumArtist.Text != musAlbumArtist || tbArtist.Text != musArtist || tbComposer.Text != musComposers || tbFileName.Text != musFileSName || tbGenre.Text != musGenre || tbTitle.Text != musFileTag.Title || numDate.Value != musFileTag.Year || numTrackNumber.Value != musFileTag.Track || numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating || albumArtworkURL != "Album artwork♪" || numDiscNumber.Value != musFile.Tag.Disc || musFile.Tag.RemixedBy != tbRemixer.Text) { fileStatus(3); tsbCloseFile.Enabled = false; } else {fileStatus(2); tsbCloseFile.Enabled = true; }
         }
 
         private void Form1_Load(object sender, EventArgs e) { fileStatus(0); pBoxAlbum.AllowDrop = true; numDate.Value = DateTime.Today.Year; tsbCloseFile.Enabled = false; albumArtworkURL = "null♪"; }
@@ -377,6 +378,7 @@ namespace Titel__WinFrorm_
                 musFile.Tag.Genres = tbGenre.Text.Split('|');
                 musFile.Tag.AlbumArtists = tbAlbumArtist.Text.Split('|');
                 musFile.Tag.Composers = tbComposer.Text.Split('|');
+                musFile.Tag.RemixedBy = tbRemixer.Text;
 
                 TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
                 if (numRatingBlank.Value != 0) {var usrBlank = ""; TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, numRatingBlank.Value != 0); frameBlank.Rating = Convert.ToByte(numRatingBlank.Value); }
@@ -426,6 +428,7 @@ namespace Titel__WinFrorm_
                 musFile.Tag.Genres = tbGenre.Text.Split('|');
                 musFile.Tag.AlbumArtists = tbAlbumArtist.Text.Split('|');
                 musFile.Tag.Composers = tbComposer.Text.Split('|');
+                musFile.Tag.RemixedBy = tbRemixer.Text;
 
                 TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
                 if (numRatingBlank.Value != 0) { var usrBlank = ""; TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, numRatingBlank.Value != 0); frameBlank.Rating = Convert.ToByte(numRatingBlank.Value); }
