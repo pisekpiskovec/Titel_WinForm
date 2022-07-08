@@ -47,6 +47,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>titel_icon_64.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -127,6 +130,7 @@
     <Content Include="Resources\generic_music_file_100px.png" />
     <Content Include="Resources\titel_icon_16.png" />
     <Content Include="Resources\titel_icon_64.png" />
+    <Content Include="titel_icon_64.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
