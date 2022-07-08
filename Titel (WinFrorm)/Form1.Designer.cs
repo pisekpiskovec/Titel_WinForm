@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tsTop = new System.Windows.Forms.ToolStrip();
             this.tsbOpen = new System.Windows.Forms.ToolStripButton();
             this.tssbSave = new System.Windows.Forms.ToolStripSplitButton();
@@ -77,6 +78,8 @@
             this.numDiscNumber = new System.Windows.Forms.NumericUpDown();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.pBoxAlbum = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tsTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numRatingBlank)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbStarsBlank)).BeginInit();
@@ -215,16 +218,16 @@
             // 
             // tbGenre
             // 
-            this.tbGenre.Location = new System.Drawing.Point(57, 213);
+            this.tbGenre.Location = new System.Drawing.Point(56, 240);
             this.tbGenre.Name = "tbGenre";
             this.tbGenre.Size = new System.Drawing.Size(396, 20);
             this.tbGenre.TabIndex = 9;
             // 
             // tbAlbumArtist
             // 
-            this.tbAlbumArtist.Location = new System.Drawing.Point(83, 239);
+            this.tbAlbumArtist.Location = new System.Drawing.Point(83, 266);
             this.tbAlbumArtist.Name = "tbAlbumArtist";
-            this.tbAlbumArtist.Size = new System.Drawing.Size(370, 20);
+            this.tbAlbumArtist.Size = new System.Drawing.Size(369, 20);
             this.tbAlbumArtist.TabIndex = 10;
             // 
             // lArtist
@@ -275,7 +278,7 @@
             // lGenre
             // 
             this.lGenre.AutoSize = true;
-            this.lGenre.Location = new System.Drawing.Point(12, 216);
+            this.lGenre.Location = new System.Drawing.Point(12, 243);
             this.lGenre.Name = "lGenre";
             this.lGenre.Size = new System.Drawing.Size(39, 13);
             this.lGenre.TabIndex = 16;
@@ -284,7 +287,7 @@
             // lAlbumArtist
             // 
             this.lAlbumArtist.AutoSize = true;
-            this.lAlbumArtist.Location = new System.Drawing.Point(12, 242);
+            this.lAlbumArtist.Location = new System.Drawing.Point(12, 269);
             this.lAlbumArtist.Name = "lAlbumArtist";
             this.lAlbumArtist.Size = new System.Drawing.Size(65, 13);
             this.lAlbumArtist.TabIndex = 17;
@@ -293,7 +296,7 @@
             // lPicture
             // 
             this.lPicture.AutoSize = true;
-            this.lPicture.Location = new System.Drawing.Point(304, 265);
+            this.lPicture.Location = new System.Drawing.Point(303, 292);
             this.lPicture.Name = "lPicture";
             this.lPicture.Size = new System.Drawing.Size(43, 13);
             this.lPicture.TabIndex = 19;
@@ -301,7 +304,7 @@
             // 
             // lResulution
             // 
-            this.lResulution.Location = new System.Drawing.Point(287, 278);
+            this.lResulution.Location = new System.Drawing.Point(287, 305);
             this.lResulution.Name = "lResulution";
             this.lResulution.Size = new System.Drawing.Size(60, 13);
             this.lResulution.TabIndex = 20;
@@ -310,7 +313,7 @@
             // 
             // bOpenPicture
             // 
-            this.bOpenPicture.Location = new System.Drawing.Point(353, 371);
+            this.bOpenPicture.Location = new System.Drawing.Point(352, 398);
             this.bOpenPicture.Name = "bOpenPicture";
             this.bOpenPicture.Size = new System.Drawing.Size(100, 23);
             this.bOpenPicture.TabIndex = 21;
@@ -321,7 +324,7 @@
             // lRatingBlank
             // 
             this.lRatingBlank.AutoSize = true;
-            this.lRatingBlank.Location = new System.Drawing.Point(12, 267);
+            this.lRatingBlank.Location = new System.Drawing.Point(12, 346);
             this.lRatingBlank.Name = "lRatingBlank";
             this.lRatingBlank.Size = new System.Drawing.Size(99, 13);
             this.lRatingBlank.TabIndex = 22;
@@ -329,7 +332,7 @@
             // 
             // numRatingBlank
             // 
-            this.numRatingBlank.Location = new System.Drawing.Point(117, 265);
+            this.numRatingBlank.Location = new System.Drawing.Point(117, 344);
             this.numRatingBlank.Maximum = new decimal(new int[] {
             255,
             0,
@@ -343,7 +346,7 @@
             // tbStarsBlank
             // 
             this.tbStarsBlank.LargeChange = 1;
-            this.tbStarsBlank.Location = new System.Drawing.Point(15, 291);
+            this.tbStarsBlank.Location = new System.Drawing.Point(15, 370);
             this.tbStarsBlank.Maximum = 5;
             this.tbStarsBlank.Name = "tbStarsBlank";
             this.tbStarsBlank.Size = new System.Drawing.Size(149, 45);
@@ -394,7 +397,7 @@
             // tbStarsSpotify
             // 
             this.tbStarsSpotify.LargeChange = 1;
-            this.tbStarsSpotify.Location = new System.Drawing.Point(15, 363);
+            this.tbStarsSpotify.Location = new System.Drawing.Point(173, 370);
             this.tbStarsSpotify.Maximum = 5;
             this.tbStarsSpotify.Name = "tbStarsSpotify";
             this.tbStarsSpotify.Size = new System.Drawing.Size(132, 45);
@@ -403,7 +406,7 @@
             // 
             // numRatingSpotify
             // 
-            this.numRatingSpotify.Location = new System.Drawing.Point(100, 337);
+            this.numRatingSpotify.Location = new System.Drawing.Point(258, 344);
             this.numRatingSpotify.Maximum = new decimal(new int[] {
             255,
             0,
@@ -417,7 +420,7 @@
             // lRatingSpotify
             // 
             this.lRatingSpotify.AutoSize = true;
-            this.lRatingSpotify.Location = new System.Drawing.Point(12, 339);
+            this.lRatingSpotify.Location = new System.Drawing.Point(170, 346);
             this.lRatingSpotify.Name = "lRatingSpotify";
             this.lRatingSpotify.Size = new System.Drawing.Size(82, 13);
             this.lRatingSpotify.TabIndex = 27;
@@ -426,7 +429,7 @@
             // tbStarsYouTube
             // 
             this.tbStarsYouTube.LargeChange = 1;
-            this.tbStarsYouTube.Location = new System.Drawing.Point(15, 435);
+            this.tbStarsYouTube.Location = new System.Drawing.Point(15, 448);
             this.tbStarsYouTube.Maximum = 5;
             this.tbStarsYouTube.Name = "tbStarsYouTube";
             this.tbStarsYouTube.Size = new System.Drawing.Size(144, 45);
@@ -435,7 +438,7 @@
             // 
             // numRatingYouTube
             // 
-            this.numRatingYouTube.Location = new System.Drawing.Point(112, 409);
+            this.numRatingYouTube.Location = new System.Drawing.Point(112, 421);
             this.numRatingYouTube.Maximum = new decimal(new int[] {
             255,
             0,
@@ -449,7 +452,7 @@
             // lRatingYouTube
             // 
             this.lRatingYouTube.AutoSize = true;
-            this.lRatingYouTube.Location = new System.Drawing.Point(12, 411);
+            this.lRatingYouTube.Location = new System.Drawing.Point(12, 423);
             this.lRatingYouTube.Name = "lRatingYouTube";
             this.lRatingYouTube.Size = new System.Drawing.Size(94, 13);
             this.lRatingYouTube.TabIndex = 30;
@@ -458,7 +461,7 @@
             // tbStarsSoundcloud
             // 
             this.tbStarsSoundcloud.LargeChange = 1;
-            this.tbStarsSoundcloud.Location = new System.Drawing.Point(173, 320);
+            this.tbStarsSoundcloud.Location = new System.Drawing.Point(168, 448);
             this.tbStarsSoundcloud.Maximum = 5;
             this.tbStarsSoundcloud.Name = "tbStarsSoundcloud";
             this.tbStarsSoundcloud.Size = new System.Drawing.Size(157, 45);
@@ -467,7 +470,7 @@
             // 
             // numRatingSoundcloud
             // 
-            this.numRatingSoundcloud.Location = new System.Drawing.Point(283, 294);
+            this.numRatingSoundcloud.Location = new System.Drawing.Point(278, 421);
             this.numRatingSoundcloud.Maximum = new decimal(new int[] {
             255,
             0,
@@ -481,7 +484,7 @@
             // lRatingSoundcloud
             // 
             this.lRatingSoundcloud.AutoSize = true;
-            this.lRatingSoundcloud.Location = new System.Drawing.Point(170, 296);
+            this.lRatingSoundcloud.Location = new System.Drawing.Point(165, 423);
             this.lRatingSoundcloud.Name = "lRatingSoundcloud";
             this.lRatingSoundcloud.Size = new System.Drawing.Size(107, 13);
             this.lRatingSoundcloud.TabIndex = 33;
@@ -490,7 +493,7 @@
             // lComposer
             // 
             this.lComposer.AutoSize = true;
-            this.lComposer.Location = new System.Drawing.Point(170, 374);
+            this.lComposer.Location = new System.Drawing.Point(12, 295);
             this.lComposer.Name = "lComposer";
             this.lComposer.Size = new System.Drawing.Size(57, 13);
             this.lComposer.TabIndex = 37;
@@ -498,15 +501,15 @@
             // 
             // tbComposer
             // 
-            this.tbComposer.Location = new System.Drawing.Point(233, 371);
+            this.tbComposer.Location = new System.Drawing.Point(75, 292);
             this.tbComposer.Name = "tbComposer";
-            this.tbComposer.Size = new System.Drawing.Size(114, 20);
+            this.tbComposer.Size = new System.Drawing.Size(206, 20);
             this.tbComposer.TabIndex = 36;
             // 
             // lDiscNumber
             // 
             this.lDiscNumber.AutoSize = true;
-            this.lDiscNumber.Location = new System.Drawing.Point(170, 400);
+            this.lDiscNumber.Location = new System.Drawing.Point(12, 216);
             this.lDiscNumber.Name = "lDiscNumber";
             this.lDiscNumber.Size = new System.Drawing.Size(71, 13);
             this.lDiscNumber.TabIndex = 39;
@@ -519,14 +522,14 @@
             // 
             // numDiscNumber
             // 
-            this.numDiscNumber.Location = new System.Drawing.Point(247, 398);
+            this.numDiscNumber.Location = new System.Drawing.Point(89, 214);
             this.numDiscNumber.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
             this.numDiscNumber.Name = "numDiscNumber";
-            this.numDiscNumber.Size = new System.Drawing.Size(206, 20);
+            this.numDiscNumber.Size = new System.Drawing.Size(363, 20);
             this.numDiscNumber.TabIndex = 40;
             this.numDiscNumber.ThousandsSeparator = true;
             this.numDiscNumber.Value = new decimal(new int[] {
@@ -539,7 +542,7 @@
             // 
             this.pBoxAlbum.BackgroundImage = global::Titel_WinFrorm.Properties.Resources.generic_music_file_100px;
             this.pBoxAlbum.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pBoxAlbum.Location = new System.Drawing.Point(353, 265);
+            this.pBoxAlbum.Location = new System.Drawing.Point(352, 292);
             this.pBoxAlbum.Name = "pBoxAlbum";
             this.pBoxAlbum.Size = new System.Drawing.Size(100, 100);
             this.pBoxAlbum.TabIndex = 18;
@@ -549,11 +552,29 @@
             this.pBoxAlbum.DragEnter += new System.Windows.Forms.DragEventHandler(this.pBoxAlbum_DragEnter);
             this.pBoxAlbum.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseClick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 321);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 13);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "Remixed by:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(83, 318);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(263, 20);
+            this.textBox1.TabIndex = 42;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 481);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.numDiscNumber);
             this.Controls.Add(this.lDiscNumber);
             this.Controls.Add(this.lComposer);
@@ -592,9 +613,10 @@
             this.Controls.Add(this.lFileName);
             this.Controls.Add(this.tsTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Titel";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -667,6 +689,8 @@
         private System.Windows.Forms.ToolStripButton tsbCloseFile;
         private System.Windows.Forms.NumericUpDown numDiscNumber;
         private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
