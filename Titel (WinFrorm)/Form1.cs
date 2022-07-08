@@ -471,9 +471,15 @@ namespace Titel__WinFrorm_
                         }
                         else { pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px; lResulution.Text = "null"; }
                     }
-                    break;
-                        
-                case MouseButtons.Left:
+                    break;                        
+            }
+        }
+
+        private void pBoxAlbum_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            switch (e.Button)
+            {
+                case MouseButtons.Right:
                     {
                         pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px;
                         lResulution.Text = "null";
