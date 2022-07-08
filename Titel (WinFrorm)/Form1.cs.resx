@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tsbOpen.ToolTipText" xml:space="preserve">
+    <value>Otevřít MP3 soubor...</value>
+  </data>
+  <data name="tssbSave.Text" xml:space="preserve">
+    <value>Uložit</value>
+  </data>
+  <data name="tssbSave.ToolTipText" xml:space="preserve">
+    <value>Uložit... nebo Uložit jako...</value>
+  </data>
+  <data name="tsbCloseFile.Text" xml:space="preserve">
+    <value>Zavřít soubor</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tslChanges.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 22</value>
+  </data>
+  <data name="tslChanges.Text" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lFileName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lFileName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="lFileName.Text" xml:space="preserve">
+    <value>Soubor:</value>
+  </data>
+  <data name="tbFileName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 31</value>
+  </data>
+  <data name="tbFileName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 20</value>
+  </data>
+  <data name="tbArtist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 83</value>
+  </data>
+  <data name="tbArtist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>389, 20</value>
+  </data>
+  <data name="tbTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 109</value>
+  </data>
+  <data name="tbTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 20</value>
+  </data>
+  <data name="tbAlbumArtist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 266</value>
+  </data>
+  <data name="tbAlbumArtist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>365, 20</value>
+  </data>
+  <data name="lArtist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lArtist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="lArtist.Text" xml:space="preserve">
+    <value>Umělec:</value>
+  </data>
+  <data name="lTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="lTitle.Text" xml:space="preserve">
+    <value>Název:</value>
+  </data>
+  <data name="lAlbum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lDate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="lDate.Text" xml:space="preserve">
+    <value>Datum:</value>
+  </data>
+  <data name="lTrackNumber.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lTrackNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="lTrackNumber.Text" xml:space="preserve">
+    <value>Číslo skladby:</value>
+  </data>
+  <data name="lGenre.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lGenre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
+  </data>
+  <data name="lGenre.Text" xml:space="preserve">
+    <value>Žánr:</value>
+  </data>
+  <data name="lAlbumArtist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lAlbumArtist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="lAlbumArtist.Text" xml:space="preserve">
+    <value>Umělec alba:</value>
+  </data>
+  <data name="lPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lPicture.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 292</value>
+  </data>
+  <data name="lPicture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="lPicture.Text" xml:space="preserve">
+    <value>Obrázek:</value>
+  </data>
+  <data name="lResulution.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bOpenPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bOpenPicture.Text" xml:space="preserve">
+    <value>Otevřít obrázek</value>
+  </data>
+  <data name="lRatingBlank.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lRatingBlank.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 13</value>
+  </data>
+  <data name="lRatingBlank.Text" xml:space="preserve">
+    <value>Hodnocení (od nikoho):</value>
+  </data>
+  <data name="numRatingBlank.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 344</value>
+  </data>
+  <data name="tbStarsBlank.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tbStarsBlank.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 45</value>
+  </data>
+  <data name="numDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 161</value>
+  </data>
+  <data name="numDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 20</value>
+  </data>
+  <data name="numTrackNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 188</value>
+  </data>
+  <data name="numTrackNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 20</value>
+  </data>
+  <data name="tbStarsSpotify.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tbStarsSpotify.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 370</value>
+  </data>
+  <data name="tbStarsSpotify.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 45</value>
+  </data>
+  <data name="numRatingSpotify.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 344</value>
+  </data>
+  <data name="lRatingSpotify.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lRatingSpotify.Location" type="System.Drawing.Point, System.Drawing">
+    <value>191, 346</value>
+  </data>
+  <data name="lRatingSpotify.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 13</value>
+  </data>
+  <data name="lRatingSpotify.Text" xml:space="preserve">
+    <value>Hodnocení (Spotify):</value>
+  </data>
+  <data name="tbStarsYouTube.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tbStarsYouTube.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 45</value>
+  </data>
+  <data name="numRatingYouTube.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 421</value>
+  </data>
+  <data name="lRatingYouTube.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lRatingYouTube.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 13</value>
+  </data>
+  <data name="lRatingYouTube.Text" xml:space="preserve">
+    <value>Hodnocení (YouTube):</value>
+  </data>
+  <data name="tbStarsSoundcloud.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tbStarsSoundcloud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 448</value>
+  </data>
+  <data name="tbStarsSoundcloud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 45</value>
+  </data>
+  <data name="numRatingSoundcloud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>324, 421</value>
+  </data>
+  <data name="lRatingSoundcloud.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lRatingSoundcloud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 423</value>
+  </data>
+  <data name="lRatingSoundcloud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 13</value>
+  </data>
+  <data name="lRatingSoundcloud.Text" xml:space="preserve">
+    <value>Hodnocení (Soundcloud):</value>
+  </data>
+  <data name="lComposer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lComposer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="lComposer.Text" xml:space="preserve">
+    <value>Skladatel:</value>
+  </data>
+  <data name="tbComposer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 292</value>
+  </data>
+  <data name="tbComposer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 20</value>
+  </data>
+  <data name="lDiscNumber.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lDiscNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 13</value>
+  </data>
+  <data name="lDiscNumber.Text" xml:space="preserve">
+    <value>Číslo disku:</value>
+  </data>
+  <data name="numDiscNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 214</value>
+  </data>
+  <data name="numDiscNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 20</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Autor míchání hudebních skladeb:</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>191, 318</value>
+  </data>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 20</value>
+  </data>
+  <data name="pBoxAlbum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pBoxAlbum.ToolTip" xml:space="preserve">
+    <value>Pravým kliknutím resetujete
+Dvojtým pravým kliknutím smažete</value>
+  </data>
+  <data name="tsmiSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="tsmiSave.Text" xml:space="preserve">
+    <value>Uložit</value>
+  </data>
+  <data name="tsmiSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="tsmiSaveAs.Text" xml:space="preserve">
+    <value>Uložit jako</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
+        AP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAAAP//////////////////////////////////////////////
+        ////////////////////////AAAAAAAAAAAAAAD//////wAAAP//////AAAA////////////////////
+        //8AAAD/AAAA/wAAAP///////////wAAAAAAAAAAAAAA////////////AAAA////////////////////
+        ////////AAAA/wAAAP8AAAD///////////8AAAAAAAAAAAAAAP///////////wAAAP//////////////
+        ////////////////////////AAAA////////////AAAAAAAAAAAAAAD///////////8AAAD/////////
+        /////////////////////////////wAAAP///////////wAAAAAAAAAAAAAA////////////AAAA////
+        //////////////////////////////////8AAAD///////////8AAAAAAAAAAAAAAP//////AAAA////
+        //8AAAD/////////////////////////////////AAAA/wAAAP//////AAAAAAAAAAAAAAD/////////
+        /////////////////////////////////////////////////////////////wAAAAAAAAAAAAAA/wAA
+        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA//8AAP//AAD//wAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAP//
+        AAD//wAA//8AAA==
+</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+</root>

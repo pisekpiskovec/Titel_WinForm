@@ -97,279 +97,220 @@
             // 
             // tsTop
             // 
+            resources.ApplyResources(this.tsTop, "tsTop");
             this.tsTop.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbOpen,
             this.tssbSave,
             this.tsbCloseFile,
             this.tsSp1,
             this.tslChanges});
-            this.tsTop.Location = new System.Drawing.Point(0, 0);
             this.tsTop.Name = "tsTop";
-            this.tsTop.Size = new System.Drawing.Size(464, 25);
             this.tsTop.Stretch = true;
-            this.tsTop.TabIndex = 0;
-            this.tsTop.Text = "toolStrip";
+            this.toolTip.SetToolTip(this.tsTop, resources.GetString("tsTop.ToolTip"));
             // 
             // tsbOpen
             // 
+            resources.ApplyResources(this.tsbOpen, "tsbOpen");
             this.tsbOpen.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbOpen.Image = global::Titel_WinFrorm.Properties.Resources.opened_folder_96px;
-            this.tsbOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbOpen.Name = "tsbOpen";
-            this.tsbOpen.Size = new System.Drawing.Size(23, 22);
-            this.tsbOpen.Text = "Open File";
-            this.tsbOpen.ToolTipText = "Open MP3 file...";
             this.tsbOpen.Click += new System.EventHandler(this.tsbtnOpen_Click);
             // 
             // tssbSave
             // 
+            resources.ApplyResources(this.tssbSave, "tssbSave");
             this.tssbSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tssbSave.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiSave,
             this.tsmiSaveAs});
             this.tssbSave.Image = global::Titel_WinFrorm.Properties.Resources.save_96px;
-            this.tssbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tssbSave.Name = "tssbSave";
-            this.tssbSave.Size = new System.Drawing.Size(32, 22);
-            this.tssbSave.Text = "Save";
-            this.tssbSave.ToolTipText = "Save... or Save as...";
             this.tssbSave.ButtonClick += new System.EventHandler(this.tssbSave_ButtonClick);
             // 
             // tsmiSave
             // 
+            resources.ApplyResources(this.tsmiSave, "tsmiSave");
             this.tsmiSave.Image = global::Titel_WinFrorm.Properties.Resources.save_96px;
             this.tsmiSave.Name = "tsmiSave";
-            this.tsmiSave.Size = new System.Drawing.Size(114, 22);
-            this.tsmiSave.Text = "Save";
             this.tsmiSave.Click += new System.EventHandler(this.tssbSave_ButtonClick);
             // 
             // tsmiSaveAs
             // 
+            resources.ApplyResources(this.tsmiSaveAs, "tsmiSaveAs");
             this.tsmiSaveAs.Image = global::Titel_WinFrorm.Properties.Resources.save_as_96px;
             this.tsmiSaveAs.Name = "tsmiSaveAs";
-            this.tsmiSaveAs.Size = new System.Drawing.Size(114, 22);
-            this.tsmiSaveAs.Text = "Save As";
             this.tsmiSaveAs.Click += new System.EventHandler(this.tsmiSaveAs_Click);
             // 
             // tsbCloseFile
             // 
+            resources.ApplyResources(this.tsbCloseFile, "tsbCloseFile");
             this.tsbCloseFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbCloseFile.Image = global::Titel_WinFrorm.Properties.Resources.close_tab_96px;
-            this.tsbCloseFile.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbCloseFile.Name = "tsbCloseFile";
-            this.tsbCloseFile.Size = new System.Drawing.Size(23, 22);
-            this.tsbCloseFile.Text = "Close file";
             this.tsbCloseFile.Click += new System.EventHandler(this.tsbCloseFile_Click);
             // 
             // tsSp1
             // 
+            resources.ApplyResources(this.tsSp1, "tsSp1");
             this.tsSp1.Name = "tsSp1";
-            this.tsSp1.Size = new System.Drawing.Size(6, 25);
             // 
             // tslChanges
             // 
+            resources.ApplyResources(this.tslChanges, "tslChanges");
             this.tslChanges.Name = "tslChanges";
-            this.tslChanges.Size = new System.Drawing.Size(39, 22);
-            this.tslChanges.Text = "Status";
             // 
             // openFileDiMP3
             // 
             this.openFileDiMP3.DefaultExt = "mp3";
-            this.openFileDiMP3.Filter = "MP3 Audio Files|*.mp3";
+            resources.ApplyResources(this.openFileDiMP3, "openFileDiMP3");
             this.openFileDiMP3.RestoreDirectory = true;
-            this.openFileDiMP3.Title = "Open MP3 file...";
             // 
             // lFileName
             // 
-            this.lFileName.AutoSize = true;
-            this.lFileName.Location = new System.Drawing.Point(12, 34);
+            resources.ApplyResources(this.lFileName, "lFileName");
             this.lFileName.Name = "lFileName";
-            this.lFileName.Size = new System.Drawing.Size(26, 13);
-            this.lFileName.TabIndex = 1;
-            this.lFileName.Text = "File:";
+            this.toolTip.SetToolTip(this.lFileName, resources.GetString("lFileName.ToolTip"));
             // 
             // tbFileName
             // 
-            this.tbFileName.Location = new System.Drawing.Point(44, 31);
+            resources.ApplyResources(this.tbFileName, "tbFileName");
             this.tbFileName.Name = "tbFileName";
-            this.tbFileName.Size = new System.Drawing.Size(409, 20);
-            this.tbFileName.TabIndex = 2;
+            this.toolTip.SetToolTip(this.tbFileName, resources.GetString("tbFileName.ToolTip"));
             // 
             // tbArtist
             // 
-            this.tbArtist.Location = new System.Drawing.Point(51, 83);
+            resources.ApplyResources(this.tbArtist, "tbArtist");
             this.tbArtist.Name = "tbArtist";
-            this.tbArtist.Size = new System.Drawing.Size(402, 20);
-            this.tbArtist.TabIndex = 4;
+            this.toolTip.SetToolTip(this.tbArtist, resources.GetString("tbArtist.ToolTip"));
             // 
             // tbTitle
             // 
-            this.tbTitle.Location = new System.Drawing.Point(48, 109);
+            resources.ApplyResources(this.tbTitle, "tbTitle");
             this.tbTitle.Name = "tbTitle";
-            this.tbTitle.Size = new System.Drawing.Size(405, 20);
-            this.tbTitle.TabIndex = 6;
+            this.toolTip.SetToolTip(this.tbTitle, resources.GetString("tbTitle.ToolTip"));
             // 
             // tbAlbum
             // 
-            this.tbAlbum.Location = new System.Drawing.Point(57, 135);
+            resources.ApplyResources(this.tbAlbum, "tbAlbum");
             this.tbAlbum.Name = "tbAlbum";
-            this.tbAlbum.Size = new System.Drawing.Size(396, 20);
-            this.tbAlbum.TabIndex = 8;
+            this.toolTip.SetToolTip(this.tbAlbum, resources.GetString("tbAlbum.ToolTip"));
             // 
             // tbGenre
             // 
-            this.tbGenre.Location = new System.Drawing.Point(56, 240);
+            resources.ApplyResources(this.tbGenre, "tbGenre");
             this.tbGenre.Name = "tbGenre";
-            this.tbGenre.Size = new System.Drawing.Size(396, 20);
-            this.tbGenre.TabIndex = 16;
+            this.toolTip.SetToolTip(this.tbGenre, resources.GetString("tbGenre.ToolTip"));
             // 
             // tbAlbumArtist
             // 
-            this.tbAlbumArtist.Location = new System.Drawing.Point(83, 266);
+            resources.ApplyResources(this.tbAlbumArtist, "tbAlbumArtist");
             this.tbAlbumArtist.Name = "tbAlbumArtist";
-            this.tbAlbumArtist.Size = new System.Drawing.Size(369, 20);
-            this.tbAlbumArtist.TabIndex = 18;
+            this.toolTip.SetToolTip(this.tbAlbumArtist, resources.GetString("tbAlbumArtist.ToolTip"));
             // 
             // lArtist
             // 
-            this.lArtist.AutoSize = true;
-            this.lArtist.Location = new System.Drawing.Point(12, 86);
+            resources.ApplyResources(this.lArtist, "lArtist");
             this.lArtist.Name = "lArtist";
-            this.lArtist.Size = new System.Drawing.Size(33, 13);
-            this.lArtist.TabIndex = 3;
-            this.lArtist.Text = "Artist:";
+            this.toolTip.SetToolTip(this.lArtist, resources.GetString("lArtist.ToolTip"));
             // 
             // lTitle
             // 
-            this.lTitle.AutoSize = true;
-            this.lTitle.Location = new System.Drawing.Point(12, 112);
+            resources.ApplyResources(this.lTitle, "lTitle");
             this.lTitle.Name = "lTitle";
-            this.lTitle.Size = new System.Drawing.Size(30, 13);
-            this.lTitle.TabIndex = 5;
-            this.lTitle.Text = "Title:";
+            this.toolTip.SetToolTip(this.lTitle, resources.GetString("lTitle.ToolTip"));
             // 
             // lAlbum
             // 
-            this.lAlbum.AutoSize = true;
-            this.lAlbum.Location = new System.Drawing.Point(12, 138);
+            resources.ApplyResources(this.lAlbum, "lAlbum");
             this.lAlbum.Name = "lAlbum";
-            this.lAlbum.Size = new System.Drawing.Size(39, 13);
-            this.lAlbum.TabIndex = 7;
-            this.lAlbum.Text = "Album:";
+            this.toolTip.SetToolTip(this.lAlbum, resources.GetString("lAlbum.ToolTip"));
             // 
             // lDate
             // 
-            this.lDate.AutoSize = true;
-            this.lDate.Location = new System.Drawing.Point(12, 164);
+            resources.ApplyResources(this.lDate, "lDate");
             this.lDate.Name = "lDate";
-            this.lDate.Size = new System.Drawing.Size(33, 13);
-            this.lDate.TabIndex = 9;
-            this.lDate.Text = "Date:";
+            this.toolTip.SetToolTip(this.lDate, resources.GetString("lDate.ToolTip"));
             // 
             // lTrackNumber
             // 
-            this.lTrackNumber.AutoSize = true;
-            this.lTrackNumber.Location = new System.Drawing.Point(12, 190);
+            resources.ApplyResources(this.lTrackNumber, "lTrackNumber");
             this.lTrackNumber.Name = "lTrackNumber";
-            this.lTrackNumber.Size = new System.Drawing.Size(78, 13);
-            this.lTrackNumber.TabIndex = 11;
-            this.lTrackNumber.Text = "Track Number:";
+            this.toolTip.SetToolTip(this.lTrackNumber, resources.GetString("lTrackNumber.ToolTip"));
             // 
             // lGenre
             // 
-            this.lGenre.AutoSize = true;
-            this.lGenre.Location = new System.Drawing.Point(12, 243);
+            resources.ApplyResources(this.lGenre, "lGenre");
             this.lGenre.Name = "lGenre";
-            this.lGenre.Size = new System.Drawing.Size(39, 13);
-            this.lGenre.TabIndex = 15;
-            this.lGenre.Text = "Genre:";
+            this.toolTip.SetToolTip(this.lGenre, resources.GetString("lGenre.ToolTip"));
             // 
             // lAlbumArtist
             // 
-            this.lAlbumArtist.AutoSize = true;
-            this.lAlbumArtist.Location = new System.Drawing.Point(12, 269);
+            resources.ApplyResources(this.lAlbumArtist, "lAlbumArtist");
             this.lAlbumArtist.Name = "lAlbumArtist";
-            this.lAlbumArtist.Size = new System.Drawing.Size(65, 13);
-            this.lAlbumArtist.TabIndex = 17;
-            this.lAlbumArtist.Text = "Album Artist:";
+            this.toolTip.SetToolTip(this.lAlbumArtist, resources.GetString("lAlbumArtist.ToolTip"));
             // 
             // lPicture
             // 
-            this.lPicture.AutoSize = true;
-            this.lPicture.Location = new System.Drawing.Point(303, 292);
+            resources.ApplyResources(this.lPicture, "lPicture");
             this.lPicture.Name = "lPicture";
-            this.lPicture.Size = new System.Drawing.Size(43, 13);
-            this.lPicture.TabIndex = 35;
-            this.lPicture.Text = "Picture:";
+            this.toolTip.SetToolTip(this.lPicture, resources.GetString("lPicture.ToolTip"));
             // 
             // lResulution
             // 
-            this.lResulution.Location = new System.Drawing.Point(287, 305);
+            resources.ApplyResources(this.lResulution, "lResulution");
             this.lResulution.Name = "lResulution";
-            this.lResulution.Size = new System.Drawing.Size(60, 13);
-            this.lResulution.TabIndex = 36;
-            this.lResulution.Text = "null";
-            this.lResulution.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip.SetToolTip(this.lResulution, resources.GetString("lResulution.ToolTip"));
             // 
             // bOpenPicture
             // 
-            this.bOpenPicture.Location = new System.Drawing.Point(352, 398);
+            resources.ApplyResources(this.bOpenPicture, "bOpenPicture");
             this.bOpenPicture.Name = "bOpenPicture";
-            this.bOpenPicture.Size = new System.Drawing.Size(100, 23);
-            this.bOpenPicture.TabIndex = 37;
-            this.bOpenPicture.Text = "Open Picture";
+            this.toolTip.SetToolTip(this.bOpenPicture, resources.GetString("bOpenPicture.ToolTip"));
             this.bOpenPicture.UseVisualStyleBackColor = true;
             this.bOpenPicture.Click += new System.EventHandler(this.bOpenPicture_Click);
             // 
             // lRatingBlank
             // 
-            this.lRatingBlank.AutoSize = true;
-            this.lRatingBlank.Location = new System.Drawing.Point(12, 346);
+            resources.ApplyResources(this.lRatingBlank, "lRatingBlank");
             this.lRatingBlank.Name = "lRatingBlank";
-            this.lRatingBlank.Size = new System.Drawing.Size(99, 13);
-            this.lRatingBlank.TabIndex = 23;
-            this.lRatingBlank.Text = "Rating (from blank):";
+            this.toolTip.SetToolTip(this.lRatingBlank, resources.GetString("lRatingBlank.ToolTip"));
             // 
             // numRatingBlank
             // 
-            this.numRatingBlank.Location = new System.Drawing.Point(117, 344);
+            resources.ApplyResources(this.numRatingBlank, "numRatingBlank");
             this.numRatingBlank.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
             this.numRatingBlank.Name = "numRatingBlank";
-            this.numRatingBlank.Size = new System.Drawing.Size(47, 20);
-            this.numRatingBlank.TabIndex = 24;
+            this.toolTip.SetToolTip(this.numRatingBlank, resources.GetString("numRatingBlank.ToolTip"));
             this.numRatingBlank.ValueChanged += new System.EventHandler(this.numRating_ValueChanged);
             // 
             // tbStarsBlank
             // 
+            resources.ApplyResources(this.tbStarsBlank, "tbStarsBlank");
             this.tbStarsBlank.LargeChange = 1;
-            this.tbStarsBlank.Location = new System.Drawing.Point(15, 370);
             this.tbStarsBlank.Maximum = 5;
             this.tbStarsBlank.Name = "tbStarsBlank";
-            this.tbStarsBlank.Size = new System.Drawing.Size(149, 45);
-            this.tbStarsBlank.TabIndex = 25;
+            this.toolTip.SetToolTip(this.tbStarsBlank, resources.GetString("tbStarsBlank.ToolTip"));
             this.tbStarsBlank.Scroll += new System.EventHandler(this.tbStarsBlank_Scroll);
             // 
             // openFileDiJPGPNG
             // 
-            this.openFileDiJPGPNG.Filter = "PNG image|*.png|JPG image|*.jpg";
+            resources.ApplyResources(this.openFileDiJPGPNG, "openFileDiJPGPNG");
             this.openFileDiJPGPNG.RestoreDirectory = true;
-            this.openFileDiJPGPNG.Title = "Open image file...";
             // 
             // numDate
             // 
-            this.numDate.Location = new System.Drawing.Point(51, 161);
+            resources.ApplyResources(this.numDate, "numDate");
             this.numDate.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
             this.numDate.Name = "numDate";
-            this.numDate.Size = new System.Drawing.Size(402, 20);
-            this.numDate.TabIndex = 10;
+            this.toolTip.SetToolTip(this.numDate, resources.GetString("numDate.ToolTip"));
             this.numDate.Value = new decimal(new int[] {
             2022,
             0,
@@ -378,16 +319,14 @@
             // 
             // numTrackNumber
             // 
-            this.numTrackNumber.Location = new System.Drawing.Point(96, 188);
+            resources.ApplyResources(this.numTrackNumber, "numTrackNumber");
             this.numTrackNumber.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
             this.numTrackNumber.Name = "numTrackNumber";
-            this.numTrackNumber.Size = new System.Drawing.Size(357, 20);
-            this.numTrackNumber.TabIndex = 12;
-            this.numTrackNumber.ThousandsSeparator = true;
+            this.toolTip.SetToolTip(this.numTrackNumber, resources.GetString("numTrackNumber.ToolTip"));
             this.numTrackNumber.Value = new decimal(new int[] {
             1,
             0,
@@ -396,124 +335,102 @@
             // 
             // tbStarsSpotify
             // 
+            resources.ApplyResources(this.tbStarsSpotify, "tbStarsSpotify");
             this.tbStarsSpotify.LargeChange = 1;
-            this.tbStarsSpotify.Location = new System.Drawing.Point(173, 370);
             this.tbStarsSpotify.Maximum = 5;
             this.tbStarsSpotify.Name = "tbStarsSpotify";
-            this.tbStarsSpotify.Size = new System.Drawing.Size(132, 45);
-            this.tbStarsSpotify.TabIndex = 28;
+            this.toolTip.SetToolTip(this.tbStarsSpotify, resources.GetString("tbStarsSpotify.ToolTip"));
             this.tbStarsSpotify.Scroll += new System.EventHandler(this.tbStarsSpotify_Scroll);
             // 
             // numRatingSpotify
             // 
-            this.numRatingSpotify.Location = new System.Drawing.Point(258, 344);
+            resources.ApplyResources(this.numRatingSpotify, "numRatingSpotify");
             this.numRatingSpotify.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
             this.numRatingSpotify.Name = "numRatingSpotify";
-            this.numRatingSpotify.Size = new System.Drawing.Size(47, 20);
-            this.numRatingSpotify.TabIndex = 27;
+            this.toolTip.SetToolTip(this.numRatingSpotify, resources.GetString("numRatingSpotify.ToolTip"));
             this.numRatingSpotify.ValueChanged += new System.EventHandler(this.numRatingSpotify_ValueChanged);
             // 
             // lRatingSpotify
             // 
-            this.lRatingSpotify.AutoSize = true;
-            this.lRatingSpotify.Location = new System.Drawing.Point(170, 346);
+            resources.ApplyResources(this.lRatingSpotify, "lRatingSpotify");
             this.lRatingSpotify.Name = "lRatingSpotify";
-            this.lRatingSpotify.Size = new System.Drawing.Size(82, 13);
-            this.lRatingSpotify.TabIndex = 26;
-            this.lRatingSpotify.Text = "Rating (Spotify):";
+            this.toolTip.SetToolTip(this.lRatingSpotify, resources.GetString("lRatingSpotify.ToolTip"));
             // 
             // tbStarsYouTube
             // 
+            resources.ApplyResources(this.tbStarsYouTube, "tbStarsYouTube");
             this.tbStarsYouTube.LargeChange = 1;
-            this.tbStarsYouTube.Location = new System.Drawing.Point(15, 448);
             this.tbStarsYouTube.Maximum = 5;
             this.tbStarsYouTube.Name = "tbStarsYouTube";
-            this.tbStarsYouTube.Size = new System.Drawing.Size(144, 45);
-            this.tbStarsYouTube.TabIndex = 31;
+            this.toolTip.SetToolTip(this.tbStarsYouTube, resources.GetString("tbStarsYouTube.ToolTip"));
             this.tbStarsYouTube.Scroll += new System.EventHandler(this.tbStarsYouTube_Scroll);
             // 
             // numRatingYouTube
             // 
-            this.numRatingYouTube.Location = new System.Drawing.Point(112, 421);
+            resources.ApplyResources(this.numRatingYouTube, "numRatingYouTube");
             this.numRatingYouTube.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
             this.numRatingYouTube.Name = "numRatingYouTube";
-            this.numRatingYouTube.Size = new System.Drawing.Size(47, 20);
-            this.numRatingYouTube.TabIndex = 30;
+            this.toolTip.SetToolTip(this.numRatingYouTube, resources.GetString("numRatingYouTube.ToolTip"));
             this.numRatingYouTube.ValueChanged += new System.EventHandler(this.numRatingYouTube_ValueChanged);
             // 
             // lRatingYouTube
             // 
-            this.lRatingYouTube.AutoSize = true;
-            this.lRatingYouTube.Location = new System.Drawing.Point(12, 423);
+            resources.ApplyResources(this.lRatingYouTube, "lRatingYouTube");
             this.lRatingYouTube.Name = "lRatingYouTube";
-            this.lRatingYouTube.Size = new System.Drawing.Size(94, 13);
-            this.lRatingYouTube.TabIndex = 29;
-            this.lRatingYouTube.Text = "Rating (YouTube):";
+            this.toolTip.SetToolTip(this.lRatingYouTube, resources.GetString("lRatingYouTube.ToolTip"));
             // 
             // tbStarsSoundcloud
             // 
+            resources.ApplyResources(this.tbStarsSoundcloud, "tbStarsSoundcloud");
             this.tbStarsSoundcloud.LargeChange = 1;
-            this.tbStarsSoundcloud.Location = new System.Drawing.Point(168, 448);
             this.tbStarsSoundcloud.Maximum = 5;
             this.tbStarsSoundcloud.Name = "tbStarsSoundcloud";
-            this.tbStarsSoundcloud.Size = new System.Drawing.Size(157, 45);
-            this.tbStarsSoundcloud.TabIndex = 34;
+            this.toolTip.SetToolTip(this.tbStarsSoundcloud, resources.GetString("tbStarsSoundcloud.ToolTip"));
             this.tbStarsSoundcloud.Scroll += new System.EventHandler(this.tbStarsSoundcloud_Scroll);
             // 
             // numRatingSoundcloud
             // 
-            this.numRatingSoundcloud.Location = new System.Drawing.Point(278, 421);
+            resources.ApplyResources(this.numRatingSoundcloud, "numRatingSoundcloud");
             this.numRatingSoundcloud.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
             this.numRatingSoundcloud.Name = "numRatingSoundcloud";
-            this.numRatingSoundcloud.Size = new System.Drawing.Size(47, 20);
-            this.numRatingSoundcloud.TabIndex = 33;
+            this.toolTip.SetToolTip(this.numRatingSoundcloud, resources.GetString("numRatingSoundcloud.ToolTip"));
             this.numRatingSoundcloud.ValueChanged += new System.EventHandler(this.numRatingSoundcloud_ValueChanged);
             // 
             // lRatingSoundcloud
             // 
-            this.lRatingSoundcloud.AutoSize = true;
-            this.lRatingSoundcloud.Location = new System.Drawing.Point(165, 423);
+            resources.ApplyResources(this.lRatingSoundcloud, "lRatingSoundcloud");
             this.lRatingSoundcloud.Name = "lRatingSoundcloud";
-            this.lRatingSoundcloud.Size = new System.Drawing.Size(107, 13);
-            this.lRatingSoundcloud.TabIndex = 32;
-            this.lRatingSoundcloud.Text = "Rating (Soundcloud):";
+            this.toolTip.SetToolTip(this.lRatingSoundcloud, resources.GetString("lRatingSoundcloud.ToolTip"));
             // 
             // lComposer
             // 
-            this.lComposer.AutoSize = true;
-            this.lComposer.Location = new System.Drawing.Point(12, 295);
+            resources.ApplyResources(this.lComposer, "lComposer");
             this.lComposer.Name = "lComposer";
-            this.lComposer.Size = new System.Drawing.Size(57, 13);
-            this.lComposer.TabIndex = 19;
-            this.lComposer.Text = "Composer:";
+            this.toolTip.SetToolTip(this.lComposer, resources.GetString("lComposer.ToolTip"));
             // 
             // tbComposer
             // 
-            this.tbComposer.Location = new System.Drawing.Point(75, 292);
+            resources.ApplyResources(this.tbComposer, "tbComposer");
             this.tbComposer.Name = "tbComposer";
-            this.tbComposer.Size = new System.Drawing.Size(206, 20);
-            this.tbComposer.TabIndex = 20;
+            this.toolTip.SetToolTip(this.tbComposer, resources.GetString("tbComposer.ToolTip"));
             // 
             // lDiscNumber
             // 
-            this.lDiscNumber.AutoSize = true;
-            this.lDiscNumber.Location = new System.Drawing.Point(12, 216);
+            resources.ApplyResources(this.lDiscNumber, "lDiscNumber");
             this.lDiscNumber.Name = "lDiscNumber";
-            this.lDiscNumber.Size = new System.Drawing.Size(71, 13);
-            this.lDiscNumber.TabIndex = 13;
-            this.lDiscNumber.Text = "Disc Number:";
+            this.toolTip.SetToolTip(this.lDiscNumber, resources.GetString("lDiscNumber.ToolTip"));
             // 
             // tFileChanged
             // 
@@ -522,16 +439,14 @@
             // 
             // numDiscNumber
             // 
-            this.numDiscNumber.Location = new System.Drawing.Point(89, 214);
+            resources.ApplyResources(this.numDiscNumber, "numDiscNumber");
             this.numDiscNumber.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
             this.numDiscNumber.Name = "numDiscNumber";
-            this.numDiscNumber.Size = new System.Drawing.Size(363, 20);
-            this.numDiscNumber.TabIndex = 14;
-            this.numDiscNumber.ThousandsSeparator = true;
+            this.toolTip.SetToolTip(this.numDiscNumber, resources.GetString("numDiscNumber.ToolTip"));
             this.numDiscNumber.Value = new decimal(new int[] {
             1,
             0,
@@ -540,16 +455,13 @@
             // 
             // pBoxAlbum
             // 
+            resources.ApplyResources(this.pBoxAlbum, "pBoxAlbum");
             this.pBoxAlbum.BackgroundImage = global::Titel_WinFrorm.Properties.Resources.generic_music_file_100px;
-            this.pBoxAlbum.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pBoxAlbum.ErrorImage = global::Titel_WinFrorm.Properties.Resources.generic_music_file_100px;
             this.pBoxAlbum.InitialImage = global::Titel_WinFrorm.Properties.Resources.generic_music_file_100px;
-            this.pBoxAlbum.Location = new System.Drawing.Point(352, 292);
             this.pBoxAlbum.Name = "pBoxAlbum";
-            this.pBoxAlbum.Size = new System.Drawing.Size(100, 100);
-            this.pBoxAlbum.TabIndex = 18;
             this.pBoxAlbum.TabStop = false;
-            this.toolTip.SetToolTip(this.pBoxAlbum, "Left Click to Delete\r\nRight Click to Reset");
+            this.toolTip.SetToolTip(this.pBoxAlbum, resources.GetString("pBoxAlbum.ToolTip"));
             this.pBoxAlbum.DragDrop += new System.Windows.Forms.DragEventHandler(this.pBoxAlbum_DragDrop);
             this.pBoxAlbum.DragEnter += new System.Windows.Forms.DragEventHandler(this.pBoxAlbum_DragEnter);
             this.pBoxAlbum.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseClick);
@@ -557,25 +469,20 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 321);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 13);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Remixed by:";
+            this.toolTip.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(83, 318);
+            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 20);
-            this.textBox1.TabIndex = 22;
+            this.toolTip.SetToolTip(this.textBox1, resources.GetString("textBox1.ToolTip"));
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 481);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numDiscNumber);
@@ -616,11 +523,9 @@
             this.Controls.Add(this.lFileName);
             this.Controls.Add(this.tsTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Titel";
+            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tsTop.ResumeLayout(false);
