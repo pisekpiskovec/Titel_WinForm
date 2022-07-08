@@ -63,7 +63,7 @@ namespace Titel__WinFrorm_
                     pBoxAlbum.BackgroundImage = Image.FromStream(new MemoryStream(musFile.Tag.Pictures[0].Data.Data));
                     lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
                 }
-                else {lResulution.Text = "null"; }
+                else {pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px; lResulution.Text = "null"; }
                 albumArtworkURL = "Album artwork♪";
 
                 tbFileName.Text = musFileSName;
@@ -456,12 +456,16 @@ namespace Titel__WinFrorm_
             switch (e.Button) { 
                 case MouseButtons.Right: 
                     {
-                        if(pBoxAlbum.BackgroundImage != null)
+                        if (musFileName != null)
                         {
                             var musFileTag = TagLib.File.Create(musFileName).Tag;
-                            pBoxAlbum.BackgroundImage = System.Drawing.Image.FromStream(new MemoryStream(musFileTag.Pictures[0].Data.Data));
-                            lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
-                            albumArtworkURL = "Album artwork♪";
+                            if (musFileTag.Pictures.Length >= 1)
+                            {
+                                pBoxAlbum.BackgroundImage = Image.FromStream(new MemoryStream(musFileTag.Pictures[0].Data.Data));
+                                lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
+                                albumArtworkURL = "Album artwork♪";
+                            }
+                            else { pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px; lResulution.Text = "null"; }
                         }
                     } break;
             }

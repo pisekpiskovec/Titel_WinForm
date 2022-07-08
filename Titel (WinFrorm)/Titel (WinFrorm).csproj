@@ -123,5 +123,10 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\generic_music_file_100px.png" />
+    <Content Include="Resources\titel_icon_16.png" />
+    <Content Include="Resources\titel_icon_64.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

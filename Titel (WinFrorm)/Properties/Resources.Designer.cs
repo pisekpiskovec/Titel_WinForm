@@ -73,6 +73,16 @@ namespace Titel_WinFrorm.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap generic_music_file_100px {
+            get {
+                object obj = ResourceManager.GetObject("generic_music_file_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap opened_folder_96px {
             get {
                 object obj = ResourceManager.GetObject("opened_folder_96px", resourceCulture);
@@ -96,6 +106,26 @@ namespace Titel_WinFrorm.Properties {
         internal static System.Drawing.Bitmap save_as_96px {
             get {
                 object obj = ResourceManager.GetObject("save_as_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap titel_icon_16 {
+            get {
+                object obj = ResourceManager.GetObject("titel_icon_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap titel_icon_64 {
+            get {
+                object obj = ResourceManager.GetObject("titel_icon_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

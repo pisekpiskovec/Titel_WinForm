@@ -34,8 +34,6 @@ Titel is written in .NET Framework since it supports User Interface, which means
 
 (Window with a song loaded)
 
-
-
 * Changing file name
 * Editing file's song metadata
 * Adding rating from main streaming services (Spotify, YouTube, SoundCloud)
