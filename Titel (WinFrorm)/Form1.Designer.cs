@@ -542,6 +542,8 @@
             // 
             this.pBoxAlbum.BackgroundImage = global::Titel_WinFrorm.Properties.Resources.generic_music_file_100px;
             this.pBoxAlbum.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pBoxAlbum.ErrorImage = global::Titel_WinFrorm.Properties.Resources.generic_music_file_100px;
+            this.pBoxAlbum.InitialImage = global::Titel_WinFrorm.Properties.Resources.generic_music_file_100px;
             this.pBoxAlbum.Location = new System.Drawing.Point(352, 292);
             this.pBoxAlbum.Name = "pBoxAlbum";
             this.pBoxAlbum.Size = new System.Drawing.Size(100, 100);
