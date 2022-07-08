@@ -74,7 +74,6 @@
             this.tbComposer = new System.Windows.Forms.TextBox();
             this.lDiscNumber = new System.Windows.Forms.Label();
             this.tFileChanged = new System.Windows.Forms.Timer(this.components);
-            this.saveFileDiSaveAs = new System.Windows.Forms.SaveFileDialog();
             this.numDiscNumber = new System.Windows.Forms.NumericUpDown();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.pBoxAlbum = new System.Windows.Forms.PictureBox();
@@ -518,12 +517,6 @@
             this.tFileChanged.Interval = 1000;
             this.tFileChanged.Tick += new System.EventHandler(this.tFileChanged_Tick);
             // 
-            // saveFileDiSaveAs
-            // 
-            this.saveFileDiSaveAs.DefaultExt = "mp3";
-            this.saveFileDiSaveAs.Filter = "MP3 Audio Files|*.mp3";
-            this.saveFileDiSaveAs.Title = "Save as...";
-            // 
             // numDiscNumber
             // 
             this.numDiscNumber.Location = new System.Drawing.Point(247, 398);
@@ -672,7 +665,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiSave;
         private System.Windows.Forms.ToolStripMenuItem tsmiSaveAs;
         private System.Windows.Forms.ToolStripButton tsbCloseFile;
-        private System.Windows.Forms.SaveFileDialog saveFileDiSaveAs;
         private System.Windows.Forms.NumericUpDown numDiscNumber;
         private System.Windows.Forms.ToolTip toolTip;
     }
