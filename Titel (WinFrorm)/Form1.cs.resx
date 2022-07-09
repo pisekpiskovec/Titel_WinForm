@@ -162,7 +162,7 @@
     <value>62, 31</value>
   </data>
   <data name="tbFileName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 20</value>
+    <value>316, 20</value>
   </data>
   <data name="tbArtist.Location" type="System.Drawing.Point, System.Drawing">
     <value>64, 83</value>
@@ -404,6 +404,18 @@ Dvojtým pravým kliknutím smažete</value>
   </data>
   <data name="tbRemixer.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 20</value>
+  </data>
+  <data name="button1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 29</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 23</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Ze značek</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
