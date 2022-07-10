@@ -29,7 +29,7 @@ Titel is written in .NET Framework since it supports User Interface, which means
 ![Newly opened window](https://github.com/pisekpiskovec/Titel_WinFrorm/blob/master/Titel%20(WinFrorm)/readme_resources/old_titel_new_window.png)
 (Newly opened window)
 
-![Window with a song loaded](https://github.com/pisekpiskovec/Titel_WinFrorm/blob/master/Titel%20(WinFrorm)/readme_resources/old_audio_loaded_unchanged.png)
+![Window with a song loaded](https://github.com/pisekpiskovec/Titel_WinFrorm/blob/master/Titel%20(WinFrorm)/readme_resources/audio_loaded_changed.png)
 (Window with a song loaded)
 
 ## Features
