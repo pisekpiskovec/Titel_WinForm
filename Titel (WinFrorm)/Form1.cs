@@ -524,9 +524,6 @@ namespace Titel__WinFrorm_
             }
         }
 
-        private void bFileFromTags_Click(object sender, EventArgs e)
-        {
-            if (musFileName != "") { tbFileName.Text = tbArtist.Text.Split('|')[0] + " - " + tbTitle.Text + ".mp3"; }
-        }
+        private void bFileFromTags_Click(object sender, EventArgs e) {if (musFileName != null) {tbFileName.Text = tbArtist.Text.Split('|')[0] + " - " + tbTitle.Text + ".mp3"; } }
     }   
 }
