@@ -515,6 +515,7 @@ namespace Titel__WinFrorm_
                 tbGenre.Text = null;
                 tbAlbumArtist.Text = null;
                 tbComposer.Text = null;
+                tbRemixer.Text = null;
                 numRatingBlank.Value = 0;
                 numRatingSpotify.Value = 0;
                 numRatingYouTube.Value = 0;
