@@ -98,66 +98,67 @@
             // 
             // tsTop
             // 
+            resources.ApplyResources(this.tsTop, "tsTop");
             this.tsTop.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbOpen,
             this.tssbSave,
             this.tsbCloseFile,
             this.tsSp1,
             this.tslChanges});
-            resources.ApplyResources(this.tsTop, "tsTop");
             this.tsTop.Name = "tsTop";
             this.tsTop.Stretch = true;
+            this.toolTip.SetToolTip(this.tsTop, resources.GetString("tsTop.ToolTip"));
             // 
             // tsbOpen
             // 
+            resources.ApplyResources(this.tsbOpen, "tsbOpen");
             this.tsbOpen.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbOpen.Image = global::Titel_WinFrorm.Properties.Resources.opened_folder_96px;
-            resources.ApplyResources(this.tsbOpen, "tsbOpen");
             this.tsbOpen.Name = "tsbOpen";
             this.tsbOpen.Click += new System.EventHandler(this.tsbtnOpen_Click);
             // 
             // tssbSave
             // 
+            resources.ApplyResources(this.tssbSave, "tssbSave");
             this.tssbSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tssbSave.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiSave,
             this.tsmiSaveAs});
             this.tssbSave.Image = global::Titel_WinFrorm.Properties.Resources.save_96px;
-            resources.ApplyResources(this.tssbSave, "tssbSave");
             this.tssbSave.Name = "tssbSave";
             this.tssbSave.ButtonClick += new System.EventHandler(this.tssbSave_ButtonClick);
             // 
             // tsmiSave
             // 
+            resources.ApplyResources(this.tsmiSave, "tsmiSave");
             this.tsmiSave.Image = global::Titel_WinFrorm.Properties.Resources.save_96px;
             this.tsmiSave.Name = "tsmiSave";
-            resources.ApplyResources(this.tsmiSave, "tsmiSave");
             this.tsmiSave.Click += new System.EventHandler(this.tssbSave_ButtonClick);
             // 
             // tsmiSaveAs
             // 
+            resources.ApplyResources(this.tsmiSaveAs, "tsmiSaveAs");
             this.tsmiSaveAs.Image = global::Titel_WinFrorm.Properties.Resources.save_as_96px;
             this.tsmiSaveAs.Name = "tsmiSaveAs";
-            resources.ApplyResources(this.tsmiSaveAs, "tsmiSaveAs");
             this.tsmiSaveAs.Click += new System.EventHandler(this.tsmiSaveAs_Click);
             // 
             // tsbCloseFile
             // 
+            resources.ApplyResources(this.tsbCloseFile, "tsbCloseFile");
             this.tsbCloseFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbCloseFile.Image = global::Titel_WinFrorm.Properties.Resources.close_tab_96px;
-            resources.ApplyResources(this.tsbCloseFile, "tsbCloseFile");
             this.tsbCloseFile.Name = "tsbCloseFile";
             this.tsbCloseFile.Click += new System.EventHandler(this.tsbCloseFile_Click);
             // 
             // tsSp1
             // 
-            this.tsSp1.Name = "tsSp1";
             resources.ApplyResources(this.tsSp1, "tsSp1");
+            this.tsSp1.Name = "tsSp1";
             // 
             // tslChanges
             // 
-            this.tslChanges.Name = "tslChanges";
             resources.ApplyResources(this.tslChanges, "tslChanges");
+            this.tslChanges.Name = "tslChanges";
             // 
             // openFileDiMP3
             // 
@@ -169,86 +170,103 @@
             // 
             resources.ApplyResources(this.lFileName, "lFileName");
             this.lFileName.Name = "lFileName";
+            this.toolTip.SetToolTip(this.lFileName, resources.GetString("lFileName.ToolTip"));
             // 
             // tbFileName
             // 
             resources.ApplyResources(this.tbFileName, "tbFileName");
             this.tbFileName.Name = "tbFileName";
+            this.toolTip.SetToolTip(this.tbFileName, resources.GetString("tbFileName.ToolTip"));
             // 
             // tbArtist
             // 
             resources.ApplyResources(this.tbArtist, "tbArtist");
             this.tbArtist.Name = "tbArtist";
+            this.toolTip.SetToolTip(this.tbArtist, resources.GetString("tbArtist.ToolTip"));
             // 
             // tbTitle
             // 
             resources.ApplyResources(this.tbTitle, "tbTitle");
             this.tbTitle.Name = "tbTitle";
+            this.toolTip.SetToolTip(this.tbTitle, resources.GetString("tbTitle.ToolTip"));
             // 
             // tbAlbum
             // 
             resources.ApplyResources(this.tbAlbum, "tbAlbum");
             this.tbAlbum.Name = "tbAlbum";
+            this.toolTip.SetToolTip(this.tbAlbum, resources.GetString("tbAlbum.ToolTip"));
             // 
             // tbGenre
             // 
             resources.ApplyResources(this.tbGenre, "tbGenre");
             this.tbGenre.Name = "tbGenre";
+            this.toolTip.SetToolTip(this.tbGenre, resources.GetString("tbGenre.ToolTip"));
             // 
             // tbAlbumArtist
             // 
             resources.ApplyResources(this.tbAlbumArtist, "tbAlbumArtist");
             this.tbAlbumArtist.Name = "tbAlbumArtist";
+            this.toolTip.SetToolTip(this.tbAlbumArtist, resources.GetString("tbAlbumArtist.ToolTip"));
             // 
             // lArtist
             // 
             resources.ApplyResources(this.lArtist, "lArtist");
             this.lArtist.Name = "lArtist";
+            this.toolTip.SetToolTip(this.lArtist, resources.GetString("lArtist.ToolTip"));
             // 
             // lTitle
             // 
             resources.ApplyResources(this.lTitle, "lTitle");
             this.lTitle.Name = "lTitle";
+            this.toolTip.SetToolTip(this.lTitle, resources.GetString("lTitle.ToolTip"));
             // 
             // lAlbum
             // 
             resources.ApplyResources(this.lAlbum, "lAlbum");
             this.lAlbum.Name = "lAlbum";
+            this.toolTip.SetToolTip(this.lAlbum, resources.GetString("lAlbum.ToolTip"));
             // 
             // lDate
             // 
             resources.ApplyResources(this.lDate, "lDate");
             this.lDate.Name = "lDate";
+            this.toolTip.SetToolTip(this.lDate, resources.GetString("lDate.ToolTip"));
             // 
             // lTrackNumber
             // 
             resources.ApplyResources(this.lTrackNumber, "lTrackNumber");
             this.lTrackNumber.Name = "lTrackNumber";
+            this.toolTip.SetToolTip(this.lTrackNumber, resources.GetString("lTrackNumber.ToolTip"));
             // 
             // lGenre
             // 
             resources.ApplyResources(this.lGenre, "lGenre");
             this.lGenre.Name = "lGenre";
+            this.toolTip.SetToolTip(this.lGenre, resources.GetString("lGenre.ToolTip"));
             // 
             // lAlbumArtist
             // 
             resources.ApplyResources(this.lAlbumArtist, "lAlbumArtist");
             this.lAlbumArtist.Name = "lAlbumArtist";
+            this.toolTip.SetToolTip(this.lAlbumArtist, resources.GetString("lAlbumArtist.ToolTip"));
             // 
             // lPicture
             // 
             resources.ApplyResources(this.lPicture, "lPicture");
             this.lPicture.Name = "lPicture";
+            this.toolTip.SetToolTip(this.lPicture, resources.GetString("lPicture.ToolTip"));
             // 
             // lResulution
             // 
             resources.ApplyResources(this.lResulution, "lResulution");
             this.lResulution.Name = "lResulution";
+            this.toolTip.SetToolTip(this.lResulution, resources.GetString("lResulution.ToolTip"));
             // 
             // bOpenPicture
             // 
             resources.ApplyResources(this.bOpenPicture, "bOpenPicture");
             this.bOpenPicture.Name = "bOpenPicture";
+            this.toolTip.SetToolTip(this.bOpenPicture, resources.GetString("bOpenPicture.ToolTip"));
             this.bOpenPicture.UseVisualStyleBackColor = true;
             this.bOpenPicture.Click += new System.EventHandler(this.bOpenPicture_Click);
             // 
@@ -256,6 +274,7 @@
             // 
             resources.ApplyResources(this.lRatingBlank, "lRatingBlank");
             this.lRatingBlank.Name = "lRatingBlank";
+            this.toolTip.SetToolTip(this.lRatingBlank, resources.GetString("lRatingBlank.ToolTip"));
             // 
             // numRatingBlank
             // 
@@ -266,14 +285,16 @@
             0,
             0});
             this.numRatingBlank.Name = "numRatingBlank";
+            this.toolTip.SetToolTip(this.numRatingBlank, resources.GetString("numRatingBlank.ToolTip"));
             this.numRatingBlank.ValueChanged += new System.EventHandler(this.numRating_ValueChanged);
             // 
             // tbStarsBlank
             // 
-            this.tbStarsBlank.LargeChange = 1;
             resources.ApplyResources(this.tbStarsBlank, "tbStarsBlank");
+            this.tbStarsBlank.LargeChange = 1;
             this.tbStarsBlank.Maximum = 5;
             this.tbStarsBlank.Name = "tbStarsBlank";
+            this.toolTip.SetToolTip(this.tbStarsBlank, resources.GetString("tbStarsBlank.ToolTip"));
             this.tbStarsBlank.Scroll += new System.EventHandler(this.tbStarsBlank_Scroll);
             // 
             // openFileDiJPGPNG
@@ -290,6 +311,7 @@
             0,
             0});
             this.numDate.Name = "numDate";
+            this.toolTip.SetToolTip(this.numDate, resources.GetString("numDate.ToolTip"));
             this.numDate.Value = new decimal(new int[] {
             2022,
             0,
@@ -305,6 +327,7 @@
             0,
             0});
             this.numTrackNumber.Name = "numTrackNumber";
+            this.toolTip.SetToolTip(this.numTrackNumber, resources.GetString("numTrackNumber.ToolTip"));
             this.numTrackNumber.Value = new decimal(new int[] {
             1,
             0,
@@ -313,10 +336,11 @@
             // 
             // tbStarsSpotify
             // 
-            this.tbStarsSpotify.LargeChange = 1;
             resources.ApplyResources(this.tbStarsSpotify, "tbStarsSpotify");
+            this.tbStarsSpotify.LargeChange = 1;
             this.tbStarsSpotify.Maximum = 5;
             this.tbStarsSpotify.Name = "tbStarsSpotify";
+            this.toolTip.SetToolTip(this.tbStarsSpotify, resources.GetString("tbStarsSpotify.ToolTip"));
             this.tbStarsSpotify.Scroll += new System.EventHandler(this.tbStarsSpotify_Scroll);
             // 
             // numRatingSpotify
@@ -328,19 +352,22 @@
             0,
             0});
             this.numRatingSpotify.Name = "numRatingSpotify";
+            this.toolTip.SetToolTip(this.numRatingSpotify, resources.GetString("numRatingSpotify.ToolTip"));
             this.numRatingSpotify.ValueChanged += new System.EventHandler(this.numRatingSpotify_ValueChanged);
             // 
             // lRatingSpotify
             // 
             resources.ApplyResources(this.lRatingSpotify, "lRatingSpotify");
             this.lRatingSpotify.Name = "lRatingSpotify";
+            this.toolTip.SetToolTip(this.lRatingSpotify, resources.GetString("lRatingSpotify.ToolTip"));
             // 
             // tbStarsYouTube
             // 
-            this.tbStarsYouTube.LargeChange = 1;
             resources.ApplyResources(this.tbStarsYouTube, "tbStarsYouTube");
+            this.tbStarsYouTube.LargeChange = 1;
             this.tbStarsYouTube.Maximum = 5;
             this.tbStarsYouTube.Name = "tbStarsYouTube";
+            this.toolTip.SetToolTip(this.tbStarsYouTube, resources.GetString("tbStarsYouTube.ToolTip"));
             this.tbStarsYouTube.Scroll += new System.EventHandler(this.tbStarsYouTube_Scroll);
             // 
             // numRatingYouTube
@@ -352,19 +379,22 @@
             0,
             0});
             this.numRatingYouTube.Name = "numRatingYouTube";
+            this.toolTip.SetToolTip(this.numRatingYouTube, resources.GetString("numRatingYouTube.ToolTip"));
             this.numRatingYouTube.ValueChanged += new System.EventHandler(this.numRatingYouTube_ValueChanged);
             // 
             // lRatingYouTube
             // 
             resources.ApplyResources(this.lRatingYouTube, "lRatingYouTube");
             this.lRatingYouTube.Name = "lRatingYouTube";
+            this.toolTip.SetToolTip(this.lRatingYouTube, resources.GetString("lRatingYouTube.ToolTip"));
             // 
             // tbStarsSoundcloud
             // 
-            this.tbStarsSoundcloud.LargeChange = 1;
             resources.ApplyResources(this.tbStarsSoundcloud, "tbStarsSoundcloud");
+            this.tbStarsSoundcloud.LargeChange = 1;
             this.tbStarsSoundcloud.Maximum = 5;
             this.tbStarsSoundcloud.Name = "tbStarsSoundcloud";
+            this.toolTip.SetToolTip(this.tbStarsSoundcloud, resources.GetString("tbStarsSoundcloud.ToolTip"));
             this.tbStarsSoundcloud.Scroll += new System.EventHandler(this.tbStarsSoundcloud_Scroll);
             // 
             // numRatingSoundcloud
@@ -376,27 +406,32 @@
             0,
             0});
             this.numRatingSoundcloud.Name = "numRatingSoundcloud";
+            this.toolTip.SetToolTip(this.numRatingSoundcloud, resources.GetString("numRatingSoundcloud.ToolTip"));
             this.numRatingSoundcloud.ValueChanged += new System.EventHandler(this.numRatingSoundcloud_ValueChanged);
             // 
             // lRatingSoundcloud
             // 
             resources.ApplyResources(this.lRatingSoundcloud, "lRatingSoundcloud");
             this.lRatingSoundcloud.Name = "lRatingSoundcloud";
+            this.toolTip.SetToolTip(this.lRatingSoundcloud, resources.GetString("lRatingSoundcloud.ToolTip"));
             // 
             // lComposer
             // 
             resources.ApplyResources(this.lComposer, "lComposer");
             this.lComposer.Name = "lComposer";
+            this.toolTip.SetToolTip(this.lComposer, resources.GetString("lComposer.ToolTip"));
             // 
             // tbComposer
             // 
             resources.ApplyResources(this.tbComposer, "tbComposer");
             this.tbComposer.Name = "tbComposer";
+            this.toolTip.SetToolTip(this.tbComposer, resources.GetString("tbComposer.ToolTip"));
             // 
             // lDiscNumber
             // 
             resources.ApplyResources(this.lDiscNumber, "lDiscNumber");
             this.lDiscNumber.Name = "lDiscNumber";
+            this.toolTip.SetToolTip(this.lDiscNumber, resources.GetString("lDiscNumber.ToolTip"));
             // 
             // tFileChanged
             // 
@@ -412,6 +447,7 @@
             0,
             0});
             this.numDiscNumber.Name = "numDiscNumber";
+            this.toolTip.SetToolTip(this.numDiscNumber, resources.GetString("numDiscNumber.ToolTip"));
             this.numDiscNumber.Value = new decimal(new int[] {
             1,
             0,
@@ -420,8 +456,8 @@
             // 
             // pBoxAlbum
             // 
-            this.pBoxAlbum.BackgroundImage = global::Titel_WinFrorm.Properties.Resources.generic_music_file_100px;
             resources.ApplyResources(this.pBoxAlbum, "pBoxAlbum");
+            this.pBoxAlbum.BackgroundImage = global::Titel_WinFrorm.Properties.Resources.generic_music_file_100px;
             this.pBoxAlbum.ErrorImage = global::Titel_WinFrorm.Properties.Resources.generic_music_file_100px;
             this.pBoxAlbum.InitialImage = global::Titel_WinFrorm.Properties.Resources.generic_music_file_100px;
             this.pBoxAlbum.Name = "pBoxAlbum";
@@ -436,16 +472,19 @@
             // 
             resources.ApplyResources(this.lRemixer, "lRemixer");
             this.lRemixer.Name = "lRemixer";
+            this.toolTip.SetToolTip(this.lRemixer, resources.GetString("lRemixer.ToolTip"));
             // 
             // tbRemixer
             // 
             resources.ApplyResources(this.tbRemixer, "tbRemixer");
             this.tbRemixer.Name = "tbRemixer";
+            this.toolTip.SetToolTip(this.tbRemixer, resources.GetString("tbRemixer.ToolTip"));
             // 
             // bFileFromTags
             // 
             resources.ApplyResources(this.bFileFromTags, "bFileFromTags");
             this.bFileFromTags.Name = "bFileFromTags";
+            this.toolTip.SetToolTip(this.bFileFromTags, resources.GetString("bFileFromTags.ToolTip"));
             this.bFileFromTags.UseVisualStyleBackColor = true;
             this.bFileFromTags.Click += new System.EventHandler(this.bFileFromTags_Click);
             // 
@@ -496,6 +535,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tsTop.ResumeLayout(false);

@@ -1,5 +1,7 @@
 # Titel_WinFrorm
 
+![Titel (WinForm)](https://github.com/pisekpiskovec/Titel_WinFrorm/blob/master/Titel%20(WinFrorm)/Resources/titel_icon_64.png)
+
 ### Simple WinForms audio tagger.
 
 Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make your music library fancier.
@@ -19,20 +21,18 @@ Titel is written in .NET Framework since it supports User Interface, which means
 * [x] Saving file
 * [x] Saving file as
 * [x] Close file
-* [ ] Change positions of elements
-* [ ] Icon
-* [ ] Play audio?
-* [ ] Rating calculator?
+* [x] Change positions of elements
+* [x] Icon
 
 ## Screenshots
 
 ![Newly opened window](https://github.com/pisekpiskovec/Titel_WinFrorm/blob/master/Titel%20(WinFrorm)/readme_resources/old_titel_new_window.png)
-
 (Newly opened window)
 
 ![Window with a song loaded](https://github.com/pisekpiskovec/Titel_WinFrorm/blob/master/Titel%20(WinFrorm)/readme_resources/old_audio_loaded_unchanged.png)
-
 (Window with a song loaded)
+
+## Features
 
 * Changing file name
 * Editing file's song metadata
