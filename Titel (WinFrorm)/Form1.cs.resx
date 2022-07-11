@@ -148,6 +148,9 @@
   <data name="tslChanges.Text" xml:space="preserve">
     <value>Stav</value>
   </data>
+  <data name="tsTop.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lFileName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -158,11 +161,17 @@
   <data name="lFileName.Text" xml:space="preserve">
     <value>Soubor:</value>
   </data>
+  <data name="lFileName.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tbFileName.Location" type="System.Drawing.Point, System.Drawing">
     <value>62, 31</value>
   </data>
   <data name="tbFileName.Size" type="System.Drawing.Size, System.Drawing">
     <value>316, 20</value>
+  </data>
+  <data name="tbFileName.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="tbArtist.Location" type="System.Drawing.Point, System.Drawing">
     <value>64, 83</value>
@@ -170,17 +179,32 @@
   <data name="tbArtist.Size" type="System.Drawing.Size, System.Drawing">
     <value>389, 20</value>
   </data>
+  <data name="tbArtist.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tbTitle.Location" type="System.Drawing.Point, System.Drawing">
     <value>59, 109</value>
   </data>
   <data name="tbTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>394, 20</value>
   </data>
+  <data name="tbTitle.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbAlbum.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbGenre.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tbAlbumArtist.Location" type="System.Drawing.Point, System.Drawing">
     <value>87, 266</value>
   </data>
   <data name="tbAlbumArtist.Size" type="System.Drawing.Size, System.Drawing">
     <value>365, 20</value>
+  </data>
+  <data name="tbAlbumArtist.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lArtist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -191,6 +215,9 @@
   <data name="lArtist.Text" xml:space="preserve">
     <value>Umělec:</value>
   </data>
+  <data name="lArtist.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -200,8 +227,14 @@
   <data name="lTitle.Text" xml:space="preserve">
     <value>Název:</value>
   </data>
+  <data name="lTitle.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lAlbum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="lAlbum.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lDate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -212,6 +245,9 @@
   <data name="lDate.Text" xml:space="preserve">
     <value>Datum:</value>
   </data>
+  <data name="lDate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lTrackNumber.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -220,6 +256,9 @@
   </data>
   <data name="lTrackNumber.Text" xml:space="preserve">
     <value>Číslo skladby:</value>
+  </data>
+  <data name="lTrackNumber.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lGenre.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -230,6 +269,9 @@
   <data name="lGenre.Text" xml:space="preserve">
     <value>Žánr:</value>
   </data>
+  <data name="lGenre.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lAlbumArtist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -238,6 +280,9 @@
   </data>
   <data name="lAlbumArtist.Text" xml:space="preserve">
     <value>Umělec alba:</value>
+  </data>
+  <data name="lAlbumArtist.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -251,14 +296,23 @@
   <data name="lPicture.Text" xml:space="preserve">
     <value>Obrázek:</value>
   </data>
+  <data name="lPicture.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lResulution.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="lResulution.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="bOpenPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="bOpenPicture.Text" xml:space="preserve">
     <value>Otevřít obrázek</value>
+  </data>
+  <data name="bOpenPicture.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lRatingBlank.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -269,8 +323,14 @@
   <data name="lRatingBlank.Text" xml:space="preserve">
     <value>Hodnocení (od nikoho):</value>
   </data>
+  <data name="lRatingBlank.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="numRatingBlank.Location" type="System.Drawing.Point, System.Drawing">
     <value>138, 344</value>
+  </data>
+  <data name="numRatingBlank.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="tbStarsBlank.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -278,17 +338,26 @@
   <data name="tbStarsBlank.Size" type="System.Drawing.Size, System.Drawing">
     <value>170, 45</value>
   </data>
+  <data name="tbStarsBlank.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="numDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>59, 161</value>
   </data>
   <data name="numDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>394, 20</value>
   </data>
+  <data name="numDate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="numTrackNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>91, 188</value>
   </data>
   <data name="numTrackNumber.Size" type="System.Drawing.Size, System.Drawing">
     <value>362, 20</value>
+  </data>
+  <data name="numTrackNumber.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="tbStarsSpotify.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -299,8 +368,14 @@
   <data name="tbStarsSpotify.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 45</value>
   </data>
+  <data name="tbStarsSpotify.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="numRatingSpotify.Location" type="System.Drawing.Point, System.Drawing">
     <value>299, 344</value>
+  </data>
+  <data name="numRatingSpotify.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lRatingSpotify.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -314,14 +389,23 @@
   <data name="lRatingSpotify.Text" xml:space="preserve">
     <value>Hodnocení (Spotify):</value>
   </data>
+  <data name="lRatingSpotify.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tbStarsYouTube.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="tbStarsYouTube.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 45</value>
   </data>
+  <data name="tbStarsYouTube.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="numRatingYouTube.Location" type="System.Drawing.Point, System.Drawing">
     <value>135, 421</value>
+  </data>
+  <data name="numRatingYouTube.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lRatingYouTube.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -332,6 +416,9 @@
   <data name="lRatingYouTube.Text" xml:space="preserve">
     <value>Hodnocení (YouTube):</value>
   </data>
+  <data name="lRatingYouTube.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tbStarsSoundcloud.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -341,8 +428,14 @@
   <data name="tbStarsSoundcloud.Size" type="System.Drawing.Size, System.Drawing">
     <value>166, 45</value>
   </data>
+  <data name="tbStarsSoundcloud.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="numRatingSoundcloud.Location" type="System.Drawing.Point, System.Drawing">
     <value>324, 421</value>
+  </data>
+  <data name="numRatingSoundcloud.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lRatingSoundcloud.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -356,6 +449,9 @@
   <data name="lRatingSoundcloud.Text" xml:space="preserve">
     <value>Hodnocení (Soundcloud):</value>
   </data>
+  <data name="lRatingSoundcloud.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lComposer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -365,11 +461,17 @@
   <data name="lComposer.Text" xml:space="preserve">
     <value>Skladatel:</value>
   </data>
+  <data name="lComposer.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tbComposer.Location" type="System.Drawing.Point, System.Drawing">
     <value>72, 292</value>
   </data>
   <data name="tbComposer.Size" type="System.Drawing.Size, System.Drawing">
     <value>209, 20</value>
+  </data>
+  <data name="tbComposer.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lDiscNumber.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -380,11 +482,17 @@
   <data name="lDiscNumber.Text" xml:space="preserve">
     <value>Číslo disku:</value>
   </data>
+  <data name="lDiscNumber.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="numDiscNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>80, 214</value>
   </data>
   <data name="numDiscNumber.Size" type="System.Drawing.Size, System.Drawing">
     <value>372, 20</value>
+  </data>
+  <data name="numDiscNumber.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="pBoxAlbum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -399,23 +507,29 @@ Dvojtým pravým kliknutím smažete</value>
   <data name="lRemixer.Text" xml:space="preserve">
     <value>Autor míchání hudebních skladeb:</value>
   </data>
+  <data name="lRemixer.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tbRemixer.Location" type="System.Drawing.Point, System.Drawing">
     <value>191, 318</value>
   </data>
   <data name="tbRemixer.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 20</value>
   </data>
-  <data name="button1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
+  <data name="tbRemixer.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="bFileFromTags.Location" type="System.Drawing.Point, System.Drawing">
     <value>384, 29</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="bFileFromTags.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 23</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
+  <data name="bFileFromTags.Text" xml:space="preserve">
     <value>Ze značek</value>
+  </data>
+  <data name="bFileFromTags.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -440,5 +554,8 @@ Dvojtým pravým kliknutím smažete</value>
         AAAAAAAA//8AAP//AAD//wAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAP//
         AAD//wAA//8AAA==
 </value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>
