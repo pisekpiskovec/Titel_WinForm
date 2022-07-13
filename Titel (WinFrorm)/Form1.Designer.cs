@@ -317,6 +317,7 @@
             0,
             0,
             0});
+            this.numDate.Leave += new System.EventHandler(this.numDate_Leave);
             // 
             // numTrackNumber
             // 

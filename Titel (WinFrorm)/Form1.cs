@@ -527,5 +527,10 @@ namespace Titel__WinFrorm_
         }
 
         private void bFileFromTags_Click(object sender, EventArgs e) {if (musFileName != null) {tbFileName.Text = tbArtist.Text.Split('|')[0] + " - " + tbTitle.Text + ".mp3"; } }
+
+        private void numDate_Leave(object sender, EventArgs e)
+        {
+            if(numDate.Text == "") {numDate.Value = DateTime.Today.Year; numDate.Text = Convert.ToString(DateTime.Today.Year); }
+        }
     }   
 }
