@@ -405,7 +405,7 @@ namespace Titel__WinFrorm_
 
         private void tsmiSaveAs_Click(object sender, EventArgs e)
         {
-            if (tbFileName.Text != "" && musFileSName != tbFileName.Text && !System.IO.File.Exists(@musFilePath + tbFileName.Text))
+            if (tbFileName.Text != "" && musFileSName != tbFileName.Text && !System.IO.File.Exists(@musFilePath + tbFileName.Text) && !tbFileName.Text.Contains("\\") && !tbFileName.Text.Contains("/") && !tbFileName.Text.Contains(":") && !tbFileName.Text.Contains("*") && !tbFileName.Text.Contains("?") && !tbFileName.Text.Contains(Char.ToString('"')) && !tbFileName.Text.Contains("<") && !tbFileName.Text.Contains(">") && !tbFileName.Text.Contains("|"))
             {
                 System.IO.File.Copy(musFileName, musFilePath + tbFileName.Text);
                 musFileSName = tbFileName.Text;
