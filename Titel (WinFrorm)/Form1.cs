@@ -391,13 +391,12 @@ namespace Titel__WinFrorm_
                 musFile.RemoveTags(TagTypes.Id3v1);
                 musFile.Save();
 
-                if (tbFileName.Text != musFileSName)
+                if (tbFileName.Text != musFileSName && !tbFileName.Text.Contains("\\") && !tbFileName.Text.Contains("/") && !tbFileName.Text.Contains(":") && !tbFileName.Text.Contains("*") && !tbFileName.Text.Contains("?") && !tbFileName.Text.Contains(Char.ToString('"')) && !tbFileName.Text.Contains("<") && !tbFileName.Text.Contains(">") && !tbFileName.Text.Contains("|"))
                 {
                     System.IO.File.Move(musFilePath + musFileSName, musFilePath + tbFileName.Text);
                     musFileSName = tbFileName.Text;
                     musFileName = musFilePath + musFileSName;
                 }
-                //else if (System.IO.File.Exists(@musFilePath + tbFileName.Text)) { MessageBox.Show("File already exists.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
                 tFileChanged.Start();
             }
