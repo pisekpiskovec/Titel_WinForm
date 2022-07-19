@@ -123,18 +123,8 @@
   <data name="lFileName.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tbFileName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 20</value>
-  </data>
   <data name="tbFileName.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="tbArtist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 83</value>
-  </data>
-  <data name="tbArtist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>402, 20</value>
   </data>
   <data name="tbArtist.ToolTip" xml:space="preserve">
     <value />
@@ -145,44 +135,17 @@
   <data name="tbAlbum.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="tbGenre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 240</value>
-  </data>
-  <data name="tbGenre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>376, 20</value>
-  </data>
   <data name="tbGenre.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="tbAlbumArtist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 266</value>
-  </data>
-  <data name="tbAlbumArtist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 20</value>
-  </data>
   <data name="tbAlbumArtist.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="lArtist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 13</value>
-  </data>
-  <data name="lArtist.Text" xml:space="preserve">
-    <value>Artist:</value>
   </data>
   <data name="lArtist.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lTitle.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="lPicture.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 292</value>
-  </data>
-  <data name="lPicture.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
-  </data>
-  <data name="lPicture.Text" xml:space="preserve">
-    <value>Picture:</value>
   </data>
   <data name="lPicture.ToolTip" xml:space="preserve">
     <value />
@@ -193,59 +156,26 @@
   <data name="bOpenPicture.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="lRatingBlank.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 13</value>
-  </data>
-  <data name="lRatingBlank.Text" xml:space="preserve">
-    <value>Rating (from blank):</value>
-  </data>
   <data name="lRatingBlank.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="numRatingBlank.Location" type="System.Drawing.Point, System.Drawing">
-    <value>117, 344</value>
   </data>
   <data name="numRatingBlank.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="tbStarsBlank.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 45</value>
-  </data>
   <data name="tbStarsBlank.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="numDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 161</value>
-  </data>
-  <data name="numDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 20</value>
   </data>
   <data name="numDate.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="numTrackNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 188</value>
-  </data>
-  <data name="numTrackNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>338, 20</value>
-  </data>
   <data name="numTrackNumber.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="tbStarsSpotify.Location" type="System.Drawing.Point, System.Drawing">
-    <value>173, 370</value>
   </data>
   <data name="tbStarsSpotify.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="numRatingSpotify.Location" type="System.Drawing.Point, System.Drawing">
-    <value>258, 344</value>
-  </data>
   <data name="numRatingSpotify.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="lRatingSpotify.Location" type="System.Drawing.Point, System.Drawing">
-    <value>170, 346</value>
   </data>
   <data name="lRatingSpotify.ToolTip" xml:space="preserve">
     <value />
@@ -268,29 +198,11 @@
   <data name="lRatingSoundcloud.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="tbComposer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>94, 292</value>
-  </data>
-  <data name="tbComposer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 20</value>
-  </data>
   <data name="tbComposer.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="numDiscNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 214</value>
-  </data>
-  <data name="numDiscNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 20</value>
-  </data>
   <data name="numDiscNumber.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="tbRemixer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 318</value>
-  </data>
-  <data name="tbRemixer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>261, 20</value>
   </data>
   <data name="tbRemixer.ToolTip" xml:space="preserve">
     <value />
@@ -301,69 +213,28 @@
   <data name="chbAlbum.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="chbYear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 17</value>
-  </data>
-  <data name="chbYear.Text" xml:space="preserve">
-    <value>Date:</value>
-  </data>
   <data name="chbYear.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="chbTrack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 17</value>
-  </data>
-  <data name="chbTrack.Text" xml:space="preserve">
-    <value>Track Number:</value>
   </data>
   <data name="chbTrack.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="chbDisk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 17</value>
-  </data>
-  <data name="chbDisk.Text" xml:space="preserve">
-    <value>Disc Number:</value>
-  </data>
   <data name="chbDisk.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="chbGenres.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 17</value>
-  </data>
-  <data name="chbGenres.Text" xml:space="preserve">
-    <value>Genre:</value>
   </data>
   <data name="chbGenres.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="chbAlbumArtists.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 17</value>
-  </data>
-  <data name="chbAlbumArtists.Text" xml:space="preserve">
-    <value>Album Artist:</value>
-  </data>
   <data name="chbAlbumArtists.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="chbComposers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 17</value>
-  </data>
-  <data name="chbComposers.Text" xml:space="preserve">
-    <value>Composer:</value>
   </data>
   <data name="chbComposers.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="chbRemixer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 17</value>
-  </data>
-  <data name="chbRemixer.Text" xml:space="preserve">
-    <value>Remixer:</value>
-  </data>
   <data name="chbRemixer.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA

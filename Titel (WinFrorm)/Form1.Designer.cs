@@ -48,11 +48,6 @@
             this.tbAlbumArtist = new System.Windows.Forms.TextBox();
             this.lArtist = new System.Windows.Forms.Label();
             this.lTitle = new System.Windows.Forms.Label();
-            this.lAlbum = new System.Windows.Forms.Label();
-            this.lDate = new System.Windows.Forms.Label();
-            this.lTrackNumber = new System.Windows.Forms.Label();
-            this.lGenre = new System.Windows.Forms.Label();
-            this.lAlbumArtist = new System.Windows.Forms.Label();
             this.lPicture = new System.Windows.Forms.Label();
             this.lResulution = new System.Windows.Forms.Label();
             this.bOpenPicture = new System.Windows.Forms.Button();
@@ -71,16 +66,21 @@
             this.tbStarsSoundcloud = new System.Windows.Forms.TrackBar();
             this.numRatingSoundcloud = new System.Windows.Forms.NumericUpDown();
             this.lRatingSoundcloud = new System.Windows.Forms.Label();
-            this.lComposer = new System.Windows.Forms.Label();
             this.tbComposer = new System.Windows.Forms.TextBox();
-            this.lDiscNumber = new System.Windows.Forms.Label();
             this.tFileChanged = new System.Windows.Forms.Timer(this.components);
             this.numDiscNumber = new System.Windows.Forms.NumericUpDown();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.pBoxAlbum = new System.Windows.Forms.PictureBox();
-            this.lRemixer = new System.Windows.Forms.Label();
             this.tbRemixer = new System.Windows.Forms.TextBox();
             this.bFileFromTags = new System.Windows.Forms.Button();
+            this.chbAlbum = new System.Windows.Forms.CheckBox();
+            this.chbYear = new System.Windows.Forms.CheckBox();
+            this.chbTrack = new System.Windows.Forms.CheckBox();
+            this.chbDisk = new System.Windows.Forms.CheckBox();
+            this.chbGenres = new System.Windows.Forms.CheckBox();
+            this.chbAlbumArtists = new System.Windows.Forms.CheckBox();
+            this.chbComposers = new System.Windows.Forms.CheckBox();
+            this.chbRemixer = new System.Windows.Forms.CheckBox();
             this.tsTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numRatingBlank)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbStarsBlank)).BeginInit();
@@ -219,36 +219,6 @@
             resources.ApplyResources(this.lTitle, "lTitle");
             this.lTitle.Name = "lTitle";
             this.toolTip.SetToolTip(this.lTitle, resources.GetString("lTitle.ToolTip"));
-            // 
-            // lAlbum
-            // 
-            resources.ApplyResources(this.lAlbum, "lAlbum");
-            this.lAlbum.Name = "lAlbum";
-            this.toolTip.SetToolTip(this.lAlbum, resources.GetString("lAlbum.ToolTip"));
-            // 
-            // lDate
-            // 
-            resources.ApplyResources(this.lDate, "lDate");
-            this.lDate.Name = "lDate";
-            this.toolTip.SetToolTip(this.lDate, resources.GetString("lDate.ToolTip"));
-            // 
-            // lTrackNumber
-            // 
-            resources.ApplyResources(this.lTrackNumber, "lTrackNumber");
-            this.lTrackNumber.Name = "lTrackNumber";
-            this.toolTip.SetToolTip(this.lTrackNumber, resources.GetString("lTrackNumber.ToolTip"));
-            // 
-            // lGenre
-            // 
-            resources.ApplyResources(this.lGenre, "lGenre");
-            this.lGenre.Name = "lGenre";
-            this.toolTip.SetToolTip(this.lGenre, resources.GetString("lGenre.ToolTip"));
-            // 
-            // lAlbumArtist
-            // 
-            resources.ApplyResources(this.lAlbumArtist, "lAlbumArtist");
-            this.lAlbumArtist.Name = "lAlbumArtist";
-            this.toolTip.SetToolTip(this.lAlbumArtist, resources.GetString("lAlbumArtist.ToolTip"));
             // 
             // lPicture
             // 
@@ -416,23 +386,11 @@
             this.lRatingSoundcloud.Name = "lRatingSoundcloud";
             this.toolTip.SetToolTip(this.lRatingSoundcloud, resources.GetString("lRatingSoundcloud.ToolTip"));
             // 
-            // lComposer
-            // 
-            resources.ApplyResources(this.lComposer, "lComposer");
-            this.lComposer.Name = "lComposer";
-            this.toolTip.SetToolTip(this.lComposer, resources.GetString("lComposer.ToolTip"));
-            // 
             // tbComposer
             // 
             resources.ApplyResources(this.tbComposer, "tbComposer");
             this.tbComposer.Name = "tbComposer";
             this.toolTip.SetToolTip(this.tbComposer, resources.GetString("tbComposer.ToolTip"));
-            // 
-            // lDiscNumber
-            // 
-            resources.ApplyResources(this.lDiscNumber, "lDiscNumber");
-            this.lDiscNumber.Name = "lDiscNumber";
-            this.toolTip.SetToolTip(this.lDiscNumber, resources.GetString("lDiscNumber.ToolTip"));
             // 
             // tFileChanged
             // 
@@ -469,12 +427,6 @@
             this.pBoxAlbum.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseClick);
             this.pBoxAlbum.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseDoubleClick);
             // 
-            // lRemixer
-            // 
-            resources.ApplyResources(this.lRemixer, "lRemixer");
-            this.lRemixer.Name = "lRemixer";
-            this.toolTip.SetToolTip(this.lRemixer, resources.GetString("lRemixer.ToolTip"));
-            // 
             // tbRemixer
             // 
             resources.ApplyResources(this.tbRemixer, "tbRemixer");
@@ -489,16 +441,69 @@
             this.bFileFromTags.UseVisualStyleBackColor = true;
             this.bFileFromTags.Click += new System.EventHandler(this.bFileFromTags_Click);
             // 
+            // chbAlbum
+            // 
+            resources.ApplyResources(this.chbAlbum, "chbAlbum");
+            this.chbAlbum.Name = "chbAlbum";
+            this.toolTip.SetToolTip(this.chbAlbum, resources.GetString("chbAlbum.ToolTip"));
+            this.chbAlbum.UseVisualStyleBackColor = true;
+            // 
+            // chbYear
+            // 
+            resources.ApplyResources(this.chbYear, "chbYear");
+            this.chbYear.Name = "chbYear";
+            this.toolTip.SetToolTip(this.chbYear, resources.GetString("chbYear.ToolTip"));
+            this.chbYear.UseVisualStyleBackColor = true;
+            // 
+            // chbTrack
+            // 
+            resources.ApplyResources(this.chbTrack, "chbTrack");
+            this.chbTrack.Name = "chbTrack";
+            this.toolTip.SetToolTip(this.chbTrack, resources.GetString("chbTrack.ToolTip"));
+            this.chbTrack.UseVisualStyleBackColor = true;
+            // 
+            // chbDisk
+            // 
+            resources.ApplyResources(this.chbDisk, "chbDisk");
+            this.chbDisk.Name = "chbDisk";
+            this.toolTip.SetToolTip(this.chbDisk, resources.GetString("chbDisk.ToolTip"));
+            this.chbDisk.UseVisualStyleBackColor = true;
+            // 
+            // chbGenres
+            // 
+            resources.ApplyResources(this.chbGenres, "chbGenres");
+            this.chbGenres.Name = "chbGenres";
+            this.toolTip.SetToolTip(this.chbGenres, resources.GetString("chbGenres.ToolTip"));
+            this.chbGenres.UseVisualStyleBackColor = true;
+            // 
+            // chbAlbumArtists
+            // 
+            resources.ApplyResources(this.chbAlbumArtists, "chbAlbumArtists");
+            this.chbAlbumArtists.Name = "chbAlbumArtists";
+            this.toolTip.SetToolTip(this.chbAlbumArtists, resources.GetString("chbAlbumArtists.ToolTip"));
+            this.chbAlbumArtists.UseVisualStyleBackColor = true;
+            // 
+            // chbComposers
+            // 
+            resources.ApplyResources(this.chbComposers, "chbComposers");
+            this.chbComposers.Name = "chbComposers";
+            this.toolTip.SetToolTip(this.chbComposers, resources.GetString("chbComposers.ToolTip"));
+            this.chbComposers.UseVisualStyleBackColor = true;
+            // 
+            // chbRemixer
+            // 
+            resources.ApplyResources(this.chbRemixer, "chbRemixer");
+            this.chbRemixer.Name = "chbRemixer";
+            this.toolTip.SetToolTip(this.chbRemixer, resources.GetString("chbRemixer.ToolTip"));
+            this.chbRemixer.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bFileFromTags);
             this.Controls.Add(this.tbRemixer);
-            this.Controls.Add(this.lRemixer);
             this.Controls.Add(this.numDiscNumber);
-            this.Controls.Add(this.lDiscNumber);
-            this.Controls.Add(this.lComposer);
             this.Controls.Add(this.tbComposer);
             this.Controls.Add(this.tbStarsSoundcloud);
             this.Controls.Add(this.numRatingSoundcloud);
@@ -518,11 +523,6 @@
             this.Controls.Add(this.lResulution);
             this.Controls.Add(this.lPicture);
             this.Controls.Add(this.pBoxAlbum);
-            this.Controls.Add(this.lAlbumArtist);
-            this.Controls.Add(this.lGenre);
-            this.Controls.Add(this.lTrackNumber);
-            this.Controls.Add(this.lDate);
-            this.Controls.Add(this.lAlbum);
             this.Controls.Add(this.lTitle);
             this.Controls.Add(this.lArtist);
             this.Controls.Add(this.tbAlbumArtist);
@@ -533,6 +533,14 @@
             this.Controls.Add(this.tbFileName);
             this.Controls.Add(this.lFileName);
             this.Controls.Add(this.tsTop);
+            this.Controls.Add(this.chbAlbum);
+            this.Controls.Add(this.chbYear);
+            this.Controls.Add(this.chbTrack);
+            this.Controls.Add(this.chbDisk);
+            this.Controls.Add(this.chbGenres);
+            this.Controls.Add(this.chbAlbumArtists);
+            this.Controls.Add(this.chbComposers);
+            this.Controls.Add(this.chbRemixer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -572,11 +580,6 @@
         private System.Windows.Forms.TextBox tbAlbumArtist;
         private System.Windows.Forms.Label lArtist;
         private System.Windows.Forms.Label lTitle;
-        private System.Windows.Forms.Label lAlbum;
-        private System.Windows.Forms.Label lDate;
-        private System.Windows.Forms.Label lTrackNumber;
-        private System.Windows.Forms.Label lGenre;
-        private System.Windows.Forms.Label lAlbumArtist;
         private System.Windows.Forms.PictureBox pBoxAlbum;
         private System.Windows.Forms.Label lPicture;
         private System.Windows.Forms.Label lResulution;
@@ -597,9 +600,7 @@
         private System.Windows.Forms.TrackBar tbStarsSoundcloud;
         private System.Windows.Forms.NumericUpDown numRatingSoundcloud;
         private System.Windows.Forms.Label lRatingSoundcloud;
-        private System.Windows.Forms.Label lComposer;
         private System.Windows.Forms.TextBox tbComposer;
-        private System.Windows.Forms.Label lDiscNumber;
         private System.Windows.Forms.ToolStripSeparator tsSp1;
         public System.Windows.Forms.Timer tFileChanged;
         private System.Windows.Forms.ToolStripSplitButton tssbSave;
@@ -608,9 +609,16 @@
         private System.Windows.Forms.ToolStripButton tsbCloseFile;
         private System.Windows.Forms.NumericUpDown numDiscNumber;
         private System.Windows.Forms.ToolTip toolTip;
-        private System.Windows.Forms.Label lRemixer;
         private System.Windows.Forms.TextBox tbRemixer;
         private System.Windows.Forms.Button bFileFromTags;
+        private System.Windows.Forms.CheckBox chbAlbum;
+        private System.Windows.Forms.CheckBox chbYear;
+        private System.Windows.Forms.CheckBox chbTrack;
+        private System.Windows.Forms.CheckBox chbDisk;
+        private System.Windows.Forms.CheckBox chbGenres;
+        private System.Windows.Forms.CheckBox chbAlbumArtists;
+        private System.Windows.Forms.CheckBox chbComposers;
+        private System.Windows.Forms.CheckBox chbRemixer;
     }
 }
 
