@@ -1,6 +1,6 @@
 ![Titel (WinForm)](https://github.com/pisekpiskovec/Titel_WinFrorm/blob/master/Titel%20(WinFrorm)/Resources/titel_icon_64.png)
 
-# Titel_WinFrorm
+# Titel_WinForm
 
 ### Simple WinForms audio tagger.
 
