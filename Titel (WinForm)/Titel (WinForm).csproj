@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{25D1B8D8-D475-4F9D-A4E8-09A4461FA003}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Titel_WinFrorm</RootNamespace>
-    <AssemblyName>Titel %28WinFrorm%29</AssemblyName>
+    <RootNamespace>Titel_WinForm</RootNamespace>
+    <AssemblyName>Titel %28WinForm%29</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -75,13 +75,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.aa.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.cs.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.en-AS.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.en.resx">

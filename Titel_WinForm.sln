@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titel (WinFrorm)", "Titel (WinFrorm)\Titel (WinFrorm).csproj", "{25D1B8D8-D475-4F9D-A4E8-09A4461FA003}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titel (WinForm)", "Titel (WinForm)\Titel (WinForm).csproj", "{25D1B8D8-D475-4F9D-A4E8-09A4461FA003}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
