@@ -113,7 +113,7 @@
             // 
             resources.ApplyResources(this.tsbOpen, "tsbOpen");
             this.tsbOpen.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbOpen.Image = global::Titel_WinFrorm.Properties.Resources.opened_folder_96px;
+            this.tsbOpen.Image = global::Titel_WinForm.Properties.Resources.opened_folder_96px;
             this.tsbOpen.Name = "tsbOpen";
             this.tsbOpen.Click += new System.EventHandler(this.tsbtnOpen_Click);
             // 
@@ -124,21 +124,21 @@
             this.tssbSave.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiSave,
             this.tsmiSaveAs});
-            this.tssbSave.Image = global::Titel_WinFrorm.Properties.Resources.save_96px;
+            this.tssbSave.Image = global::Titel_WinForm.Properties.Resources.save_96px;
             this.tssbSave.Name = "tssbSave";
             this.tssbSave.ButtonClick += new System.EventHandler(this.tssbSave_ButtonClick);
             // 
             // tsmiSave
             // 
             resources.ApplyResources(this.tsmiSave, "tsmiSave");
-            this.tsmiSave.Image = global::Titel_WinFrorm.Properties.Resources.save_96px;
+            this.tsmiSave.Image = global::Titel_WinForm.Properties.Resources.save_96px;
             this.tsmiSave.Name = "tsmiSave";
             this.tsmiSave.Click += new System.EventHandler(this.tssbSave_ButtonClick);
             // 
             // tsmiSaveAs
             // 
             resources.ApplyResources(this.tsmiSaveAs, "tsmiSaveAs");
-            this.tsmiSaveAs.Image = global::Titel_WinFrorm.Properties.Resources.save_as_96px;
+            this.tsmiSaveAs.Image = global::Titel_WinForm.Properties.Resources.save_as_96px;
             this.tsmiSaveAs.Name = "tsmiSaveAs";
             this.tsmiSaveAs.Click += new System.EventHandler(this.tsmiSaveAs_Click);
             // 
@@ -146,7 +146,7 @@
             // 
             resources.ApplyResources(this.tsbCloseFile, "tsbCloseFile");
             this.tsbCloseFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbCloseFile.Image = global::Titel_WinFrorm.Properties.Resources.close_tab_96px;
+            this.tsbCloseFile.Image = global::Titel_WinForm.Properties.Resources.close_tab_96px;
             this.tsbCloseFile.Name = "tsbCloseFile";
             this.tsbCloseFile.Click += new System.EventHandler(this.tsbCloseFile_Click);
             // 
@@ -416,9 +416,9 @@
             // pBoxAlbum
             // 
             resources.ApplyResources(this.pBoxAlbum, "pBoxAlbum");
-            this.pBoxAlbum.BackgroundImage = global::Titel_WinFrorm.Properties.Resources.generic_music_file_100px;
-            this.pBoxAlbum.ErrorImage = global::Titel_WinFrorm.Properties.Resources.generic_music_file_100px;
-            this.pBoxAlbum.InitialImage = global::Titel_WinFrorm.Properties.Resources.generic_music_file_100px;
+            this.pBoxAlbum.BackgroundImage = global::Titel_WinForm.Properties.Resources.generic_music_file_100px;
+            this.pBoxAlbum.ErrorImage = global::Titel_WinForm.Properties.Resources.generic_music_file_100px;
+            this.pBoxAlbum.InitialImage = global::Titel_WinForm.Properties.Resources.generic_music_file_100px;
             this.pBoxAlbum.Name = "pBoxAlbum";
             this.pBoxAlbum.TabStop = false;
             this.toolTip.SetToolTip(this.pBoxAlbum, resources.GetString("pBoxAlbum.ToolTip"));

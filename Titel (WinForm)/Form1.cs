@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TagLib;
 using System.IO;
-using Titel_WinFrorm.Properties;
+using Titel_WinForm.Properties;
 
 namespace Titel__WinFrorm_
 {
