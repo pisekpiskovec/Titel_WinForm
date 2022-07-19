@@ -20,6 +20,8 @@ namespace Titel__WinFrorm_
         string musFilePath; //get song's path || done
         string musFileName; //get song's full path (file path + save file name)
 
+        WMPLib.WindowsMediaPlayer mediaPlayer = new WMPLib.WindowsMediaPlayer();
+
         public Form1() {InitializeComponent(); }
 
         private void fileStatus(int status)
@@ -87,6 +89,10 @@ namespace Titel__WinFrorm_
                 numRatingYouTube.Value = frameYouTube.Rating;
                 numRatingSoundcloud.Value = frameSoundcloud.Rating;
 
+                mediaPlayer.URL = musFileName;
+                mediaPlayer.controls.stop();
+                tslDuration.Text = "00:00/" + mediaPlayer.currentMedia.durationString;
+
                 fileStatus(2);
                 tFileChanged.Start();
             } else { fileStatus(0); }
@@ -127,6 +133,8 @@ namespace Titel__WinFrorm_
 
         private void tFileChanged_Tick(object sender, EventArgs e)
         {
+            if (mediaPlayer.playState == WMPLib.WMPPlayState.wmppsStopped) {tslDuration.Text = "00:00/" + mediaPlayer.currentMedia.durationString; } else { tslDuration.Text = mediaPlayer.controls.currentPositionString + "/" + mediaPlayer.currentMedia.durationString; }
+
             var musFileTag = TagLib.File.Create(musFileName).Tag;
             var musFile = TagLib.File.Create(musFileName);
 
@@ -398,6 +406,12 @@ namespace Titel__WinFrorm_
         private void numDate_Leave(object sender, EventArgs e) {if (numDate.Text == "") {numDate.Value = DateTime.Today.Year; numDate.Text = Convert.ToString(DateTime.Today.Year); } }
 
         private void trimTextBoxes(System.Windows.Forms.TextBox tb) {tb.Text = tb.Text.Trim(); }
+
+        private void tsbPlayFile_Click(object sender, EventArgs e) {mediaPlayer.controls.play(); }
+
+        private void tsbPausePlaying_Click(object sender, EventArgs e) {mediaPlayer.controls.pause(); }
+
+        private void tsbStopPlaying_Click(object sender, EventArgs e) {mediaPlayer.controls.stop(); }
     }
 }
    

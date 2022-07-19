@@ -93,6 +93,26 @@ namespace Titel_WinForm.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pause_96px {
+            get {
+                object obj = ResourceManager.GetObject("pause_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap play_96px {
+            get {
+                object obj = ResourceManager.GetObject("play_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap save_96px {
             get {
                 object obj = ResourceManager.GetObject("save_96px", resourceCulture);
@@ -106,6 +126,16 @@ namespace Titel_WinForm.Properties {
         internal static System.Drawing.Bitmap save_as_96px {
             get {
                 object obj = ResourceManager.GetObject("save_as_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stop_96px {
+            get {
+                object obj = ResourceManager.GetObject("stop_96px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

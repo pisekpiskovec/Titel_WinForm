@@ -118,17 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="save_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="close_tab_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_tab_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="save_as_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\save_as_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="opened_folder_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\opened_folder_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="titel_icon_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\titel_icon_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="close_tab_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_tab_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="save_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="generic_music_file_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\generic_music_file_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,7 +136,16 @@
   <data name="titel_icon_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\titel_icon_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="titel_icon_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\titel_icon_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="opened_folder_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\opened_folder_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pause_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pause_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stop_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stop_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
