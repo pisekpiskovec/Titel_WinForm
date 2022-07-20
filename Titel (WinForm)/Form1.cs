@@ -91,7 +91,6 @@ namespace Titel__WinFrorm_
 
                 mediaPlayer.URL = musFileName;
                 mediaPlayer.controls.stop();
-                tslDuration.Text = "00:00/" + mediaPlayer.currentMedia.durationString;
 
                 fileStatus(2);
                 tFileChanged.Start();
