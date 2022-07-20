@@ -121,96 +121,6 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tsbOpen.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tsbOpen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
-  </data>
-  <data name="tsbOpen.Text" xml:space="preserve">
-    <value>Open File</value>
-  </data>
-  <data name="tsbOpen.ToolTipText" xml:space="preserve">
-    <value>Open MP3 file...</value>
-  </data>
-  <data name="tsmiSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 22</value>
-  </data>
-  <data name="tsmiSave.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="tsmiSaveAs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 22</value>
-  </data>
-  <data name="tsmiSaveAs.Text" xml:space="preserve">
-    <value>Save As</value>
-  </data>
-  <data name="tssbSave.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tssbSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 22</value>
-  </data>
-  <data name="tssbSave.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="tssbSave.ToolTipText" xml:space="preserve">
-    <value>Save... or Save as...</value>
-  </data>
-  <data name="tsbCloseFile.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tsbCloseFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
-  </data>
-  <data name="tsbCloseFile.Text" xml:space="preserve">
-    <value>Close file</value>
-  </data>
-  <data name="tsSp1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>6, 25</value>
-  </data>
-  <data name="tslChanges.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 22</value>
-  </data>
-  <data name="tslChanges.Text" xml:space="preserve">
-    <value>Status</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>6, 25</value>
-  </data>
-  <data name="tsbPlayFile.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tsbPlayFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
-  </data>
-  <data name="tsbPlayFile.Text" xml:space="preserve">
-    <value>toolStripButton1</value>
-  </data>
-  <data name="tsbPausePlaying.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tsbPausePlaying.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
-  </data>
-  <data name="tsbPausePlaying.Text" xml:space="preserve">
-    <value>toolStripButton2</value>
-  </data>
-  <data name="tsbStopPlaying.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tsbStopPlaying.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
-  </data>
-  <data name="tsbStopPlaying.Text" xml:space="preserve">
-    <value>toolStripButton3</value>
-  </data>
-  <data name="tslDuration.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 22</value>
-  </data>
-  <data name="tslDuration.Text" xml:space="preserve">
-    <value>00:00/00:00</value>
-  </data>
   <data name="tsTop.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -235,6 +145,108 @@
   </data>
   <data name="&gt;&gt;tsTop.ZOrder" xml:space="preserve">
     <value>32</value>
+  </data>
+  <data name="tsbOpen.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="tsbOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="tsbOpen.Text" xml:space="preserve">
+    <value>Open File</value>
+  </data>
+  <data name="tsbOpen.ToolTipText" xml:space="preserve">
+    <value>Open MP3 file...</value>
+  </data>
+  <data name="tssbSave.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="tssbSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 22</value>
+  </data>
+  <data name="tssbSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="tssbSave.ToolTipText" xml:space="preserve">
+    <value>Save... or Save as...</value>
+  </data>
+  <data name="tsmiSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="tsmiSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="tsmiSave.ToolTipText" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="tsmiSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="tsmiSaveAs.Text" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="tsmiSaveAs.ToolTipText" xml:space="preserve">
+    <value>Save As...</value>
+  </data>
+  <data name="tsbCloseFile.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="tsbCloseFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="tsbCloseFile.Text" xml:space="preserve">
+    <value>Close file</value>
+  </data>
+  <data name="tsSp1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="tslChanges.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 22</value>
+  </data>
+  <data name="tslChanges.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="tslChanges.ToolTipText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="tsbPlayFile.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="tsbPlayFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="tsbPlayFile.Text" xml:space="preserve">
+    <value>Play</value>
+  </data>
+  <data name="tsbPausePlaying.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="tsbPausePlaying.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="tsbPausePlaying.Text" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="tsbStopPlaying.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="tsbStopPlaying.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="tsbStopPlaying.Text" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="tslDuration.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 22</value>
+  </data>
+  <data name="tslDuration.Text" xml:space="preserve">
+    <value>00:00/00:00</value>
+  </data>
+  <data name="tslDuration.ToolTipText" xml:space="preserve">
+    <value>Duration</value>
   </data>
   <metadata name="openFileDiMP3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>99, 17</value>
@@ -304,7 +316,7 @@
     <value>375, 20</value>
   </data>
   <data name="tbArtist.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;tbArtist.Name" xml:space="preserve">
     <value>tbArtist</value>
@@ -325,7 +337,7 @@
     <value>405, 20</value>
   </data>
   <data name="tbTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;tbTitle.Name" xml:space="preserve">
     <value>tbTitle</value>
@@ -346,7 +358,7 @@
     <value>377, 20</value>
   </data>
   <data name="tbAlbum.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;tbAlbum.Name" xml:space="preserve">
     <value>tbAlbum</value>
@@ -367,7 +379,7 @@
     <value>371, 20</value>
   </data>
   <data name="tbGenre.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="&gt;&gt;tbGenre.Name" xml:space="preserve">
     <value>tbGenre</value>
@@ -388,7 +400,7 @@
     <value>345, 20</value>
   </data>
   <data name="tbAlbumArtist.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="&gt;&gt;tbAlbumArtist.Name" xml:space="preserve">
     <value>tbAlbumArtist</value>
@@ -415,7 +427,7 @@
     <value>60, 13</value>
   </data>
   <data name="lArtist.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="lArtist.Text" xml:space="preserve">
     <value>Performers:</value>
@@ -445,7 +457,7 @@
     <value>30, 13</value>
   </data>
   <data name="lTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="lTitle.Text" xml:space="preserve">
     <value>Title:</value>
@@ -475,7 +487,7 @@
     <value>60, 13</value>
   </data>
   <data name="lPicture.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
+    <value>36</value>
   </data>
   <data name="lPicture.Text" xml:space="preserve">
     <value>Pictures[0]:</value>
@@ -502,7 +514,7 @@
     <value>60, 13</value>
   </data>
   <data name="lResulution.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
+    <value>37</value>
   </data>
   <data name="lResulution.Text" xml:space="preserve">
     <value>null</value>
@@ -532,7 +544,7 @@
     <value>100, 23</value>
   </data>
   <data name="bOpenPicture.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
+    <value>38</value>
   </data>
   <data name="bOpenPicture.Text" xml:space="preserve">
     <value>Open Picture</value>
@@ -562,7 +574,7 @@
     <value>76, 13</value>
   </data>
   <data name="lRatingBlank.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="lRatingBlank.Text" xml:space="preserve">
     <value>Rating (blank):</value>
@@ -586,7 +598,7 @@
     <value>47, 20</value>
   </data>
   <data name="numRatingBlank.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="&gt;&gt;numRatingBlank.Name" xml:space="preserve">
     <value>numRatingBlank</value>
@@ -610,7 +622,7 @@
     <value>126, 45</value>
   </data>
   <data name="tbStarsBlank.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="&gt;&gt;tbStarsBlank.Name" xml:space="preserve">
     <value>tbStarsBlank</value>
@@ -640,7 +652,7 @@
     <value>384, 20</value>
   </data>
   <data name="numDate.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;numDate.Name" xml:space="preserve">
     <value>numDate</value>
@@ -661,7 +673,7 @@
     <value>378, 20</value>
   </data>
   <data name="numTrackNumber.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="numTrackNumber.ThousandsSeparator" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -688,7 +700,7 @@
     <value>132, 45</value>
   </data>
   <data name="tbStarsSpotify.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
+    <value>29</value>
   </data>
   <data name="&gt;&gt;tbStarsSpotify.Name" xml:space="preserve">
     <value>tbStarsSpotify</value>
@@ -709,7 +721,7 @@
     <value>47, 20</value>
   </data>
   <data name="numRatingSpotify.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="&gt;&gt;numRatingSpotify.Name" xml:space="preserve">
     <value>numRatingSpotify</value>
@@ -736,7 +748,7 @@
     <value>82, 13</value>
   </data>
   <data name="lRatingSpotify.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="lRatingSpotify.Text" xml:space="preserve">
     <value>Rating (Spotify):</value>
@@ -763,7 +775,7 @@
     <value>144, 45</value>
   </data>
   <data name="tbStarsYouTube.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
+    <value>32</value>
   </data>
   <data name="&gt;&gt;tbStarsYouTube.Name" xml:space="preserve">
     <value>tbStarsYouTube</value>
@@ -784,7 +796,7 @@
     <value>47, 20</value>
   </data>
   <data name="numRatingYouTube.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
+    <value>31</value>
   </data>
   <data name="&gt;&gt;numRatingYouTube.Name" xml:space="preserve">
     <value>numRatingYouTube</value>
@@ -811,7 +823,7 @@
     <value>94, 13</value>
   </data>
   <data name="lRatingYouTube.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="lRatingYouTube.Text" xml:space="preserve">
     <value>Rating (YouTube):</value>
@@ -838,7 +850,7 @@
     <value>157, 45</value>
   </data>
   <data name="tbStarsSoundcloud.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
+    <value>35</value>
   </data>
   <data name="&gt;&gt;tbStarsSoundcloud.Name" xml:space="preserve">
     <value>tbStarsSoundcloud</value>
@@ -859,7 +871,7 @@
     <value>47, 20</value>
   </data>
   <data name="numRatingSoundcloud.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
+    <value>34</value>
   </data>
   <data name="&gt;&gt;numRatingSoundcloud.Name" xml:space="preserve">
     <value>numRatingSoundcloud</value>
@@ -886,7 +898,7 @@
     <value>107, 13</value>
   </data>
   <data name="lRatingSoundcloud.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
+    <value>33</value>
   </data>
   <data name="lRatingSoundcloud.Text" xml:space="preserve">
     <value>Rating (Soundcloud):</value>
@@ -910,7 +922,7 @@
     <value>181, 20</value>
   </data>
   <data name="tbComposer.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="&gt;&gt;tbComposer.Name" xml:space="preserve">
     <value>tbComposer</value>
@@ -934,7 +946,7 @@
     <value>384, 20</value>
   </data>
   <data name="numDiscNumber.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="numDiscNumber.ThousandsSeparator" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -954,300 +966,6 @@
   <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>655, 17</value>
   </metadata>
-  <data name="tbRemixer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 318</value>
-  </data>
-  <data name="tbRemixer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 20</value>
-  </data>
-  <data name="tbRemixer.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;tbRemixer.Name" xml:space="preserve">
-    <value>tbRemixer</value>
-  </data>
-  <data name="&gt;&gt;tbRemixer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbRemixer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tbRemixer.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="bFileFromTags.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="bFileFromTags.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="bFileFromTags.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bFileFromTags.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 29</value>
-  </data>
-  <data name="bFileFromTags.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 23</value>
-  </data>
-  <data name="bFileFromTags.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="bFileFromTags.Text" xml:space="preserve">
-    <value>From Tags</value>
-  </data>
-  <data name="&gt;&gt;bFileFromTags.Name" xml:space="preserve">
-    <value>bFileFromTags</value>
-  </data>
-  <data name="&gt;&gt;bFileFromTags.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bFileFromTags.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bFileFromTags.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="chbAlbum.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chbAlbum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chbAlbum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 137</value>
-  </data>
-  <data name="chbAlbum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 17</value>
-  </data>
-  <data name="chbAlbum.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="chbAlbum.Text" xml:space="preserve">
-    <value>Album:</value>
-  </data>
-  <data name="&gt;&gt;chbAlbum.Name" xml:space="preserve">
-    <value>chbAlbum</value>
-  </data>
-  <data name="&gt;&gt;chbAlbum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chbAlbum.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chbAlbum.ZOrder" xml:space="preserve">
-    <value>33</value>
-  </data>
-  <data name="chbYear.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chbYear.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chbYear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 162</value>
-  </data>
-  <data name="chbYear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 17</value>
-  </data>
-  <data name="chbYear.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="chbYear.Text" xml:space="preserve">
-    <value>Year:</value>
-  </data>
-  <data name="&gt;&gt;chbYear.Name" xml:space="preserve">
-    <value>chbYear</value>
-  </data>
-  <data name="&gt;&gt;chbYear.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chbYear.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chbYear.ZOrder" xml:space="preserve">
-    <value>34</value>
-  </data>
-  <data name="chbTrack.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chbTrack.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chbTrack.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 189</value>
-  </data>
-  <data name="chbTrack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 17</value>
-  </data>
-  <data name="chbTrack.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="chbTrack.Text" xml:space="preserve">
-    <value>Track:</value>
-  </data>
-  <data name="&gt;&gt;chbTrack.Name" xml:space="preserve">
-    <value>chbTrack</value>
-  </data>
-  <data name="&gt;&gt;chbTrack.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chbTrack.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chbTrack.ZOrder" xml:space="preserve">
-    <value>35</value>
-  </data>
-  <data name="chbDisk.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chbDisk.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chbDisk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 215</value>
-  </data>
-  <data name="chbDisk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 17</value>
-  </data>
-  <data name="chbDisk.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="chbDisk.Text" xml:space="preserve">
-    <value>Disc:</value>
-  </data>
-  <data name="&gt;&gt;chbDisk.Name" xml:space="preserve">
-    <value>chbDisk</value>
-  </data>
-  <data name="&gt;&gt;chbDisk.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chbDisk.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chbDisk.ZOrder" xml:space="preserve">
-    <value>36</value>
-  </data>
-  <data name="chbGenres.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chbGenres.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chbGenres.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 242</value>
-  </data>
-  <data name="chbGenres.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 17</value>
-  </data>
-  <data name="chbGenres.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="chbGenres.Text" xml:space="preserve">
-    <value>Genres:</value>
-  </data>
-  <data name="&gt;&gt;chbGenres.Name" xml:space="preserve">
-    <value>chbGenres</value>
-  </data>
-  <data name="&gt;&gt;chbGenres.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chbGenres.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chbGenres.ZOrder" xml:space="preserve">
-    <value>37</value>
-  </data>
-  <data name="chbAlbumArtists.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chbAlbumArtists.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chbAlbumArtists.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 268</value>
-  </data>
-  <data name="chbAlbumArtists.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 17</value>
-  </data>
-  <data name="chbAlbumArtists.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="chbAlbumArtists.Text" xml:space="preserve">
-    <value>Album Artists:</value>
-  </data>
-  <data name="&gt;&gt;chbAlbumArtists.Name" xml:space="preserve">
-    <value>chbAlbumArtists</value>
-  </data>
-  <data name="&gt;&gt;chbAlbumArtists.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chbAlbumArtists.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chbAlbumArtists.ZOrder" xml:space="preserve">
-    <value>38</value>
-  </data>
-  <data name="chbComposers.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chbComposers.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chbComposers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 294</value>
-  </data>
-  <data name="chbComposers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 17</value>
-  </data>
-  <data name="chbComposers.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="chbComposers.Text" xml:space="preserve">
-    <value>Composers:</value>
-  </data>
-  <data name="&gt;&gt;chbComposers.Name" xml:space="preserve">
-    <value>chbComposers</value>
-  </data>
-  <data name="&gt;&gt;chbComposers.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chbComposers.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chbComposers.ZOrder" xml:space="preserve">
-    <value>39</value>
-  </data>
-  <data name="chbRemixer.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chbRemixer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chbRemixer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 320</value>
-  </data>
-  <data name="chbRemixer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 17</value>
-  </data>
-  <data name="chbRemixer.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="chbRemixer.Text" xml:space="preserve">
-    <value>Remixed by:</value>
-  </data>
-  <data name="&gt;&gt;chbRemixer.Name" xml:space="preserve">
-    <value>chbRemixer</value>
-  </data>
-  <data name="&gt;&gt;chbRemixer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chbRemixer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chbRemixer.ZOrder" xml:space="preserve">
-    <value>40</value>
-  </data>
   <data name="pBoxAlbum.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -1279,6 +997,300 @@ Double Right Click to Delete</value>
   <data name="&gt;&gt;pBoxAlbum.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
+  <data name="tbRemixer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 318</value>
+  </data>
+  <data name="tbRemixer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 20</value>
+  </data>
+  <data name="tbRemixer.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;tbRemixer.Name" xml:space="preserve">
+    <value>tbRemixer</value>
+  </data>
+  <data name="&gt;&gt;tbRemixer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbRemixer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbRemixer.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bFileFromTags.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bFileFromTags.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="bFileFromTags.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bFileFromTags.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 29</value>
+  </data>
+  <data name="bFileFromTags.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 23</value>
+  </data>
+  <data name="bFileFromTags.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="bFileFromTags.Text" xml:space="preserve">
+    <value>From Tags</value>
+  </data>
+  <data name="&gt;&gt;bFileFromTags.Name" xml:space="preserve">
+    <value>bFileFromTags</value>
+  </data>
+  <data name="&gt;&gt;bFileFromTags.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bFileFromTags.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bFileFromTags.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chbAlbum.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chbAlbum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chbAlbum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 137</value>
+  </data>
+  <data name="chbAlbum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 17</value>
+  </data>
+  <data name="chbAlbum.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="chbAlbum.Text" xml:space="preserve">
+    <value>Album:</value>
+  </data>
+  <data name="&gt;&gt;chbAlbum.Name" xml:space="preserve">
+    <value>chbAlbum</value>
+  </data>
+  <data name="&gt;&gt;chbAlbum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbAlbum.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chbAlbum.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="chbYear.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chbYear.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chbYear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 162</value>
+  </data>
+  <data name="chbYear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 17</value>
+  </data>
+  <data name="chbYear.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="chbYear.Text" xml:space="preserve">
+    <value>Year:</value>
+  </data>
+  <data name="&gt;&gt;chbYear.Name" xml:space="preserve">
+    <value>chbYear</value>
+  </data>
+  <data name="&gt;&gt;chbYear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbYear.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chbYear.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="chbTrack.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chbTrack.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chbTrack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 189</value>
+  </data>
+  <data name="chbTrack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 17</value>
+  </data>
+  <data name="chbTrack.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="chbTrack.Text" xml:space="preserve">
+    <value>Track:</value>
+  </data>
+  <data name="&gt;&gt;chbTrack.Name" xml:space="preserve">
+    <value>chbTrack</value>
+  </data>
+  <data name="&gt;&gt;chbTrack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbTrack.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chbTrack.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="chbDisk.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chbDisk.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chbDisk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 215</value>
+  </data>
+  <data name="chbDisk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 17</value>
+  </data>
+  <data name="chbDisk.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="chbDisk.Text" xml:space="preserve">
+    <value>Disc:</value>
+  </data>
+  <data name="&gt;&gt;chbDisk.Name" xml:space="preserve">
+    <value>chbDisk</value>
+  </data>
+  <data name="&gt;&gt;chbDisk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbDisk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chbDisk.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="chbGenres.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chbGenres.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chbGenres.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 242</value>
+  </data>
+  <data name="chbGenres.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 17</value>
+  </data>
+  <data name="chbGenres.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="chbGenres.Text" xml:space="preserve">
+    <value>Genres:</value>
+  </data>
+  <data name="&gt;&gt;chbGenres.Name" xml:space="preserve">
+    <value>chbGenres</value>
+  </data>
+  <data name="&gt;&gt;chbGenres.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbGenres.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chbGenres.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="chbAlbumArtists.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chbAlbumArtists.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chbAlbumArtists.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 268</value>
+  </data>
+  <data name="chbAlbumArtists.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 17</value>
+  </data>
+  <data name="chbAlbumArtists.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="chbAlbumArtists.Text" xml:space="preserve">
+    <value>Album Artists:</value>
+  </data>
+  <data name="&gt;&gt;chbAlbumArtists.Name" xml:space="preserve">
+    <value>chbAlbumArtists</value>
+  </data>
+  <data name="&gt;&gt;chbAlbumArtists.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbAlbumArtists.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chbAlbumArtists.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="chbComposers.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chbComposers.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chbComposers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 294</value>
+  </data>
+  <data name="chbComposers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 17</value>
+  </data>
+  <data name="chbComposers.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="chbComposers.Text" xml:space="preserve">
+    <value>Composers:</value>
+  </data>
+  <data name="&gt;&gt;chbComposers.Name" xml:space="preserve">
+    <value>chbComposers</value>
+  </data>
+  <data name="&gt;&gt;chbComposers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbComposers.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chbComposers.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="chbRemixer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chbRemixer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chbRemixer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 320</value>
+  </data>
+  <data name="chbRemixer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 17</value>
+  </data>
+  <data name="chbRemixer.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="chbRemixer.Text" xml:space="preserve">
+    <value>Remixed by:</value>
+  </data>
+  <data name="&gt;&gt;chbRemixer.Name" xml:space="preserve">
+    <value>chbRemixer</value>
+  </data>
+  <data name="&gt;&gt;chbRemixer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbRemixer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chbRemixer.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
   <data name="winMediaPlayer.Enabled" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1300,7 +1312,7 @@ Double Right Click to Delete</value>
     <value>75, 23</value>
   </data>
   <data name="winMediaPlayer.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
+    <value>39</value>
   </data>
   <data name="winMediaPlayer.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1356,48 +1368,6 @@ Double Right Click to Delete</value>
   <data name="$this.Text" xml:space="preserve">
     <value>Titel</value>
   </data>
-  <data name="&gt;&gt;tsSp1.Name" xml:space="preserve">
-    <value>tsSp1</value>
-  </data>
-  <data name="&gt;&gt;tsSp1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tslChanges.Name" xml:space="preserve">
-    <value>tslChanges</value>
-  </data>
-  <data name="&gt;&gt;tslChanges.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openFileDiMP3.Name" xml:space="preserve">
-    <value>openFileDiMP3</value>
-  </data>
-  <data name="&gt;&gt;openFileDiMP3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openFileDiJPGPNG.Name" xml:space="preserve">
-    <value>openFileDiJPGPNG</value>
-  </data>
-  <data name="&gt;&gt;openFileDiJPGPNG.Type" xml:space="preserve">
-    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tFileChanged.Name" xml:space="preserve">
-    <value>tFileChanged</value>
-  </data>
-  <data name="&gt;&gt;tFileChanged.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
-    <value>toolTip</value>
-  </data>
-  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
-    <value>toolStripSeparator1</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;tsbOpen.Name" xml:space="preserve">
     <value>tsbOpen</value>
   </data>
@@ -1428,6 +1398,24 @@ Double Right Click to Delete</value>
   <data name="&gt;&gt;tsbCloseFile.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;tsSp1.Name" xml:space="preserve">
+    <value>tsSp1</value>
+  </data>
+  <data name="&gt;&gt;tsSp1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tslChanges.Name" xml:space="preserve">
+    <value>tslChanges</value>
+  </data>
+  <data name="&gt;&gt;tslChanges.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;tsbPlayFile.Name" xml:space="preserve">
     <value>tsbPlayFile</value>
   </data>
@@ -1451,6 +1439,30 @@ Double Right Click to Delete</value>
   </data>
   <data name="&gt;&gt;tslDuration.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDiMP3.Name" xml:space="preserve">
+    <value>openFileDiMP3</value>
+  </data>
+  <data name="&gt;&gt;openFileDiMP3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDiJPGPNG.Name" xml:space="preserve">
+    <value>openFileDiJPGPNG</value>
+  </data>
+  <data name="&gt;&gt;openFileDiJPGPNG.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tFileChanged.Name" xml:space="preserve">
+    <value>tFileChanged</value>
+  </data>
+  <data name="&gt;&gt;tFileChanged.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>
