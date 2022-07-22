@@ -12,7 +12,7 @@ using System.IO;
 using Titel_WinForm.Properties;
 using Titel_WinForm;
 
-namespace Titel__WinFrorm_
+namespace Titel_WinForm
 {
     public partial class Form1 : Form
     {

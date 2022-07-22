@@ -1,4 +1,4 @@
-﻿namespace Titel__WinFrorm_
+﻿namespace Titel_WinForm
 {
     partial class Form1
     {
