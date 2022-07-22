@@ -86,7 +86,7 @@
             this.chbAlbumArtists = new System.Windows.Forms.CheckBox();
             this.chbComposers = new System.Windows.Forms.CheckBox();
             this.chbRemixer = new System.Windows.Forms.CheckBox();
-            this.winMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
+            this.bRatingCalculator = new System.Windows.Forms.Button();
             this.tsTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numRatingBlank)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbStarsBlank)).BeginInit();
@@ -100,7 +100,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numRatingSoundcloud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDiscNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxAlbum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.winMediaPlayer)).BeginInit();
             this.SuspendLayout();
             // 
             // tsTop
@@ -123,7 +122,6 @@
             // tsbOpen
             // 
             this.tsbOpen.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbOpen.Image = global::Titel_WinForm.Properties.Resources.opened_folder_96px;
             resources.ApplyResources(this.tsbOpen, "tsbOpen");
             this.tsbOpen.Name = "tsbOpen";
             this.tsbOpen.Click += new System.EventHandler(this.tsbtnOpen_Click);
@@ -134,29 +132,25 @@
             this.tssbSave.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiSave,
             this.tsmiSaveAs});
-            this.tssbSave.Image = global::Titel_WinForm.Properties.Resources.save_96px;
             resources.ApplyResources(this.tssbSave, "tssbSave");
             this.tssbSave.Name = "tssbSave";
             this.tssbSave.ButtonClick += new System.EventHandler(this.tssbSave_ButtonClick);
             // 
             // tsmiSave
             // 
-            this.tsmiSave.Image = global::Titel_WinForm.Properties.Resources.save_96px;
-            this.tsmiSave.Name = "tsmiSave";
             resources.ApplyResources(this.tsmiSave, "tsmiSave");
+            this.tsmiSave.Name = "tsmiSave";
             this.tsmiSave.Click += new System.EventHandler(this.tssbSave_ButtonClick);
             // 
             // tsmiSaveAs
             // 
-            this.tsmiSaveAs.Image = global::Titel_WinForm.Properties.Resources.save_as_96px;
-            this.tsmiSaveAs.Name = "tsmiSaveAs";
             resources.ApplyResources(this.tsmiSaveAs, "tsmiSaveAs");
+            this.tsmiSaveAs.Name = "tsmiSaveAs";
             this.tsmiSaveAs.Click += new System.EventHandler(this.tsmiSaveAs_Click);
             // 
             // tsbCloseFile
             // 
             this.tsbCloseFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbCloseFile.Image = global::Titel_WinForm.Properties.Resources.close_tab_96px;
             resources.ApplyResources(this.tsbCloseFile, "tsbCloseFile");
             this.tsbCloseFile.Name = "tsbCloseFile";
             this.tsbCloseFile.Click += new System.EventHandler(this.tsbCloseFile_Click);
@@ -179,7 +173,6 @@
             // tsbPlayFile
             // 
             this.tsbPlayFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbPlayFile.Image = global::Titel_WinForm.Properties.Resources.play_96px;
             resources.ApplyResources(this.tsbPlayFile, "tsbPlayFile");
             this.tsbPlayFile.Name = "tsbPlayFile";
             this.tsbPlayFile.Click += new System.EventHandler(this.tsbPlayFile_Click);
@@ -187,7 +180,6 @@
             // tsbPausePlaying
             // 
             this.tsbPausePlaying.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbPausePlaying.Image = global::Titel_WinForm.Properties.Resources.pause_96px;
             resources.ApplyResources(this.tsbPausePlaying, "tsbPausePlaying");
             this.tsbPausePlaying.Name = "tsbPausePlaying";
             this.tsbPausePlaying.Click += new System.EventHandler(this.tsbPausePlaying_Click);
@@ -195,7 +187,6 @@
             // tsbStopPlaying
             // 
             this.tsbStopPlaying.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbStopPlaying.Image = global::Titel_WinForm.Properties.Resources.stop_96px;
             resources.ApplyResources(this.tsbStopPlaying, "tsbStopPlaying");
             this.tsbStopPlaying.Name = "tsbStopPlaying";
             this.tsbStopPlaying.Click += new System.EventHandler(this.tsbStopPlaying_Click);
@@ -432,10 +423,7 @@
             // 
             // pBoxAlbum
             // 
-            this.pBoxAlbum.BackgroundImage = global::Titel_WinForm.Properties.Resources.generic_music_file_100px;
             resources.ApplyResources(this.pBoxAlbum, "pBoxAlbum");
-            this.pBoxAlbum.ErrorImage = global::Titel_WinForm.Properties.Resources.generic_music_file_100px;
-            this.pBoxAlbum.InitialImage = global::Titel_WinForm.Properties.Resources.generic_music_file_100px;
             this.pBoxAlbum.Name = "pBoxAlbum";
             this.pBoxAlbum.TabStop = false;
             this.toolTip.SetToolTip(this.pBoxAlbum, resources.GetString("pBoxAlbum.ToolTip"));
@@ -504,18 +492,18 @@
             this.chbRemixer.Name = "chbRemixer";
             this.chbRemixer.UseVisualStyleBackColor = true;
             // 
-            // winMediaPlayer
+            // bRatingCalculator
             // 
-            resources.ApplyResources(this.winMediaPlayer, "winMediaPlayer");
-            this.winMediaPlayer.Name = "winMediaPlayer";
-            this.winMediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("winMediaPlayer.OcxState")));
-            this.winMediaPlayer.TabStop = false;
+            resources.ApplyResources(this.bRatingCalculator, "bRatingCalculator");
+            this.bRatingCalculator.Name = "bRatingCalculator";
+            this.bRatingCalculator.UseVisualStyleBackColor = true;
+            this.bRatingCalculator.Click += new System.EventHandler(this.bRatingCalculator_Click);
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.winMediaPlayer);
+            this.Controls.Add(this.bRatingCalculator);
             this.Controls.Add(this.bFileFromTags);
             this.Controls.Add(this.tbRemixer);
             this.Controls.Add(this.numDiscNumber);
@@ -575,7 +563,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numRatingSoundcloud)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDiscNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxAlbum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.winMediaPlayer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -600,20 +587,16 @@
         private System.Windows.Forms.Label lResulution;
         private System.Windows.Forms.Button bOpenPicture;
         private System.Windows.Forms.Label lRatingBlank;
-        private System.Windows.Forms.NumericUpDown numRatingBlank;
         private System.Windows.Forms.TrackBar tbStarsBlank;
         private System.Windows.Forms.OpenFileDialog openFileDiJPGPNG;
         private System.Windows.Forms.ToolStripLabel tslChanges;
         private System.Windows.Forms.NumericUpDown numDate;
         private System.Windows.Forms.NumericUpDown numTrackNumber;
         private System.Windows.Forms.TrackBar tbStarsSpotify;
-        private System.Windows.Forms.NumericUpDown numRatingSpotify;
         private System.Windows.Forms.Label lRatingSpotify;
         private System.Windows.Forms.TrackBar tbStarsYouTube;
-        private System.Windows.Forms.NumericUpDown numRatingYouTube;
         private System.Windows.Forms.Label lRatingYouTube;
         private System.Windows.Forms.TrackBar tbStarsSoundcloud;
-        private System.Windows.Forms.NumericUpDown numRatingSoundcloud;
         private System.Windows.Forms.Label lRatingSoundcloud;
         private System.Windows.Forms.TextBox tbComposer;
         private System.Windows.Forms.ToolStripSeparator tsSp1;
@@ -638,8 +621,12 @@
         private System.Windows.Forms.ToolStripButton tsbPlayFile;
         private System.Windows.Forms.ToolStripButton tsbPausePlaying;
         private System.Windows.Forms.ToolStripButton tsbStopPlaying;
-        private AxWMPLib.AxWindowsMediaPlayer winMediaPlayer;
         private System.Windows.Forms.ToolStripLabel tslDuration;
+        private System.Windows.Forms.Button bRatingCalculator;
+        public System.Windows.Forms.NumericUpDown numRatingBlank;
+        public System.Windows.Forms.NumericUpDown numRatingSpotify;
+        public System.Windows.Forms.NumericUpDown numRatingYouTube;
+        public System.Windows.Forms.NumericUpDown numRatingSoundcloud;
     }
 }
 

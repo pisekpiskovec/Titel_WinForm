@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using TagLib;
 using System.IO;
 using Titel_WinForm.Properties;
+using Titel_WinForm;
 
 namespace Titel__WinFrorm_
 {
@@ -411,7 +412,7 @@ namespace Titel__WinFrorm_
         private void tsbPausePlaying_Click(object sender, EventArgs e) {mediaPlayer.controls.pause(); }
 
         private void tsbStopPlaying_Click(object sender, EventArgs e) {mediaPlayer.controls.stop(); }
+
+        private void bRatingCalculator_Click(object sender, EventArgs e) {rating_calculator rCalc = new rating_calculator(); rCalc.Show(); }
     }
 }
-   
-
