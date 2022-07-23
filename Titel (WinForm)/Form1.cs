@@ -413,6 +413,15 @@ namespace Titel_WinForm
 
         private void tsbStopPlaying_Click(object sender, EventArgs e) {mediaPlayer.controls.stop(); }
 
-        private void bRatingCalculator_Click(object sender, EventArgs e) {rating_calculator rCalc = new rating_calculator(); rCalc.Show(); }
+        void spotifyLikeCalculator(NumericUpDown current, NumericUpDown maximum, NumericUpDown returning) { decimal val = (current.Value / maximum.Value) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
+        void youtubeCalculator(NumericUpDown likes, NumericUpDown dislikes, NumericUpDown returning) { decimal val = (likes.Value / (dislikes.Value + likes.Value)) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
+        void soundcloudCalculator(NumericUpDown plays, NumericUpDown likes, NumericUpDown reposts, NumericUpDown returning) { decimal val = ((likes.Value+reposts.Value) / plays.Value) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
+
+        private void numBlank_ValueChanged(object sender, EventArgs e) {spotifyLikeCalculator(numBlankStars, numBlankMaxStars, numRatingBlank); }
+        private void numSpotify_ValueChanged(object sender, EventArgs e) {spotifyLikeCalculator(numSpotifyPlays, numSpotifyMaxPlays, numRatingSpotify); }
+        private void numYT_ValueChanged(object sender, EventArgs e) {youtubeCalculator(numYTLikes, numYTDislikes, numRatingYouTube); }
+        private void numSC_ValueChanged(object sender, EventArgs e) {soundcloudCalculator(numSCPlays, numSCLikes, numSCRepost, numRatingSoundcloud); }
+
+        private void tDontNull_Tick(object sender, EventArgs e) { if (numBlankMaxStars.Value == 0) { numBlankStars.Enabled = false; } else { numBlankStars.Enabled = true; } if (numSpotifyMaxPlays.Value == 0) { numSpotifyPlays.Enabled = false; } else { numSpotifyPlays.Enabled = true; } if (numSCPlays.Value == 0) {numSCLikes.Enabled = false; numSCRepost.Enabled = false; } else {numSCLikes.Enabled = true; numSCRepost.Enabled = true; } }
     }
 }

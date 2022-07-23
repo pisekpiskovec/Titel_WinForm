@@ -94,12 +94,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="rating_calculator.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="rating_calculator.Designer.cs">
-      <DependentUpon>rating_calculator.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Form1.cs.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,9 +114,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="rating_calculator.resx">
-      <DependentUpon>rating_calculator.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

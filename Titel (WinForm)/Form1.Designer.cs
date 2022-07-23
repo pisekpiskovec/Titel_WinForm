@@ -38,7 +38,7 @@
             this.tsbCloseFile = new System.Windows.Forms.ToolStripButton();
             this.tsSp1 = new System.Windows.Forms.ToolStripSeparator();
             this.tslChanges = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsSp2 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbPlayFile = new System.Windows.Forms.ToolStripButton();
             this.tsbPausePlaying = new System.Windows.Forms.ToolStripButton();
             this.tsbStopPlaying = new System.Windows.Forms.ToolStripButton();
@@ -76,6 +76,15 @@
             this.numDiscNumber = new System.Windows.Forms.NumericUpDown();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.pBoxAlbum = new System.Windows.Forms.PictureBox();
+            this.numBlankStars = new System.Windows.Forms.NumericUpDown();
+            this.numBlankMaxStars = new System.Windows.Forms.NumericUpDown();
+            this.numSpotifyMaxPlays = new System.Windows.Forms.NumericUpDown();
+            this.numSpotifyPlays = new System.Windows.Forms.NumericUpDown();
+            this.numYTDislikes = new System.Windows.Forms.NumericUpDown();
+            this.numYTLikes = new System.Windows.Forms.NumericUpDown();
+            this.numSCLikes = new System.Windows.Forms.NumericUpDown();
+            this.numSCPlays = new System.Windows.Forms.NumericUpDown();
+            this.numSCRepost = new System.Windows.Forms.NumericUpDown();
             this.tbRemixer = new System.Windows.Forms.TextBox();
             this.bFileFromTags = new System.Windows.Forms.Button();
             this.chbAlbum = new System.Windows.Forms.CheckBox();
@@ -86,7 +95,7 @@
             this.chbAlbumArtists = new System.Windows.Forms.CheckBox();
             this.chbComposers = new System.Windows.Forms.CheckBox();
             this.chbRemixer = new System.Windows.Forms.CheckBox();
-            this.bRatingCalculator = new System.Windows.Forms.Button();
+            this.tDontNull = new System.Windows.Forms.Timer(this.components);
             this.tsTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numRatingBlank)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbStarsBlank)).BeginInit();
@@ -100,39 +109,49 @@
             ((System.ComponentModel.ISupportInitialize)(this.numRatingSoundcloud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDiscNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxAlbum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBlankStars)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBlankMaxStars)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSpotifyMaxPlays)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSpotifyPlays)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numYTDislikes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numYTLikes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSCLikes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSCPlays)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSCRepost)).BeginInit();
             this.SuspendLayout();
             // 
             // tsTop
             // 
+            resources.ApplyResources(this.tsTop, "tsTop");
             this.tsTop.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbOpen,
             this.tssbSave,
             this.tsbCloseFile,
             this.tsSp1,
             this.tslChanges,
-            this.toolStripSeparator1,
+            this.tsSp2,
             this.tsbPlayFile,
             this.tsbPausePlaying,
             this.tsbStopPlaying,
             this.tslDuration});
-            resources.ApplyResources(this.tsTop, "tsTop");
             this.tsTop.Name = "tsTop";
             this.tsTop.Stretch = true;
+            this.toolTip.SetToolTip(this.tsTop, resources.GetString("tsTop.ToolTip"));
             // 
             // tsbOpen
             // 
-            this.tsbOpen.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.tsbOpen, "tsbOpen");
+            this.tsbOpen.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbOpen.Name = "tsbOpen";
             this.tsbOpen.Click += new System.EventHandler(this.tsbtnOpen_Click);
             // 
             // tssbSave
             // 
+            resources.ApplyResources(this.tssbSave, "tssbSave");
             this.tssbSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tssbSave.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiSave,
             this.tsmiSaveAs});
-            resources.ApplyResources(this.tssbSave, "tssbSave");
             this.tssbSave.Name = "tssbSave";
             this.tssbSave.ButtonClick += new System.EventHandler(this.tssbSave_ButtonClick);
             // 
@@ -150,51 +169,51 @@
             // 
             // tsbCloseFile
             // 
-            this.tsbCloseFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.tsbCloseFile, "tsbCloseFile");
+            this.tsbCloseFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbCloseFile.Name = "tsbCloseFile";
             this.tsbCloseFile.Click += new System.EventHandler(this.tsbCloseFile_Click);
             // 
             // tsSp1
             // 
-            this.tsSp1.Name = "tsSp1";
             resources.ApplyResources(this.tsSp1, "tsSp1");
+            this.tsSp1.Name = "tsSp1";
             // 
             // tslChanges
             // 
-            this.tslChanges.Name = "tslChanges";
             resources.ApplyResources(this.tslChanges, "tslChanges");
+            this.tslChanges.Name = "tslChanges";
             // 
-            // toolStripSeparator1
+            // tsSp2
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            resources.ApplyResources(this.tsSp2, "tsSp2");
+            this.tsSp2.Name = "tsSp2";
             // 
             // tsbPlayFile
             // 
-            this.tsbPlayFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.tsbPlayFile, "tsbPlayFile");
+            this.tsbPlayFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbPlayFile.Name = "tsbPlayFile";
             this.tsbPlayFile.Click += new System.EventHandler(this.tsbPlayFile_Click);
             // 
             // tsbPausePlaying
             // 
-            this.tsbPausePlaying.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.tsbPausePlaying, "tsbPausePlaying");
+            this.tsbPausePlaying.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbPausePlaying.Name = "tsbPausePlaying";
             this.tsbPausePlaying.Click += new System.EventHandler(this.tsbPausePlaying_Click);
             // 
             // tsbStopPlaying
             // 
-            this.tsbStopPlaying.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.tsbStopPlaying, "tsbStopPlaying");
+            this.tsbStopPlaying.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbStopPlaying.Name = "tsbStopPlaying";
             this.tsbStopPlaying.Click += new System.EventHandler(this.tsbStopPlaying_Click);
             // 
             // tslDuration
             // 
-            this.tslDuration.Name = "tslDuration";
             resources.ApplyResources(this.tslDuration, "tslDuration");
+            this.tslDuration.Name = "tslDuration";
             // 
             // openFileDiMP3
             // 
@@ -206,61 +225,73 @@
             // 
             resources.ApplyResources(this.lFileName, "lFileName");
             this.lFileName.Name = "lFileName";
+            this.toolTip.SetToolTip(this.lFileName, resources.GetString("lFileName.ToolTip"));
             // 
             // tbFileName
             // 
             resources.ApplyResources(this.tbFileName, "tbFileName");
             this.tbFileName.Name = "tbFileName";
+            this.toolTip.SetToolTip(this.tbFileName, resources.GetString("tbFileName.ToolTip"));
             // 
             // tbArtist
             // 
             resources.ApplyResources(this.tbArtist, "tbArtist");
             this.tbArtist.Name = "tbArtist";
+            this.toolTip.SetToolTip(this.tbArtist, resources.GetString("tbArtist.ToolTip"));
             // 
             // tbTitle
             // 
             resources.ApplyResources(this.tbTitle, "tbTitle");
             this.tbTitle.Name = "tbTitle";
+            this.toolTip.SetToolTip(this.tbTitle, resources.GetString("tbTitle.ToolTip"));
             // 
             // tbAlbum
             // 
             resources.ApplyResources(this.tbAlbum, "tbAlbum");
             this.tbAlbum.Name = "tbAlbum";
+            this.toolTip.SetToolTip(this.tbAlbum, resources.GetString("tbAlbum.ToolTip"));
             // 
             // tbGenre
             // 
             resources.ApplyResources(this.tbGenre, "tbGenre");
             this.tbGenre.Name = "tbGenre";
+            this.toolTip.SetToolTip(this.tbGenre, resources.GetString("tbGenre.ToolTip"));
             // 
             // tbAlbumArtist
             // 
             resources.ApplyResources(this.tbAlbumArtist, "tbAlbumArtist");
             this.tbAlbumArtist.Name = "tbAlbumArtist";
+            this.toolTip.SetToolTip(this.tbAlbumArtist, resources.GetString("tbAlbumArtist.ToolTip"));
             // 
             // lArtist
             // 
             resources.ApplyResources(this.lArtist, "lArtist");
             this.lArtist.Name = "lArtist";
+            this.toolTip.SetToolTip(this.lArtist, resources.GetString("lArtist.ToolTip"));
             // 
             // lTitle
             // 
             resources.ApplyResources(this.lTitle, "lTitle");
             this.lTitle.Name = "lTitle";
+            this.toolTip.SetToolTip(this.lTitle, resources.GetString("lTitle.ToolTip"));
             // 
             // lPicture
             // 
             resources.ApplyResources(this.lPicture, "lPicture");
             this.lPicture.Name = "lPicture";
+            this.toolTip.SetToolTip(this.lPicture, resources.GetString("lPicture.ToolTip"));
             // 
             // lResulution
             // 
             resources.ApplyResources(this.lResulution, "lResulution");
             this.lResulution.Name = "lResulution";
+            this.toolTip.SetToolTip(this.lResulution, resources.GetString("lResulution.ToolTip"));
             // 
             // bOpenPicture
             // 
             resources.ApplyResources(this.bOpenPicture, "bOpenPicture");
             this.bOpenPicture.Name = "bOpenPicture";
+            this.toolTip.SetToolTip(this.bOpenPicture, resources.GetString("bOpenPicture.ToolTip"));
             this.bOpenPicture.UseVisualStyleBackColor = true;
             this.bOpenPicture.Click += new System.EventHandler(this.bOpenPicture_Click);
             // 
@@ -268,6 +299,7 @@
             // 
             resources.ApplyResources(this.lRatingBlank, "lRatingBlank");
             this.lRatingBlank.Name = "lRatingBlank";
+            this.toolTip.SetToolTip(this.lRatingBlank, resources.GetString("lRatingBlank.ToolTip"));
             // 
             // numRatingBlank
             // 
@@ -278,6 +310,7 @@
             0,
             0});
             this.numRatingBlank.Name = "numRatingBlank";
+            this.toolTip.SetToolTip(this.numRatingBlank, resources.GetString("numRatingBlank.ToolTip"));
             this.numRatingBlank.ValueChanged += new System.EventHandler(this.numRating_ValueChanged);
             // 
             // tbStarsBlank
@@ -286,6 +319,7 @@
             this.tbStarsBlank.LargeChange = 1;
             this.tbStarsBlank.Maximum = 5;
             this.tbStarsBlank.Name = "tbStarsBlank";
+            this.toolTip.SetToolTip(this.tbStarsBlank, resources.GetString("tbStarsBlank.ToolTip"));
             this.tbStarsBlank.Scroll += new System.EventHandler(this.tbStarsBlank_Scroll);
             // 
             // openFileDiJPGPNG
@@ -302,6 +336,7 @@
             0,
             0});
             this.numDate.Name = "numDate";
+            this.toolTip.SetToolTip(this.numDate, resources.GetString("numDate.ToolTip"));
             this.numDate.Value = new decimal(new int[] {
             2022,
             0,
@@ -318,6 +353,7 @@
             0,
             0});
             this.numTrackNumber.Name = "numTrackNumber";
+            this.toolTip.SetToolTip(this.numTrackNumber, resources.GetString("numTrackNumber.ToolTip"));
             this.numTrackNumber.Value = new decimal(new int[] {
             1,
             0,
@@ -330,6 +366,7 @@
             this.tbStarsSpotify.LargeChange = 1;
             this.tbStarsSpotify.Maximum = 5;
             this.tbStarsSpotify.Name = "tbStarsSpotify";
+            this.toolTip.SetToolTip(this.tbStarsSpotify, resources.GetString("tbStarsSpotify.ToolTip"));
             this.tbStarsSpotify.Scroll += new System.EventHandler(this.tbStarsSpotify_Scroll);
             // 
             // numRatingSpotify
@@ -341,12 +378,14 @@
             0,
             0});
             this.numRatingSpotify.Name = "numRatingSpotify";
+            this.toolTip.SetToolTip(this.numRatingSpotify, resources.GetString("numRatingSpotify.ToolTip"));
             this.numRatingSpotify.ValueChanged += new System.EventHandler(this.numRatingSpotify_ValueChanged);
             // 
             // lRatingSpotify
             // 
             resources.ApplyResources(this.lRatingSpotify, "lRatingSpotify");
             this.lRatingSpotify.Name = "lRatingSpotify";
+            this.toolTip.SetToolTip(this.lRatingSpotify, resources.GetString("lRatingSpotify.ToolTip"));
             // 
             // tbStarsYouTube
             // 
@@ -354,6 +393,7 @@
             this.tbStarsYouTube.LargeChange = 1;
             this.tbStarsYouTube.Maximum = 5;
             this.tbStarsYouTube.Name = "tbStarsYouTube";
+            this.toolTip.SetToolTip(this.tbStarsYouTube, resources.GetString("tbStarsYouTube.ToolTip"));
             this.tbStarsYouTube.Scroll += new System.EventHandler(this.tbStarsYouTube_Scroll);
             // 
             // numRatingYouTube
@@ -365,12 +405,14 @@
             0,
             0});
             this.numRatingYouTube.Name = "numRatingYouTube";
+            this.toolTip.SetToolTip(this.numRatingYouTube, resources.GetString("numRatingYouTube.ToolTip"));
             this.numRatingYouTube.ValueChanged += new System.EventHandler(this.numRatingYouTube_ValueChanged);
             // 
             // lRatingYouTube
             // 
             resources.ApplyResources(this.lRatingYouTube, "lRatingYouTube");
             this.lRatingYouTube.Name = "lRatingYouTube";
+            this.toolTip.SetToolTip(this.lRatingYouTube, resources.GetString("lRatingYouTube.ToolTip"));
             // 
             // tbStarsSoundcloud
             // 
@@ -378,6 +420,7 @@
             this.tbStarsSoundcloud.LargeChange = 1;
             this.tbStarsSoundcloud.Maximum = 5;
             this.tbStarsSoundcloud.Name = "tbStarsSoundcloud";
+            this.toolTip.SetToolTip(this.tbStarsSoundcloud, resources.GetString("tbStarsSoundcloud.ToolTip"));
             this.tbStarsSoundcloud.Scroll += new System.EventHandler(this.tbStarsSoundcloud_Scroll);
             // 
             // numRatingSoundcloud
@@ -389,17 +432,20 @@
             0,
             0});
             this.numRatingSoundcloud.Name = "numRatingSoundcloud";
+            this.toolTip.SetToolTip(this.numRatingSoundcloud, resources.GetString("numRatingSoundcloud.ToolTip"));
             this.numRatingSoundcloud.ValueChanged += new System.EventHandler(this.numRatingSoundcloud_ValueChanged);
             // 
             // lRatingSoundcloud
             // 
             resources.ApplyResources(this.lRatingSoundcloud, "lRatingSoundcloud");
             this.lRatingSoundcloud.Name = "lRatingSoundcloud";
+            this.toolTip.SetToolTip(this.lRatingSoundcloud, resources.GetString("lRatingSoundcloud.ToolTip"));
             // 
             // tbComposer
             // 
             resources.ApplyResources(this.tbComposer, "tbComposer");
             this.tbComposer.Name = "tbComposer";
+            this.toolTip.SetToolTip(this.tbComposer, resources.GetString("tbComposer.ToolTip"));
             // 
             // tFileChanged
             // 
@@ -415,6 +461,7 @@
             0,
             0});
             this.numDiscNumber.Name = "numDiscNumber";
+            this.toolTip.SetToolTip(this.numDiscNumber, resources.GetString("numDiscNumber.ToolTip"));
             this.numDiscNumber.Value = new decimal(new int[] {
             1,
             0,
@@ -432,15 +479,116 @@
             this.pBoxAlbum.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseClick);
             this.pBoxAlbum.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseDoubleClick);
             // 
+            // numBlankStars
+            // 
+            resources.ApplyResources(this.numBlankStars, "numBlankStars");
+            this.numBlankStars.DecimalPlaces = 1;
+            this.numBlankStars.Name = "numBlankStars";
+            this.toolTip.SetToolTip(this.numBlankStars, resources.GetString("numBlankStars.ToolTip"));
+            this.numBlankStars.ValueChanged += new System.EventHandler(this.numBlank_ValueChanged);
+            // 
+            // numBlankMaxStars
+            // 
+            resources.ApplyResources(this.numBlankMaxStars, "numBlankMaxStars");
+            this.numBlankMaxStars.Name = "numBlankMaxStars";
+            this.toolTip.SetToolTip(this.numBlankMaxStars, resources.GetString("numBlankMaxStars.ToolTip"));
+            this.numBlankMaxStars.ValueChanged += new System.EventHandler(this.numBlank_ValueChanged);
+            // 
+            // numSpotifyMaxPlays
+            // 
+            resources.ApplyResources(this.numSpotifyMaxPlays, "numSpotifyMaxPlays");
+            this.numSpotifyMaxPlays.Maximum = new decimal(new int[] {
+            -294967296,
+            0,
+            0,
+            0});
+            this.numSpotifyMaxPlays.Name = "numSpotifyMaxPlays";
+            this.toolTip.SetToolTip(this.numSpotifyMaxPlays, resources.GetString("numSpotifyMaxPlays.ToolTip"));
+            this.numSpotifyMaxPlays.ValueChanged += new System.EventHandler(this.numSpotify_ValueChanged);
+            // 
+            // numSpotifyPlays
+            // 
+            resources.ApplyResources(this.numSpotifyPlays, "numSpotifyPlays");
+            this.numSpotifyPlays.Maximum = new decimal(new int[] {
+            -294967296,
+            0,
+            0,
+            0});
+            this.numSpotifyPlays.Name = "numSpotifyPlays";
+            this.toolTip.SetToolTip(this.numSpotifyPlays, resources.GetString("numSpotifyPlays.ToolTip"));
+            this.numSpotifyPlays.ValueChanged += new System.EventHandler(this.numSpotify_ValueChanged);
+            // 
+            // numYTDislikes
+            // 
+            resources.ApplyResources(this.numYTDislikes, "numYTDislikes");
+            this.numYTDislikes.Maximum = new decimal(new int[] {
+            21000000,
+            0,
+            0,
+            0});
+            this.numYTDislikes.Name = "numYTDislikes";
+            this.toolTip.SetToolTip(this.numYTDislikes, resources.GetString("numYTDislikes.ToolTip"));
+            this.numYTDislikes.ValueChanged += new System.EventHandler(this.numYT_ValueChanged);
+            // 
+            // numYTLikes
+            // 
+            resources.ApplyResources(this.numYTLikes, "numYTLikes");
+            this.numYTLikes.Maximum = new decimal(new int[] {
+            50000000,
+            0,
+            0,
+            0});
+            this.numYTLikes.Name = "numYTLikes";
+            this.toolTip.SetToolTip(this.numYTLikes, resources.GetString("numYTLikes.ToolTip"));
+            this.numYTLikes.ValueChanged += new System.EventHandler(this.numYT_ValueChanged);
+            // 
+            // numSCLikes
+            // 
+            resources.ApplyResources(this.numSCLikes, "numSCLikes");
+            this.numSCLikes.Maximum = new decimal(new int[] {
+            4000000,
+            0,
+            0,
+            0});
+            this.numSCLikes.Name = "numSCLikes";
+            this.toolTip.SetToolTip(this.numSCLikes, resources.GetString("numSCLikes.ToolTip"));
+            this.numSCLikes.ValueChanged += new System.EventHandler(this.numSC_ValueChanged);
+            // 
+            // numSCPlays
+            // 
+            resources.ApplyResources(this.numSCPlays, "numSCPlays");
+            this.numSCPlays.Maximum = new decimal(new int[] {
+            400000000,
+            0,
+            0,
+            0});
+            this.numSCPlays.Name = "numSCPlays";
+            this.toolTip.SetToolTip(this.numSCPlays, resources.GetString("numSCPlays.ToolTip"));
+            this.numSCPlays.ValueChanged += new System.EventHandler(this.numSC_ValueChanged);
+            // 
+            // numSCRepost
+            // 
+            resources.ApplyResources(this.numSCRepost, "numSCRepost");
+            this.numSCRepost.Maximum = new decimal(new int[] {
+            400000000,
+            0,
+            0,
+            0});
+            this.numSCRepost.Name = "numSCRepost";
+            this.toolTip.SetToolTip(this.numSCRepost, resources.GetString("numSCRepost.ToolTip"));
+            this.numSCRepost.ValueChanged += new System.EventHandler(this.numSC_ValueChanged);
+            // 
             // tbRemixer
             // 
             resources.ApplyResources(this.tbRemixer, "tbRemixer");
             this.tbRemixer.Name = "tbRemixer";
+            this.toolTip.SetToolTip(this.tbRemixer, resources.GetString("tbRemixer.ToolTip"));
             // 
             // bFileFromTags
             // 
             resources.ApplyResources(this.bFileFromTags, "bFileFromTags");
             this.bFileFromTags.Name = "bFileFromTags";
+            this.toolTip.SetToolTip(this.bFileFromTags, resources.GetString("bFileFromTags.ToolTip"));
             this.bFileFromTags.UseVisualStyleBackColor = true;
             this.bFileFromTags.Click += new System.EventHandler(this.bFileFromTags_Click);
             // 
@@ -448,62 +596,75 @@
             // 
             resources.ApplyResources(this.chbAlbum, "chbAlbum");
             this.chbAlbum.Name = "chbAlbum";
+            this.toolTip.SetToolTip(this.chbAlbum, resources.GetString("chbAlbum.ToolTip"));
             this.chbAlbum.UseVisualStyleBackColor = true;
             // 
             // chbYear
             // 
             resources.ApplyResources(this.chbYear, "chbYear");
             this.chbYear.Name = "chbYear";
+            this.toolTip.SetToolTip(this.chbYear, resources.GetString("chbYear.ToolTip"));
             this.chbYear.UseVisualStyleBackColor = true;
             // 
             // chbTrack
             // 
             resources.ApplyResources(this.chbTrack, "chbTrack");
             this.chbTrack.Name = "chbTrack";
+            this.toolTip.SetToolTip(this.chbTrack, resources.GetString("chbTrack.ToolTip"));
             this.chbTrack.UseVisualStyleBackColor = true;
             // 
             // chbDisk
             // 
             resources.ApplyResources(this.chbDisk, "chbDisk");
             this.chbDisk.Name = "chbDisk";
+            this.toolTip.SetToolTip(this.chbDisk, resources.GetString("chbDisk.ToolTip"));
             this.chbDisk.UseVisualStyleBackColor = true;
             // 
             // chbGenres
             // 
             resources.ApplyResources(this.chbGenres, "chbGenres");
             this.chbGenres.Name = "chbGenres";
+            this.toolTip.SetToolTip(this.chbGenres, resources.GetString("chbGenres.ToolTip"));
             this.chbGenres.UseVisualStyleBackColor = true;
             // 
             // chbAlbumArtists
             // 
             resources.ApplyResources(this.chbAlbumArtists, "chbAlbumArtists");
             this.chbAlbumArtists.Name = "chbAlbumArtists";
+            this.toolTip.SetToolTip(this.chbAlbumArtists, resources.GetString("chbAlbumArtists.ToolTip"));
             this.chbAlbumArtists.UseVisualStyleBackColor = true;
             // 
             // chbComposers
             // 
             resources.ApplyResources(this.chbComposers, "chbComposers");
             this.chbComposers.Name = "chbComposers";
+            this.toolTip.SetToolTip(this.chbComposers, resources.GetString("chbComposers.ToolTip"));
             this.chbComposers.UseVisualStyleBackColor = true;
             // 
             // chbRemixer
             // 
             resources.ApplyResources(this.chbRemixer, "chbRemixer");
             this.chbRemixer.Name = "chbRemixer";
+            this.toolTip.SetToolTip(this.chbRemixer, resources.GetString("chbRemixer.ToolTip"));
             this.chbRemixer.UseVisualStyleBackColor = true;
             // 
-            // bRatingCalculator
+            // tDontNull
             // 
-            resources.ApplyResources(this.bRatingCalculator, "bRatingCalculator");
-            this.bRatingCalculator.Name = "bRatingCalculator";
-            this.bRatingCalculator.UseVisualStyleBackColor = true;
-            this.bRatingCalculator.Click += new System.EventHandler(this.bRatingCalculator_Click);
+            this.tDontNull.Enabled = true;
+            this.tDontNull.Interval = 1000;
+            this.tDontNull.Tick += new System.EventHandler(this.tDontNull_Tick);
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bRatingCalculator);
+            this.Controls.Add(this.numSCRepost);
+            this.Controls.Add(this.numSCLikes);
+            this.Controls.Add(this.numSCPlays);
+            this.Controls.Add(this.numYTDislikes);
+            this.Controls.Add(this.numYTLikes);
+            this.Controls.Add(this.numSpotifyMaxPlays);
+            this.Controls.Add(this.numSpotifyPlays);
             this.Controls.Add(this.bFileFromTags);
             this.Controls.Add(this.tbRemixer);
             this.Controls.Add(this.numDiscNumber);
@@ -544,9 +705,12 @@
             this.Controls.Add(this.chbAlbumArtists);
             this.Controls.Add(this.chbComposers);
             this.Controls.Add(this.chbRemixer);
+            this.Controls.Add(this.numBlankStars);
+            this.Controls.Add(this.numBlankMaxStars);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tsTop.ResumeLayout(false);
@@ -563,6 +727,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.numRatingSoundcloud)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDiscNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxAlbum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBlankStars)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBlankMaxStars)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSpotifyMaxPlays)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSpotifyPlays)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numYTDislikes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numYTLikes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSCLikes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSCPlays)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSCRepost)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -617,16 +790,25 @@
         private System.Windows.Forms.CheckBox chbAlbumArtists;
         private System.Windows.Forms.CheckBox chbComposers;
         private System.Windows.Forms.CheckBox chbRemixer;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator tsSp2;
         private System.Windows.Forms.ToolStripButton tsbPlayFile;
         private System.Windows.Forms.ToolStripButton tsbPausePlaying;
         private System.Windows.Forms.ToolStripButton tsbStopPlaying;
         private System.Windows.Forms.ToolStripLabel tslDuration;
-        private System.Windows.Forms.Button bRatingCalculator;
-        public System.Windows.Forms.NumericUpDown numRatingBlank;
-        public System.Windows.Forms.NumericUpDown numRatingSpotify;
-        public System.Windows.Forms.NumericUpDown numRatingYouTube;
-        public System.Windows.Forms.NumericUpDown numRatingSoundcloud;
+        private System.Windows.Forms.NumericUpDown numBlankStars;
+        private System.Windows.Forms.NumericUpDown numBlankMaxStars;
+        private System.Windows.Forms.NumericUpDown numRatingBlank;
+        private System.Windows.Forms.NumericUpDown numRatingSpotify;
+        private System.Windows.Forms.NumericUpDown numRatingYouTube;
+        private System.Windows.Forms.NumericUpDown numRatingSoundcloud;
+        private System.Windows.Forms.NumericUpDown numSpotifyMaxPlays;
+        private System.Windows.Forms.NumericUpDown numSpotifyPlays;
+        private System.Windows.Forms.NumericUpDown numYTDislikes;
+        private System.Windows.Forms.NumericUpDown numYTLikes;
+        private System.Windows.Forms.NumericUpDown numSCLikes;
+        private System.Windows.Forms.NumericUpDown numSCPlays;
+        private System.Windows.Forms.NumericUpDown numSCRepost;
+        private System.Windows.Forms.Timer tDontNull;
     }
 }
 

@@ -117,15 +117,106 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tsbOpen.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
   <data name="tsbOpen.ToolTipText" xml:space="preserve">
     <value>Otevřít MP3 soubor...</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tsmiSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAABCFJREFUeF7tlMtuE1EQBSMhRfB7eazzd2x5iAXwc+BjFUjQxY2F5PZ43CXVhupJ
+        ztgKd8MwDMMwDMMwDMMwDMMwDMOwcR4fH3/szA/Pz8/3vN72kRfYg19fXl7e8orbRsbvxev4EmT4bnx4
+        ePi4+f+ObPiePHwJ356ent7xutvDRu/QT5v9S5CxR8lL7LlIPhn7GZFcsNvX3Oxfgo2N5CX2XCSfjP2M
+        SC7YbTx8yO/t33+5yS/BhkbyEnsukk/GfkYkF+w2Hv6beXN1X4KNjOQl9lwkn4z9jEgu2G1MO+VLOPh9
+        M1+CjDtKXmLPRfLJ2M+I5ILdRvJ1fQky7Ch5iT0XySdjPyOSC3YbyUeu5kuQUUfJS+y5SD4b9jsj+TdX
+        8SXIoKPkJfZcJJ8N+52R/AeHL+H+0D7/ffuXXzjvR8YcJS+x5yL5bNjvjOTCKX8JnPZjYyJ5iT0XyWfD
+        fmckK6/9JXDWj42J5CX2XCSfDfudkfxP+BL+69mzYWMieYk9F8lnw35nJC+x5yK5HxsTyUvsuUvKrCX2
+        XCT3Y2MieYk9d0mZtcSei+R+bEwkL7HnLimzlthzkdyPjYnkJfbcJWXWEnsukvuxMZG8xJ67pMxaYs9F
+        cj82JpKX2HOXlFlL7LlI7sfGRPLusHeN5H5sTCTvDnvXSO7HxkTy7rB3jeR+bEwk7w5710jux8ZE8u6w
+        d43kfmxMJO8Oe9dI7sfGRPLusHeN5H5sTCTvDnvXSO7HxkTy7rB3jeR+bEwkF+x2izK3YLeR3I+NieSC
+        3W5R5hbsNpL7sTGRXLDbLcrcgt1Gcj82JpILdrtFmVuw20jux8ZEcsFutyhzC3Ybyf3YmEgu2O0WZW7B
+        biO5HxsTyQW7jeR2bEskF+w2kvuxMZFcsNtIbse2RHLBbiO5HxsTyQW7jeR2bEskF+w2kvuxMZFcsNtI
+        bse2RHLBbiO5HxsTyQW7jeR2bEskF+w2kvuxMZFcsNtIbse2RHLBbiO5HxsTyQW7jeR2bEskF+w2kvux
+        MZFcsNtIbse2RHLBbiO5HxsTyQW7jeR2bEskF+w2kvuxMZFcsNtIbse2RHLBbiO5HxsTyQW7jeR2bEsk
+        F+w2kvuxMZFcsNtIbse2RHLBbiO5HxsTyQW7jeR2bEskF+w2kvuxMZFcsNtIbse2RHLBbiO5HxsTyQW7
+        jeR2bEskF+w2kvuxMZFcsNtIbse2RHLBbiO5HxsTyQW7jeR2bEskF+w2kvuxMZFcsNtIbse2RHLBbiO5
+        HxsTyQW7jeR2bEskF+w2kvuxMZFcsNtIbse2RHLBbiO5HxsTyQW7jeR2bEskF+w2kvuxMbcoH0c/NuYW
+        5ePox8bconwc/diYW5SPox8bc4vycfRjY25RPo5hGIZhGIZhGIZhGIZhGIZh2CZ3dz8BuETGhSDNXJkA
+        AAAASUVORK5CYII=
+</value>
+  </data>
   <data name="tsmiSave.Size" type="System.Drawing.Size, System.Drawing">
     <value>129, 22</value>
   </data>
   <data name="tsmiSave.Text" xml:space="preserve">
     <value>Uložit</value>
+  </data>
+  <data name="tsmiSaveAs.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
   <data name="tsmiSaveAs.Size" type="System.Drawing.Size, System.Drawing">
     <value>129, 22</value>
@@ -133,11 +224,73 @@
   <data name="tsmiSaveAs.Text" xml:space="preserve">
     <value>Uložit jako</value>
   </data>
+  <data name="tssbSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQhSURBVHhe7ZTLilNhEAYHBNHHm9t63s6tF1yoL6f5Qilo
+        l79BSOfkpAtqY/WZ+U7CeDcMwzAMwzAMwzAMwzAMwzAMG+fx8fH7znz//Pz8mtfbPvICe/DLy8vLG15x
+        28j4vXgdX4IM340PDw8fNv/fkQ3fk/f391+fnp7e8rrbw0bv0I+b/UuQsUfJS+y5SD4Z+xmRXLDbf7nZ
+        vwQbG8lL7LlIPhn7GZFcsNt4+JDf2b//dJNfgg2N5CX2XCSfjP2MSC7YbTz8N/Pq6r4EGxnJS+y5SD4Z
+        +xmRXLDbmHbKl3Dw22a+BBl3lLzEnovkk7GfEckFu43k6/oSZNhR8hJ7LpJPxn5GJBfsNpKPXM2XIKOO
+        kpfYc5F8Nux3RvIvruJLkEFHyUvsuUg+G/Y7I/k3Dl/C60P79OftH37mvB8Zc5S8xJ6L5LNhvzOSC6f8
+        JXDaj42J5CX2XCSfDfudkaz86y+Bs35sTCQvseci+WzY74zkv8KX8F/Png0bE8lL7LlIPhv2OyN5iT0X
+        yf3YmEheYs9dUmYtseciuR8bE8lL7LlLyqwl9lwk92NjInmJPXdJmbXEnovkfmxMJC+x5y4ps5bYc5Hc
+        j42J5CX23CVl1hJ7LpL7sTGRvMSeu6TMWmLPRXI/NiaSd4e9ayT3Y2MieXfYu0ZyPzYmkneHvWsk92Nj
+        Inl32LtGcj82JpJ3h71rJPdjYyJ5d9i7RnI/NiaSd4e9ayT3Y2MieXfYu0ZyPzYmkneHvWsk92NjIrlg
+        t1uUuQW7jeR+bEwkF+x2izK3YLeR3I+NieSC3W5R5hbsNpL7sTGRXLDbLcrcgt1Gcj82JpILdrtFmVuw
+        20jux8ZEcsFutyhzC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2Nb
+        Irlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu
+        2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Yb
+        yf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7
+        tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J
+        5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlg
+        t5Hcj425Rfk4+rExtygfRz825hbl4+jHxtyifBz92JhblI+jHxtzi/JxDMMwDMMwDMMwDMMwDMMwDMM2
+        ubv7AdlPxmSlnt0QAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="tssbSave.Text" xml:space="preserve">
     <value>Uložit</value>
   </data>
   <data name="tssbSave.ToolTipText" xml:space="preserve">
     <value>Uložit... nebo Uložit jako...</value>
+  </data>
+  <data name="tsbCloseFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        rkJggg==
+</value>
   </data>
   <data name="tsbCloseFile.Text" xml:space="preserve">
     <value>Zavřít soubor</value>
@@ -148,12 +301,64 @@
   <data name="tslChanges.Text" xml:space="preserve">
     <value>Stav</value>
   </data>
-  <data name="tsTop.ToolTip" xml:space="preserve">
-    <value />
+  <data name="tsbPlayFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lFileName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="tsbPausePlaying.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJSSURBVHhe7ZCxCcQAEMOyY/af5R+DSpVx5ROoUmHwcxzH
+        cRzHcRzHcRzHcRzHcRzHcRxHg/d9fya5hm1G8g52QiTXsM1I3sFOiOQathnJO9gJkVzDNiN5BzshkmvY
+        ZiTvYCdEcg3bjOQd7IRIrmGbkbyDnRDJNWwzknewEyK5hm1G8g52QiTXsM1I3sFOiOQathnJO9gJkVzD
+        NiN5BzshkmvYZiTvYCdEcg3bjOQd7IRIrmGbkbyDnRDJNWwzknewEyK5hm1G8g52QiTXsM1I3sFOiOQa
+        thnJO9gJkVzDNiN5BzshkmvYZiTvYCdEcg3bjOQd7IRIrmGbkbyDnRDJNWwzknewEyK5hm1G8g52QiTX
+        sM1I3sFOiOQathnJO9gJkVzDNiN5BzshkmvYZiTvYCdEcg3bjOQd7IRIrmGbkbyDnRDJNWwzknewEyK5
+        hm1G8g52QiTXsM1I3sFOiOQathnJO9gJkVzDNiN5BzshkmvYZiTvYCdEcg3bjOQd7IRIrmGbkbyDnRDJ
+        NWwzknewEyK5hm1G8g52QiTXsM1I3sFOiOQathnJO9gJkVzDNiN5BzshkmvYZiTvYCdEcg3bjOQd7IRI
+        rmGbkbyDnRDJNWwzknewEyK5hm1G8g52QiTXsM1I3sFOiOQathnJO9gJkVzDNiN5BzshkmvYZiTvYCdE
+        cg3bjOQd7IRIrmGbkbyDnRDJNWwzknewEyK5hm1G8g52QiTXsM1I3sFOiOQathnJO9gJkVzDNiP5OI7j
+        OI7jOI7jOI7jOI7jOI7jOI4PeZ4/75aJzDpZw2EAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="tsbStopPlaying.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI4SURBVHhe7Y+xiSRQFMOmx+m/lj0MCsVyod9fCxQpsT9j
+        jDHGGGOMMcYYY4wxxhhjjP/h+/3+/CW53YONfFlu92AjX5bbPdjIl+V2DzbyZbndg418WW73YCMj+Sz2
+        KZJ7sJGRfBb7FMk92MhIPot9iuQebGQkn8U+RXIPNjKSz2KfIrkHGxnJZ7FPkdyDjYzks9inSO7BRkby
+        WexTJPdgIyP5LPYpknuwkZF8FvsUyT3YyEg+i32K5B5sZCSfxT5Fcg82MpLPYp8iuQcbGclnsU+R3ION
+        jOSz2KdI7sFGRvJZ7FMk92AjI/ks9imSe7CRkXwW+xTJPdjISD6LfYrkHmxkJJ/FPkVyDzYyks9inyK5
+        BxsZyWexT5Hcg42M5LPYp0juwUZG8lnsUyT3YCMj+Sz2KZJ7sJGRfBb7FMk92MhIPot9iuQebGQkn8U+
+        RXIPNjKSz2KfIrkHGxnJZ7FPkdyDjYzks9inSO7BRkbyWexTJPdgIyP5LPYpknuwkZF8FvsUyT3YyEg+
+        i32K5B5sZCSfxT5Fcg82MpLPYp8iuQcbGclnsU+R3IONjOSz2KdI7sFGRvJZ7FMk92AjI/ks9imSe7CR
+        kXwW+xTJPdjISD6LfYrkHmxkJJ/FPkVyDzYyks9inyK5BxsZyWexT5Hcg42M5LPYp0juwUZG8lnsUyT3
+        YCNflts92MiX5XYPNvJlud2DjXxZbvdgI1+W2z3YyJfl9hhjjDHGGGOMMcYYY4wxxhjjFz6ffwig+AiE
+        YC88AAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="lFileName.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 13</value>
@@ -161,17 +366,11 @@
   <data name="lFileName.Text" xml:space="preserve">
     <value>Soubor:</value>
   </data>
-  <data name="lFileName.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tbFileName.Location" type="System.Drawing.Point, System.Drawing">
     <value>62, 31</value>
   </data>
   <data name="tbFileName.Size" type="System.Drawing.Size, System.Drawing">
     <value>316, 20</value>
-  </data>
-  <data name="tbFileName.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="tbArtist.Location" type="System.Drawing.Point, System.Drawing">
     <value>64, 83</value>
@@ -179,8 +378,9 @@
   <data name="tbArtist.Size" type="System.Drawing.Size, System.Drawing">
     <value>389, 20</value>
   </data>
-  <data name="tbArtist.ToolTip" xml:space="preserve">
-    <value />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbArtist.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="tbTitle.Location" type="System.Drawing.Point, System.Drawing">
     <value>59, 109</value>
@@ -188,11 +388,8 @@
   <data name="tbTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>394, 20</value>
   </data>
-  <data name="tbTitle.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tbAlbum.ToolTip" xml:space="preserve">
-    <value />
+  <data name="tbTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="tbGenre.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 240</value>
@@ -200,44 +397,29 @@
   <data name="tbGenre.Size" type="System.Drawing.Size, System.Drawing">
     <value>383, 20</value>
   </data>
-  <data name="tbGenre.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tbAlbumArtist.Location" type="System.Drawing.Point, System.Drawing">
     <value>106, 266</value>
   </data>
   <data name="tbAlbumArtist.Size" type="System.Drawing.Size, System.Drawing">
     <value>346, 20</value>
   </data>
-  <data name="tbAlbumArtist.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lArtist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="lArtist.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 13</value>
+  </data>
+  <data name="lArtist.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="lArtist.Text" xml:space="preserve">
     <value>Umělec:</value>
   </data>
-  <data name="lArtist.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="lTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
   </data>
+  <data name="lTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
   <data name="lTitle.Text" xml:space="preserve">
     <value>Název:</value>
-  </data>
-  <data name="lTitle.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="lPicture.Location" type="System.Drawing.Point, System.Drawing">
     <value>296, 292</value>
@@ -245,29 +427,20 @@
   <data name="lPicture.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 13</value>
   </data>
+  <data name="lPicture.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
   <data name="lPicture.Text" xml:space="preserve">
     <value>Obrázek:</value>
   </data>
-  <data name="lPicture.ToolTip" xml:space="preserve">
-    <value />
+  <data name="lResulution.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
   </data>
-  <data name="lResulution.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lResulution.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="bOpenPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="bOpenPicture.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
   </data>
   <data name="bOpenPicture.Text" xml:space="preserve">
     <value>Otevřít obrázek</value>
-  </data>
-  <data name="bOpenPicture.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lRatingBlank.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="lRatingBlank.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 13</value>
@@ -275,23 +448,18 @@
   <data name="lRatingBlank.Text" xml:space="preserve">
     <value>Hodnocení (od nikoho):</value>
   </data>
-  <data name="lRatingBlank.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="numRatingBlank.Location" type="System.Drawing.Point, System.Drawing">
     <value>138, 344</value>
   </data>
-  <data name="numRatingBlank.ToolTip" xml:space="preserve">
-    <value />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="numRatingBlank.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 0, 3</value>
   </data>
-  <data name="tbStarsBlank.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="numRatingBlank.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
   </data>
-  <data name="tbStarsBlank.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 45</value>
-  </data>
-  <data name="tbStarsBlank.ToolTip" xml:space="preserve">
-    <value />
+  <data name="tbStarsBlank.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
   <data name="numDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>78, 161</value>
@@ -299,110 +467,95 @@
   <data name="numDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>375, 20</value>
   </data>
-  <data name="numDate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="numTrackNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 188</value>
   </data>
   <data name="numTrackNumber.Size" type="System.Drawing.Size, System.Drawing">
     <value>343, 20</value>
   </data>
-  <data name="numTrackNumber.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tbStarsSpotify.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="tbStarsSpotify.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 370</value>
+    <value>12, 427</value>
   </data>
-  <data name="tbStarsSpotify.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 45</value>
-  </data>
-  <data name="tbStarsSpotify.ToolTip" xml:space="preserve">
-    <value />
+  <data name="tbStarsSpotify.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
   </data>
   <data name="numRatingSpotify.Location" type="System.Drawing.Point, System.Drawing">
-    <value>299, 344</value>
+    <value>123, 401</value>
   </data>
-  <data name="numRatingSpotify.ToolTip" xml:space="preserve">
-    <value />
+  <data name="numRatingSpotify.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 20</value>
   </data>
-  <data name="lRatingSpotify.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="numRatingSpotify.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
   </data>
   <data name="lRatingSpotify.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 346</value>
+    <value>12, 403</value>
   </data>
   <data name="lRatingSpotify.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 13</value>
   </data>
+  <data name="lRatingSpotify.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
   <data name="lRatingSpotify.Text" xml:space="preserve">
     <value>Hodnocení (Spotify):</value>
   </data>
-  <data name="lRatingSpotify.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tbStarsYouTube.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="tbStarsYouTube.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 483</value>
   </data>
   <data name="tbStarsYouTube.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 45</value>
+    <value>443, 45</value>
   </data>
-  <data name="tbStarsYouTube.ToolTip" xml:space="preserve">
-    <value />
+  <data name="tbStarsYouTube.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
   </data>
   <data name="numRatingYouTube.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 421</value>
+    <value>138, 457</value>
   </data>
-  <data name="numRatingYouTube.ToolTip" xml:space="preserve">
-    <value />
+  <data name="numRatingYouTube.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
   </data>
-  <data name="lRatingYouTube.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="numRatingYouTube.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="lRatingYouTube.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 459</value>
   </data>
   <data name="lRatingYouTube.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 13</value>
   </data>
+  <data name="lRatingYouTube.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
   <data name="lRatingYouTube.Text" xml:space="preserve">
     <value>Hodnocení (YouTube):</value>
   </data>
-  <data name="lRatingYouTube.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tbStarsSoundcloud.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="tbStarsSoundcloud.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 448</value>
+    <value>12, 539</value>
   </data>
-  <data name="tbStarsSoundcloud.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 45</value>
-  </data>
-  <data name="tbStarsSoundcloud.ToolTip" xml:space="preserve">
-    <value />
+  <data name="tbStarsSoundcloud.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
   </data>
   <data name="numRatingSoundcloud.Location" type="System.Drawing.Point, System.Drawing">
-    <value>324, 421</value>
+    <value>149, 513</value>
   </data>
-  <data name="numRatingSoundcloud.ToolTip" xml:space="preserve">
-    <value />
+  <data name="numRatingSoundcloud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
   </data>
-  <data name="lRatingSoundcloud.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="numRatingSoundcloud.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
   </data>
   <data name="lRatingSoundcloud.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 423</value>
+    <value>12, 515</value>
   </data>
   <data name="lRatingSoundcloud.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 13</value>
+    <value>131, 13</value>
+  </data>
+  <data name="lRatingSoundcloud.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
   </data>
   <data name="lRatingSoundcloud.Text" xml:space="preserve">
-    <value>Hodnocení (Soundcloud):</value>
-  </data>
-  <data name="lRatingSoundcloud.ToolTip" xml:space="preserve">
-    <value />
+    <value>Hodnocení (SoundCloud):</value>
   </data>
   <data name="tbComposer.Location" type="System.Drawing.Point, System.Drawing">
     <value>91, 292</value>
@@ -410,24 +563,195 @@
   <data name="tbComposer.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 20</value>
   </data>
-  <data name="tbComposer.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="numDiscNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>99, 214</value>
   </data>
   <data name="numDiscNumber.Size" type="System.Drawing.Size, System.Drawing">
     <value>353, 20</value>
   </data>
-  <data name="numDiscNumber.ToolTip" xml:space="preserve">
-    <value />
+  <data name="pBoxAlbum.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAABGdBTUEAALGPC/xhBQAAAiFJREFUeF7t
+        2rFu4kAYReG87pa0Lt1SuuQleYS90kwsB5bEZ2bWjtD5CpSxbObnQCwKPu7azViAsQBjAcYCjAUYCzAW
+        YCzAWICxAGMBxgKMBRgLMBZgLMBYgLEAYwHGAowFvH+s2+12vV7zWNcd3jxWKTXP8zRNy7LUo63eOVZK
+        rR+olEqvddnmnFgZOm/4VufL2Fqf/OE58/nKwbpockKsvIa8yWX0ovyb5LEt2Vpn6/mpyvG6aHJCrEyc
+        LnXxKa9tTVZe1U4PV32Tu5xQF03OifVq6H9+Rn70TaCtcnJdNPldsf6r/n2NBRgLMBZgLMBYgLEAYwHG
+        AowFGAswFmAswFiAsQBjAcYCjAUYCzAWYCzAWICxAGMBxgKMBRgLMBZgLMBYgLGA8bGef2P18PupcrAu
+        xjlg35GxMtw8z5fL5c9XOVJ+mVemL3+XS4Y4bN9hsZZleR73QU6YpimPA2Mdue+YWHsm3hoV6+B9B8Si
+        E8eQWMfv2xurYeLoj3XKvl2xcuNsmDg6hz5r365Y2btOAXUOfda+xgKMBXjPArpiRb4W10GIzqHjlH17
+        YzW8yTk/V9XrW52yb2+sQF95cmbOr1f2OX7fAbFi59wDSxUH7zsmVvw49/BSxZH7DosVuSPkDvpK/33q
+        lcP2HRnr7RkLMBZgLMBYgLEAYwHGAowFGAswFmAswFiAsQBjAcYCjAUYCzAWYCzAWICxAGPtdr//BaYa
+        hgLgW82RAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="pBoxAlbum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="pBoxAlbum.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAABGdBTUEAALGPC/xhBQAAAiFJREFUeF7t
+        2rFu4kAYReG87pa0Lt1SuuQleYS90kwsB5bEZ2bWjtD5CpSxbObnQCwKPu7azViAsQBjAcYCjAUYCzAW
+        YCzAWICxAGMBxgKMBRgLMBZgLMBYgLEAYwHGAowFvH+s2+12vV7zWNcd3jxWKTXP8zRNy7LUo63eOVZK
+        rR+olEqvddnmnFgZOm/4VufL2Fqf/OE58/nKwbpockKsvIa8yWX0ovyb5LEt2Vpn6/mpyvG6aHJCrEyc
+        LnXxKa9tTVZe1U4PV32Tu5xQF03OifVq6H9+Rn70TaCtcnJdNPldsf6r/n2NBRgLMBZgLMBYgLEAYwHG
+        AowFGAswFmAswFiAsQBjAcYCjAUYCzAWYCzAWICxAGMBxgKMBRgLMBZgLMBYgLGA8bGef2P18PupcrAu
+        xjlg35GxMtw8z5fL5c9XOVJ+mVemL3+XS4Y4bN9hsZZleR73QU6YpimPA2Mdue+YWHsm3hoV6+B9B8Si
+        E8eQWMfv2xurYeLoj3XKvl2xcuNsmDg6hz5r365Y2btOAXUOfda+xgKMBXjPArpiRb4W10GIzqHjlH17
+        YzW8yTk/V9XrW52yb2+sQF95cmbOr1f2OX7fAbFi59wDSxUH7zsmVvw49/BSxZH7DosVuSPkDvpK/33q
+        lcP2HRnr7RkLMBZgLMBYgLEAYwHGAowFGAswFmAswFiAsQBjAcYCjAUYCzAWYCzAWICxAGPtdr//BaYa
+        hgLgW82RAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="pBoxAlbum.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAABGdBTUEAALGPC/xhBQAAAiFJREFUeF7t
+        2rFu4kAYReG87pa0Lt1SuuQleYS90kwsB5bEZ2bWjtD5CpSxbObnQCwKPu7azViAsQBjAcYCjAUYCzAW
+        YCzAWICxAGMBxgKMBRgLMBZgLMBYgLEAYwHGAowFvH+s2+12vV7zWNcd3jxWKTXP8zRNy7LUo63eOVZK
+        rR+olEqvddnmnFgZOm/4VufL2Fqf/OE58/nKwbpockKsvIa8yWX0ovyb5LEt2Vpn6/mpyvG6aHJCrEyc
+        LnXxKa9tTVZe1U4PV32Tu5xQF03OifVq6H9+Rn70TaCtcnJdNPldsf6r/n2NBRgLMBZgLMBYgLEAYwHG
+        AowFGAswFmAswFiAsQBjAcYCjAUYCzAWYCzAWICxAGMBxgKMBRgLMBZgLMBYgLGA8bGef2P18PupcrAu
+        xjlg35GxMtw8z5fL5c9XOVJ+mVemL3+XS4Y4bN9hsZZleR73QU6YpimPA2Mdue+YWHsm3hoV6+B9B8Si
+        E8eQWMfv2xurYeLoj3XKvl2xcuNsmDg6hz5r365Y2btOAXUOfda+xgKMBXjPArpiRb4W10GIzqHjlH17
+        YzW8yTk/V9XrW52yb2+sQF95cmbOr1f2OX7fAbFi59wDSxUH7zsmVvw49/BSxZH7DosVuSPkDvpK/33q
+        lcP2HRnr7RkLMBZgLMBYgLEAYwHGAowFGAswFmAswFiAsQBjAcYCjAUYCzAWYCzAWICxAGPtdr//BaYa
+        hgLgW82RAAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="pBoxAlbum.ToolTip" xml:space="preserve">
     <value>Pravým kliknutím resetujete
 Dvojtým pravým kliknutím smažete</value>
+  </data>
+  <data name="numBlankStars.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 344</value>
+  </data>
+  <data name="numBlankStars.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 3, 0, 3</value>
+  </data>
+  <data name="numBlankStars.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="numBlankStars.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="numBlankStars.ToolTip" xml:space="preserve">
+    <value>Získané hodnocení</value>
+  </data>
+  <data name="numBlankMaxStars.Location" type="System.Drawing.Point, System.Drawing">
+    <value>277, 344</value>
+  </data>
+  <data name="numBlankMaxStars.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 3, 3, 3</value>
+  </data>
+  <data name="numBlankMaxStars.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="numBlankMaxStars.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="numBlankMaxStars.ToolTip" xml:space="preserve">
+    <value>Maximální hodnocení</value>
+  </data>
+  <data name="numSpotifyMaxPlays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 401</value>
+  </data>
+  <data name="numSpotifyMaxPlays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 20</value>
+  </data>
+  <data name="numSpotifyMaxPlays.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="numSpotifyMaxPlays.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="numSpotifyMaxPlays.ToolTip" xml:space="preserve">
+    <value>Nejpřehrávanější skladba v albu</value>
+  </data>
+  <data name="numSpotifyPlays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>197, 401</value>
+  </data>
+  <data name="numSpotifyPlays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 20</value>
+  </data>
+  <data name="numSpotifyPlays.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="numSpotifyPlays.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="numSpotifyPlays.ToolTip" xml:space="preserve">
+    <value>Počet přehrání</value>
+  </data>
+  <data name="numYTDislikes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 457</value>
+  </data>
+  <data name="numYTDislikes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="numYTDislikes.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="numYTDislikes.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="numYTDislikes.ToolTip" xml:space="preserve">
+    <value>Počet palců dolu</value>
+  </data>
+  <data name="numYTLikes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>243, 457</value>
+  </data>
+  <data name="numYTLikes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="numYTLikes.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="numYTLikes.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="numYTLikes.ToolTip" xml:space="preserve">
+    <value>Počet palců nahoru</value>
+  </data>
+  <data name="numSCLikes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 513</value>
+  </data>
+  <data name="numSCLikes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="numSCLikes.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="numSCLikes.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="numSCLikes.ToolTip" xml:space="preserve">
+    <value>Počet srdíček</value>
+  </data>
+  <data name="numSCPlays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>225, 513</value>
+  </data>
+  <data name="numSCPlays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="numSCPlays.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="numSCPlays.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="numSCPlays.ToolTip" xml:space="preserve">
+    <value>Počet přehrátí</value>
+  </data>
+  <data name="numSCRepost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>376, 513</value>
+  </data>
+  <data name="numSCRepost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="numSCRepost.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="numSCRepost.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="numSCRepost.ToolTip" xml:space="preserve">
+    <value>Počet přeposlání</value>
   </data>
   <data name="tbRemixer.Location" type="System.Drawing.Point, System.Drawing">
     <value>210, 318</value>
@@ -435,23 +759,17 @@ Dvojtým pravým kliknutím smažete</value>
   <data name="tbRemixer.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 20</value>
   </data>
-  <data name="tbRemixer.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="bFileFromTags.Location" type="System.Drawing.Point, System.Drawing">
     <value>384, 29</value>
   </data>
   <data name="bFileFromTags.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 23</value>
   </data>
+  <data name="bFileFromTags.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
   <data name="bFileFromTags.Text" xml:space="preserve">
     <value>Ze značek</value>
-  </data>
-  <data name="bFileFromTags.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="chbAlbum.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="chbYear.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 17</value>
@@ -459,17 +777,11 @@ Dvojtým pravým kliknutím smažete</value>
   <data name="chbYear.Text" xml:space="preserve">
     <value>Datum:</value>
   </data>
-  <data name="chbYear.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="chbTrack.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 17</value>
   </data>
   <data name="chbTrack.Text" xml:space="preserve">
     <value>Číslo skladby:</value>
-  </data>
-  <data name="chbTrack.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="chbDisk.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 17</value>
@@ -477,17 +789,11 @@ Dvojtým pravým kliknutím smažete</value>
   <data name="chbDisk.Text" xml:space="preserve">
     <value>Číslo disku:</value>
   </data>
-  <data name="chbDisk.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="chbGenres.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 17</value>
   </data>
   <data name="chbGenres.Text" xml:space="preserve">
     <value>Žánr:</value>
-  </data>
-  <data name="chbGenres.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="chbAlbumArtists.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 17</value>
@@ -495,26 +801,17 @@ Dvojtým pravým kliknutím smažete</value>
   <data name="chbAlbumArtists.Text" xml:space="preserve">
     <value>Umělec alba:</value>
   </data>
-  <data name="chbAlbumArtists.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="chbComposers.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 17</value>
   </data>
   <data name="chbComposers.Text" xml:space="preserve">
     <value>Skladatel:</value>
   </data>
-  <data name="chbComposers.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="chbRemixer.Size" type="System.Drawing.Size, System.Drawing">
     <value>192, 17</value>
   </data>
   <data name="chbRemixer.Text" xml:space="preserve">
     <value>Autor míchání hudebních skladeb:</value>
-  </data>
-  <data name="chbRemixer.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -540,7 +837,7 @@ Dvojtým pravým kliknutím smažete</value>
         AAD//wAA//8AAA==
 </value>
   </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>480, 616</value>
   </data>
 </root>
