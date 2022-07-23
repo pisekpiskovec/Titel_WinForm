@@ -62,9 +62,9 @@ namespace Titel_WinForm.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
-        public string lastPos {
+        public global::System.Drawing.Point lastPos {
             get {
-                return ((string)(this["lastPos"]));
+                return ((global::System.Drawing.Point)(this["lastPos"]));
             }
             set {
                 this["lastPos"] = value;
