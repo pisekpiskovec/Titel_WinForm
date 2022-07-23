@@ -174,7 +174,7 @@ namespace Titel_WinForm
             if (chbRemixer.Checked == true && tbRemixer.Text != musFileTag.RemixedBy) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
         }
 
-        private void Form1_Load(object sender, EventArgs e) {fileStatus(0); pBoxAlbum.AllowDrop = true; numDate.Value = DateTime.Today.Year; tsbCloseFile.Enabled = false; albumArtworkURL = "null♪"; }
+        private void Form1_Load(object sender, EventArgs e) {this.Location = Settings.Default.lastPos; fileStatus(0); pBoxAlbum.AllowDrop = true; numDate.Value = DateTime.Today.Year; tsbCloseFile.Enabled = false; albumArtworkURL = "null♪"; }
 
         private void numRatingSpotify_ValueChanged(object sender, EventArgs e)
         {
@@ -368,7 +368,7 @@ namespace Titel_WinForm
             }
         }
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e) {Settings.Default.Save(); }
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e) { Settings.Default.lastPos = this.Location; Settings.Default.Save(); }
 
         private void tsbCloseFile_Click(object sender, EventArgs e)
         {

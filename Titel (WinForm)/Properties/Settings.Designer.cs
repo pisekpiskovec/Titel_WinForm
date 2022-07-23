@@ -58,5 +58,17 @@ namespace Titel_WinForm.Properties {
                 this["sfdMp3"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        public string lastPos {
+            get {
+                return ((string)(this["lastPos"]));
+            }
+            set {
+                this["lastPos"] = value;
+            }
+        }
     }
 }
