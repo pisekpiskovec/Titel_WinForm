@@ -23,6 +23,7 @@ Titel is written in .NET Framework since it supports User Interface, which means
 * [x] Close file
 * [x] Change positions of elements
 * [x] Icon
+* [x] Rating calculator
 
 ## Screenshots
 
