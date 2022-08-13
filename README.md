@@ -16,11 +16,11 @@ Titel is written in .NET Framework since it supports User Interface, which means
 * [x] Basic metadata loading
 * [x] Picture loading
 * [x] Rating loading
-* [ ] Custom picture loading (+ resolution)
-* [ ] Indicator of changes
-* [ ] Saving file
-* [ ] Saving file as
-* [ ] Close file
+* [ ] Custom picture loading (+ resolution) (?)
+* [ ] Indicator of changes (not working)
+* [ ] Saving file (not working)
+* [ ] Saving file as (not working)
+* [ ] Close file 
 * [x] Change positions of elements
 * [x] Icon
 * [x] Rating calculator
