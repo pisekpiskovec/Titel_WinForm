@@ -70,5 +70,29 @@ namespace Titel_WinForm.Properties {
                 this["lastPos"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ofdTempl {
+            get {
+                return ((string)(this["ofdTempl"]));
+            }
+            set {
+                this["ofdTempl"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string sfdTempl {
+            get {
+                return ((string)(this["sfdTempl"]));
+            }
+            set {
+                this["sfdTempl"] = value;
+            }
+        }
     }
 }

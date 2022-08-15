@@ -19,9 +19,9 @@ namespace Titel_WinForm
         string albumArtworkURL; //set album artwork path or default || done
         string musFileSName; //get file safe name
         string musFilePath; //get song's path || done
-        string musFileName; //get song's full path (file path + save file name)
+        string musFileName; //get song's full path (file path + safe file name)
 
-        public Form1() {InitializeComponent(); }
+        public Form1() { InitializeComponent(); }
 
         private void fileStatus(int status)
         {
@@ -51,7 +51,8 @@ namespace Titel_WinForm
             tFileChanged.Stop();
             openFileDiMP3.InitialDirectory = Settings.Default.ofdMp3;
             fileStatus(1);
-            if (openFileDiMP3.ShowDialog() == DialogResult.OK) {
+            if (openFileDiMP3.ShowDialog() == DialogResult.OK)
+            {
                 Settings.Default.ofdMp3 = new System.IO.FileInfo(openFileDiMP3.FileName).DirectoryName;
                 musFileName = openFileDiMP3.FileName;
                 musFileSName = openFileDiMP3.SafeFileName;
@@ -63,7 +64,8 @@ namespace Titel_WinForm
                 {
                     pBoxAlbum.BackgroundImage = Image.FromStream(new MemoryStream(musFile.Tag.Pictures[0].Data.Data));
                     lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
-                } else { pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px; lResulution.Text = "null"; }
+                }
+                else { pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px; lResulution.Text = "null"; }
                 albumArtworkURL = "Album artwork♪";
 
                 tbFileName.Text = musFileSName;
@@ -90,27 +92,28 @@ namespace Titel_WinForm
 
                 fileStatus(2);
                 tFileChanged.Start();
-            } else { fileStatus(0); }
+            }
+            else { fileStatus(0); }
         }
 
         private void numRating_ValueChanged(object sender, EventArgs e)
         {
-            if (numRatingBlank.Value == 0) {tbStarsBlank.Value = 0; }
-            else if (numRatingBlank.Value >= 1 && numRatingBlank.Value <= 31) {tbStarsBlank.Value = 1; }
-            else if (numRatingBlank.Value >= 32 && numRatingBlank.Value <= 95) {tbStarsBlank.Value = 2; }
-            else if (numRatingBlank.Value >= 96 && numRatingBlank.Value <= 159) {tbStarsBlank.Value = 3; }
-            else if (numRatingBlank.Value >= 160 && numRatingBlank.Value <= 223) {tbStarsBlank.Value = 4; }
-            else if (numRatingBlank.Value >= 224 && numRatingBlank.Value <= 255) {tbStarsBlank.Value = 5; }
+            if (numRatingBlank.Value == 0) { tbStarsBlank.Value = 0; }
+            else if (numRatingBlank.Value >= 1 && numRatingBlank.Value <= 31) { tbStarsBlank.Value = 1; }
+            else if (numRatingBlank.Value >= 32 && numRatingBlank.Value <= 95) { tbStarsBlank.Value = 2; }
+            else if (numRatingBlank.Value >= 96 && numRatingBlank.Value <= 159) { tbStarsBlank.Value = 3; }
+            else if (numRatingBlank.Value >= 160 && numRatingBlank.Value <= 223) { tbStarsBlank.Value = 4; }
+            else if (numRatingBlank.Value >= 224 && numRatingBlank.Value <= 255) { tbStarsBlank.Value = 5; }
         }
 
         private void tbStarsBlank_Scroll(object sender, EventArgs e)
         {
-            if (tbStarsBlank.Value == 0) {numRatingBlank.Value = 0; }
-            else if (tbStarsBlank.Value == 1) {numRatingBlank.Value = 31; }
-            else if (tbStarsBlank.Value == 2) {numRatingBlank.Value = 95; }
-            else if (tbStarsBlank.Value == 3) {numRatingBlank.Value = 159; }
-            else if (tbStarsBlank.Value == 4) {numRatingBlank.Value = 223; }
-            else if (tbStarsBlank.Value == 5) {numRatingBlank.Value = 225; }
+            if (tbStarsBlank.Value == 0) { numRatingBlank.Value = 0; }
+            else if (tbStarsBlank.Value == 1) { numRatingBlank.Value = 31; }
+            else if (tbStarsBlank.Value == 2) { numRatingBlank.Value = 95; }
+            else if (tbStarsBlank.Value == 3) { numRatingBlank.Value = 159; }
+            else if (tbStarsBlank.Value == 4) { numRatingBlank.Value = 223; }
+            else if (tbStarsBlank.Value == 5) { numRatingBlank.Value = 225; }
         }
 
         private void bOpenPicture_Click(object sender, EventArgs e)
@@ -158,75 +161,76 @@ namespace Titel_WinForm
             if (tbArtist.Text != musArtist) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
             if (chbComposers.Checked == true && tbComposer.Text != musComposers) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
             if (tbFileName.Text != musFileSName) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
-            if (chbGenres.Checked == true && tbGenre.Text != musGenre) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }if( tbTitle.Text != musFileTag.Title) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
+            if (chbGenres.Checked == true && tbGenre.Text != musGenre) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
+            if (tbTitle.Text != musFileTag.Title) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
             if (chbYear.Checked == true && numDate.Value != musFileTag.Year) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
             if (chbTrack.Checked == true && numTrackNumber.Value != musFileTag.Track) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
             if (numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
-            if (albumArtworkURL != "Album artwork♪" ) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
+            if (albumArtworkURL != "Album artwork♪") { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
             if (chbDisk.Checked == true && numDiscNumber.Value != musFile.Tag.Disc) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
             if (chbRemixer.Checked == true && tbRemixer.Text != musFileTag.RemixedBy) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
         }
 
-        private void Form1_Load(object sender, EventArgs e) {this.Location = Settings.Default.lastPos; fileStatus(0); pBoxAlbum.AllowDrop = true; numDate.Value = DateTime.Today.Year; tsbCloseFile.Enabled = false; albumArtworkURL = "null♪"; }
+        private void Form1_Load(object sender, EventArgs e) { this.Location = Settings.Default.lastPos; fileStatus(0); pBoxAlbum.AllowDrop = true; numDate.Value = DateTime.Today.Year; tsbCloseFile.Enabled = false; albumArtworkURL = "null♪"; }
 
         private void numRatingSpotify_ValueChanged(object sender, EventArgs e)
         {
-            if (numRatingSpotify.Value == 0) {tbStarsSpotify.Value = 0; }
-            else if (numRatingSpotify.Value >= 1 && numRatingSpotify.Value <= 31) {tbStarsSpotify.Value = 1; }
-            else if (numRatingSpotify.Value >= 32 && numRatingSpotify.Value <= 95) {tbStarsSpotify.Value = 2; }
-            else if (numRatingSpotify.Value >= 96 && numRatingSpotify.Value <= 159) {tbStarsSpotify.Value = 3; }
-            else if (numRatingSpotify.Value >= 160 && numRatingSpotify.Value <= 223) {tbStarsSpotify.Value = 4; }
-            else if (numRatingSpotify.Value >= 224 && numRatingSpotify.Value <= 255) {tbStarsSpotify.Value = 5; }
+            if (numRatingSpotify.Value == 0) { tbStarsSpotify.Value = 0; }
+            else if (numRatingSpotify.Value >= 1 && numRatingSpotify.Value <= 31) { tbStarsSpotify.Value = 1; }
+            else if (numRatingSpotify.Value >= 32 && numRatingSpotify.Value <= 95) { tbStarsSpotify.Value = 2; }
+            else if (numRatingSpotify.Value >= 96 && numRatingSpotify.Value <= 159) { tbStarsSpotify.Value = 3; }
+            else if (numRatingSpotify.Value >= 160 && numRatingSpotify.Value <= 223) { tbStarsSpotify.Value = 4; }
+            else if (numRatingSpotify.Value >= 224 && numRatingSpotify.Value <= 255) { tbStarsSpotify.Value = 5; }
         }
 
         private void numRatingYouTube_ValueChanged(object sender, EventArgs e)
         {
-            if (numRatingYouTube.Value == 0) {tbStarsYouTube.Value = 0; }
-            else if (numRatingYouTube.Value >= 1 && numRatingYouTube.Value <= 31) {tbStarsYouTube.Value = 1; }
-            else if (numRatingYouTube.Value >= 32 && numRatingYouTube.Value <= 95) {tbStarsYouTube.Value = 2; }
-            else if (numRatingYouTube.Value >= 96 && numRatingYouTube.Value <= 159) {tbStarsYouTube.Value = 3; }
-            else if (numRatingYouTube.Value >= 160 && numRatingYouTube.Value <= 223) {tbStarsYouTube.Value = 4; }
-            else if (numRatingYouTube.Value >= 224 && numRatingYouTube.Value <= 255) {tbStarsYouTube.Value = 5; }
+            if (numRatingYouTube.Value == 0) { tbStarsYouTube.Value = 0; }
+            else if (numRatingYouTube.Value >= 1 && numRatingYouTube.Value <= 31) { tbStarsYouTube.Value = 1; }
+            else if (numRatingYouTube.Value >= 32 && numRatingYouTube.Value <= 95) { tbStarsYouTube.Value = 2; }
+            else if (numRatingYouTube.Value >= 96 && numRatingYouTube.Value <= 159) { tbStarsYouTube.Value = 3; }
+            else if (numRatingYouTube.Value >= 160 && numRatingYouTube.Value <= 223) { tbStarsYouTube.Value = 4; }
+            else if (numRatingYouTube.Value >= 224 && numRatingYouTube.Value <= 255) { tbStarsYouTube.Value = 5; }
         }
 
         private void numRatingSoundcloud_ValueChanged(object sender, EventArgs e)
         {
-            if (numRatingSoundcloud.Value == 0) {tbStarsSoundcloud.Value = 0; }
-            else if (numRatingSoundcloud.Value >= 1 && numRatingSoundcloud.Value <= 31) {tbStarsSoundcloud.Value = 1; }
-            else if (numRatingSoundcloud.Value >= 32 && numRatingSoundcloud.Value <= 95) {tbStarsSoundcloud.Value = 2; }
-            else if (numRatingSoundcloud.Value >= 96 && numRatingSoundcloud.Value <= 159) {tbStarsSoundcloud.Value = 3; }
-            else if (numRatingSoundcloud.Value >= 160 && numRatingSoundcloud.Value <= 223) {tbStarsSoundcloud.Value = 4; }
-            else if (numRatingSoundcloud.Value >= 224 && numRatingSoundcloud.Value <= 255) {tbStarsSoundcloud.Value = 5; }
+            if (numRatingSoundcloud.Value == 0) { tbStarsSoundcloud.Value = 0; }
+            else if (numRatingSoundcloud.Value >= 1 && numRatingSoundcloud.Value <= 31) { tbStarsSoundcloud.Value = 1; }
+            else if (numRatingSoundcloud.Value >= 32 && numRatingSoundcloud.Value <= 95) { tbStarsSoundcloud.Value = 2; }
+            else if (numRatingSoundcloud.Value >= 96 && numRatingSoundcloud.Value <= 159) { tbStarsSoundcloud.Value = 3; }
+            else if (numRatingSoundcloud.Value >= 160 && numRatingSoundcloud.Value <= 223) { tbStarsSoundcloud.Value = 4; }
+            else if (numRatingSoundcloud.Value >= 224 && numRatingSoundcloud.Value <= 255) { tbStarsSoundcloud.Value = 5; }
         }
 
         private void tbStarsSpotify_Scroll(object sender, EventArgs e)
         {
-            if (tbStarsSpotify.Value == 0) {numRatingSpotify.Value = 0;}
-            else if (tbStarsSpotify.Value == 1) {numRatingSpotify.Value = 31; }
-            else if (tbStarsSpotify.Value == 2) {numRatingSpotify.Value = 95; }
-            else if (tbStarsSpotify.Value == 3) {numRatingSpotify.Value = 159; }
-            else if (tbStarsSpotify.Value == 4) {numRatingSpotify.Value = 223; }
-            else if (tbStarsSpotify.Value == 5) {numRatingSpotify.Value = 225; }
+            if (tbStarsSpotify.Value == 0) { numRatingSpotify.Value = 0; }
+            else if (tbStarsSpotify.Value == 1) { numRatingSpotify.Value = 31; }
+            else if (tbStarsSpotify.Value == 2) { numRatingSpotify.Value = 95; }
+            else if (tbStarsSpotify.Value == 3) { numRatingSpotify.Value = 159; }
+            else if (tbStarsSpotify.Value == 4) { numRatingSpotify.Value = 223; }
+            else if (tbStarsSpotify.Value == 5) { numRatingSpotify.Value = 225; }
         }
 
         private void tbStarsYouTube_Scroll(object sender, EventArgs e)
         {
-            if (tbStarsYouTube.Value == 0) {numRatingYouTube.Value = 0; }
-            else if (tbStarsYouTube.Value == 1) {numRatingYouTube.Value = 31; }
-            else if (tbStarsYouTube.Value == 2) {numRatingYouTube.Value = 95;}
-            else if (tbStarsYouTube.Value == 3) {numRatingYouTube.Value = 159; }
-            else if (tbStarsYouTube.Value == 4) {numRatingYouTube.Value = 223; }
-            else if (tbStarsYouTube.Value == 5) {numRatingYouTube.Value = 225; }
+            if (tbStarsYouTube.Value == 0) { numRatingYouTube.Value = 0; }
+            else if (tbStarsYouTube.Value == 1) { numRatingYouTube.Value = 31; }
+            else if (tbStarsYouTube.Value == 2) { numRatingYouTube.Value = 95; }
+            else if (tbStarsYouTube.Value == 3) { numRatingYouTube.Value = 159; }
+            else if (tbStarsYouTube.Value == 4) { numRatingYouTube.Value = 223; }
+            else if (tbStarsYouTube.Value == 5) { numRatingYouTube.Value = 225; }
         }
 
         private void tbStarsSoundcloud_Scroll(object sender, EventArgs e)
         {
-            if (tbStarsSoundcloud.Value == 0) {numRatingSoundcloud.Value = 0; }
-            else if (tbStarsSoundcloud.Value == 1) {numRatingSoundcloud.Value = 31; }
-            else if (tbStarsSoundcloud.Value == 2) {numRatingSoundcloud.Value = 95; }
-            else if (tbStarsSoundcloud.Value == 3) {numRatingSoundcloud.Value = 159; }
-            else if (tbStarsSoundcloud.Value == 4) {numRatingSoundcloud.Value = 223; }
-            else if (tbStarsSoundcloud.Value == 5) {numRatingSoundcloud.Value = 225; }
+            if (tbStarsSoundcloud.Value == 0) { numRatingSoundcloud.Value = 0; }
+            else if (tbStarsSoundcloud.Value == 1) { numRatingSoundcloud.Value = 31; }
+            else if (tbStarsSoundcloud.Value == 2) { numRatingSoundcloud.Value = 95; }
+            else if (tbStarsSoundcloud.Value == 3) { numRatingSoundcloud.Value = 159; }
+            else if (tbStarsSoundcloud.Value == 4) { numRatingSoundcloud.Value = 223; }
+            else if (tbStarsSoundcloud.Value == 5) { numRatingSoundcloud.Value = 225; }
         }
 
         private void tssbSave_ButtonClick(object sender, EventArgs e)
@@ -242,8 +246,8 @@ namespace Titel_WinForm
                 TagLib.Id3v2.Tag.UseNumericGenres = false;
                 TagLib.File musFile = TagLib.File.Create(musFileName);
 
-                if (albumArtworkURL != "Album artwork♪" && albumArtworkURL != "null♪") {musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiJPGPNG.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
-                else if (albumArtworkURL == "null♪") {musFile.Tag.Pictures = null; }
+                if (albumArtworkURL != "Album artwork♪" && albumArtworkURL != "null♪") { musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiJPGPNG.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
+                else if (albumArtworkURL == "null♪") { musFile.Tag.Pictures = null; }
 
                 musFile.Tag.Performers = tbArtist.Text.Split('|');
                 musFile.Tag.Title = tbTitle.Text;
@@ -257,10 +261,10 @@ namespace Titel_WinForm
                 musFile.Tag.RemixedBy = tbRemixer.Text;
 
                 TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
-                if (numRatingBlank.Value != 0) {var usrBlank = ""; TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, numRatingBlank.Value != 0); frameBlank.Rating = Convert.ToByte(numRatingBlank.Value); }
-                if (numRatingSpotify.Value != 0) {var usrSpotify = "open.spotify.com"; TagLib.Id3v2.PopularimeterFrame frameSpotify = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSpotify, numRatingSpotify.Value != 0); frameSpotify.Rating = Convert.ToByte(numRatingSpotify.Value); }
-                if (numRatingYouTube.Value != 0) {var usrYouTube = "youtube.com"; TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrYouTube, numRatingYouTube.Value != 0); frameYouTube.Rating = Convert.ToByte(numRatingYouTube.Value); }
-                if (numRatingSoundcloud.Value != 0) {var usrSoundCloud = "soundcloud.com"; TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, numRatingSoundcloud.Value != 0); frameSoundcloud.Rating = Convert.ToByte(numRatingSoundcloud.Value); }
+                if (numRatingBlank.Value != 0) { var usrBlank = ""; TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, numRatingBlank.Value != 0); frameBlank.Rating = Convert.ToByte(numRatingBlank.Value); }
+                if (numRatingSpotify.Value != 0) { var usrSpotify = "open.spotify.com"; TagLib.Id3v2.PopularimeterFrame frameSpotify = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSpotify, numRatingSpotify.Value != 0); frameSpotify.Rating = Convert.ToByte(numRatingSpotify.Value); }
+                if (numRatingYouTube.Value != 0) { var usrYouTube = "youtube.com"; TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrYouTube, numRatingYouTube.Value != 0); frameYouTube.Rating = Convert.ToByte(numRatingYouTube.Value); }
+                if (numRatingSoundcloud.Value != 0) { var usrSoundCloud = "soundcloud.com"; TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, numRatingSoundcloud.Value != 0); frameSoundcloud.Rating = Convert.ToByte(numRatingSoundcloud.Value); }
 
                 musFile.RemoveTags(TagTypes.Id3v1);
                 musFile.Save();
@@ -274,7 +278,7 @@ namespace Titel_WinForm
 
                 tFileChanged.Start();
             }
-            else if (tbFileName.Text == "") {MessageBox.Show("Enter file name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); tbFileName.Text = musFileSName; }
+            else if (tbFileName.Text == "") { MessageBox.Show("Enter file name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); tbFileName.Text = musFileSName; }
         }
 
         private void tsmiSaveAs_Click(object sender, EventArgs e)
@@ -293,8 +297,8 @@ namespace Titel_WinForm
                 TagLib.Id3v2.Tag.UseNumericGenres = false;
                 TagLib.File musFile = TagLib.File.Create(musFileName);
 
-                if (albumArtworkURL != "Album artwork♪" && albumArtworkURL != "null♪") {musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiJPGPNG.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
-                else if (albumArtworkURL == "null♪") {musFile.Tag.Pictures = null; }
+                if (albumArtworkURL != "Album artwork♪" && albumArtworkURL != "null♪") { musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiJPGPNG.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
+                else if (albumArtworkURL == "null♪") { musFile.Tag.Pictures = null; }
 
                 musFile.Tag.Performers = tbArtist.Text.Split('|');
                 musFile.Tag.Title = tbTitle.Text;
@@ -308,24 +312,24 @@ namespace Titel_WinForm
                 musFile.Tag.RemixedBy = tbRemixer.Text;
 
                 TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
-                if (numRatingBlank.Value != 0) {var usrBlank = ""; TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, numRatingBlank.Value != 0); frameBlank.Rating = Convert.ToByte(numRatingBlank.Value); }
-                if (numRatingSpotify.Value != 0) {var usrSpotify = "open.spotify.com"; TagLib.Id3v2.PopularimeterFrame frameSpotify = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSpotify, numRatingSpotify.Value != 0); frameSpotify.Rating = Convert.ToByte(numRatingSpotify.Value); }
-                if (numRatingYouTube.Value != 0) {var usrYouTube = "youtube.com"; TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrYouTube, numRatingYouTube.Value != 0); frameYouTube.Rating = Convert.ToByte(numRatingYouTube.Value); }
-                if (numRatingSoundcloud.Value != 0) {var usrSoundCloud = "soundcloud.com"; TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, numRatingSoundcloud.Value != 0); frameSoundcloud.Rating = Convert.ToByte(numRatingSoundcloud.Value); }
+                if (numRatingBlank.Value != 0) { var usrBlank = ""; TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, numRatingBlank.Value != 0); frameBlank.Rating = Convert.ToByte(numRatingBlank.Value); }
+                if (numRatingSpotify.Value != 0) { var usrSpotify = "open.spotify.com"; TagLib.Id3v2.PopularimeterFrame frameSpotify = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSpotify, numRatingSpotify.Value != 0); frameSpotify.Rating = Convert.ToByte(numRatingSpotify.Value); }
+                if (numRatingYouTube.Value != 0) { var usrYouTube = "youtube.com"; TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrYouTube, numRatingYouTube.Value != 0); frameYouTube.Rating = Convert.ToByte(numRatingYouTube.Value); }
+                if (numRatingSoundcloud.Value != 0) { var usrSoundCloud = "soundcloud.com"; TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, numRatingSoundcloud.Value != 0); frameSoundcloud.Rating = Convert.ToByte(numRatingSoundcloud.Value); }
 
                 musFile.RemoveTags(TagTypes.Id3v1);
                 musFile.Save();
 
                 tFileChanged.Start();
             }
-            else if (musFileSName == tbFileName.Text) {MessageBox.Show("New file's name can't match the orgiginal's name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-            else if (System.IO.File.Exists(@musFilePath + tbFileName.Text)) {MessageBox.Show("File already exists.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-            else if (tbFileName.Text == "") {MessageBox.Show("Enter file name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); tbFileName.Text = musFileSName; }
+            else if (musFileSName == tbFileName.Text) { MessageBox.Show("New file's name can't match the orgiginal's name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            else if (System.IO.File.Exists(@musFilePath + tbFileName.Text)) { MessageBox.Show("File already exists.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            else if (tbFileName.Text == "") { MessageBox.Show("Enter file name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); tbFileName.Text = musFileSName; }
         }
 
-        private void pBoxAlbum_DragDrop(object sender, DragEventArgs e) {var data = e.Data.GetData(DataFormats.FileDrop); if (data != null) {var fileNames = data as string[]; if (fileNames.Length > 0) pBoxAlbum.BackgroundImage = Image.FromFile(fileNames[0]); albumArtworkURL = fileNames[0]; lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height; } }
+        private void pBoxAlbum_DragDrop(object sender, DragEventArgs e) { var data = e.Data.GetData(DataFormats.FileDrop); if (data != null) { var fileNames = data as string[]; if (fileNames.Length > 0) pBoxAlbum.BackgroundImage = Image.FromFile(fileNames[0]); albumArtworkURL = fileNames[0]; lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height; } }
 
-        private void pBoxAlbum_DragEnter(object sender, DragEventArgs e) {e.Effect = DragDropEffects.Copy; }
+        private void pBoxAlbum_DragEnter(object sender, DragEventArgs e) { e.Effect = DragDropEffects.Copy; }
 
         private void pBoxAlbum_MouseClick(object sender, MouseEventArgs e)
         {
@@ -341,7 +345,7 @@ namespace Titel_WinForm
                             lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
                             albumArtworkURL = "Album artwork♪";
                         }
-                        else {pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px; lResulution.Text = "null"; }
+                        else { pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px; lResulution.Text = "null"; }
                     }
                     break;
             }
@@ -396,19 +400,67 @@ namespace Titel_WinForm
 
         private void bFileFromTags_Click(object sender, EventArgs e) { if (musFileName != null) { tbFileName.Text = tbArtist.Text.Split('|')[0] + " - " + tbTitle.Text + ".mp3"; } }
 
-        private void numDate_Leave(object sender, EventArgs e) {if (numDate.Text == "") {numDate.Value = DateTime.Today.Year; numDate.Text = Convert.ToString(DateTime.Today.Year); } }
+        private void numDate_Leave(object sender, EventArgs e) { if (numDate.Text == "") { numDate.Value = DateTime.Today.Year; numDate.Text = Convert.ToString(DateTime.Today.Year); } }
 
-        private void trimTextBoxes(System.Windows.Forms.TextBox tb) {tb.Text = tb.Text.Trim(); }
+        private void trimTextBoxes(System.Windows.Forms.TextBox tb) { tb.Text = tb.Text.Trim(); }
 
         void spotifyLikeCalculator(NumericUpDown current, NumericUpDown maximum, NumericUpDown returning) { decimal val = (current.Value / maximum.Value) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
         void youtubeCalculator(NumericUpDown likes, NumericUpDown dislikes, NumericUpDown returning) { decimal val = (likes.Value / (dislikes.Value + likes.Value)) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
-        void soundcloudCalculator(NumericUpDown plays, NumericUpDown likes, NumericUpDown reposts, NumericUpDown returning) { decimal val = ((likes.Value+reposts.Value) / plays.Value) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
+        void soundcloudCalculator(NumericUpDown plays, NumericUpDown likes, NumericUpDown reposts, NumericUpDown returning) { decimal val = ((likes.Value + reposts.Value) / plays.Value) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
 
-        private void numBlank_ValueChanged(object sender, EventArgs e) {spotifyLikeCalculator(numBlankStars, numBlankMaxStars, numRatingBlank); }
-        private void numSpotify_ValueChanged(object sender, EventArgs e) {spotifyLikeCalculator(numSpotifyPlays, numSpotifyMaxPlays, numRatingSpotify); }
-        private void numYT_ValueChanged(object sender, EventArgs e) {youtubeCalculator(numYTLikes, numYTDislikes, numRatingYouTube); }
-        private void numSC_ValueChanged(object sender, EventArgs e) {soundcloudCalculator(numSCPlays, numSCLikes, numSCRepost, numRatingSoundcloud); }
+        private void numBlank_ValueChanged(object sender, EventArgs e) { spotifyLikeCalculator(numBlankStars, numBlankMaxStars, numRatingBlank); }
+        private void numSpotify_ValueChanged(object sender, EventArgs e) { spotifyLikeCalculator(numSpotifyPlays, numSpotifyMaxPlays, numRatingSpotify); }
+        private void numYT_ValueChanged(object sender, EventArgs e) { youtubeCalculator(numYTLikes, numYTDislikes, numRatingYouTube); }
+        private void numSC_ValueChanged(object sender, EventArgs e) { soundcloudCalculator(numSCPlays, numSCLikes, numSCRepost, numRatingSoundcloud); }
 
-        private void tDontNull_Tick(object sender, EventArgs e) { if (numBlankMaxStars.Value == 0) { numBlankStars.Enabled = false; } else { numBlankStars.Enabled = true; } if (numSpotifyMaxPlays.Value == 0) { numSpotifyPlays.Enabled = false; } else { numSpotifyPlays.Enabled = true; } if (numSCPlays.Value == 0) {numSCLikes.Enabled = false; numSCRepost.Enabled = false; } else {numSCLikes.Enabled = true; numSCRepost.Enabled = true; } }
+        private void tDontNull_Tick(object sender, EventArgs e) { if (numBlankMaxStars.Value == 0) { numBlankStars.Enabled = false; } else { numBlankStars.Enabled = true; } if (numSpotifyMaxPlays.Value == 0) { numSpotifyPlays.Enabled = false; } else { numSpotifyPlays.Enabled = true; } if (numSCPlays.Value == 0) { numSCLikes.Enabled = false; numSCRepost.Enabled = false; } else { numSCLikes.Enabled = true; numSCRepost.Enabled = true; } }
+
+        private void tsbOpenTempl_Click(object sender, EventArgs e)
+        {
+            openFileDiTempl.InitialDirectory = Settings.Default.ofdTempl;
+            if (openFileDiTempl.ShowDialog() == DialogResult.OK)
+            {
+                Settings.Default.ofdTempl = new System.IO.FileInfo(openFileDiTempl.FileName).DirectoryName;
+                StreamReader reader = new StreamReader(openFileDiTempl.FileName, System.Text.Encoding.Default);
+                string[] inputing = reader.ReadToEnd().Split('\n');
+
+                tbArtist.Text = inputing[0];
+                tbTitle.Text = inputing[1];
+                tbAlbum.Text = inputing[2];
+                numDate.Value = Convert.ToDecimal(inputing[3]);
+                numTrackNumber.Value = Convert.ToDecimal(inputing[4]);
+                numDiscNumber.Value = Convert.ToDecimal(inputing[5]);
+                tbGenre.Text = inputing[6];
+                tbAlbumArtist.Text = inputing[7];
+                tbComposer.Text = inputing[8];
+                tbRemixer.Text = inputing[9];
+                numRatingBlank.Value = Convert.ToDecimal(inputing[10]);
+                numBlankMaxStars.Value = Convert.ToDecimal(inputing[11]);
+                numRatingSpotify.Value = Convert.ToDecimal(inputing[12]);
+                numSpotifyMaxPlays.Value = Convert.ToDecimal(inputing[13]);
+                numRatingYouTube.Value = Convert.ToDecimal(inputing[14]);
+                numRatingSoundcloud.Value = Convert.ToDecimal(inputing[15]);
+
+                string picMode = inputing[16].ToString().Trim().ToLower();
+                if (picMode == "null" || picMode == "empty") {pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px; lResulution.Text = "null"; albumArtworkURL = "null♪"; }
+                else if (picMode == "custom" || picMode == "my" || picMode == "file" || picMode == "own") {if (inputing[17].ToString().Trim().ToLower() != "") {pBoxAlbum.BackgroundImage = new Bitmap(inputing[17]); albumArtworkURL = inputing[17]; lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height; } else {pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px; lResulution.Text = "null"; albumArtworkURL = "null♪"; } } else { }
+            }
+        }
+
+        private void tsmiSaveTemplate_Click(object sender, EventArgs e)
+        {
+            saveFileDiTempl.InitialDirectory = Settings.Default.sfdTempl;
+            if (saveFileDiTempl.ShowDialog() == DialogResult.OK)
+            {
+                Settings.Default.sfdTempl = new System.IO.FileInfo(saveFileDiTempl.FileName).DirectoryName;
+                if (saveFileDiTempl.FileName != "")
+                {
+                    string[] inputing = {tbArtist.Text, tbTitle.Text, tbAlbum.Text, numDate.Value.ToString(), numTrackNumber.Value.ToString(), numDiscNumber.Value.ToString(), tbGenre.Text, tbAlbumArtist.Text, tbComposer.Text, tbRemixer.Text, numRatingBlank.Value.ToString(), numBlankMaxStars.Value.ToString(), numRatingSpotify.Value.ToString(), numSpotifyMaxPlays.Value.ToString(), numRatingYouTube.Value.ToString(), numRatingSoundcloud.Value.ToString(), "", "" };
+                    if (albumArtworkURL == "null♪") { inputing[16] = "null"; } else if (albumArtworkURL == "Album artwork♪") { inputing[16] = ""; } else if (albumArtworkURL != "null♪" && albumArtworkURL != "Album artwork♪") { inputing[16] = "custom"; inputing[17] = albumArtworkURL; }
+
+                    System.IO.File.WriteAllLines(saveFileDiTempl.FileName, inputing);
+                }
+            }
+        }
     }
 }

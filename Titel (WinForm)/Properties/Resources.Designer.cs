@@ -73,6 +73,26 @@ namespace Titel_WinForm.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap create_96px {
+            get {
+                object obj = ResourceManager.GetObject("create_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap file_invoice_96px {
+            get {
+                object obj = ResourceManager.GetObject("file_invoice_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap generic_music_file_100px {
             get {
                 object obj = ResourceManager.GetObject("generic_music_file_100px", resourceCulture);
