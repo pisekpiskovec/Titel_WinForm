@@ -372,11 +372,11 @@ namespace Titel_WinForm
             if (tslChanges.Text == "No changes")
             {
                 tFileChanged.Stop();
-                albumArtworkURL = null;
+                albumArtworkURL = "null♪";
                 musFileSName = null;
                 musFilePath = null;
                 musFileName = null;
-                pBoxAlbum.BackgroundImage = null;
+                pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px;
                 lResulution.Text = "null";
                 tbFileName.Text = null;
                 tbArtist.Text = null;
