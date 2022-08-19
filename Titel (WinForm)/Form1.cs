@@ -118,13 +118,13 @@ namespace Titel_WinForm
 
         private void bOpenPicture_Click(object sender, EventArgs e)
         {
-            openFileDiJPGPNG.InitialDirectory = Settings.Default.ofdPic;
-            if (openFileDiJPGPNG.ShowDialog() == DialogResult.OK)
+            openFileDiPic.InitialDirectory = Settings.Default.ofdPic;
+            if (openFileDiPic.ShowDialog() == DialogResult.OK)
             {
-                System.IO.FileInfo fInfo = new System.IO.FileInfo(openFileDiJPGPNG.FileName);
+                System.IO.FileInfo fInfo = new System.IO.FileInfo(openFileDiPic.FileName);
                 Settings.Default.ofdPic = fInfo.DirectoryName;
-                pBoxAlbum.BackgroundImage = new Bitmap(openFileDiJPGPNG.FileName);
-                albumArtworkURL = openFileDiJPGPNG.FileName;
+                pBoxAlbum.BackgroundImage = new Bitmap(openFileDiPic.FileName);
+                albumArtworkURL = openFileDiPic.FileName;
                 lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
             }
         }
@@ -246,7 +246,7 @@ namespace Titel_WinForm
                 TagLib.Id3v2.Tag.UseNumericGenres = false;
                 TagLib.File musFile = TagLib.File.Create(musFileName);
 
-                if (albumArtworkURL != "Album artwork♪" && albumArtworkURL != "null♪") { musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiJPGPNG.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
+                if (albumArtworkURL != "Album artwork♪" && albumArtworkURL != "null♪") { musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiPic.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
                 else if (albumArtworkURL == "null♪") { musFile.Tag.Pictures = null; }
 
                 musFile.Tag.Performers = tbArtist.Text.Split('|');
@@ -297,7 +297,7 @@ namespace Titel_WinForm
                 TagLib.Id3v2.Tag.UseNumericGenres = false;
                 TagLib.File musFile = TagLib.File.Create(musFileName);
 
-                if (albumArtworkURL != "Album artwork♪" && albumArtworkURL != "null♪") { musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiJPGPNG.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
+                if (albumArtworkURL != "Album artwork♪" && albumArtworkURL != "null♪") { musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiPic.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
                 else if (albumArtworkURL == "null♪") { musFile.Tag.Pictures = null; }
 
                 musFile.Tag.Performers = tbArtist.Text.Split('|');

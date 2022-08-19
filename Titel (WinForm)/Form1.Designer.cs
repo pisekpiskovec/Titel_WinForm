@@ -31,6 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tsTop = new System.Windows.Forms.ToolStrip();
+            this.tsbOpenMP3 = new System.Windows.Forms.ToolStripButton();
+            this.tsbOpenTempl = new System.Windows.Forms.ToolStripButton();
+            this.tssbSave = new System.Windows.Forms.ToolStripSplitButton();
+            this.tsmiSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSaveAs = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSaveTemplate = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsbCloseFile = new System.Windows.Forms.ToolStripButton();
             this.tsSp1 = new System.Windows.Forms.ToolStripSeparator();
             this.tslChanges = new System.Windows.Forms.ToolStripLabel();
             this.tslDuration = new System.Windows.Forms.ToolStripLabel();
@@ -50,7 +57,7 @@
             this.lRatingBlank = new System.Windows.Forms.Label();
             this.numRatingBlank = new System.Windows.Forms.NumericUpDown();
             this.tbStarsBlank = new System.Windows.Forms.TrackBar();
-            this.openFileDiJPGPNG = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDiPic = new System.Windows.Forms.OpenFileDialog();
             this.numDate = new System.Windows.Forms.NumericUpDown();
             this.numTrackNumber = new System.Windows.Forms.NumericUpDown();
             this.tbStarsSpotify = new System.Windows.Forms.TrackBar();
@@ -75,6 +82,7 @@
             this.numSCLikes = new System.Windows.Forms.NumericUpDown();
             this.numSCPlays = new System.Windows.Forms.NumericUpDown();
             this.numSCRepost = new System.Windows.Forms.NumericUpDown();
+            this.pBoxAlbum = new System.Windows.Forms.PictureBox();
             this.tbRemixer = new System.Windows.Forms.TextBox();
             this.bFileFromTags = new System.Windows.Forms.Button();
             this.chbAlbum = new System.Windows.Forms.CheckBox();
@@ -88,14 +96,6 @@
             this.tDontNull = new System.Windows.Forms.Timer(this.components);
             this.openFileDiTempl = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDiTempl = new System.Windows.Forms.SaveFileDialog();
-            this.pBoxAlbum = new System.Windows.Forms.PictureBox();
-            this.tsbOpenMP3 = new System.Windows.Forms.ToolStripButton();
-            this.tsbOpenTempl = new System.Windows.Forms.ToolStripButton();
-            this.tssbSave = new System.Windows.Forms.ToolStripSplitButton();
-            this.tsmiSave = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiSaveAs = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiSaveTemplate = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsbCloseFile = new System.Windows.Forms.ToolStripButton();
             this.tsTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numRatingBlank)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbStarsBlank)).BeginInit();
@@ -133,6 +133,58 @@
             resources.ApplyResources(this.tsTop, "tsTop");
             this.tsTop.Name = "tsTop";
             this.tsTop.Stretch = true;
+            // 
+            // tsbOpenMP3
+            // 
+            this.tsbOpenMP3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.tsbOpenMP3, "tsbOpenMP3");
+            this.tsbOpenMP3.Name = "tsbOpenMP3";
+            this.tsbOpenMP3.Click += new System.EventHandler(this.tsbtnOpen_Click);
+            // 
+            // tsbOpenTempl
+            // 
+            this.tsbOpenTempl.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbOpenTempl.Image = global::Titel_WinForm.Properties.Resources.file_invoice_96px;
+            resources.ApplyResources(this.tsbOpenTempl, "tsbOpenTempl");
+            this.tsbOpenTempl.Name = "tsbOpenTempl";
+            this.tsbOpenTempl.Click += new System.EventHandler(this.tsbOpenTempl_Click);
+            // 
+            // tssbSave
+            // 
+            this.tssbSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tssbSave.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiSave,
+            this.tsmiSaveAs,
+            this.tsmiSaveTemplate});
+            resources.ApplyResources(this.tssbSave, "tssbSave");
+            this.tssbSave.Name = "tssbSave";
+            this.tssbSave.ButtonClick += new System.EventHandler(this.tssbSave_ButtonClick);
+            // 
+            // tsmiSave
+            // 
+            resources.ApplyResources(this.tsmiSave, "tsmiSave");
+            this.tsmiSave.Name = "tsmiSave";
+            this.tsmiSave.Click += new System.EventHandler(this.tssbSave_ButtonClick);
+            // 
+            // tsmiSaveAs
+            // 
+            resources.ApplyResources(this.tsmiSaveAs, "tsmiSaveAs");
+            this.tsmiSaveAs.Name = "tsmiSaveAs";
+            this.tsmiSaveAs.Click += new System.EventHandler(this.tsmiSaveAs_Click);
+            // 
+            // tsmiSaveTemplate
+            // 
+            this.tsmiSaveTemplate.Image = global::Titel_WinForm.Properties.Resources.create_96px;
+            this.tsmiSaveTemplate.Name = "tsmiSaveTemplate";
+            resources.ApplyResources(this.tsmiSaveTemplate, "tsmiSaveTemplate");
+            this.tsmiSaveTemplate.Click += new System.EventHandler(this.tsmiSaveTemplate_Click);
+            // 
+            // tsbCloseFile
+            // 
+            this.tsbCloseFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.tsbCloseFile, "tsbCloseFile");
+            this.tsbCloseFile.Name = "tsbCloseFile";
+            this.tsbCloseFile.Click += new System.EventHandler(this.tsbCloseFile_Click);
             // 
             // tsSp1
             // 
@@ -241,10 +293,10 @@
             this.tbStarsBlank.Name = "tbStarsBlank";
             this.tbStarsBlank.Scroll += new System.EventHandler(this.tbStarsBlank_Scroll);
             // 
-            // openFileDiJPGPNG
+            // openFileDiPic
             // 
-            resources.ApplyResources(this.openFileDiJPGPNG, "openFileDiJPGPNG");
-            this.openFileDiJPGPNG.RestoreDirectory = true;
+            resources.ApplyResources(this.openFileDiPic, "openFileDiPic");
+            this.openFileDiPic.RestoreDirectory = true;
             // 
             // numDate
             // 
@@ -473,6 +525,17 @@
             this.toolTip.SetToolTip(this.numSCRepost, resources.GetString("numSCRepost.ToolTip"));
             this.numSCRepost.ValueChanged += new System.EventHandler(this.numSC_ValueChanged);
             // 
+            // pBoxAlbum
+            // 
+            resources.ApplyResources(this.pBoxAlbum, "pBoxAlbum");
+            this.pBoxAlbum.Name = "pBoxAlbum";
+            this.pBoxAlbum.TabStop = false;
+            this.toolTip.SetToolTip(this.pBoxAlbum, resources.GetString("pBoxAlbum.ToolTip"));
+            this.pBoxAlbum.DragDrop += new System.Windows.Forms.DragEventHandler(this.pBoxAlbum_DragDrop);
+            this.pBoxAlbum.DragEnter += new System.Windows.Forms.DragEventHandler(this.pBoxAlbum_DragEnter);
+            this.pBoxAlbum.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseClick);
+            this.pBoxAlbum.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseDoubleClick);
+            // 
             // tbRemixer
             // 
             resources.ApplyResources(this.tbRemixer, "tbRemixer");
@@ -550,69 +613,6 @@
             this.saveFileDiTempl.DefaultExt = "templ";
             resources.ApplyResources(this.saveFileDiTempl, "saveFileDiTempl");
             this.saveFileDiTempl.RestoreDirectory = true;
-            // 
-            // pBoxAlbum
-            // 
-            resources.ApplyResources(this.pBoxAlbum, "pBoxAlbum");
-            this.pBoxAlbum.Name = "pBoxAlbum";
-            this.pBoxAlbum.TabStop = false;
-            this.toolTip.SetToolTip(this.pBoxAlbum, resources.GetString("pBoxAlbum.ToolTip"));
-            this.pBoxAlbum.DragDrop += new System.Windows.Forms.DragEventHandler(this.pBoxAlbum_DragDrop);
-            this.pBoxAlbum.DragEnter += new System.Windows.Forms.DragEventHandler(this.pBoxAlbum_DragEnter);
-            this.pBoxAlbum.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseClick);
-            this.pBoxAlbum.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseDoubleClick);
-            // 
-            // tsbOpenMP3
-            // 
-            this.tsbOpenMP3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.tsbOpenMP3, "tsbOpenMP3");
-            this.tsbOpenMP3.Name = "tsbOpenMP3";
-            this.tsbOpenMP3.Click += new System.EventHandler(this.tsbtnOpen_Click);
-            // 
-            // tsbOpenTempl
-            // 
-            this.tsbOpenTempl.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbOpenTempl.Image = global::Titel_WinForm.Properties.Resources.file_invoice_96px;
-            resources.ApplyResources(this.tsbOpenTempl, "tsbOpenTempl");
-            this.tsbOpenTempl.Name = "tsbOpenTempl";
-            this.tsbOpenTempl.Click += new System.EventHandler(this.tsbOpenTempl_Click);
-            // 
-            // tssbSave
-            // 
-            this.tssbSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tssbSave.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiSave,
-            this.tsmiSaveAs,
-            this.tsmiSaveTemplate});
-            resources.ApplyResources(this.tssbSave, "tssbSave");
-            this.tssbSave.Name = "tssbSave";
-            this.tssbSave.ButtonClick += new System.EventHandler(this.tssbSave_ButtonClick);
-            // 
-            // tsmiSave
-            // 
-            resources.ApplyResources(this.tsmiSave, "tsmiSave");
-            this.tsmiSave.Name = "tsmiSave";
-            this.tsmiSave.Click += new System.EventHandler(this.tssbSave_ButtonClick);
-            // 
-            // tsmiSaveAs
-            // 
-            resources.ApplyResources(this.tsmiSaveAs, "tsmiSaveAs");
-            this.tsmiSaveAs.Name = "tsmiSaveAs";
-            this.tsmiSaveAs.Click += new System.EventHandler(this.tsmiSaveAs_Click);
-            // 
-            // tsmiSaveTemplate
-            // 
-            this.tsmiSaveTemplate.Image = global::Titel_WinForm.Properties.Resources.create_96px;
-            this.tsmiSaveTemplate.Name = "tsmiSaveTemplate";
-            resources.ApplyResources(this.tsmiSaveTemplate, "tsmiSaveTemplate");
-            this.tsmiSaveTemplate.Click += new System.EventHandler(this.tsmiSaveTemplate_Click);
-            // 
-            // tsbCloseFile
-            // 
-            this.tsbCloseFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.tsbCloseFile, "tsbCloseFile");
-            this.tsbCloseFile.Name = "tsbCloseFile";
-            this.tsbCloseFile.Click += new System.EventHandler(this.tsbCloseFile_Click);
             // 
             // Form1
             // 
@@ -720,7 +720,7 @@
         private System.Windows.Forms.Button bOpenPicture;
         private System.Windows.Forms.Label lRatingBlank;
         private System.Windows.Forms.TrackBar tbStarsBlank;
-        private System.Windows.Forms.OpenFileDialog openFileDiJPGPNG;
+        private System.Windows.Forms.OpenFileDialog openFileDiPic;
         private System.Windows.Forms.ToolStripLabel tslChanges;
         private System.Windows.Forms.NumericUpDown numDate;
         private System.Windows.Forms.NumericUpDown numTrackNumber;
