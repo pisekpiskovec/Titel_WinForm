@@ -444,7 +444,7 @@ namespace Titel_WinForm
                 string picMode = inputing[16].ToString().Trim().ToLower();
                 if (picMode == "null" || picMode == "empty") {pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px; lResulution.Text = "null"; albumArtworkURL = "null♪"; }
                 else if (picMode == "custom" || picMode == "my" || picMode == "file" || picMode == "own") {if (inputing[17].ToString().Trim().ToLower() != "") {pBoxAlbum.BackgroundImage = new Bitmap(inputing[17]); albumArtworkURL = inputing[17]; lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height; } else {pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px; lResulution.Text = "null"; albumArtworkURL = "null♪"; } }
-                else if (picMode == "skip" || picMode = "") {} else { }
+                else if (picMode == "skip" || picMode == "") {} else { }
             }
         }
 
