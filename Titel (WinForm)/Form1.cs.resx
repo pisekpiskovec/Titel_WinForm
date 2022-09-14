@@ -121,35 +121,127 @@
   <data name="tsbOpenMP3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        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
+        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
-        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
+        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
 </value>
+  </data>
+  <data name="tsbOpenMP3.Text" xml:space="preserve">
+    <value>Otevřít MP3 soubor</value>
+  </data>
+  <data name="tsbOpenMP3.ToolTipText" xml:space="preserve">
+    <value>Otevřít MP3 soubor...</value>
+  </data>
+  <data name="tsbOpenTempl.Text" xml:space="preserve">
+    <value>Otevřít šablonu</value>
+  </data>
+  <data name="tsbOpenTempl.ToolTipText" xml:space="preserve">
+    <value>Otevřít šablonu</value>
+  </data>
+  <data name="tssbSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQhSURBVHhe7ZTLilNhEAYHBNHHm9t63s6tF1yoL6f5Qilo
+        l79BSOfkpAtqY/WZ+U7CeDcMwzAMwzAMwzAMwzAMwzAMG+fx8fH7znz//Pz8mtfbPvICe/DLy8vLG15x
+        28j4vXgdX4IM340PDw8fNv/fkQ3fk/f391+fnp7e8rrbw0bv0I+b/UuQsUfJS+y5SD4Z+xmRXLDbf7nZ
+        vwQbG8lL7LlIPhn7GZFcsNt4+JDf2b//dJNfgg2N5CX2XCSfjP2MSC7YbTz8N/Pq6r4EGxnJS+y5SD4Z
+        +xmRXLDbmHbKl3Dw22a+BBl3lLzEnovkk7GfEckFu43k6/oSZNhR8hJ7LpJPxn5GJBfsNpKPXM2XIKOO
+        kpfYc5F8Nux3RvIvruJLkEFHyUvsuUg+G/Y7I/k3Dl/C60P79OftH37mvB8Zc5S8xJ6L5LNhvzOSC6f8
+        JXDaj42J5CX2XCSfDfudkaz86y+Bs35sTCQvseci+WzY74zkv8KX8F/Png0bE8lL7LlIPhv2OyN5iT0X
+        yf3YmEheYs9dUmYtseciuR8bE8lL7LlLyqwl9lwk92NjInmJPXdJmbXEnovkfmxMJC+x5y4ps5bYc5Hc
+        j42J5CX23CVl1hJ7LpL7sTGRvMSeu6TMWmLPRXI/NiaSd4e9ayT3Y2MieXfYu0ZyPzYmkneHvWsk92Nj
+        Inl32LtGcj82JpJ3h71rJPdjYyJ5d9i7RnI/NiaSd4e9ayT3Y2MieXfYu0ZyPzYmkneHvWsk92NjIrlg
+        t1uUuQW7jeR+bEwkF+x2izK3YLeR3I+NieSC3W5R5hbsNpL7sTGRXLDbLcrcgt1Gcj82JpILdrtFmVuw
+        20jux8ZEcsFutyhzC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2Nb
+        Irlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu
+        2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Yb
+        yf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7
+        tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J
+        5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlg
+        t5Hcj425Rfk4+rExtygfRz825hbl4+jHxtyifBz92JhblI+jHxtzi/JxDMMwDMMwDMMwDMMwDMMwDMM2
+        ubv7AdlPxmSlnt0QAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tssbSave.Text" xml:space="preserve">
+    <value>Uložit</value>
+  </data>
+  <data name="tssbSave.ToolTipText" xml:space="preserve">
+    <value>Uložit... nebo Uložit jako...</value>
+  </data>
+  <data name="tsbCloseFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        TkSuQmCC
+</value>
+  </data>
+  <data name="tsbCloseFile.Text" xml:space="preserve">
+    <value>Zavřít soubor</value>
+  </data>
+  <data name="tslChanges.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 22</value>
+  </data>
+  <data name="tslChanges.Text" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="tslChanges.ToolTipText" xml:space="preserve">
+    <value>Stav</value>
   </data>
   <data name="tsmiSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -175,7 +267,13 @@
         AAAASUVORK5CYII=
 </value>
   </data>
+  <data name="tsmiSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
   <data name="tsmiSave.Text" xml:space="preserve">
+    <value>Uložit</value>
+  </data>
+  <data name="tsmiSave.ToolTipText" xml:space="preserve">
     <value>Uložit</value>
   </data>
   <data name="tsmiSaveAs.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -212,88 +310,29 @@
         6Q98DK+Ux1RW49y5/wHWjOEneqVGtAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="tsmiSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
   <data name="tsmiSaveAs.Text" xml:space="preserve">
-    <value>Uložit jako</value>
+    <value>Uložit jako...</value>
   </data>
-  <data name="tssbSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQhSURBVHhe7ZTLilNhEAYHBNHHm9t63s6tF1yoL6f5Qilo
-        l79BSOfkpAtqY/WZ+U7CeDcMwzAMwzAMwzAMwzAMwzAMG+fx8fH7znz//Pz8mtfbPvICe/DLy8vLG15x
-        28j4vXgdX4IM340PDw8fNv/fkQ3fk/f391+fnp7e8rrbw0bv0I+b/UuQsUfJS+y5SD4Z+xmRXLDbf7nZ
-        vwQbG8lL7LlIPhn7GZFcsNt4+JDf2b//dJNfgg2N5CX2XCSfjP2MSC7YbTz8N/Pq6r4EGxnJS+y5SD4Z
-        +xmRXLDbmHbKl3Dw22a+BBl3lLzEnovkk7GfEckFu43k6/oSZNhR8hJ7LpJPxn5GJBfsNpKPXM2XIKOO
-        kpfYc5F8Nux3RvIvruJLkEFHyUvsuUg+G/Y7I/k3Dl/C60P79OftH37mvB8Zc5S8xJ6L5LNhvzOSC6f8
-        JXDaj42J5CX2XCSfDfudkaz86y+Bs35sTCQvseci+WzY74zkv8KX8F/Png0bE8lL7LlIPhv2OyN5iT0X
-        yf3YmEheYs9dUmYtseciuR8bE8lL7LlLyqwl9lwk92NjInmJPXdJmbXEnovkfmxMJC+x5y4ps5bYc5Hc
-        j42J5CX23CVl1hJ7LpL7sTGRvMSeu6TMWmLPRXI/NiaSd4e9ayT3Y2MieXfYu0ZyPzYmkneHvWsk92Nj
-        Inl32LtGcj82JpJ3h71rJPdjYyJ5d9i7RnI/NiaSd4e9ayT3Y2MieXfYu0ZyPzYmkneHvWsk92NjIrlg
-        t1uUuQW7jeR+bEwkF+x2izK3YLeR3I+NieSC3W5R5hbsNpL7sTGRXLDbLcrcgt1Gcj82JpILdrtFmVuw
-        20jux8ZEcsFutyhzC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2Nb
-        Irlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu
-        2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Yb
-        yf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7
-        tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J
-        5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlg
-        t5Hcj425Rfk4+rExtygfRz825hbl4+jHxtyifBz92JhblI+jHxtzi/JxDMMwDMMwDMMwDMMwDMMwDMM2
-        ubv7AdlPxmSlnt0QAAAAAElFTkSuQmCC
-</value>
+  <data name="tsmiSaveAs.ToolTipText" xml:space="preserve">
+    <value>Uložit jako...</value>
   </data>
-  <data name="tssbSave.Text" xml:space="preserve">
-    <value>Uložit</value>
+  <data name="tsmiSaveTemplate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
-  <data name="tssbSave.ToolTipText" xml:space="preserve">
-    <value>Uložit... nebo Uložit jako...</value>
+  <data name="tsmiSaveTemplate.Text" xml:space="preserve">
+    <value>Uložit šablonu</value>
   </data>
-  <data name="tsbCloseFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        QmCC
-</value>
+  <data name="tsmiSaveTemplate.ToolTipText" xml:space="preserve">
+    <value>Uložit metadata jako šablonu do souboru</value>
   </data>
-  <data name="tsbCloseFile.Text" xml:space="preserve">
-    <value>Zavřít soubor</value>
+  <data name="openFileDiMP3.Filter" xml:space="preserve">
+    <value>Zvukové soubory MP3|*.mp3</value>
   </data>
-  <data name="tslChanges.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 22</value>
-  </data>
-  <data name="tslChanges.Text" xml:space="preserve">
-    <value>Stav</value>
-  </data>
-  <data name="tsTop.ToolTip" xml:space="preserve">
-    <value />
+  <data name="openFileDiMP3.Title" xml:space="preserve">
+    <value>Otevřít soubor MP3...</value>
   </data>
   <data name="lFileName.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 13</value>
@@ -301,17 +340,11 @@
   <data name="lFileName.Text" xml:space="preserve">
     <value>Soubor:</value>
   </data>
-  <data name="lFileName.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tbFileName.Location" type="System.Drawing.Point, System.Drawing">
     <value>62, 31</value>
   </data>
   <data name="tbFileName.Size" type="System.Drawing.Size, System.Drawing">
     <value>316, 20</value>
-  </data>
-  <data name="tbFileName.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="tbArtist.Location" type="System.Drawing.Point, System.Drawing">
     <value>64, 83</value>
@@ -323,9 +356,6 @@
   <data name="tbArtist.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="tbArtist.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tbTitle.Location" type="System.Drawing.Point, System.Drawing">
     <value>59, 109</value>
   </data>
@@ -335,29 +365,17 @@
   <data name="tbTitle.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="tbTitle.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tbAlbum.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tbGenre.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 240</value>
   </data>
   <data name="tbGenre.Size" type="System.Drawing.Size, System.Drawing">
     <value>383, 20</value>
   </data>
-  <data name="tbGenre.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tbAlbumArtist.Location" type="System.Drawing.Point, System.Drawing">
     <value>106, 266</value>
   </data>
   <data name="tbAlbumArtist.Size" type="System.Drawing.Size, System.Drawing">
     <value>346, 20</value>
-  </data>
-  <data name="tbAlbumArtist.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="lArtist.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 13</value>
@@ -368,9 +386,6 @@
   <data name="lArtist.Text" xml:space="preserve">
     <value>Umělec:</value>
   </data>
-  <data name="lArtist.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="lTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
   </data>
@@ -379,9 +394,6 @@
   </data>
   <data name="lTitle.Text" xml:space="preserve">
     <value>Název:</value>
-  </data>
-  <data name="lTitle.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="lPicture.Location" type="System.Drawing.Point, System.Drawing">
     <value>296, 292</value>
@@ -395,14 +407,8 @@
   <data name="lPicture.Text" xml:space="preserve">
     <value>Obrázek:</value>
   </data>
-  <data name="lPicture.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="lResulution.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
-  </data>
-  <data name="lResulution.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="bOpenPicture.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -410,17 +416,11 @@
   <data name="bOpenPicture.Text" xml:space="preserve">
     <value>Otevřít obrázek</value>
   </data>
-  <data name="bOpenPicture.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="lRatingBlank.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 13</value>
   </data>
   <data name="lRatingBlank.Text" xml:space="preserve">
     <value>Hodnocení (od nikoho):</value>
-  </data>
-  <data name="lRatingBlank.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="numRatingBlank.Location" type="System.Drawing.Point, System.Drawing">
     <value>138, 344</value>
@@ -432,14 +432,14 @@
   <data name="numRatingBlank.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 20</value>
   </data>
-  <data name="numRatingBlank.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tbStarsBlank.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
-  <data name="tbStarsBlank.ToolTip" xml:space="preserve">
-    <value />
+  <data name="openFileDiPic.Filter" xml:space="preserve">
+    <value>Podporované formáty|*.png;*.jpg;*.jpeg;*.bmp|Portable Network Graphics|*.png|JPEG|*.jpg;*.jpeg|Windows Bitmap|*.bmp</value>
+  </data>
+  <data name="openFileDiPic.Title" xml:space="preserve">
+    <value>Otevřít soubor obrázku...</value>
   </data>
   <data name="numDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>78, 161</value>
@@ -447,26 +447,17 @@
   <data name="numDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>375, 20</value>
   </data>
-  <data name="numDate.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="numTrackNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>110, 188</value>
   </data>
   <data name="numTrackNumber.Size" type="System.Drawing.Size, System.Drawing">
     <value>343, 20</value>
   </data>
-  <data name="numTrackNumber.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tbStarsSpotify.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 427</value>
   </data>
   <data name="tbStarsSpotify.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
-  </data>
-  <data name="tbStarsSpotify.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="numRatingSpotify.Location" type="System.Drawing.Point, System.Drawing">
     <value>123, 401</value>
@@ -476,9 +467,6 @@
   </data>
   <data name="numRatingSpotify.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
-  </data>
-  <data name="numRatingSpotify.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="lRatingSpotify.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 403</value>
@@ -492,9 +480,6 @@
   <data name="lRatingSpotify.Text" xml:space="preserve">
     <value>Hodnocení (Spotify):</value>
   </data>
-  <data name="lRatingSpotify.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tbStarsYouTube.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 483</value>
   </data>
@@ -504,9 +489,6 @@
   <data name="tbStarsYouTube.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
-  <data name="tbStarsYouTube.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="numRatingYouTube.Location" type="System.Drawing.Point, System.Drawing">
     <value>138, 457</value>
   </data>
@@ -515,9 +497,6 @@
   </data>
   <data name="numRatingYouTube.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
-  </data>
-  <data name="numRatingYouTube.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="lRatingYouTube.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 459</value>
@@ -531,17 +510,11 @@
   <data name="lRatingYouTube.Text" xml:space="preserve">
     <value>Hodnocení (YouTube):</value>
   </data>
-  <data name="lRatingYouTube.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tbStarsSoundcloud.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 539</value>
   </data>
   <data name="tbStarsSoundcloud.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
-  </data>
-  <data name="tbStarsSoundcloud.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="numRatingSoundcloud.Location" type="System.Drawing.Point, System.Drawing">
     <value>149, 513</value>
@@ -551,9 +524,6 @@
   </data>
   <data name="numRatingSoundcloud.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
-  </data>
-  <data name="numRatingSoundcloud.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="lRatingSoundcloud.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 515</value>
@@ -567,26 +537,17 @@
   <data name="lRatingSoundcloud.Text" xml:space="preserve">
     <value>Hodnocení (SoundCloud):</value>
   </data>
-  <data name="lRatingSoundcloud.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tbComposer.Location" type="System.Drawing.Point, System.Drawing">
     <value>91, 292</value>
   </data>
   <data name="tbComposer.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 20</value>
   </data>
-  <data name="tbComposer.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="numDiscNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>99, 214</value>
   </data>
   <data name="numDiscNumber.Size" type="System.Drawing.Size, System.Drawing">
     <value>353, 20</value>
-  </data>
-  <data name="numDiscNumber.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="numBlankStars.Location" type="System.Drawing.Point, System.Drawing">
     <value>207, 344</value>
@@ -778,9 +739,6 @@ Dvojtým pravým kliknutím smažete</value>
   <data name="tbRemixer.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 20</value>
   </data>
-  <data name="tbRemixer.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="bFileFromTags.Location" type="System.Drawing.Point, System.Drawing">
     <value>384, 29</value>
   </data>
@@ -793,20 +751,11 @@ Dvojtým pravým kliknutím smažete</value>
   <data name="bFileFromTags.Text" xml:space="preserve">
     <value>Ze značek</value>
   </data>
-  <data name="bFileFromTags.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="chbAlbum.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="chbYear.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 17</value>
   </data>
   <data name="chbYear.Text" xml:space="preserve">
     <value>Datum:</value>
-  </data>
-  <data name="chbYear.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="chbTrack.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 17</value>
@@ -814,17 +763,11 @@ Dvojtým pravým kliknutím smažete</value>
   <data name="chbTrack.Text" xml:space="preserve">
     <value>Číslo skladby:</value>
   </data>
-  <data name="chbTrack.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="chbDisk.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 17</value>
   </data>
   <data name="chbDisk.Text" xml:space="preserve">
     <value>Číslo disku:</value>
-  </data>
-  <data name="chbDisk.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="chbGenres.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 17</value>
@@ -832,17 +775,11 @@ Dvojtým pravým kliknutím smažete</value>
   <data name="chbGenres.Text" xml:space="preserve">
     <value>Žánr:</value>
   </data>
-  <data name="chbGenres.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="chbAlbumArtists.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 17</value>
   </data>
   <data name="chbAlbumArtists.Text" xml:space="preserve">
     <value>Umělec alba:</value>
-  </data>
-  <data name="chbAlbumArtists.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="chbComposers.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 17</value>
@@ -850,17 +787,26 @@ Dvojtým pravým kliknutím smažete</value>
   <data name="chbComposers.Text" xml:space="preserve">
     <value>Skladatel:</value>
   </data>
-  <data name="chbComposers.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="chbRemixer.Size" type="System.Drawing.Size, System.Drawing">
     <value>192, 17</value>
   </data>
   <data name="chbRemixer.Text" xml:space="preserve">
     <value>Autor míchání hudebních skladeb:</value>
   </data>
-  <data name="chbRemixer.ToolTip" xml:space="preserve">
-    <value />
+  <data name="openFileDiTempl.Filter" xml:space="preserve">
+    <value>Šablona|*.templ</value>
+  </data>
+  <data name="openFileDiTempl.Title" xml:space="preserve">
+    <value>Načíst metadata ze šablony</value>
+  </data>
+  <data name="saveFileDiTempl.Filter" xml:space="preserve">
+    <value>Šablona|*.templ</value>
+  </data>
+  <data name="saveFileDiTempl.Title" xml:space="preserve">
+    <value>Uložit šablonu jako...</value>
+  </data>
+  <data name="saveFileDiMP3.Filter" xml:space="preserve">
+    <value>Zvukové soubory MP3|*.mp3</value>
   </data>
   <data name="saveFileDiMP3.Title" xml:space="preserve">
     <value>Uložit MP3 jako...</value>
@@ -891,8 +837,5 @@ Dvojtým pravým kliknutím smažete</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>480, 616</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
   </data>
 </root>
