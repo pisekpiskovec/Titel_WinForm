@@ -391,6 +391,16 @@ namespace Titel_WinForm
                 numRatingSpotify.Value = 0;
                 numRatingYouTube.Value = 0;
                 numRatingSoundcloud.Value = 0;
+
+                chbAlbum.Checked = true;
+                chbYear.Checked = true;
+                chbTrack.Checked = true;
+                chbDisk.Checked = false;
+                chbGenres.Checked = true;
+                chbAlbumArtists.Checked = false;
+                chbComposers.Checked = false;
+                chbRemixer.Checked = false;
+
                 fileStatus(0);
                 tsbCloseFile.Enabled = false;
             }

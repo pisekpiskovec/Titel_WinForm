@@ -83,8 +83,8 @@
             this.numSCPlays = new System.Windows.Forms.NumericUpDown();
             this.numSCRepost = new System.Windows.Forms.NumericUpDown();
             this.pBoxAlbum = new System.Windows.Forms.PictureBox();
-            this.tbRemixer = new System.Windows.Forms.TextBox();
             this.bFileFromTags = new System.Windows.Forms.Button();
+            this.tbRemixer = new System.Windows.Forms.TextBox();
             this.chbAlbum = new System.Windows.Forms.CheckBox();
             this.chbYear = new System.Windows.Forms.CheckBox();
             this.chbTrack = new System.Windows.Forms.CheckBox();
@@ -566,12 +566,6 @@
             this.pBoxAlbum.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseClick);
             this.pBoxAlbum.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseDoubleClick);
             // 
-            // tbRemixer
-            // 
-            resources.ApplyResources(this.tbRemixer, "tbRemixer");
-            this.tbRemixer.Name = "tbRemixer";
-            this.toolTip.SetToolTip(this.tbRemixer, resources.GetString("tbRemixer.ToolTip"));
-            // 
             // bFileFromTags
             // 
             resources.ApplyResources(this.bFileFromTags, "bFileFromTags");
@@ -580,9 +574,17 @@
             this.bFileFromTags.UseVisualStyleBackColor = true;
             this.bFileFromTags.Click += new System.EventHandler(this.bFileFromTags_Click);
             // 
+            // tbRemixer
+            // 
+            resources.ApplyResources(this.tbRemixer, "tbRemixer");
+            this.tbRemixer.Name = "tbRemixer";
+            this.toolTip.SetToolTip(this.tbRemixer, resources.GetString("tbRemixer.ToolTip"));
+            // 
             // chbAlbum
             // 
             resources.ApplyResources(this.chbAlbum, "chbAlbum");
+            this.chbAlbum.Checked = true;
+            this.chbAlbum.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chbAlbum.Name = "chbAlbum";
             this.toolTip.SetToolTip(this.chbAlbum, resources.GetString("chbAlbum.ToolTip"));
             this.chbAlbum.UseVisualStyleBackColor = true;
@@ -590,6 +592,8 @@
             // chbYear
             // 
             resources.ApplyResources(this.chbYear, "chbYear");
+            this.chbYear.Checked = true;
+            this.chbYear.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chbYear.Name = "chbYear";
             this.toolTip.SetToolTip(this.chbYear, resources.GetString("chbYear.ToolTip"));
             this.chbYear.UseVisualStyleBackColor = true;
@@ -597,6 +601,8 @@
             // chbTrack
             // 
             resources.ApplyResources(this.chbTrack, "chbTrack");
+            this.chbTrack.Checked = true;
+            this.chbTrack.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chbTrack.Name = "chbTrack";
             this.toolTip.SetToolTip(this.chbTrack, resources.GetString("chbTrack.ToolTip"));
             this.chbTrack.UseVisualStyleBackColor = true;
@@ -611,6 +617,8 @@
             // chbGenres
             // 
             resources.ApplyResources(this.chbGenres, "chbGenres");
+            this.chbGenres.Checked = true;
+            this.chbGenres.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chbGenres.Name = "chbGenres";
             this.toolTip.SetToolTip(this.chbGenres, resources.GetString("chbGenres.ToolTip"));
             this.chbGenres.UseVisualStyleBackColor = true;
