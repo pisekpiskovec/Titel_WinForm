@@ -260,14 +260,14 @@ namespace Titel_WinForm
 
                 musFile.Tag.Performers = tbArtist.Text.Split('|');
                 musFile.Tag.Title = tbTitle.Text;
-                musFile.Tag.Album = tbAlbum.Text;
-                musFile.Tag.Year = Convert.ToUInt32(numDate.Value);
-                musFile.Tag.Track = Convert.ToUInt32(numTrackNumber.Value);
-                musFile.Tag.Disc = Convert.ToUInt32(numDiscNumber.Value);
-                musFile.Tag.Genres = tbGenre.Text.Split('|');
-                musFile.Tag.AlbumArtists = tbAlbumArtist.Text.Split('|');
-                musFile.Tag.Composers = tbComposer.Text.Split('|');
-                musFile.Tag.RemixedBy = tbRemixer.Text;
+                if (chbAlbum.Checked == true) { musFile.Tag.Album = tbAlbum.Text; }
+                if (chbYear.Checked == true) { musFile.Tag.Year = Convert.ToUInt32(numDate.Value); }
+                if (chbTrack.Checked == true) { musFile.Tag.Track = Convert.ToUInt32(numTrackNumber.Value); }
+                if (chbDisk.Checked == true) { musFile.Tag.Disc = Convert.ToUInt32(numDiscNumber.Value); }
+                if (chbGenres.Checked == true) { musFile.Tag.Genres = tbGenre.Text.Split('|'); }
+                if (chbAlbumArtists.Checked == true) { musFile.Tag.AlbumArtists = tbAlbumArtist.Text.Split('|'); }
+                if (chbComposers.Checked == true) { musFile.Tag.Composers = tbComposer.Text.Split('|'); }
+                if (chbRemixer.Checked == true) { musFile.Tag.RemixedBy = tbRemixer.Text; }
 
                 TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
                 if (numRatingBlank.Value != 0) { var usrBlank = ""; TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, numRatingBlank.Value != 0); frameBlank.Rating = Convert.ToByte(numRatingBlank.Value); }
@@ -305,14 +305,14 @@ namespace Titel_WinForm
 
                 musFile.Tag.Performers = tbArtist.Text.Split('|');
                 musFile.Tag.Title = tbTitle.Text;
-                musFile.Tag.Album = tbAlbum.Text;
-                musFile.Tag.Year = Convert.ToUInt32(numDate.Value);
-                musFile.Tag.Track = Convert.ToUInt32(numTrackNumber.Value);
-                musFile.Tag.Disc = Convert.ToUInt32(numDiscNumber.Value);
-                musFile.Tag.Genres = tbGenre.Text.Split('|');
-                musFile.Tag.AlbumArtists = tbAlbumArtist.Text.Split('|');
-                musFile.Tag.Composers = tbComposer.Text.Split('|');
-                musFile.Tag.RemixedBy = tbRemixer.Text;
+                if (chbAlbum.Checked == true) { musFile.Tag.Album = tbAlbum.Text; }
+                if (chbYear.Checked == true) { musFile.Tag.Year = Convert.ToUInt32(numDate.Value); }
+                if (chbTrack.Checked == true) { musFile.Tag.Track = Convert.ToUInt32(numTrackNumber.Value); }
+                if (chbDisk.Checked == true) { musFile.Tag.Disc = Convert.ToUInt32(numDiscNumber.Value); }
+                if (chbGenres.Checked == true) { musFile.Tag.Genres = tbGenre.Text.Split('|'); }
+                if (chbAlbumArtists.Checked == true) { musFile.Tag.AlbumArtists = tbAlbumArtist.Text.Split('|'); }
+                if (chbComposers.Checked == true) { musFile.Tag.Composers = tbComposer.Text.Split('|'); }
+                if (chbRemixer.Checked == true) { musFile.Tag.RemixedBy = tbRemixer.Text; }
 
                 TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
                 if (numRatingBlank.Value != 0) { var usrBlank = ""; TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, numRatingBlank.Value != 0); frameBlank.Rating = Convert.ToByte(numRatingBlank.Value); }
