@@ -71,14 +71,14 @@ namespace Titel_WinForm
                 tbFileName.Text = musFileSName;
                 tbArtist.Text = string.Join("|", musFile.Tag.Performers);
                 tbTitle.Text = musFile.Tag.Title;
-                tbAlbum.Text = musFile.Tag.Album;
-                numDate.Value = musFile.Tag.Year;
-                numTrackNumber.Value = musFile.Tag.Track;
-                numDiscNumber.Value = musFile.Tag.Disc;
-                tbGenre.Text = string.Join("|", musFile.Tag.Genres);
-                tbAlbumArtist.Text = string.Join("|", musFile.Tag.AlbumArtists);
-                tbComposer.Text = string.Join("|", musFile.Tag.Composers);
-                tbRemixer.Text = musFile.Tag.RemixedBy;
+                if (musFile.Tag.Album != "") { chbAlbum.Checked = true; } else { chbAlbum.Checked = false; } tbAlbum.Text = musFile.Tag.Album;
+                if (musFile.Tag.Year != 0) { chbYear.Checked = true; } else { chbYear.Checked = false; } numDate.Value = musFile.Tag.Year;
+                if (musFile.Tag.Track != 0) { chbTrack.Checked = true; } else { chbTrack.Checked = false; } numTrackNumber.Value = musFile.Tag.Track;
+                if (musFile.Tag.Disc != 0) { chbDisk.Checked = true; } else { chbDisk.Checked = false; } numDiscNumber.Value = musFile.Tag.Disc;
+                if (musFile.Tag.Genres.Length != 0) { chbGenres.Checked = true; } else { chbGenres.Checked = false; } tbGenre.Text = string.Join("|", musFile.Tag.Genres);
+                if (musFile.Tag.AlbumArtists.Length != 0) { chbAlbumArtists.Checked = true; } else { chbAlbumArtists.Checked = false; } tbAlbumArtist.Text = string.Join("|", musFile.Tag.AlbumArtists);
+                if (musFile.Tag.Composers.Length != 0) { chbComposers.Checked = true; } else { chbComposers.Checked = false; } tbComposer.Text = string.Join("|", musFile.Tag.Composers);
+                if (musFile.Tag.RemixedBy != null) { chbRemixer.Checked = true; } else { chbRemixer.Checked = false; } tbRemixer.Text = musFile.Tag.RemixedBy;
 
                 TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
                 TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, "", true);
