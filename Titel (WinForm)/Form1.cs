@@ -129,47 +129,56 @@ namespace Titel_WinForm
             }
         }
 
-        private void tFileChanged_Tick(object sender, EventArgs e)
-        {
+        private void tFileChanged_Tick(object sender, EventArgs e) { if (Checker("album") == true || Checker("albumArtist") == true || Checker("artist") == true || Checker("composers") == true || Checker("fileName") == true || Checker("genres") == true || Checker("title") == true || Checker("year") == true || Checker("track") == true || Checker("rating") == true || Checker("albumArtwork") == true || Checker("disk") == true || Checker("remixer") == true) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; } }
+
+        Boolean Checker(String stringTag) {
             var musFileTag = TagLib.File.Create(musFileName).Tag;
-            var musFile = TagLib.File.Create(musFileName);
+            bool returningValue = false;
 
-            string[] musAlbumArtistArr = musFileTag.AlbumArtists;
-            string musAlbumArtist = string.Join("|", musAlbumArtistArr);
-
-            string[] musArtistArr = musFileTag.Performers;
-            string musArtist = string.Join("|", musArtistArr);
-
-            string[] musGenreArr = musFileTag.Genres;
-            string musGenre = string.Join("|", musGenreArr);
-
-            string[] musComposersArr = musFileTag.Composers;
-            string musComposers = string.Join("|", musComposersArr);
-
-            TagLib.Tag tag123 = musFile.GetTag(TagLib.TagTypes.Id3v2);
-            var usrBlank = "";
-            TagLib.Id3v2.PopularimeterFrame frameBlank = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrBlank, true);
-            var usrSpotify = "open.spotify.com";
-            TagLib.Id3v2.PopularimeterFrame frameSpotify = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSpotify, true);
-            var usrYouTube = "youtube.com";
-            TagLib.Id3v2.PopularimeterFrame frameYouTube = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrYouTube, true);
-            var usrSoundCloud = "soundcloud.com";
-            TagLib.Id3v2.PopularimeterFrame frameSoundcloud = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)tag123, usrSoundCloud, true);
-
-            if (chbAlbum.Checked == true && tbAlbum.Text != musFileTag.Album) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
-            if (chbAlbumArtists.Checked == true && tbAlbumArtist.Text != musAlbumArtist) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
-            if (tbArtist.Text != musArtist) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
-            if (chbComposers.Checked == true && tbComposer.Text != musComposers) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
-            if (tbFileName.Text != musFileSName) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
-            if (chbGenres.Checked == true && tbGenre.Text != musGenre) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
-            if (tbTitle.Text != musFileTag.Title) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
-            if (chbYear.Checked == true && numDate.Value != musFileTag.Year) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
-            if (chbTrack.Checked == true && numTrackNumber.Value != musFileTag.Track) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
-            if (numRatingBlank.Value != frameBlank.Rating || numRatingSpotify.Value != frameSpotify.Rating || numRatingYouTube.Value != frameYouTube.Rating || numRatingSoundcloud.Value != frameSoundcloud.Rating) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
-            if (albumArtworkURL != "Album artwork♪") { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
-            if (chbDisk.Checked == true && numDiscNumber.Value != musFile.Tag.Disc) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
-            if (chbRemixer.Checked == true && tbRemixer.Text != musFileTag.RemixedBy) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; }
-        }
+            switch (stringTag)
+            {
+                case "album":
+                    if(chbAlbum.Checked == true && tbAlbum.Text != musFileTag.Album) {returningValue = true; }
+                    break;
+                case "albumArtist":
+                    if(chbAlbumArtists.Checked == true && tbAlbumArtist.Text != string.Join("|", musFileTag.AlbumArtists)) { returningValue = true; }
+                    break;
+                case "artist":
+                    if(tbArtist.Text != string.Join("|", musFileTag.Performers)) { returningValue = true; }
+                    break;
+                case "composers":
+                    if(chbComposers.Checked == true && tbComposer.Text != string.Join("|", musFileTag.Composers)) { returningValue = true; }
+                    break;
+                case "fileName":
+                    if(tbFileName.Text != musFileSName) { returningValue = true; }
+                    break;
+                case "genres":
+                    if(chbGenres.Checked == true && tbGenre.Text != string.Join("|", musFileTag.Genres)) { returningValue = true; }
+                    break;
+                case "title":
+                    if(tbTitle.Text != musFileTag.Title) { returningValue = true; }
+                    break;
+                case "year":
+                    if(chbYear.Checked == true && numDate.Value != musFileTag.Year) { returningValue = true; }
+                    break;
+                case "track":
+                    if(chbTrack.Checked == true && numTrackNumber.Value != musFileTag.Track) { returningValue = true; }
+                    break;
+                case "rating":
+                    if(numRatingBlank.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "", true).Rating || numRatingSpotify.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "open.spotify.com", true).Rating || numRatingYouTube.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "youtube.com", true).Rating || numRatingSoundcloud.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "soundcloud.com", true).Rating) { returningValue = true; }
+                    break;
+                case "albumArtwork":
+                    if(albumArtworkURL != "Album artwork♪") { returningValue = true; }
+                    break;
+                case "disk":
+                    if(chbDisk.Checked == true && numDiscNumber.Value != musFileTag.Disc) { returningValue = true; }
+                    break;
+                case "remixer":
+                    if(chbRemixer.Checked == true && tbRemixer.Text != musFileTag.RemixedBy) { returningValue = true; }
+                    break;
+            }
+            return returningValue;
+        } 
 
         private void Form1_Load(object sender, EventArgs e) { this.Location = Settings.Default.lastPos; fileStatus(0); pBoxAlbum.AllowDrop = true; numDate.Value = DateTime.Today.Year; tsbCloseFile.Enabled = false; albumArtworkURL = "null♪"; }
 
