@@ -296,6 +296,12 @@ namespace Titel_WinForm
             if (tbFileName.Text != musFileSName) {saveFileDiMP3.FileName = tbFileName.Text; }
             if(saveFileDiMP3.ShowDialog() == DialogResult.OK)
             {
+                trimTextBoxes(tbFileName); trimTextBoxes(tbArtist); trimTextBoxes(tbTitle); trimTextBoxes(tbAlbum); trimTextBoxes(tbGenre); trimTextBoxes(tbAlbumArtist); trimTextBoxes(tbComposer); trimTextBoxes(tbRemixer);
+
+                TagLib.Id3v2.Tag.DefaultVersion = 3;
+                TagLib.Id3v2.Tag.ForceDefaultVersion = true;
+                TagLib.Id3v2.Tag.UseNumericGenres = false;
+
                 Settings.Default.sfdMp3 = new System.IO.FileInfo(saveFileDiMP3.FileName).DirectoryName;
                 if (!System.IO.File.Exists(saveFileDiMP3.FileName)) {System.IO.File.Copy(musFileName, saveFileDiMP3.FileName); }
                 TagLib.File musFile = TagLib.File.Create(saveFileDiMP3.FileName);
