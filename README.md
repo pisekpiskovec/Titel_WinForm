@@ -6,7 +6,7 @@
 
 Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make your music library fancier.
 
-Titel is written in .NET Framework since it supports User Interface, which means it's Windows-only. 😕
+Titel is written in .NET Framework since it supports User Interface, which means it's Windows-only program. 😕
 
 ⚠This project was created for learning and my personal purpose. I just wanted to share it with you.⚠
 
@@ -17,25 +17,41 @@ Titel is written in .NET Framework since it supports User Interface, which means
 * [x] Picture loading
 * [x] Rating loading
 * [x] Custom picture loading (+ resolution)
-* [ ] Indicator of changes (not working)
+* [x] Indicator of changes
 * [x] Saving file
 * [x] Saving file as
-* [x] Close file 
+* [x] Close file
 * [x] Change positions of elements
 * [x] Icon
 * [x] Rating calculator
+- [ ] Shortcuts (1.0.1)
+- [ ] taglib update (1.0.1)
 
 ## Screenshots
 
-![Newly opened window](https://github.com/pisekpiskovec/Titel_WinFrorm/blob/master/Titel%20(WinFrorm)/readme_resources/old_titel_new_window.png)
+![Newly opened window](https://github.com/pisekpiskovec/Titel_WinFrorm/blob/master/Titel%20(WinForm)/readme_resources/old_titel_new_window.png)
 (Newly opened window)
 
-![Window with a song loaded](https://github.com/pisekpiskovec/Titel_WinFrorm/blob/master/Titel%20(WinFrorm)/readme_resources/audio_loaded_changed.png)
+![Window with a song loaded](https://github.com/pisekpiskovec/Titel_WinFrorm/blob/master/Titel%20(WinForm)/readme_resources/audio_loaded_changed.png)
 (Window with a song loaded)
 
 ## Features
 
 * Changing file name
 * Editing file's song metadata
-* Adding rating from main streaming services (Spotify, YouTube, SoundCloud)
-* Replacing and adding album art
+* Adding rating from main streaming services (Spotify, YouTube, SoundCloud) (Not importing)
+
+## Support
+
+|          | Version | Support until |
+| -------- | ------- | ------------- |
+| *LTS*    | 0.9.0   | 1.3.x         |
+| *LTS*    | 1.0.1   | 1.4.x         |
+| *ESR*    | 0.7.0   | 0.9.x         |
+| *Stable* | 1.0.0   | 1.0.1         |
+
+* **LTS** *(Long-Term Support)*: Follows 5 release cycle.
+
+* **ESR** *(Extended Support Release)*: Follows 3 release cycle.
+
+* **Stable**: Become un supported after next release.
