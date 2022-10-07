@@ -722,11 +722,13 @@
             this.Controls.Add(this.numBlankStars);
             this.Controls.Add(this.numBlankMaxStars);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.tsTop.ResumeLayout(false);
             this.tsTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numRatingBlank)).EndInit();

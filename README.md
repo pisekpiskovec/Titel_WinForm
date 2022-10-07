@@ -24,7 +24,7 @@ Titel is written in .NET Framework since it supports User Interface, which means
 * [x] Change positions of elements
 * [x] Icon
 * [x] Rating calculator
-- [ ] Shortcuts (1.0.1)
+- [x] Shortcuts (1.0.1)
 - [ ] taglib update (1.0.1)
 
 ## Screenshots
@@ -38,7 +38,7 @@ Titel is written in .NET Framework since it supports User Interface, which means
 ## Features
 
 * Changing file name
-* Editing file's song metadata
+* Editing song's metadata
 * Adding rating from main streaming services (Spotify, YouTube, SoundCloud) (Not importing)
 
 ## Support
@@ -48,10 +48,23 @@ Titel is written in .NET Framework since it supports User Interface, which means
 | *LTS*    | 0.9.0   | 1.3.x         |
 | *LTS*    | 1.0.1   | 1.4.x         |
 | *ESR*    | 0.7.0   | 0.9.x         |
-| *Stable* | 1.0.0   | 1.0.1         |
+| *Stable* |         |               |
 
 * **LTS** *(Long-Term Support)*: Follows 5 release cycle.
 
 * **ESR** *(Extended Support Release)*: Follows 3 release cycle.
 
 * **Stable**: Become un supported after next release.
+
+## Keyboard shortcuts
+
+| Action              | Shortcut     |
+| ------------------- | ------------ |
+| Open File           | Ctrl+O       |
+| Open Template       | Ctrl+Shift+O |
+| Save                | Ctrl+S       |
+| Save As...          | Ctrl+Shift+S |
+| Save Template       | Ctrl+Alt+S   |
+| Close File          | Ctrl+W       |
+| Open Picture        | Ctrl+Alt+O   |
+| File Name From Tags | Ctrl+D       |

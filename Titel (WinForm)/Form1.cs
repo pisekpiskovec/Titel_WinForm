@@ -531,5 +531,17 @@ namespace Titel_WinForm
                 }
             }
         }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.O) {e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsbOpenMP3.PerformClick())); }
+            if (e.Control && e.Shift && e.KeyCode == Keys.O) {e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsbOpenTempl.PerformClick())); }
+            if (e.Control && e.KeyCode == Keys.S) { e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsmiSave.PerformClick())); }
+            if (e.Control && e.Shift && e.KeyCode == Keys.S) { e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsmiSaveAs.PerformClick())); }
+            if (e.Control && e.Alt && e.KeyCode == Keys.S) { e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsmiSaveTemplate.PerformClick())); }
+            if (e.Control && e.KeyCode == Keys.W) { e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsbCloseFile.PerformClick())); }
+            if (e.Control && e.Alt && e.KeyCode == Keys.O) { e.SuppressKeyPress = true; BeginInvoke(new Action(() => bOpenPicture.PerformClick())); }
+            if (e.Control && e.KeyCode == Keys.D) { e.SuppressKeyPress = true; BeginInvoke(new Action(() => bFileFromTags.PerformClick())); }
+        }
     }
 }

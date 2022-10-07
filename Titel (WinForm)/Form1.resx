@@ -117,26 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="chbRemixer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;saveFileDiMP3.Type" xml:space="preserve">
     <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;chbDisk.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
   <data name="&gt;&gt;openFileDiTempl.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tbComposer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>99, 292</value>
+  <data name="&gt;&gt;numDiscNumber.Name" xml:space="preserve">
+    <value>numDiscNumber</value>
   </data>
-  <data name="&gt;&gt;tbRemixer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tbTitle.ZOrder" xml:space="preserve">
+    <value>34</value>
   </data>
-  <data name="&gt;&gt;numRatingBlank.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="bFileFromTags.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="numRatingSoundcloud.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 0, 3</value>
   </data>
@@ -146,9 +149,7 @@
   <data name="&gt;&gt;tsbCloseFile.Name" xml:space="preserve">
     <value>tsbCloseFile</value>
   </data>
-  <data name="tsmiSaveTemplate.Text" xml:space="preserve">
-    <value>Save Template</value>
-  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tsmiSaveAs.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAABqVJREFUeF7t
@@ -195,9 +196,6 @@
   <data name="&gt;&gt;numRatingYouTube.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="bFileFromTags.Text" xml:space="preserve">
-    <value>From Tags</value>
-  </data>
   <data name="tsmiSave.Text" xml:space="preserve">
     <value>Save</value>
   </data>
@@ -210,14 +208,17 @@
   <data name="tbComposer.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="tsTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>464, 25</value>
-  </data>
   <data name="chbDisk.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 17</value>
   </data>
   <data name="tbStarsBlank.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="numRatingYouTube.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 456</value>
+  </data>
+  <data name="&gt;&gt;lPicture.ZOrder" xml:space="preserve">
+    <value>27</value>
   </data>
   <data name="&gt;&gt;chbRemixer.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -225,12 +226,14 @@
   <data name="chbAlbum.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lRatingSpotify.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
   <data name="tsbCloseFile.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 22</value>
+  </data>
+  <data name="&gt;&gt;numYTLikes.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="lRatingYouTube.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 13</value>
@@ -238,11 +241,8 @@
   <data name="&gt;&gt;numSCLikes.Name" xml:space="preserve">
     <value>numSCLikes</value>
   </data>
-  <data name="&gt;&gt;tbStarsSpotify.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lRatingSpotify.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 13</value>
+  <data name="tsmiSaveAs.Text" xml:space="preserve">
+    <value>Save As</value>
   </data>
   <data name="&gt;&gt;lArtist.Parent" xml:space="preserve">
     <value>$this</value>
@@ -259,11 +259,8 @@
   <data name="&gt;&gt;saveFileDiMP3.Name" xml:space="preserve">
     <value>saveFileDiMP3</value>
   </data>
-  <data name="tbGenre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>81, 240</value>
-  </data>
-  <data name="chbComposers.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;chbAlbumArtists.Name" xml:space="preserve">
+    <value>chbAlbumArtists</value>
   </data>
   <data name="lResulution.ToolTip" xml:space="preserve">
     <value>Rozměry obrázku alba</value>
@@ -273,6 +270,9 @@
   </data>
   <data name="pBoxAlbum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="numDiscNumber.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lRatingSpotify.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -289,6 +289,9 @@
   <data name="&gt;&gt;numYTLikes.Name" xml:space="preserve">
     <value>numYTLikes</value>
   </data>
+  <data name="&gt;&gt;chbGenres.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
   <data name="numRatingSpotify.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
@@ -298,16 +301,13 @@
   <data name="chbRemixer.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 320</value>
   </data>
-  <data name="&gt;&gt;tbGenre.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;openFileDiPic.Name" xml:space="preserve">
     <value>openFileDiPic</value>
   </data>
   <data name="tssbSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAABCFJREFUeF7tlMuKU2EQBgcE0ceb23rezq0XXKgvp/lCKWiXv0FI5+SkC2pj9Zn5
+        wAAADsABataJCQAABCFJREFUeF7tlMuKU2EQBgcE0ceb23rezq0XXKgvp/lCKWiXv0FI5+SkC2pj9Zn5
         TsJ4NwzDMAzDMAzDMAzDMAzDMAwb5/Hx8fvOfP/8/Pya19s+8gJ78MvLy8sbXnHbyPi9eB1fggzfjQ8P
         Dx82/9+RDd+T9/f3X5+ent7yutvDRu/Qj5v9S5CxR8lL7LlIPhn7GZFcsNt/udm/BBsbyUvsuUg+GfsZ
         kVyw23j4kN/Zv/90k1+CDY3kJfZcJJ+M/YxILthtPPw38+rqvgQbGclL7LlIPhn7GZFcsNuYdsqXcPDb
@@ -331,14 +331,14 @@
   <data name="lRatingBlank.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 13</value>
   </data>
-  <data name="tsbOpenMP3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
-  </data>
   <data name="numSCPlays.Location" type="System.Drawing.Point, System.Drawing">
     <value>206, 512</value>
   </data>
   <data name="lResulution.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;tbStarsSpotify.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;bFileFromTags.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -348,9 +348,6 @@
   </data>
   <data name="chbTrack.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="tbStarsSpotify.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="lArtist.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -370,14 +367,14 @@
   <data name="&gt;&gt;openFileDiMP3.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="numYTLikes.ToolTip" xml:space="preserve">
+    <value>Number of Likes</value>
+  </data>
   <data name="chbGenres.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
   <data name="&gt;&gt;numBlankMaxStars.Name" xml:space="preserve">
     <value>numBlankMaxStars</value>
-  </data>
-  <data name="tbAlbum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 20</value>
   </data>
   <data name="tbStarsYouTube.Size" type="System.Drawing.Size, System.Drawing">
     <value>440, 45</value>
@@ -412,7 +409,7 @@
   <data name="tsbCloseFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAB1xJREFUeF7tnduLHEUYxbNe37zECwpqMIKgoggBURaZKBgjJNk7slkVBV0EBf0P
+        wAAADsABataJCQAAB1xJREFUeF7tnduLHEUYxbNe37zECwpqMIKgoggBWRGZKBgjJNk7slkVBV0EBf0P
         dt8UNeCLqPH6pNGNiYmC+BSMIIh/gRBQ9E3X64PGW+I57dm1t/f0TM9s10xPV//gsJs5X9VX89V0dXXP
         zGZTQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDHlNTU6f7rJNjY2NXKn2DKVBwTU5O7lf6Bleg0Nq1a9ef09PTV2sI
         ceMK1A/hKHhRQ4gbV5x+qNVq/TEzM3OVhhEvrjh91KsaRryYoiSSXQro7+Vs/xTPBViKtiosTlxhKNml
@@ -427,8 +424,8 @@
         rhwY2z3QT+mx9kO7d+/+AZNwt4ZRHi4ZJbtSYHfzEMZW9CON3PnsR5s5nCe2zc7OXrx3794LKf7Ox+gh
         5hXEfptpa6XvNz+g4ZSDS0TJrgwo1IMY16nsONPS7mcJ2r6wsHCGmnaEsej/DrQ7WGAHdQqx96vpxjEJ
         EsmuBBgPl522r3zs6Y/hvHCdmvQM+roB+iTdd1Y8EpDvLjXZGC4BJXvg4NW2BeKFkx0n9v+/w38coSP/
-        tSiFEfT5BPt2OaVlTMIViu8d03Ei2QMF6/SZKMRnbnzSMtbkWxReOijwrTz5mryJ4B/vZqmzuI4p2QMF
-        T/BJNzaKhUHxb1RoMJDrpnZHIPSYQnvDdJhI9sBA8S/HOPKubk+i+LcpdB29vCrbtcEEjOZ9lB7ng58x
+        tSiFEfT5BPt2OaVlTMIViu8d03Ei2QMF6/SZKMRnbnzSMtbkWxReOijwKE++Jm8i+Me7WeosrmNK9kDB
+        E3zSjY1iYVD8GxUaDOS6qd0RCD2m0N4wHSaSPTBQ/Msxjryr25Mo/q0KXUcvr8p2bTABt+V9lB7ng58x
         1ksV2j2uU0r2wMCTftaNi4LHNd8CfxH+e/Pz82froY4wlm2gBT20jnZHI/SUwrrHdJZI9kDgjTWMwb76
         UYhjCLEnXPiLqdiDRSZhpfgr7dpMwghyH0/1vyoeBXNzc+cprjtch5TsgYD8j2bHQ3GPjqXneoWtAX66
         +CtaQpuzFLIOFh8xBzNtcieB55y86wR4DyusO1xnlOyBgALk7XyWFLIGPO6Knwh9vesmgY/Rc22ovEmA
@@ -443,7 +440,7 @@
         sut7kUnghLrtKdrd6eLRZ7k34yqqeG5HV1F8leEoiOMNmaoKr7Q43pKsslCk+r8pXxHV/2MpVabdq642
         H8yqMtwG4snX+6OJVQcTUO8P5w4DeLL1/Xj6sIBXZD2/oDFMYL3f0FeU0AWXqZFKfUVp2EAh6vUlvWEE
         hajP11SHFa7bXA5QmO9d0coQ32LUklPmDqteYC0v/U8VYIfzCyb2afys5xVuCPidAhSt5z/Wwf/LDAXn
-        zbZHMKnnq9uGXsCysRkTgVr+/+dqoPQRwt/X/LkatlHzDbBp079PrxgYZl1VQAAAAABJRU5ErkJggg==
+        zbZHMKnnq9uGXsCysRkTgVr+/+dqoPQRwt/X/LkatlHzDbBp079dkRf98lrqzwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="numSpotifyMaxPlays.ToolTip" xml:space="preserve">
@@ -451,6 +448,9 @@
   </data>
   <data name="tbStarsSpotify.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pBoxAlbum.Name" xml:space="preserve">
     <value>pBoxAlbum</value>
@@ -497,8 +497,8 @@
   <data name="&gt;&gt;chbAlbumArtists.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lRatingSpotify.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 402</value>
+  <data name="bFileFromTags.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 29</value>
   </data>
   <data name="&gt;&gt;tbStarsSoundcloud.Type" xml:space="preserve">
     <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -524,8 +524,14 @@
   <data name="numDiscNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>68, 214</value>
   </data>
+  <data name="tbStarsYouTube.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 482</value>
+  </data>
   <data name="lResulution.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
+  </data>
+  <data name="&gt;&gt;bFileFromTags.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="numRatingSpotify.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 0, 3</value>
@@ -545,11 +551,8 @@
   <data name="chbYear.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lPicture.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 13</value>
-  </data>
-  <data name="&gt;&gt;numBlankMaxStars.ZOrder" xml:space="preserve">
-    <value>48</value>
+  <data name="&gt;&gt;tsmiSaveTemplate.Name" xml:space="preserve">
+    <value>tsmiSaveTemplate</value>
   </data>
   <data name="tbStarsBlank.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -560,9 +563,6 @@
   <data name="&gt;&gt;numSCPlays.Name" xml:space="preserve">
     <value>numSCPlays</value>
   </data>
-  <data name="tbAlbumArtist.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
   <data name="openFileDiPic.Title" xml:space="preserve">
     <value>Open image file...</value>
   </data>
@@ -572,17 +572,17 @@
   <data name="&gt;&gt;tbComposer.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="chbAlbumArtists.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;lRatingYouTube.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="numDate.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;numDiscNumber.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="tbFileName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 31</value>
+  <data name="&gt;&gt;tbArtist.Name" xml:space="preserve">
+    <value>tbArtist</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>464, 577</value>
@@ -620,8 +620,8 @@
   <data name="tbTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>405, 20</value>
   </data>
-  <data name="tbTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="lRatingSpotify.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 402</value>
   </data>
   <data name="lFileName.ToolTip" xml:space="preserve">
     <value>Název souboru</value>
@@ -657,7 +657,7 @@
     <value>23, 22</value>
   </data>
   <data name="tsbOpenMP3.ToolTipText" xml:space="preserve">
-    <value>Open MP3 file...</value>
+    <value>Open MP3 file...  (Ctrl+O)</value>
   </data>
   <data name="&gt;&gt;numSpotifyMaxPlays.Name" xml:space="preserve">
     <value>numSpotifyMaxPlays</value>
@@ -677,9 +677,6 @@
   <data name="&gt;&gt;tsTop.Name" xml:space="preserve">
     <value>tsTop</value>
   </data>
-  <data name="numDiscNumber.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
   <data name="bFileFromTags.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
@@ -698,8 +695,11 @@
   <data name="&gt;&gt;tbFileName.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="numBlankStars.Location" type="System.Drawing.Point, System.Drawing">
-    <value>178, 344</value>
+  <data name="&gt;&gt;tDontNull.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tsbCloseFile.ToolTipText" xml:space="preserve">
+    <value>Close File (Ctrl+W)</value>
   </data>
   <data name="tbGenre.Size" type="System.Drawing.Size, System.Drawing">
     <value>371, 20</value>
@@ -707,11 +707,11 @@
   <data name="&gt;&gt;lRatingYouTube.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;numDate.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
   <data name="tbStarsBlank.Size" type="System.Drawing.Size, System.Drawing">
     <value>334, 45</value>
+  </data>
+  <data name="tbRemixer.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="tbFileName.ToolTip" xml:space="preserve">
     <value />
@@ -723,7 +723,7 @@
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tsmiSaveTemplate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
+    <value>212, 22</value>
   </data>
   <data name="&gt;&gt;chbYear.ZOrder" xml:space="preserve">
     <value>40</value>
@@ -770,6 +770,9 @@
   <data name="numBlankMaxStars.Location" type="System.Drawing.Point, System.Drawing">
     <value>262, 344</value>
   </data>
+  <data name="numSpotifyMaxPlays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
   <data name="&gt;&gt;lRatingSoundcloud.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
@@ -778,6 +781,9 @@
   </data>
   <data name="&gt;&gt;numTrackNumber.ZOrder" xml:space="preserve">
     <value>20</value>
+  </data>
+  <data name="&gt;&gt;tbStarsSpotify.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tbFileName.Size" type="System.Drawing.Size, System.Drawing">
     <value>335, 20</value>
@@ -794,26 +800,29 @@
   <data name="&gt;&gt;tsTop.ZOrder" xml:space="preserve">
     <value>38</value>
   </data>
+  <data name="tbGenre.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tbStarsSpotify.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
   <data name="lTitle.Text" xml:space="preserve">
     <value>Title:</value>
   </data>
-  <data name="numTrackNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 188</value>
-  </data>
   <data name="tsmiSaveAs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
+    <value>212, 22</value>
   </data>
   <data name="tbFileName.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="bOpenPicture.ToolTip" xml:space="preserve">
-    <value>Vybrat vlastní obrázek</value>
+  <data name="lTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
   </data>
-  <data name="tsmiSaveAs.Text" xml:space="preserve">
-    <value>Save As</value>
+  <data name="bOpenPicture.ToolTip" xml:space="preserve">
+    <value>Pick your own album art. (Ctrl+Alt+O)</value>
+  </data>
+  <data name="chbTrack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 17</value>
   </data>
   <data name="pBoxAlbum.Location" type="System.Drawing.Point, System.Drawing">
     <value>352, 292</value>
@@ -833,20 +842,17 @@
   <data name="&gt;&gt;lFileName.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="chbGenres.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="&gt;&gt;bFileFromTags.Name" xml:space="preserve">
     <value>bFileFromTags</value>
   </data>
   <data name="numSCRepost.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 3, 3</value>
   </data>
-  <data name="chbTrack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 17</value>
+  <data name="&gt;&gt;numRatingYouTube.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="lArtist.Text" xml:space="preserve">
-    <value>Performers:</value>
+  <data name="&gt;&gt;chbYear.Name" xml:space="preserve">
+    <value>chbYear</value>
   </data>
   <data name="&gt;&gt;chbAlbum.Parent" xml:space="preserve">
     <value>$this</value>
@@ -855,13 +861,13 @@
     <value>84, 20</value>
   </data>
   <data name="tsbOpenTempl.Text" xml:space="preserve">
-    <value>Open template</value>
+    <value>Open Template</value>
   </data>
   <data name="&gt;&gt;tbStarsSoundcloud.Name" xml:space="preserve">
     <value>tbStarsSoundcloud</value>
   </data>
-  <data name="&gt;&gt;tsmiSave.Name" xml:space="preserve">
-    <value>tsmiSave</value>
+  <data name="chbYear.Text" xml:space="preserve">
+    <value>Year:</value>
   </data>
   <data name="pBoxAlbum.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -899,17 +905,20 @@
   <data name="tbAlbum.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;numRatingYouTube.Name" xml:space="preserve">
-    <value>numRatingYouTube</value>
-  </data>
-  <data name="lPicture.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="tsbOpenTempl.ToolTipText" xml:space="preserve">
+    <value>Open Template (Ctrl+Shift+O)</value>
   </data>
   <data name="lRatingSpotify.Text" xml:space="preserve">
     <value>Rating (Spotify):</value>
   </data>
+  <data name="tbArtist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 83</value>
+  </data>
   <data name="&gt;&gt;chbYear.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="chbAlbumArtists.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="numSpotifyMaxPlays.Location" type="System.Drawing.Point, System.Drawing">
     <value>264, 400</value>
@@ -920,9 +929,6 @@
   <data name="&gt;&gt;tDontNull.Name" xml:space="preserve">
     <value>tDontNull</value>
   </data>
-  <data name="tssbSave.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
   <data name="&gt;&gt;numDate.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -932,17 +938,20 @@
   <data name="tbAlbum.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="chbAlbumArtists.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;tbGenre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tbStarsSoundcloud.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 538</value>
   </data>
-  <data name="chbGenres.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;numRatingYouTube.Name" xml:space="preserve">
+    <value>numRatingYouTube</value>
   </data>
   <data name="chbDisk.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 215</value>
+  </data>
+  <data name="numBlankStars.ToolTip" xml:space="preserve">
+    <value>Given Stars</value>
   </data>
   <data name="&gt;&gt;tbStarsYouTube.ZOrder" xml:space="preserve">
     <value>14</value>
@@ -963,7 +972,7 @@
     <value>100, 23</value>
   </data>
   <data name="tsmiSave.ShortcutKeyDisplayString" xml:space="preserve">
-    <value />
+    <value>Ctrl+S</value>
   </data>
   <data name="&gt;&gt;lRatingSpotify.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -980,17 +989,11 @@
   <data name="&gt;&gt;tbGenre.Name" xml:space="preserve">
     <value>tbGenre</value>
   </data>
-  <data name="chbTrack.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="lRatingYouTube.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;tsSp1.Name" xml:space="preserve">
-    <value>tsSp1</value>
-  </data>
-  <data name="&gt;&gt;chbAlbumArtists.Name" xml:space="preserve">
-    <value>chbAlbumArtists</value>
+  <data name="&gt;&gt;numDiscNumber.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="numBlankMaxStars.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 3, 0</value>
@@ -998,8 +1001,14 @@
   <data name="&gt;&gt;numYTLikes.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="tbRemixer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 20</value>
+  </data>
   <data name="&gt;&gt;numSpotifyMaxPlays.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tbAlbumArtist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 266</value>
   </data>
   <data name="openFileDiTempl.Filter" xml:space="preserve">
     <value>Template|*.templ</value>
@@ -1031,30 +1040,6 @@
   <data name="&gt;&gt;tbArtist.ZOrder" xml:space="preserve">
     <value>35</value>
   </data>
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAAAP//////////////////////////////////////////////
-        ////////////////////////AAAAAAAAAAAAAAD//////wAAAP//////AAAA////////////////////
-        //8AAAD/AAAA/wAAAP///////////wAAAAAAAAAAAAAA////////////AAAA////////////////////
-        ////////AAAA/wAAAP8AAAD///////////8AAAAAAAAAAAAAAP///////////wAAAP//////////////
-        ////////////////////////AAAA////////////AAAAAAAAAAAAAAD///////////8AAAD/////////
-        /////////////////////////////wAAAP///////////wAAAAAAAAAAAAAA////////////AAAA////
-        //////////////////////////////////8AAAD///////////8AAAAAAAAAAAAAAP//////AAAA////
-        //8AAAD/////////////////////////////////AAAA/wAAAP//////AAAAAAAAAAAAAAD/////////
-        /////////////////////////////////////////////////////////////wAAAAAAAAAAAAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAA//8AAP//AAD//wAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAP//
-        AAD//wAA//8AAA==
-</value>
-  </data>
   <data name="chbAlbumArtists.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -1063,9 +1048,6 @@
   </data>
   <data name="&gt;&gt;tbStarsSoundcloud.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="bFileFromTags.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;lResulution.Name" xml:space="preserve">
     <value>lResulution</value>
@@ -1082,17 +1064,23 @@
   <data name="&gt;&gt;tbComposer.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;numRatingYouTube.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lPicture.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bOpenPicture.ZOrder" xml:space="preserve">
     <value>25</value>
+  </data>
+  <data name="&gt;&gt;chbDisk.Name" xml:space="preserve">
+    <value>chbDisk</value>
   </data>
   <data name="&gt;&gt;numRatingSoundcloud.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lPicture.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="&gt;&gt;tslDuration.Name" xml:space="preserve">
+    <value>tslDuration</value>
   </data>
   <data name="numRatingSoundcloud.ToolTip" xml:space="preserve">
     <value />
@@ -1103,11 +1091,8 @@
   <data name="&gt;&gt;tslChanges.Name" xml:space="preserve">
     <value>tslChanges</value>
   </data>
-  <data name="numDiscNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 20</value>
-  </data>
-  <data name="&gt;&gt;tbArtist.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;tbRemixer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tbComposer.Size" type="System.Drawing.Size, System.Drawing">
     <value>181, 20</value>
@@ -1121,6 +1106,9 @@
   <data name="chbDisk.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Titel</value>
+  </data>
   <data name="&gt;&gt;tsbCloseFile.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1132,9 +1120,6 @@
   </data>
   <data name="&gt;&gt;tsbOpenTempl.Name" xml:space="preserve">
     <value>tsbOpenTempl</value>
-  </data>
-  <data name="bFileFromTags.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 29</value>
   </data>
   <data name="tsSp1.Size" type="System.Drawing.Size, System.Drawing">
     <value>6, 25</value>
@@ -1172,11 +1157,8 @@
   <data name="lFileName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lArtist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 13</value>
-  </data>
-  <data name="numRatingYouTube.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 456</value>
+  <data name="&gt;&gt;numDiscNumber.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;numRatingSoundcloud.ZOrder" xml:space="preserve">
     <value>12</value>
@@ -1198,6 +1180,9 @@
   </data>
   <data name="&gt;&gt;numYTLikes.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="tsTop.Text" xml:space="preserve">
+    <value>toolStrip</value>
   </data>
   <data name="numYTLikes.Location" type="System.Drawing.Point, System.Drawing">
     <value>225, 456</value>
@@ -1244,11 +1229,11 @@
   <data name="tbArtist.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;lRatingBlank.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;tssbSave.Name" xml:space="preserve">
+    <value>tssbSave</value>
   </data>
-  <data name="tbRemixer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 20</value>
+  <data name="tsTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>464, 25</value>
   </data>
   <data name="&gt;&gt;saveFileDiTempl.Name" xml:space="preserve">
     <value>saveFileDiTempl</value>
@@ -1256,8 +1241,8 @@
   <data name="tbAlbumArtist.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;tbStarsSpotify.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="numDiscNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="&gt;&gt;bOpenPicture.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1274,14 +1259,14 @@
   <data name="tbArtist.Size" type="System.Drawing.Size, System.Drawing">
     <value>375, 20</value>
   </data>
-  <data name="chbComposers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 294</value>
+  <data name="&gt;&gt;numDate.ZOrder" xml:space="preserve">
+    <value>21</value>
   </data>
   <data name="chbYear.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 17</value>
   </data>
-  <data name="lTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;lTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="numSpotifyMaxPlays.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -1298,44 +1283,44 @@
   <data name="tsbOpenMP3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        wQAADsEBuJFr7QAABlJJREFUeF7tnb+LXGUUhuNvBQtLERttRFLaqAmm0ZCs2WxmdhcbMV3AxrQiQlKJ
-        go3YW4hYWGpECMFCUlikEwv/ARsVDIq/EON54zPLcHmTfNm55+SLex94mLDvnXNevruzEzG7u29iYmJi
-        YmJiYmJiYmLiNmJzc/PK5OYVjqMeV2YvynHU48rsRTmOelyZvSjHUY8rsxflOOpxZfaiHEc9roycz+c/
-        uI+v4uHDh3+Lx4sx++3w+ZMnT95PjTKGnRYS1+PKSGVxSI+Hp8JPwv/FDRl2WEhcjysjiXc4dOjQ3bPZ
-        7Ok4qNcj/2Jtbe2X4XNWNeZfZl0abq8krseVkcTXJW7GzisknvPjcMZuZHQabqckrseVkcTNnDp16p54
-        3rPhG+H5+Gz+dTHrZmRcGm6nJK7HlZHEu+bMmTN3xpz9i1fI+vr6T8MdTp6ehtspietxZSTxaGxvb98b
-        Hoyb8Wa8Oi64nZLL03A7JXE9rowkTsPtlMRpuJ2SuB5XRhKn4XZK4jTcTklcjysjidNwOyVxGm6nJK7H
-        lZHEabidkjgNt1MS1+PKSOI03E5JnIbbKYnrcWUkcRpupyROw+2UxPW4MpI4DbdTEqfhdkrielwZSZyG
-        2ymJ03A7JXE9rowkTsPtlMRpuJ2SuB5XRhKn4XZK4jTcTklcjysjidNwOyVxGm6nJK7HlZHEabidkjgN
-        t1MS1+PKSOI03E5JnIbbKYnrcWUkcRpupyROw+2UxPW4MpI4DbdTEqfhdkrielwZSZyG2ymJU9D/k3A7
-        JZfU48pI4jTcTkk8OltbWw/E/PPDfQu5rB5XRhKn4XZK4lG50eFLLq3HlZHEabidkng0jhw5ct98Pv/M
-        7VryHJfXY8pclTgNt1MSj0LLZ/5sNvs43hvu4in1uFKSOA23UxKvzG1x+MIVk8RpuJ2SeGVi1rnh7GX1
-        ZUl/K+LyW4crJ4nTcDsl8cq42Qu7+Mxf4ApK4jTcTjzKJSth5i78tIvP/AWm4FWJ03A75cbGxu/xuPJN
-        GM5d2NXhC1dSEqcRO/4Y7lxS2Uo3YTBvR+J+cCUlcRrxdfgFvj/A7j927Nhfcc2My28aN1MS94MrKYlT
-        ib+JPBdnfM1/Rb3KTXDzJHE/uJKSOJ2sm+BmSeJ+cCUlcQlxE9Zi53XfE7i0GTPjqsT94EpK4jJudBO4
-        rBk3QxL3gyspiUuJvUeHPRZySTNuhiTuB1dSEpfjukjiZtwMSdwPrqQkLsd1kcTNuBmSuB9cSUlcjusi
-        iZtxMyRxP7iSkrgc10USN+NmSOJ+cCUlcTmuiyRuxs2QxP3gSkriclwXSdyMmyGJ+8GVlMTluC6SuBk3
-        QxL3gyspictxXSRxM26GJO4HV1ISl+O6SOJm3AxJ3A+upCQux3WRxM24GZK4H1xJSVyO6yKJm3EzJHE/
-        uJKSuBzXRRI342ZI4n5wJSVxOa6LJG7GzZDE/eBKSuJyXBdJ3IybIYn7wZWUxOW4LpK4GTdDEveDKymJ
-        y3FdJHEzboYk7gdXUhKX47pI4mbcDEncD66kJC7HdZHEzbgZkrgfXElJXI7rIombcTMkcT+4kpK4HNdF
-        EjfjZkjifnAlJXE5roskbsbNkMT94EpK4nJcF0ncjJshifvBlZTE5bgukrgZN0MS94MrKYnLcV0kcTNu
-        hiTuB1cSX97a2noiLrnjvytrMD1GlTX94Eouq38cO5/PL4XvxQ15JT62P56WdlOG+8eWNf3gSt7I2Wx2
-        OR71c/91U7aDhxm3MsNdY8uafnAld+E/4XdxQz6Kx9fipjyz21/GsDQzRdb0gys5ot/HTdFv3zgdr5KD
-        +t5d1l4TM2NUWdMPUeqd8Eu+rNjSY6lvxAi/ij+/Gzflpbghj1Fjh+FzxpY1/aGf93/ixIkneaN9Pw7q
-        63i83jdNjGLcCP1ums/Ds7HzxeVsWWruLfRbMeJLx1NxSK+GH8RBfHPgwIG/h4dTIZUm9Mt84kD265US
-        N+W98FLFTWH9hCNeJQ/qTTZuxuk4rA/jS8m38ai/GdnD3I2smmglbsKj4SwO7614uBD/Qffz8FBvRsZO
-        rMLx48cfiVfJehzo2XjUD1Fq/tVXjJgYG92UeD/Z1vtJHPTFa333PJdPZDN8k48/X4yP/Uk8cSvY2Nh4
-        iD9OTExMTCyzb9+/hz0WLhBIXJMAAAAASUVORK5CYII=
+        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
 </value>
   </data>
   <data name="&gt;&gt;numSpotifyPlays.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="tsbCloseFile.Text" xml:space="preserve">
-    <value>Close file</value>
+    <value>Close File</value>
   </data>
-  <data name="&gt;&gt;tbAlbumArtist.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;chbDisk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;numRatingSoundcloud.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1355,6 +1340,9 @@
   <data name="chbAlbum.Text" xml:space="preserve">
     <value>Album:</value>
   </data>
+  <data name="&gt;&gt;tbAlbum.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
   <data name="&gt;&gt;numSCPlays.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
@@ -1362,7 +1350,7 @@
     <value>3</value>
   </data>
   <data name="bFileFromTags.ToolTip" xml:space="preserve">
-    <value>Vybrat název souboru ze značek Umělec a Název</value>
+    <value>Select a file name from the Artist and Name tags (Ctrl+D)</value>
   </data>
   <data name="&gt;&gt;numYTDislikes.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -1373,17 +1361,20 @@
   <data name="tbStarsSpotify.Size" type="System.Drawing.Size, System.Drawing">
     <value>440, 45</value>
   </data>
-  <data name="&gt;&gt;lRatingSoundcloud.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;pBoxAlbum.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;openFileDiMP3.Name" xml:space="preserve">
     <value>openFileDiMP3</value>
   </data>
-  <data name="&gt;&gt;chbGenres.ZOrder" xml:space="preserve">
-    <value>43</value>
+  <data name="tsmiSaveAs.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Ctrl+Shift+S</value>
+  </data>
+  <data name="tsmiSaveTemplate.Text" xml:space="preserve">
+    <value>Save Template</value>
+  </data>
+  <data name="&gt;&gt;tbComposer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbStarsSoundcloud.ZOrder" xml:space="preserve">
     <value>11</value>
@@ -1394,11 +1385,8 @@
   <data name="chbTrack.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;lResulution.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tbRemixer.ToolTip" xml:space="preserve">
-    <value />
+  <data name="tsbOpenMP3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
   </data>
   <data name="lRatingSoundcloud.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1415,14 +1403,14 @@
   <data name="&gt;&gt;tsmiSaveAs.Name" xml:space="preserve">
     <value>tsmiSaveAs</value>
   </data>
-  <data name="chbTrack.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 189</value>
+  <data name="chbComposers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 294</value>
   </data>
   <data name="tsmiSaveTemplate.ToolTipText" xml:space="preserve">
     <value>Save Metadata to file as template</value>
   </data>
-  <data name="numBlankMaxStars.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 20</value>
+  <data name="lRatingSpotify.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lRatingBlank.Text" xml:space="preserve">
     <value>Rating (blank):</value>
@@ -1430,14 +1418,35 @@
   <data name="chbTrack.Text" xml:space="preserve">
     <value>Track:</value>
   </data>
-  <data name="&gt;&gt;tbTitle.ZOrder" xml:space="preserve">
-    <value>34</value>
+  <data name="numSpotifyPlays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 400</value>
   </data>
-  <data name="chbAlbumArtists.ToolTip" xml:space="preserve">
-    <value />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
+        AP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAAAP//////////////////////////////////////////////
+        ////////////////////////AAAAAAAAAAAAAAD//////wAAAP//////AAAA////////////////////
+        //8AAAD/AAAA/wAAAP///////////wAAAAAAAAAAAAAA////////////AAAA////////////////////
+        ////////AAAA/wAAAP8AAAD///////////8AAAAAAAAAAAAAAP///////////wAAAP//////////////
+        ////////////////////////AAAA////////////AAAAAAAAAAAAAAD///////////8AAAD/////////
+        /////////////////////////////wAAAP///////////wAAAAAAAAAAAAAA////////////AAAA////
+        //////////////////////////////////8AAAD///////////8AAAAAAAAAAAAAAP//////AAAA////
+        //8AAAD/////////////////////////////////AAAA/wAAAP//////AAAAAAAAAAAAAAD/////////
+        /////////////////////////////////////////////////////////////wAAAAAAAAAAAAAA/wAA
+        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA//8AAP//AAD//wAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAP//
+        AAD//wAA//8AAA==
+</value>
   </data>
-  <data name="openFileDiMP3.Title" xml:space="preserve">
-    <value>Open MP3 file...</value>
+  <data name="tbAlbum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 20</value>
   </data>
   <data name="numSCPlays.ToolTip" xml:space="preserve">
     <value>Number of Plays</value>
@@ -1448,8 +1457,11 @@
   <data name="numRatingYouTube.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
-  <data name="&gt;&gt;tbArtist.Name" xml:space="preserve">
-    <value>tbArtist</value>
+  <data name="tbComposer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 292</value>
+  </data>
+  <data name="saveFileDiTempl.Filter" xml:space="preserve">
+    <value>Template|*.templ</value>
   </data>
   <data name="&gt;&gt;chbTrack.Name" xml:space="preserve">
     <value>chbTrack</value>
@@ -1490,8 +1502,8 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="&gt;&gt;numYTLikes.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="numTrackNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 188</value>
   </data>
   <data name="lRatingSpotify.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1499,8 +1511,8 @@
   <data name="&gt;&gt;numDate.Name" xml:space="preserve">
     <value>numDate</value>
   </data>
-  <data name="numSpotifyMaxPlays.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 20</value>
+  <data name="lPicture.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="chbYear.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 162</value>
@@ -1508,7 +1520,7 @@
   <data name="&gt;&gt;tbStarsBlank.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
-  <data name="numDiscNumber.ToolTip" xml:space="preserve">
+  <data name="chbComposers.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="numYTLikes.TabIndex" type="System.Int32, mscorlib">
@@ -1520,8 +1532,8 @@
   <data name="$this.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="lRatingSpotify.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;lRatingBlank.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="tbStarsSpotify.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 426</value>
@@ -1535,8 +1547,8 @@
   <data name="chbYear.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;tssbSave.Name" xml:space="preserve">
-    <value>tssbSave</value>
+  <data name="lArtist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
   </data>
   <data name="&gt;&gt;numSCRepost.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1544,8 +1556,8 @@
   <data name="tssbSave.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 22</value>
   </data>
-  <data name="numRatingYouTube.ToolTip" xml:space="preserve">
-    <value />
+  <data name="tbFileName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 31</value>
   </data>
   <data name="&gt;&gt;lRatingBlank.Name" xml:space="preserve">
     <value>lRatingBlank</value>
@@ -1562,8 +1574,12 @@
   <data name="&gt;&gt;lRatingSpotify.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
-  <data name="&gt;&gt;tbAlbum.ZOrder" xml:space="preserve">
-    <value>33</value>
+  <data name="pBoxAlbum.ToolTip" xml:space="preserve">
+    <value>Right Click to Reset
+Double Right Click to Delete</value>
+  </data>
+  <data name="&gt;&gt;lArtist.Name" xml:space="preserve">
+    <value>lArtist</value>
   </data>
   <data name="saveFileDiMP3.Title" xml:space="preserve">
     <value>Save MP3 as...</value>
@@ -1571,11 +1587,8 @@
   <data name="&gt;&gt;saveFileDiTempl.Type" xml:space="preserve">
     <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="numDiscNumber.ThousandsSeparator" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;numDiscNumber.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;tsmiSave.Name" xml:space="preserve">
+    <value>tsmiSave</value>
   </data>
   <data name="numBlankStars.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -1589,11 +1602,14 @@
   <data name="&gt;&gt;chbAlbum.ZOrder" xml:space="preserve">
     <value>39</value>
   </data>
-  <data name="tbStarsYouTube.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 482</value>
+  <data name="numBlankStars.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 344</value>
   </data>
   <data name="&gt;&gt;numBlankStars.ZOrder" xml:space="preserve">
     <value>47</value>
+  </data>
+  <data name="&gt;&gt;numRatingBlank.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;tbRemixer.ZOrder" xml:space="preserve">
     <value>8</value>
@@ -1601,17 +1617,20 @@
   <data name="chbGenres.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 242</value>
   </data>
-  <data name="chbYear.Text" xml:space="preserve">
-    <value>Year:</value>
+  <data name="&gt;&gt;lResulution.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lFileName.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 13</value>
   </data>
-  <data name="tbGenre.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;tsSp1.Name" xml:space="preserve">
+    <value>tsSp1</value>
   </data>
   <data name="chbDisk.Text" xml:space="preserve">
     <value>Disc:</value>
+  </data>
+  <data name="chbTrack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 189</value>
   </data>
   <data name="numYTDislikes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 3, 3</value>
@@ -1619,8 +1638,8 @@
   <data name="&gt;&gt;chbTrack.ZOrder" xml:space="preserve">
     <value>41</value>
   </data>
-  <data name="&gt;&gt;bFileFromTags.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="bFileFromTags.Text" xml:space="preserve">
+    <value>From Tags</value>
   </data>
   <data name="numSCLikes.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -1637,20 +1656,20 @@
   <data name="numSCPlays.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
   </data>
-  <data name="&gt;&gt;chbDisk.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;numBlankMaxStars.ZOrder" xml:space="preserve">
+    <value>48</value>
   </data>
   <data name="chbComposers.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 17</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Titel</value>
+  <data name="&gt;&gt;lRatingSoundcloud.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="tbStarsSoundcloud.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
-  <data name="&gt;&gt;tbComposer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="numDate.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -1688,32 +1707,26 @@
   <data name="&gt;&gt;numSCPlays.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="chbGenres.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="&gt;&gt;numSpotifyMaxPlays.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="lArtist.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="numRatingSpotify.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="&gt;&gt;numRatingSpotify.Name" xml:space="preserve">
     <value>numRatingSpotify</value>
   </data>
-  <data name="&gt;&gt;lTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tDontNull.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="numYTDislikes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 20</value>
+  <data name="numDiscNumber.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lResulution.Text" xml:space="preserve">
     <value>null</value>
   </data>
-  <data name="&gt;&gt;tslDuration.Name" xml:space="preserve">
-    <value>tslDuration</value>
+  <data name="tbStarsSpotify.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;lRatingYouTube.Name" xml:space="preserve">
     <value>lRatingYouTube</value>
@@ -1727,9 +1740,6 @@
   <data name="bOpenPicture.Location" type="System.Drawing.Point, System.Drawing">
     <value>352, 398</value>
   </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>480, 616</value>
-  </data>
   <data name="bFileFromTags.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 23</value>
   </data>
@@ -1738,6 +1748,9 @@
   </data>
   <data name="&gt;&gt;tbComposer.Name" xml:space="preserve">
     <value>tbComposer</value>
+  </data>
+  <data name="&gt;&gt;tbArtist.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="chbRemixer.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 17</value>
@@ -1748,17 +1761,17 @@
   <data name="tbStarsYouTube.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;tbTitle.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="numRatingYouTube.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;lPicture.ZOrder" xml:space="preserve">
-    <value>27</value>
+  <data name="lRatingSpotify.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
   </data>
   <data name="&gt;&gt;numRatingSoundcloud.Name" xml:space="preserve">
     <value>numRatingSoundcloud</value>
   </data>
-  <data name="lTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 13</value>
+  <data name="numRatingSpotify.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;chbAlbum.Name" xml:space="preserve">
     <value>chbAlbum</value>
@@ -1781,8 +1794,8 @@
   <data name="&gt;&gt;numBlankStars.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;numRatingYouTube.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tbGenre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 240</value>
   </data>
   <data name="pBoxAlbum.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -1799,11 +1812,11 @@
   <data name="tslChanges.Text" xml:space="preserve">
     <value>Status</value>
   </data>
-  <data name="tbArtist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>78, 83</value>
+  <data name="numDiscNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 20</value>
   </data>
-  <data name="&gt;&gt;lPicture.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;tbAlbumArtist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="numYTDislikes.Location" type="System.Drawing.Point, System.Drawing">
     <value>339, 456</value>
@@ -1817,8 +1830,8 @@
   <data name="tbStarsYouTube.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="tbAlbumArtist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 266</value>
+  <data name="tssbSave.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
   </data>
   <data name="openFileDiPic.Filter" xml:space="preserve">
     <value>All Supported Image Formats|*.png;*.jpg;*.jpeg;*.bmp|Portable Network Graphics|*.png|JPEG|*.jpg;*.jpeg|Windows Bitmap|*.bmp</value>
@@ -1844,17 +1857,14 @@
   <data name="numSCLikes.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 20</value>
   </data>
-  <data name="numSpotifyPlays.Location" type="System.Drawing.Point, System.Drawing">
-    <value>182, 400</value>
-  </data>
   <data name="numYTLikes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
-  <data name="&gt;&gt;chbYear.Name" xml:space="preserve">
-    <value>chbYear</value>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>480, 616</value>
   </data>
-  <data name="chbYear.ToolTip" xml:space="preserve">
-    <value />
+  <data name="tbAlbumArtist.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
   </data>
   <data name="chbTrack.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -1865,8 +1875,8 @@
   <data name="numRatingBlank.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <data name="numYTLikes.ToolTip" xml:space="preserve">
-    <value>Number of Likes</value>
+  <data name="lPicture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
   </data>
   <data name="&gt;&gt;tsmiSaveAs.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1874,11 +1884,14 @@
   <data name="chbAlbum.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 137</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="chbRemixer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="numBlankStars.ToolTip" xml:space="preserve">
-    <value>Given Stars</value>
+  <data name="openFileDiMP3.Title" xml:space="preserve">
+    <value>Open MP3 file...</value>
+  </data>
+  <data name="chbYear.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;chbYear.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1898,8 +1911,8 @@
   <data name="tsbOpenMP3.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="&gt;&gt;numDiscNumber.Name" xml:space="preserve">
-    <value>numDiscNumber</value>
+  <data name="chbGenres.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="tbAlbumArtist.Size" type="System.Drawing.Size, System.Drawing">
     <value>345, 20</value>
@@ -1922,9 +1935,6 @@
   <data name="&gt;&gt;openFileDiPic.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lArtist.Name" xml:space="preserve">
-    <value>lArtist</value>
-  </data>
   <data name="&gt;&gt;tbAlbum.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1934,12 +1944,11 @@
   <data name="numYTDislikes.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
   </data>
-  <data name="pBoxAlbum.ToolTip" xml:space="preserve">
-    <value>Right Click to Reset
-Double Right Click to Delete</value>
+  <data name="lArtist.Text" xml:space="preserve">
+    <value>Performers:</value>
   </data>
-  <data name="&gt;&gt;chbDisk.ZOrder" xml:space="preserve">
-    <value>42</value>
+  <data name="numYTDislikes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 20</value>
   </data>
   <data name="chbComposers.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -1950,8 +1959,8 @@ Double Right Click to Delete</value>
   <data name="lPicture.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
   </data>
-  <data name="tsTop.Text" xml:space="preserve">
-    <value>toolStrip</value>
+  <data name="&gt;&gt;numRatingYouTube.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chbGenres.Text" xml:space="preserve">
     <value>Genres:</value>
@@ -1959,20 +1968,23 @@ Double Right Click to Delete</value>
   <data name="&gt;&gt;numSCLikes.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="tsmiSaveTemplate.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Ctrl+Alt+S</value>
+  </data>
   <data name="numSpotifyPlays.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 20</value>
   </data>
   <data name="&gt;&gt;chbComposers.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="saveFileDiTempl.Filter" xml:space="preserve">
-    <value>Template|*.templ</value>
+  <data name="&gt;&gt;tbTitle.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;chbDisk.Name" xml:space="preserve">
-    <value>chbDisk</value>
+  <data name="numBlankMaxStars.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 20</value>
   </data>
-  <data name="&gt;&gt;tsmiSaveTemplate.Name" xml:space="preserve">
-    <value>tsmiSaveTemplate</value>
+  <data name="chbTrack.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;chbTrack.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1996,19 +2008,22 @@ Double Right Click to Delete</value>
     <value>0, 3, 0, 3</value>
   </data>
   <data name="tsmiSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
+    <value>212, 22</value>
   </data>
   <data name="chbAlbumArtists.Text" xml:space="preserve">
     <value>Album Artists:</value>
   </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>cs</value>
+  </metadata>
   <metadata name="openFileDiPic.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>233, 17</value>
   </metadata>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>494, 20</value>
+  <metadata name="saveFileDiMP3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 41</value>
   </metadata>
-  <metadata name="openFileDiTempl.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>689, 20</value>
+  <metadata name="tDontNull.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>584, 20</value>
   </metadata>
   <metadata name="tsTop.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -2016,8 +2031,8 @@ Double Right Click to Delete</value>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="tDontNull.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>584, 20</value>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>494, 20</value>
   </metadata>
   <metadata name="openFileDiMP3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>99, 17</value>
@@ -2028,7 +2043,7 @@ Double Right Click to Delete</value>
   <metadata name="tFileChanged.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>387, 17</value>
   </metadata>
-  <metadata name="saveFileDiMP3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>0, 41</value>
+  <metadata name="openFileDiTempl.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>689, 20</value>
   </metadata>
 </root>
