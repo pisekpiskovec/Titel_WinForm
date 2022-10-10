@@ -25,7 +25,9 @@ Titel is written in .NET Framework since it supports User Interface, which means
 * [x] Icon
 * [x] Rating calculator
 - [x] Shortcuts (1.0.1)
-- [ ] taglib update (1.0.1)
+- [x] taglib update (1.0.1)
+- [x] Save bug fix
+- [ ] Translation updates
 
 ## Screenshots
 
@@ -45,10 +47,10 @@ Titel is written in .NET Framework since it supports User Interface, which means
 
 |          | Version | Support until |
 | -------- | ------- | ------------- |
-| *LTS*    | 0.9.0   | 1.3.x         |
-| *LTS*    | 1.0.1   | 1.4.x         |
-| *ESR*    | 0.7.0   | 0.9.x         |
-| *Stable* |         |               |
+| *LTS*    | 0.9.x   | 1.3.x         |
+| *LTS*    | 1.0.x   | 1.4.x         |
+| *ESR*    | 0.7.x   | 0.9.x         |
+| *Stable* | 1.0.1   | 1.0.2         |
 
 * **LTS** *(Long-Term Support)*: Follows 5 release cycle.
 
