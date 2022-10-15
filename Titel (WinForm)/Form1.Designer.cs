@@ -38,9 +38,8 @@
             this.tsmiSaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiSaveTemplate = new System.Windows.Forms.ToolStripMenuItem();
             this.tsbCloseFile = new System.Windows.Forms.ToolStripButton();
-            this.tsSp1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsSp = new System.Windows.Forms.ToolStripSeparator();
             this.tslChanges = new System.Windows.Forms.ToolStripLabel();
-            this.tslDuration = new System.Windows.Forms.ToolStripLabel();
             this.openFileDiMP3 = new System.Windows.Forms.OpenFileDialog();
             this.lFileName = new System.Windows.Forms.Label();
             this.tbFileName = new System.Windows.Forms.TextBox();
@@ -129,9 +128,8 @@
             this.tsbOpenTempl,
             this.tssbSave,
             this.tsbCloseFile,
-            this.tsSp1,
-            this.tslChanges,
-            this.tslDuration});
+            this.tsSp,
+            this.tslChanges});
             this.tsTop.Name = "tsTop";
             this.tsTop.Stretch = true;
             this.toolTip.SetToolTip(this.tsTop, resources.GetString("tsTop.ToolTip"));
@@ -188,20 +186,15 @@
             this.tsbCloseFile.Name = "tsbCloseFile";
             this.tsbCloseFile.Click += new System.EventHandler(this.tsbCloseFile_Click);
             // 
-            // tsSp1
+            // tsSp
             // 
-            resources.ApplyResources(this.tsSp1, "tsSp1");
-            this.tsSp1.Name = "tsSp1";
+            resources.ApplyResources(this.tsSp, "tsSp");
+            this.tsSp.Name = "tsSp";
             // 
             // tslChanges
             // 
             resources.ApplyResources(this.tslChanges, "tslChanges");
             this.tslChanges.Name = "tslChanges";
-            // 
-            // tslDuration
-            // 
-            resources.ApplyResources(this.tslDuration, "tslDuration");
-            this.tslDuration.Name = "tslDuration";
             // 
             // openFileDiMP3
             // 
@@ -788,7 +781,7 @@
         private System.Windows.Forms.TrackBar tbStarsSoundcloud;
         private System.Windows.Forms.Label lRatingSoundcloud;
         private System.Windows.Forms.TextBox tbComposer;
-        private System.Windows.Forms.ToolStripSeparator tsSp1;
+        private System.Windows.Forms.ToolStripSeparator tsSp;
         public System.Windows.Forms.Timer tFileChanged;
         private System.Windows.Forms.ToolStripSplitButton tssbSave;
         private System.Windows.Forms.ToolStripMenuItem tsmiSave;
@@ -806,7 +799,6 @@
         private System.Windows.Forms.CheckBox chbAlbumArtists;
         private System.Windows.Forms.CheckBox chbComposers;
         private System.Windows.Forms.CheckBox chbRemixer;
-        private System.Windows.Forms.ToolStripLabel tslDuration;
         private System.Windows.Forms.NumericUpDown numBlankStars;
         private System.Windows.Forms.NumericUpDown numBlankMaxStars;
         private System.Windows.Forms.NumericUpDown numRatingBlank;

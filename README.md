@@ -26,8 +26,9 @@ Titel is written in .NET Framework since it supports User Interface, which means
 * [x] Rating calculator
 - [x] Shortcuts (1.0.1)
 - [x] taglib update (1.0.1)
-- [x] Save bug fix
-- [ ] Translation updates
+- [x] Save bug fix (1.0.1)
+- [x] Translation updates (1.0.1)
+- [ ] shortcuts bugfix (1.0.2)
 
 ## Screenshots
 
