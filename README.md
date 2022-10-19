@@ -1,5 +1,3 @@
-## Even YOU can help me.
-
 ![Titel (WinForm)](https://github.com/pisekpiskovec/Titel_WinForm/blob/master/Titel%20(WinForm)/Resources/titel_icon_64.png)
 
 # Titel_WinForm
