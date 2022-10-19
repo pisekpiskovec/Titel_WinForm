@@ -12,30 +12,16 @@ Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make yo
 
 ## To-Do
 
-* [x] File loading
-* [x] Basic metadata loading
-* [x] Picture loading
-* [x] Rating loading
-* [x] Custom picture loading (+ resolution)
-* [x] Indicator of changes
-* [x] Saving file
-* [x] Saving file as
-* [x] Close file
-* [x] Change positions of elements
-* [x] Icon
-* [x] Rating calculator
-- [x] Shortcuts (1.0.1)
-- [x] taglib update (1.0.1)
-- [x] Save bug fix (1.0.1)
-- [x] Translation updates (1.0.1)
-- [ ] shortcuts bugfix (1.0.2)
+* [x] Windows integration
 
 ## Screenshots
 
 ![Newly opened window](https://github.com/pisekpiskovec/Titel_WinForm/blob/master/Titel%20(WinForm)/readme_resources/titel_new_window.png)
+
 (Newly opened window)
 
 ![Window with a song loaded](https://github.com/pisekpiskovec/Titel_WinForm/blob/master/Titel%20(WinForm)/readme_resources/audio_loaded_unchanged.png)
+
 (Window with a song loaded)
 
 ## Features
@@ -48,10 +34,10 @@ Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make yo
 
 |          | Version | Support until |
 | -------- | ------- | ------------- |
-| *LTS*    | 0.9.x   | 1.3.x         |
-| *LTS*    | 1.0.x   | 1.4.x         |
-| *ESR*    | 0.7.x   | 0.9.x         |
-| *Stable* | 1.0.1   | 1.0.2         |
+| *LTS*    | 0.9.0   | 1.3.x         |
+| *LTS*    | 1.0.2   | 1.4.x         |
+| *ESR*    | 0.7.0   | 0.9.0         |
+| *Stable* | 1.1.0   | 1.2.0         |
 
 * **LTS** *(Long-Term Support)*: Follows 5 release cycle.
 
