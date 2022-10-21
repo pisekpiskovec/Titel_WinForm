@@ -11,6 +11,7 @@ using TagLib;
 using System.IO;
 using Titel_WinForm.Properties;
 using Titel_WinForm;
+using System.Windows.Forms.VisualStyles;
 
 namespace Titel_WinForm
 {
@@ -567,6 +568,10 @@ namespace Titel_WinForm
                 else if (e.KeyCode == Keys.S)
                 {
                     e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsmiSaveTemplate.PerformClick()));
+                }
+                else if (e.KeyCode == Keys.F6)
+                {
+                    e.SuppressKeyPress = true; this.Location= new Point(0, 0);
                 }
             }
             else if (e.Control)
