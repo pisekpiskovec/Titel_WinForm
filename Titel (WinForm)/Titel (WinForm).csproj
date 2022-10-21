@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -117,6 +117,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -160,7 +161,16 @@
     <Content Include="Resources\generic_music_file_100px.png" />
     <Content Include="Resources\titel_icon_16.png" />
     <Content Include="Resources\titel_icon_64.png" />
+    <Content Include="titel_icon_16.ico" />
     <Content Include="titel_icon_64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <FileAssociation Include=".templ">
+      <Visible>False</Visible>
+      <Description>Template file containing metadatas</Description>
+      <Progid>0</Progid>
+      <DefaultIcon>Resources\titel_icon_16.ico</DefaultIcon>
+    </FileAssociation>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
