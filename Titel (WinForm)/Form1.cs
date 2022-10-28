@@ -16,12 +16,7 @@ namespace Titel_WinForm
         string musFileName; //get song's full path (file path + safe file name)
         string[] _args;
 
-        public Form1(string[] args)
-        {
-            InitializeComponent(); 
-
-            _args = args;
-        }
+        public Form1(string[] args) { InitializeComponent(); _args = args; }
 
         private void fileStatus(int status)
         {
@@ -200,11 +195,7 @@ namespace Titel_WinForm
             return returningValue;
         }
 
-        private void Form1_Load(object sender, EventArgs e) 
-        {
-            this.Location = Settings.Default.lastPos; fileStatus(0); pBoxAlbum.AllowDrop = true; numDate.Value = DateTime.Today.Year; tsbCloseFile.Enabled = false; albumArtworkURL = "null♪";
-            CreateExtend();
-            if (_args.Length > 0)
+        private void Form1_Load(object sender, EventArgs e) { this.Location = Settings.Default.lastPos; fileStatus(0); pBoxAlbum.AllowDrop = true; numDate.Value = DateTime.Today.Year; tsbCloseFile.Enabled = false; albumArtworkURL = "null♪"; CreateExtend(); if (_args.Length > 0)
             {
                 if (System.IO.File.Exists(_args[0]) && new System.IO.FileInfo(_args[0]).Extension == ".mp3")
                 {
@@ -280,8 +271,7 @@ namespace Titel_WinForm
                     else if (picMode == "custom" || picMode == "my" || picMode == "file" || picMode == "own") { if (inputing[17].ToString().Trim().ToLower() != "") { pBoxAlbum.BackgroundImage = new Bitmap(inputing[17]); albumArtworkURL = inputing[17]; lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height; } else { pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px; lResulution.Text = "null"; albumArtworkURL = "null♪"; } }
                     else if (picMode == "skip" || picMode == "") { } else { }
                 }
-            }
-        }
+            } }
 
         private void numRatingSpotify_ValueChanged(object sender, EventArgs e)
         {
@@ -480,7 +470,6 @@ namespace Titel_WinForm
         }
 
         private void pBoxAlbum_DragDrop(object sender, DragEventArgs e) { var data = e.Data.GetData(DataFormats.FileDrop); if (data != null) { var fileNames = data as string[]; if (fileNames.Length > 0) pBoxAlbum.BackgroundImage = Image.FromFile(fileNames[0]); albumArtworkURL = fileNames[0]; lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height; } }
-
         private void pBoxAlbum_DragEnter(object sender, DragEventArgs e) { e.Effect = DragDropEffects.Copy; }
 
         private void pBoxAlbum_MouseClick(object sender, MouseEventArgs e)
@@ -561,20 +550,15 @@ namespace Titel_WinForm
         }
 
         private void bFileFromTags_Click(object sender, EventArgs e) { if (musFileName != null) { tbFileName.Text = tbArtist.Text.Split('|')[0] + " - " + tbTitle.Text + ".mp3"; } }
-
         private void numDate_Leave(object sender, EventArgs e) { if (numDate.Text == "") { numDate.Value = DateTime.Today.Year; numDate.Text = Convert.ToString(DateTime.Today.Year); } }
-
         private void trimTextBoxes(System.Windows.Forms.TextBox tb) { tb.Text = tb.Text.Trim(); }
-
         void spotifyLikeCalculator(NumericUpDown current, NumericUpDown maximum, NumericUpDown returning) { decimal val = (current.Value / maximum.Value) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
         void youtubeCalculator(NumericUpDown likes, NumericUpDown dislikes, NumericUpDown returning) { decimal val = (likes.Value / (dislikes.Value + likes.Value)) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
         void soundcloudCalculator(NumericUpDown plays, NumericUpDown likes, NumericUpDown reposts, NumericUpDown returning) { decimal val = ((likes.Value + reposts.Value) / plays.Value) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
-
         private void numBlank_ValueChanged(object sender, EventArgs e) { spotifyLikeCalculator(numBlankStars, numBlankMaxStars, numRatingBlank); }
         private void numSpotify_ValueChanged(object sender, EventArgs e) { spotifyLikeCalculator(numSpotifyPlays, numSpotifyMaxPlays, numRatingSpotify); }
         private void numYT_ValueChanged(object sender, EventArgs e) { youtubeCalculator(numYTLikes, numYTDislikes, numRatingYouTube); }
         private void numSC_ValueChanged(object sender, EventArgs e) { soundcloudCalculator(numSCPlays, numSCLikes, numSCRepost, numRatingSoundcloud); }
-
         private void tDontNull_Tick(object sender, EventArgs e) { if (numBlankMaxStars.Value == 0) { numBlankStars.Enabled = false; } else { numBlankStars.Enabled = true; } if (numSpotifyMaxPlays.Value == 0) { numSpotifyPlays.Enabled = false; } else { numSpotifyPlays.Enabled = true; } if (numSCPlays.Value == 0) { numSCLikes.Enabled = false; numSCRepost.Enabled = false; } else { numSCLikes.Enabled = true; numSCRepost.Enabled = true; } }
 
         private void tsbOpenTempl_Click(object sender, EventArgs e)
