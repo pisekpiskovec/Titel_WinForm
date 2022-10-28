@@ -1,17 +1,9 @@
 ﻿using System;   
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TagLib;
 using System.IO;
 using Titel_WinForm.Properties;
-using Titel_WinForm;
-using System.Windows.Forms.VisualStyles;
 
 namespace Titel_WinForm
 {
