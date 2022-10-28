@@ -45,16 +45,17 @@ Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make yo
 
 ## Keyboard shortcuts
 
-| Action              | Shortcut     |
-| ------------------- | ------------ |
-| Open File           | Ctrl+O       |
-| Open Template       | Ctrl+Shift+O |
-| Save                | Ctrl+S       |
-| Save As...          | Ctrl+Shift+S |
-| Save Template       | Ctrl+Alt+S   |
-| Close File          | Ctrl+W       |
-| Open Picture        | Ctrl+Alt+O   |
-| File Name From Tags | Ctrl+D       |
+| Action                  | Shortcut     |
+| ----------------------- | ------------ |
+| Open File               | Ctrl+O       |
+| Open Template           | Ctrl+Shift+O |
+| Save                    | Ctrl+S       |
+| Save As...              | Ctrl+Shift+S |
+| Save Template           | Ctrl+Alt+S   |
+| Close File              | Ctrl+W       |
+| Open Picture            | Ctrl+Alt+O   |
+| File Name From Tags     | Ctrl+D       |
+| Reset Window's Position | Ctrl+Alt+F6  |
 
 ## Even YOU can help me.
 
