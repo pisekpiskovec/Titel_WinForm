@@ -35,7 +35,7 @@ Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make yo
 | *LTS*    | 0.9.0   | 1.3.x         |
 | *LTS*    | 1.0.2   | 1.4.x         |
 | *ESR*    | 0.7.0   | 0.9.0         |
-| *Stable* | 1.1.0   | 1.2.0         |
+| *Stable* | 1.1.0   | 1.1.1         |
 
 * **LTS** *(Long-Term Support)*: Follows 5 release cycle.
 
