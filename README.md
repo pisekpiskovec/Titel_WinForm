@@ -6,7 +6,7 @@
 
 Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make your music library fancier.
 
-⚠This project was created for learning purpose.⚠
+> **Warning** This project was created for learning purpose.
 
 ## To-Do
 
@@ -27,21 +27,6 @@ Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make yo
 * Changing file name
 * Editing song's metadata
 * Adding rating from main streaming services (Spotify, YouTube, SoundCloud) (Not importing)
-
-## Support
-
-|          | Version | Support until |
-| -------- | ------- | ------------- |
-| *LTS*    | 0.9.0   | 1.3.x         |
-| *LTS*    | 1.0.2   | 1.4.x         |
-| *ESR*    | 0.7.0   | 0.9.0         |
-| *Stable* | 1.1.1   | 1.2.0         |
-
-* **LTS** *(Long-Term Support)*: Follows 5 release cycle.
-
-* **ESR** *(Extended Support Release)*: Follows 3 release cycle.
-
-* **Stable**: Become un supported after next release.
 
 ## Keyboard shortcuts
 
