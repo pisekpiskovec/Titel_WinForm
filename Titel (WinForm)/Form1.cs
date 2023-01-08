@@ -489,7 +489,7 @@ namespace Titel_WinForm
                 }
                 else if (e.KeyCode == Keys.S)
                 {
-                    e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsmiSaveTemplate.PerformClick()));
+                    e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsmiSaveAs.PerformClick()));
                 }
             }
             else if (e.Control && e.Alt)
