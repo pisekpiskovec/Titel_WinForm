@@ -11,7 +11,7 @@ Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make yo
 ## To-Do
 
 * [ ] Save album arts from songs
-* [ ] Fix renaming issue
+* [x] Fix renaming issue
 * [ ] Fix Windows integration
 * [ ] Replace illegals characters in file name on saving
 * [ ] minimum rating on spotify using calculator is one
