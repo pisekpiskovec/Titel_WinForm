@@ -5,6 +5,7 @@ using TagLib;
 using System.IO;
 using Titel_WinForm.Properties;
 using Microsoft.Win32;
+using System.Text.RegularExpressions;
 
 namespace Titel_WinForm
 {
@@ -268,7 +269,7 @@ namespace Titel_WinForm
             {
                 tFileChanged.Stop();
 
-                trimTextBoxes(tbFileName); trimTextBoxes(tbArtist); trimTextBoxes(tbTitle); trimTextBoxes(tbAlbum); trimTextBoxes(tbGenre); trimTextBoxes(tbAlbumArtist); trimTextBoxes(tbComposer); trimTextBoxes(tbRemixer);
+                trimTextBoxes(tbFileName); trimTextBoxes(tbArtist); trimTextBoxes(tbTitle); trimTextBoxes(tbAlbum); trimTextBoxes(tbGenre); trimTextBoxes(tbAlbumArtist); trimTextBoxes(tbComposer); trimTextBoxes(tbRemixer); trimTextBoxes(tbFileName);
 
                 TagLib.Id3v2.Tag.DefaultVersion = 3;
                 TagLib.Id3v2.Tag.ForceDefaultVersion = true;
@@ -299,6 +300,7 @@ namespace Titel_WinForm
 
                 if (tbFileName.Text != musFileSName && !tbFileName.Text.Contains("\\") && !tbFileName.Text.Contains("/") && !tbFileName.Text.Contains(":") && !tbFileName.Text.Contains("*") && !tbFileName.Text.Contains("?") && !tbFileName.Text.Contains(Char.ToString('"')) && !tbFileName.Text.Contains("<") && !tbFileName.Text.Contains(">") && !tbFileName.Text.Contains("|"))
                 {
+                    trimTextBoxes(tbFileName);
                     System.IO.File.Move(musFilePath + musFileSName, musFilePath + tbFileName.Text);
                     musFileSName = tbFileName.Text;
                     musFileName = musFilePath + musFileSName;
@@ -318,6 +320,7 @@ namespace Titel_WinForm
                 if (saveFileDiMP3.ShowDialog() == DialogResult.OK)
                 {
                     trimTextBoxes(tbFileName); trimTextBoxes(tbArtist); trimTextBoxes(tbTitle); trimTextBoxes(tbAlbum); trimTextBoxes(tbGenre); trimTextBoxes(tbAlbumArtist); trimTextBoxes(tbComposer); trimTextBoxes(tbRemixer);
+                    
 
                     TagLib.Id3v2.Tag.DefaultVersion = 3;
                     TagLib.Id3v2.Tag.ForceDefaultVersion = true;
@@ -445,7 +448,7 @@ namespace Titel_WinForm
             }
         }
 
-        private void bFileFromTags_Click(object sender, EventArgs e) { if (musFileName != null) { tbFileName.Text = tbArtist.Text.Split('|')[0] + " - " + tbTitle.Text + ".mp3"; } }
+        private void bFileFromTags_Click(object sender, EventArgs e) { if (musFileName != null) { trimTextBoxes(tbArtist); trimTextBoxes(tbTitle); tbFileName.Text = tbArtist.Text.Split('|')[0] + " - " + tbTitle.Text + ".mp3"; } }
         private void numDate_Leave(object sender, EventArgs e) { if (numDate.Text == "") { numDate.Value = DateTime.Today.Year; numDate.Text = Convert.ToString(DateTime.Today.Year); } }
         private void trimTextBoxes(System.Windows.Forms.TextBox tb) { tb.Text = tb.Text.Trim(); }
         void spotifyLikeCalculator(NumericUpDown current, NumericUpDown maximum, NumericUpDown returning) { decimal val = (current.Value / maximum.Value) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
