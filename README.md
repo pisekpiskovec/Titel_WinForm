@@ -49,9 +49,3 @@ Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make yo
 | Open Picture            | Ctrl+Alt+O   |
 | File Name From Tags     | Ctrl+D       |
 | Reset Window's Position | Ctrl+Alt+F6  |
-
-## Even YOU can help me.
-
-Do you want to help me to improve Titel and don't know where to start? Well, I have the solution to that problem. The best way to improve Titel is by submitting new features, finding bugs and translating the program to your language.
-
-[Here](https://github.com/pisekpiskovec/Titel_WinForm/blob/master/transl_table.xlsx)'s the translation table ←.
