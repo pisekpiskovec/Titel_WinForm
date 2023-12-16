@@ -16,7 +16,7 @@ Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make yo
 * [ ] Replace illegals characters in file name on saving
 * [x] minimum rating on spotify using calculator is one
 * [ ] keyboard shortcut overview 
-* [ ] fix keyboard shortcuts
+* [x] fix keyboard shortcuts
 * [ ] YouTube Music rating
 * [ ] About screen
 
