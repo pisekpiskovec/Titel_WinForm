@@ -275,7 +275,7 @@ namespace Titel_WinForm
                 TagLib.Id3v2.Tag.UseNumericGenres = false;
                 TagLib.File musFile = TagLib.File.Create(musFileName);
 
-                if (albumArtworkURL != "Album artwork♪" && albumArtworkURL != "null♪") { musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiPic.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
+                if (albumArtworkURL != "Album artwork♪" && albumArtworkURL != "null♪") { musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(albumArtworkURL), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
                 else if (albumArtworkURL == "null♪") { musFile.Tag.Pictures = null; }
 
                 musFile.Tag.Performers = tbArtist.Text.Split('|');
@@ -329,7 +329,7 @@ namespace Titel_WinForm
                     if (!System.IO.File.Exists(saveFileDiMP3.FileName)) { System.IO.File.Copy(musFileName, saveFileDiMP3.FileName); }
                     TagLib.File musFile = TagLib.File.Create(saveFileDiMP3.FileName);
 
-                    if (albumArtworkURL != "Album artwork♪" && albumArtworkURL != "null♪") { musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(openFileDiPic.FileName), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
+                    if (albumArtworkURL != "Album artwork♪" && albumArtworkURL != "null♪") { musFile.Tag.Pictures = new TagLib.IPicture[] { new TagLib.Picture(new TagLib.ByteVector((byte[])new ImageConverter().ConvertTo(System.Drawing.Image.FromFile(albumArtworkURL), typeof(byte[])))) }; albumArtworkURL = "Album artwork♪"; }
                     else if (albumArtworkURL == "null♪") { musFile.Tag.Pictures = null; }
 
                     musFile.Tag.Performers = tbArtist.Text.Split('|');
@@ -357,7 +357,7 @@ namespace Titel_WinForm
 
         private void pBoxAlbum_DragDrop(object sender, DragEventArgs e) {
             if (e.Data.GetDataPresent(DataFormats.FileDrop)) { 
-            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+                string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
                 if (Path.GetExtension(files[0]) == ".mp3") { loadMusic(files[0]); }
                 else if (Path.GetExtension(files[0]) == ".templ") { loadTemplate(files[0]); }
                 else if (Path.GetExtension(files[0]) == ".jpg" | Path.GetExtension(files[0]) == ".png" | Path.GetExtension(files[0]) == ".bmp")
