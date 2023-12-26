@@ -5,7 +5,6 @@ using TagLib;
 using System.IO;
 using Titel_WinForm.Properties;
 using Microsoft.Win32;
-using System.Text.RegularExpressions;
 
 namespace Titel_WinForm
 {
