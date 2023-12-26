@@ -362,7 +362,9 @@ namespace Titel_WinForm
                 else if (Path.GetExtension(files[0]) == ".templ") { loadTemplate(files[0]); }
                 else if (Path.GetExtension(files[0]) == ".jpg" | Path.GetExtension(files[0]) == ".png" | Path.GetExtension(files[0]) == ".bmp")
                 {
-                    pBoxAlbum.BackgroundImage = Image.FromFile(files[0]);
+                    System.IO.FileInfo fInfo = new System.IO.FileInfo(files[0]);
+                    Settings.Default.ofdPic = fInfo.DirectoryName;
+                    pBoxAlbum.BackgroundImage = new Bitmap(files[0]);
                     albumArtworkURL = files[0];
                     lResulution.Text = pBoxAlbum.BackgroundImage.Width + "x" + pBoxAlbum.BackgroundImage.Height;
                 }
