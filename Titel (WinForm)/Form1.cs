@@ -5,6 +5,8 @@ using TagLib;
 using System.IO;
 using Titel_WinForm.Properties;
 using Microsoft.Win32;
+using System.Drawing.Imaging;
+using System.Linq;
 
 namespace Titel_WinForm
 {
@@ -355,6 +357,40 @@ namespace Titel_WinForm
             }
         }
 
+        private void tsmiSaveTemplate_Click(object sender, EventArgs e)
+        {
+            saveFileDiTempl.InitialDirectory = Settings.Default.sfdTempl;
+            if (saveFileDiTempl.ShowDialog() == DialogResult.OK)
+            {
+                Settings.Default.sfdTempl = new System.IO.FileInfo(saveFileDiTempl.FileName).DirectoryName;
+                if (saveFileDiTempl.FileName != "")
+                {
+                    string[] inputing = { tbArtist.Text, tbTitle.Text, tbAlbum.Text, numDate.Value.ToString(), numTrackNumber.Value.ToString(), numDiscNumber.Value.ToString(), tbGenre.Text, tbAlbumArtist.Text, tbComposer.Text, tbRemixer.Text, numRatingBlank.Value.ToString(), numBlankMaxStars.Value.ToString(), numRatingSpotify.Value.ToString(), numSpotifyMaxPlays.Value.ToString(), numRatingYouTube.Value.ToString(), numRatingSoundcloud.Value.ToString(), "", "" };
+                    if (albumArtworkURL == "null♪") { inputing[16] = "null"; } else if (albumArtworkURL == "Album artwork♪") { inputing[16] = ""; } else if (albumArtworkURL != "null♪" && albumArtworkURL != "Album artwork♪") { inputing[16] = "custom"; inputing[17] = albumArtworkURL; }
+
+                    System.IO.File.WriteAllLines(saveFileDiTempl.FileName, inputing);
+                }
+            }
+        }
+
+        private void tsmiSaveImage_Click(object sender, EventArgs e)
+        {
+            var musFileTag = TagLib.File.Create(musFileName).Tag;
+            if (musFileName != null && musFileTag.Pictures.Length >= 1)
+            {
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    try
+                    {
+                        Bitmap bmp = new Bitmap(Image.FromStream(new MemoryStream(musFileTag.Pictures[0].Data.Data)));
+                        bmp.Save(ms, ImageFormat.Png);
+                        byte[] bytes = ms.ToArray();
+                        System.IO.File.WriteAllBytes(Path.Combine(musFilePath,tbAlbum.Text + ".png"), bytes);
+                    } catch { MessageBox.Show("An error occured. Cannot save into already existing file.", "File already exists", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                }
+            }
+        }
+
         private void pBoxAlbum_DragDrop(object sender, DragEventArgs e) {
             if (e.Data.GetDataPresent(DataFormats.FileDrop)) { 
                 string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
@@ -465,22 +501,6 @@ namespace Titel_WinForm
         {
             openFileDiTempl.InitialDirectory = Settings.Default.ofdTempl;
             if (openFileDiTempl.ShowDialog() == DialogResult.OK) { loadTemplate(openFileDiTempl.FileName); }
-        }
-
-        private void tsmiSaveTemplate_Click(object sender, EventArgs e)
-        {
-            saveFileDiTempl.InitialDirectory = Settings.Default.sfdTempl;
-            if (saveFileDiTempl.ShowDialog() == DialogResult.OK)
-            {
-                Settings.Default.sfdTempl = new System.IO.FileInfo(saveFileDiTempl.FileName).DirectoryName;
-                if (saveFileDiTempl.FileName != "")
-                {
-                    string[] inputing = { tbArtist.Text, tbTitle.Text, tbAlbum.Text, numDate.Value.ToString(), numTrackNumber.Value.ToString(), numDiscNumber.Value.ToString(), tbGenre.Text, tbAlbumArtist.Text, tbComposer.Text, tbRemixer.Text, numRatingBlank.Value.ToString(), numBlankMaxStars.Value.ToString(), numRatingSpotify.Value.ToString(), numSpotifyMaxPlays.Value.ToString(), numRatingYouTube.Value.ToString(), numRatingSoundcloud.Value.ToString(), "", "" };
-                    if (albumArtworkURL == "null♪") { inputing[16] = "null"; } else if (albumArtworkURL == "Album artwork♪") { inputing[16] = ""; } else if (albumArtworkURL != "null♪" && albumArtworkURL != "Album artwork♪") { inputing[16] = "custom"; inputing[17] = albumArtworkURL; }
-
-                    System.IO.File.WriteAllLines(saveFileDiTempl.FileName, inputing);
-                }
-            }
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
