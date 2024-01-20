@@ -36,7 +36,8 @@
             this.tssbSave = new System.Windows.Forms.ToolStripSplitButton();
             this.tsmiSave = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiSaveAs = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiSaveTemplate = new System.Windows.Forms.ToolStripMenuItem();            
+            this.tsmiSaveTemplate = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSaveImage = new System.Windows.Forms.ToolStripMenuItem();
             this.tsbCloseFile = new System.Windows.Forms.ToolStripButton();
             this.tsSp = new System.Windows.Forms.ToolStripSeparator();
             this.tslChanges = new System.Windows.Forms.ToolStripLabel();
@@ -94,14 +95,13 @@
             this.chbAlbumArtists = new System.Windows.Forms.CheckBox();
             this.chbComposers = new System.Windows.Forms.CheckBox();
             this.chbRemixer = new System.Windows.Forms.CheckBox();
+            this.lRatingYouTubeMusic = new System.Windows.Forms.Label();
+            this.numRatingYouTubeMusic = new System.Windows.Forms.NumericUpDown();
             this.tbStarsYouTubeMusic = new System.Windows.Forms.TrackBar();
             this.tDontNull = new System.Windows.Forms.Timer(this.components);
             this.openFileDiTempl = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDiTempl = new System.Windows.Forms.SaveFileDialog();
             this.saveFileDiMP3 = new System.Windows.Forms.SaveFileDialog();
-            this.lRatingYouTubeMusic = new System.Windows.Forms.Label();
-            this.numRatingYouTubeMusic = new System.Windows.Forms.NumericUpDown();
-            this.tsmiSaveImage = new System.Windows.Forms.ToolStripMenuItem();
             this.tsTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numRatingBlank)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbStarsBlank)).BeginInit();
