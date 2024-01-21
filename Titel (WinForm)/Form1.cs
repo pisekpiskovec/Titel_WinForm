@@ -179,6 +179,16 @@ namespace Titel_WinForm
             else if (numRatingYouTube.Value >= 224 && numRatingYouTube.Value <= 255) { tbStarsYouTube.Value = 5; }
         }
 
+        private void numRatingYouTubeMusic_ValueChanged(object sender, EventArgs e)
+        {
+            if (numRatingYouTubeMusic.Value == 0) { tbStarsYouTubeMusic.Value = 0; }
+            else if (numRatingYouTubeMusic.Value >= 1 && numRatingYouTubeMusic.Value <= 31) { tbStarsYouTubeMusic.Value = 1; }
+            else if (numRatingYouTubeMusic.Value >= 32 && numRatingYouTubeMusic.Value <= 95) { tbStarsYouTubeMusic.Value = 2; }
+            else if (numRatingYouTubeMusic.Value >= 96 && numRatingYouTubeMusic.Value <= 159) { tbStarsYouTubeMusic.Value = 3; }
+            else if (numRatingYouTubeMusic.Value >= 160 && numRatingYouTubeMusic.Value <= 223) { tbStarsYouTubeMusic.Value = 4; }
+            else if (numRatingYouTubeMusic.Value >= 224 && numRatingYouTubeMusic.Value <= 255) { tbStarsYouTubeMusic.Value = 5; }
+        }
+
         private void numRatingSoundcloud_ValueChanged(object sender, EventArgs e)
         {
             if (numRatingSoundcloud.Value == 0) { tbStarsSoundcloud.Value = 0; }
@@ -494,6 +504,7 @@ namespace Titel_WinForm
         private void numBlank_ValueChanged(object sender, EventArgs e) { spotifyLikeCalculator(numBlankStars, numBlankMaxStars, numRatingBlank); }
         private void numSpotify_ValueChanged(object sender, EventArgs e) { spotifyLikeCalculator(numSpotifyPlays, numSpotifyMaxPlays, numRatingSpotify); if (numRatingSpotify.Value == 0 && numSpotifyPlays.Value != 0) { numRatingSpotify.Value = 1; } }
         private void numYT_ValueChanged(object sender, EventArgs e) { youtubeCalculator(numYTLikes, numYTDislikes, numRatingYouTube); }
+        private void numYTM_ValueChanged(object sender, EventArgs e) { youtubeCalculator(numYTMLikes, numYTMDislikes, numRatingYouTubeMusic); }
         private void numSC_ValueChanged(object sender, EventArgs e) { soundcloudCalculator(numSCPlays, numSCLikes, numSCRepost, numRatingSoundcloud); }
         private void tDontNull_Tick(object sender, EventArgs e) { if (numBlankMaxStars.Value == 0) { numBlankStars.Enabled = false; } else { numBlankStars.Enabled = true; } if (numSpotifyMaxPlays.Value == 0) { numSpotifyPlays.Enabled = false; } else { numSpotifyPlays.Enabled = true; } if (numSCPlays.Value == 0) { numSCLikes.Enabled = false; numSCRepost.Enabled = false; } else { numSCLikes.Enabled = true; numSCRepost.Enabled = true; } }
 
