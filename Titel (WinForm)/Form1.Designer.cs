@@ -487,8 +487,9 @@
             0});
             this.numSpotifyMaxPlays.Name = "numSpotifyMaxPlays";
             this.toolTip.SetToolTip(this.numSpotifyMaxPlays, resources.GetString("numSpotifyMaxPlays.ToolTip"));
-            this.numSpotifyMaxPlays.ValueChanged += new System.EventHandler(this.numRatingSpotify_ValueChanged);
+            this.numSpotifyMaxPlays.ValueChanged += new System.EventHandler(this.numSpotify_ValueChanged);
             this.numSpotifyMaxPlays.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.numSpotifyMaxPlays.Leave += new System.EventHandler(this.numSpotifyMaxPlays_Leave);
             // 
             // numSpotifyPlays
             // 

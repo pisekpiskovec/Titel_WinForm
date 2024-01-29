@@ -508,11 +508,11 @@ namespace Titel_WinForm
         void youtubeCalculator(NumericUpDown likes, NumericUpDown dislikes, NumericUpDown returning) { decimal val = (likes.Value / (dislikes.Value + likes.Value)) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
         void soundcloudCalculator(NumericUpDown plays, NumericUpDown likes, NumericUpDown reposts, NumericUpDown returning) { decimal val = ((likes.Value + reposts.Value) / plays.Value) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
         private void numBlank_ValueChanged(object sender, EventArgs e) { spotifyLikeCalculator(numBlankStars, numBlankMaxStars, numRatingBlank); }
-        private void numSpotify_ValueChanged(object sender, EventArgs e) { spotifyLikeCalculator(numSpotifyPlays, numSpotifyMaxPlays, numRatingSpotify); if (numRatingSpotify.Value == 0 && numSpotifyPlays.Value != 0) { numRatingSpotify.Value = 1; } }
+        private void numSpotify_ValueChanged(object sender, EventArgs e) { numSpotifyPlays.Maximum = numSpotifyMaxPlays.Value; if (numSpotifyPlays.Value > numSpotifyMaxPlays.Value) numSpotifyPlays.Value = numSpotifyMaxPlays.Value; spotifyLikeCalculator(numSpotifyPlays, numSpotifyMaxPlays, numRatingSpotify); if (numRatingSpotify.Value == 0 && numSpotifyPlays.Value != 0) { numRatingSpotify.Value = 1; } if (numSpotifyMaxPlays.Value == 0) { numSpotifyPlays.Enabled = false; } else { numSpotifyPlays.Enabled = true; } }
         private void numYT_ValueChanged(object sender, EventArgs e) { youtubeCalculator(numYTLikes, numYTDislikes, numRatingYouTube); }
         private void numYTM_ValueChanged(object sender, EventArgs e) { youtubeCalculator(numYTMLikes, numYTMDislikes, numRatingYouTubeMusic); }
         private void numSC_ValueChanged(object sender, EventArgs e) { soundcloudCalculator(numSCPlays, numSCLikes, numSCRepost, numRatingSoundcloud); }
-        private void tDontNull_Tick(object sender, EventArgs e) { if (numBlankMaxStars.Value == 0) { numBlankStars.Enabled = false; } else { numBlankStars.Enabled = true; } if (numSpotifyMaxPlays.Value == 0) { numSpotifyPlays.Enabled = false; } else { numSpotifyPlays.Enabled = true; } if (numSCPlays.Value == 0) { numSCLikes.Enabled = false; numSCRepost.Enabled = false; } else { numSCLikes.Enabled = true; numSCRepost.Enabled = true; } }
+        private void tDontNull_Tick(object sender, EventArgs e) { if (numBlankMaxStars.Value == 0) { numBlankStars.Enabled = false; } else { numBlankStars.Enabled = true; } if (numSCPlays.Value == 0) { numSCLikes.Enabled = false; numSCRepost.Enabled = false; } else { numSCLikes.Enabled = true; numSCRepost.Enabled = true; } }
 
         private void tsbOpenTempl_Click(object sender, EventArgs e)
         {
@@ -668,5 +668,7 @@ namespace Titel_WinForm
             fileStatus(2);
             tFileChanged.Start();
         }
+
+        private void numSpotifyMaxPlays_Leave(object sender, EventArgs e) { if (numSpotifyMaxPlays.Value == 0) { numSpotifyPlays.Enabled = false; } else { numSpotifyPlays.Enabled = true; } }
     }
 }
