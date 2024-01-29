@@ -159,6 +159,7 @@
     <None Include="Resources\file_invoice_96px.png" />
     <None Include="Resources\create_96px.png" />
     <Content Include="Resources\generic_music_file_100px.png" />
+    <None Include="Resources\save_image_96px.png" />
     <Content Include="Resources\titel_icon_16.png" />
     <Content Include="Resources\titel_icon_64.png" />
     <Content Include="titel_icon_16.ico" />

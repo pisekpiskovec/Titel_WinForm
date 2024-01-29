@@ -133,6 +133,16 @@ namespace Titel_WinForm.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap save_image_96px {
+            get {
+                object obj = ResourceManager.GetObject("save_image_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap titel_icon_16 {
             get {
                 object obj = ResourceManager.GetObject("titel_icon_16", resourceCulture);
