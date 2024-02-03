@@ -10,7 +10,7 @@ using System.Linq;
 
 namespace Titel_WinForm
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
         string albumArtworkURL; //set album artwork path or default || done
         string musFileSName; //get file safe name
@@ -18,7 +18,7 @@ namespace Titel_WinForm
         string musFileName; //get song's full path (file path + safe file name)
         string[] _args;
 
-        public Form1(string[] args) { InitializeComponent(); _args = args; }
+        public Main(string[] args) { InitializeComponent(); _args = args; }
 
         private void fileStatus(int status)
         {
@@ -670,5 +670,6 @@ namespace Titel_WinForm
         }
 
         private void numSpotifyMaxPlays_Leave(object sender, EventArgs e) { if (numSpotifyMaxPlays.Value == 0) { numSpotifyPlays.Enabled = false; } else { numSpotifyPlays.Enabled = true; } }
+        private void tslChanges_Click(object sender, EventArgs e) { About abt = new About(); abt.ShowDialog(); }
     }
 }

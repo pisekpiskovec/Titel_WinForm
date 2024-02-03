@@ -1,6 +1,6 @@
 ﻿namespace Titel_WinForm
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Vyžaduje se proměnná návrháře.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.tsTop = new System.Windows.Forms.ToolStrip();
             this.tsbOpenMP3 = new System.Windows.Forms.ToolStripButton();
             this.tsbOpenTempl = new System.Windows.Forms.ToolStripButton();
@@ -212,6 +212,7 @@
             // 
             this.tslChanges.Name = "tslChanges";
             resources.ApplyResources(this.tslChanges, "tslChanges");
+            this.tslChanges.Click += new System.EventHandler(this.tslChanges_Click);
             // 
             // openFileDiMP3
             // 
@@ -733,7 +734,7 @@
             resources.ApplyResources(this.saveFileDiMP3, "saveFileDiMP3");
             this.saveFileDiMP3.RestoreDirectory = true;
             // 
-            // Form1
+            // Main
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -794,7 +795,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Main";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
