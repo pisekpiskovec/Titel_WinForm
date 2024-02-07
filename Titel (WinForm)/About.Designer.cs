@@ -100,6 +100,7 @@ namespace Titel_WinForm
             this.MinimizeBox = false;
             this.Name = "About";
             this.ShowIcon = false;
+            this.Load += new System.EventHandler(this.About_Load);
             this.gbAbout.ResumeLayout(false);
             this.gbAbout.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).EndInit();
