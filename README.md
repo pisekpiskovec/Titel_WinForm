@@ -11,7 +11,7 @@ Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make yo
 ## To-Do
 
 * [x] Fix YouTube Music saving
-* [ ] Fix tab order
+* [x] Fix tab order
 
 ## Screenshots
 

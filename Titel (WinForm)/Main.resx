@@ -124,34 +124,34 @@
   <data name="tsbOpenMP3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        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
+        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
-        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
+        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
-        xP3gSkriclwXSdyMmyGJ+8GVxJe3t7efiEvu+O/KGkyPUWVNP7iSy+ofx87n84vhe3FDXomPrcXT0m7K
-        cP/YsqYfXMkbOZvNLsWjfu6/bspO8DDjVma4a2xZ0w+u5B78J/wubshH8fha3JRn9vrLGJZmpsiafnAl
-        R/T7uCn67Run4lVyUN+7y9prYmaMKmv6IUq9E37JlxVbeiz1jRjhV/Hnd+OmvBQ35DFqXGX4nLFlTX/o
-        5/2fOHHiSd5o34+D+joer/dNE6MYN0K/m+bz8EzsfHE5W5aa+wv9Voz40vFUHNKr4QdxEN+sra39PTyc
-        Cqk0oV/mEweypldK3JT3wosVN4X1E454lTyoN9m4GafisD6MLyXfxqP+ZmQPcy+yaqKVuAmPhrM4vLfi
-        4Xz8B93Pw0O9GRk7sQrHjx9/JF4lG3GgZ+JRP0Sp+VdfMWJibHRT4v1kR+8ncdAXrvXd81w+kc3wTT7+
-        fCE+9ifxxK1gc3PzIf44MTExMbHMgQP/AsfzFc7Fb0JPAAAAAElFTkSuQmCC
+        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
 </value>
   </data>
   <data name="tsbOpenMP3.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
@@ -317,7 +317,7 @@
   <data name="tsbCloseFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAdcSURBVHhe7Z3bixxFGMWzXt+8xAsKajCCoIsiBEQRmSgY
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAdcSURBVHhe7Z3bixxFGMWzXt+8xAsKajCC4IoiBEQRmSgY
         IyTZO7JZFQVdBAX9D3bfFDXgi6jx+qTRjYmJgvgUjCCIf4EQUPRN1+uDxlviOe3Ztbf39EzPbNdMT1f/
         4LCbOV/VV/PVdHV1z8xmU0NDQ0NDQ0NDQ0NDQ0NDQ0NDQx5TU1On+6yTY2NjVyp9gylQcE1OTu5X+gZX
         oNDatWvXn9PT01drCHHjCtQP4Sh4UUOIG1ecfqjVav0xMzNzlYYRL644fdSrGka8mKIkkl0K6O/lbP8U
@@ -331,12 +331,12 @@
         ZFeemZmZyzDeZ6Bf0+MvS0oTDpeUkl1Zdu7ceS7Gubhjx47fsmMvWYvMpbTlYxImkl1JsMxsHR8f/8KN
         O4SQ73Noi9KXi0tIya4cGNs90E/psfZDu3fv/gGTcLeGUR4uGSW7UmB38xDGVvQjjdz57EebOZwnts3O
         zl68d+/eCyn+zsfoIeYVxH6baWul7zc/oOGUg0tEya4MKNSDGNep7DjT0u5nCdq+sLBwhpp2hLHo/w60
-        O1hgB3UKsfer6cYxCRLJrgQYD5edtq987OmP4bxwnZr0DPoahT5J950VjwTku0tNNoZLQMkeOHi1bYF4
-        4WTHif3/7/AfR+jIfy1KYQR9PsG+XU5pGZNwheJ7x3ScSPZAwTp9JgrxmRuftIw1+WaFlw4KfAtPviZv
-        IvjHu1nqLK5jSvZAwRN80o2NYmFQ/BsUGgzkurHdEQg9ptDeMB0mkj0wUPzLMY68q9uTKP6tCl1HL6/K
-        dm0wAbflfZQe54OfMdZLFdo9rlNK9sDAk37WjYuCxzXfAn8R/nvz8/Nn66GOMJZtoAU9tI52RyP0lMK6
-        x3SWSPZA4I01jMG++lGIYwixJ1z4i6nYg0UmYaX4K+3aTMIIch9P9b8qHgVzc3PnKa47XIeU7IGA/I9m
-        x0Nxj46l53qFrQF+uvgrWkKbsxSyDhYfMQczbXIngeecvOsEeA8rrDtcZ5TsgYAC5O18lhSyBjzuip8I
+        O1hgB3UKsfer6cYxCRLJrgQYD5edtq987OmP4bxwnZr0DPq6Hvok3XdWPBKQ7y412RguASV74ODVtgXi
+        hZMdJ/b/v8N/HKEj/7UohRH0+QT7djmlZUzCFYrvHdNxItkDBev0mSjEZ2580jLW5JsVXjoo8C08+Zq8
+        ieAf72aps7iOKdkDBU/wSTc2ioVB8W9QaDCQ68Z2RyD0mEJ7w3SYSPbAQPEvxzjyrm5Povi3KnQdvbwq
+        27XBBNyW91F6nA9+xlgvVWj3uE4p2QMDT/pZNy4KHtd8C/xF+O/Nz8+frYc6wli2gRb00DraHY3QUwrr
+        HtNZItkDgTfWMAb76kchjiHEnnDhL6ZiDxaZhJXir7RrMwkjyH081f+qeBTMzc2dp7jucB1SsgcC8j+a
+        HQ/FPTqWnlGFrQF+uvgrWkKbsxSyDhYfMQczbXIngeecvOsEeA8rrDtcZ5TsgYAC5O18lhSyBjzuip8I
         fb3rJoGP0XNtqLxJgHcoG0vx6FBId7jOKNl9hyc05M+74r1dYatwq4rHD2fi1gh9vpOeBP7Ox1xsSofY
         t5qsgse3Z+IS8cjAheBFCiuO64yS3XfwyrvXjQc6Aduu/SjUOWj3vmmT1gEWvmDxD7c5f4zA/yoTnwhj
         mFJMcVxHlOy+g9zPZ8dC4cm9oBALJwFxR7Lt0kIfb+PngezjaXEi2Ze6tSDmJdcW2qeQ4phOEsnuO8j9
@@ -348,7 +348,7 @@
         k19Lw16FW0h49g7lirLre5FJ4IS67Sna3eni0We5N+MqqnhuR1dRfJXhKIjjDZmqCq+0ON6SrLJQpPq/
         KV8R1f9jKVWm3auuNh/MqjLcBuLJ1/ujiVUHE1DvD+cOA3iy9f14+rCAV2Q9v6AxTGC939BXlNAFl6mR
         Sn1FadhAIer1Jb1hBIWoz9dUhxWu21wOUJjvXdHKEN9i1JJT5g6rXmAtL/1PFWCH8wsm9mn8rOcVbgj4
-        nQIUrec/1sH/ywwF5822RzCp56vbhl7AsrEZE4Fa/v/naqD0EcLf1/y5GrZR8w2wadO/7woXiHiuj10A
+        nQIUrec/1sH/ywwF5822RzCp56vbhl7AsrEZE4Fa/v/naqD0EcLf1/y5GrZR8w2wadO/SQoXf+hvlPUA
         AAAASUVORK5CYII=
 </value>
   </data>
@@ -475,7 +475,7 @@
     <value>375, 20</value>
   </data>
   <data name="tbArtist.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;tbArtist.Name" xml:space="preserve">
     <value>tbArtist</value>
@@ -496,7 +496,7 @@
     <value>405, 20</value>
   </data>
   <data name="tbTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;tbTitle.Name" xml:space="preserve">
     <value>tbTitle</value>
@@ -586,7 +586,7 @@
     <value>60, 13</value>
   </data>
   <data name="lArtist.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="lArtist.Text" xml:space="preserve">
     <value>Performers:</value>
@@ -616,7 +616,7 @@
     <value>30, 13</value>
   </data>
   <data name="lTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="lTitle.Text" xml:space="preserve">
     <value>Title:</value>
@@ -646,7 +646,7 @@
     <value>60, 13</value>
   </data>
   <data name="lPicture.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
+    <value>51</value>
   </data>
   <data name="lPicture.Text" xml:space="preserve">
     <value>Pictures[0]:</value>
@@ -673,7 +673,7 @@
     <value>60, 13</value>
   </data>
   <data name="lResulution.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
+    <value>52</value>
   </data>
   <data name="lResulution.Text" xml:space="preserve">
     <value>null</value>
@@ -706,7 +706,7 @@
     <value>100, 23</value>
   </data>
   <data name="bOpenPicture.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
+    <value>50</value>
   </data>
   <data name="bOpenPicture.Text" xml:space="preserve">
     <value>Open Picture</value>
@@ -790,7 +790,7 @@
     <value>334, 45</value>
   </data>
   <data name="tbStarsBlank.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
+    <value>28</value>
   </data>
   <data name="&gt;&gt;tbStarsBlank.Name" xml:space="preserve">
     <value>tbStarsBlank</value>
@@ -868,7 +868,7 @@
     <value>440, 45</value>
   </data>
   <data name="tbStarsSpotify.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
+    <value>33</value>
   </data>
   <data name="&gt;&gt;tbStarsSpotify.Name" xml:space="preserve">
     <value>tbStarsSpotify</value>
@@ -892,7 +892,7 @@
     <value>82, 20</value>
   </data>
   <data name="numRatingSpotify.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
+    <value>30</value>
   </data>
   <data name="&gt;&gt;numRatingSpotify.Name" xml:space="preserve">
     <value>numRatingSpotify</value>
@@ -919,7 +919,7 @@
     <value>82, 13</value>
   </data>
   <data name="lRatingSpotify.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+    <value>29</value>
   </data>
   <data name="lRatingSpotify.Text" xml:space="preserve">
     <value>Rating (Spotify):</value>
@@ -946,7 +946,7 @@
     <value>440, 45</value>
   </data>
   <data name="tbStarsYouTube.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
+    <value>38</value>
   </data>
   <data name="&gt;&gt;tbStarsYouTube.Name" xml:space="preserve">
     <value>tbStarsYouTube</value>
@@ -970,7 +970,7 @@
     <value>113, 20</value>
   </data>
   <data name="numRatingYouTube.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
+    <value>35</value>
   </data>
   <data name="&gt;&gt;numRatingYouTube.Name" xml:space="preserve">
     <value>numRatingYouTube</value>
@@ -997,7 +997,7 @@
     <value>94, 13</value>
   </data>
   <data name="lRatingYouTube.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
+    <value>34</value>
   </data>
   <data name="lRatingYouTube.Text" xml:space="preserve">
     <value>Rating (YouTube):</value>
@@ -1024,7 +1024,7 @@
     <value>440, 45</value>
   </data>
   <data name="tbStarsSoundcloud.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
+    <value>49</value>
   </data>
   <data name="&gt;&gt;tbStarsSoundcloud.Name" xml:space="preserve">
     <value>tbStarsSoundcloud</value>
@@ -1048,7 +1048,7 @@
     <value>82, 20</value>
   </data>
   <data name="numRatingSoundcloud.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
+    <value>45</value>
   </data>
   <data name="&gt;&gt;numRatingSoundcloud.Name" xml:space="preserve">
     <value>numRatingSoundcloud</value>
@@ -1075,7 +1075,7 @@
     <value>107, 13</value>
   </data>
   <data name="lRatingSoundcloud.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
+    <value>44</value>
   </data>
   <data name="lRatingSoundcloud.Text" xml:space="preserve">
     <value>Rating (Soundcloud):</value>
@@ -1150,7 +1150,7 @@
     <value>84, 20</value>
   </data>
   <data name="numBlankStars.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
+    <value>26</value>
   </data>
   <data name="numBlankStars.ToolTip" xml:space="preserve">
     <value>Given Stars</value>
@@ -1177,7 +1177,7 @@
     <value>84, 20</value>
   </data>
   <data name="numBlankMaxStars.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
+    <value>27</value>
   </data>
   <data name="numBlankMaxStars.ToolTip" xml:space="preserve">
     <value>Maximum Stars</value>
@@ -1204,7 +1204,7 @@
     <value>82, 20</value>
   </data>
   <data name="numSpotifyMaxPlays.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
+    <value>32</value>
   </data>
   <data name="numSpotifyMaxPlays.ToolTip" xml:space="preserve">
     <value>The most played song in album</value>
@@ -1234,7 +1234,7 @@
     <value>82, 20</value>
   </data>
   <data name="numSpotifyPlays.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
+    <value>31</value>
   </data>
   <data name="numSpotifyPlays.ToolTip" xml:space="preserve">
     <value>Number of Plays</value>
@@ -1261,7 +1261,7 @@
     <value>113, 20</value>
   </data>
   <data name="numYTDislikes.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
+    <value>37</value>
   </data>
   <data name="numYTDislikes.ToolTip" xml:space="preserve">
     <value>Number of Dislikes</value>
@@ -1288,7 +1288,7 @@
     <value>113, 20</value>
   </data>
   <data name="numYTLikes.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
+    <value>36</value>
   </data>
   <data name="numYTLikes.ToolTip" xml:space="preserve">
     <value>Number of Likes</value>
@@ -1315,7 +1315,7 @@
     <value>82, 20</value>
   </data>
   <data name="numSCLikes.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
+    <value>47</value>
   </data>
   <data name="numSCLikes.ToolTip" xml:space="preserve">
     <value>Number of Likes</value>
@@ -1342,7 +1342,7 @@
     <value>82, 20</value>
   </data>
   <data name="numSCPlays.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
+    <value>46</value>
   </data>
   <data name="numSCPlays.ToolTip" xml:space="preserve">
     <value>Number of Plays</value>
@@ -1369,7 +1369,7 @@
     <value>82, 20</value>
   </data>
   <data name="numSCRepost.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
+    <value>48</value>
   </data>
   <data name="numSCRepost.ToolTip" xml:space="preserve">
     <value>Number of Reposts</value>
@@ -1402,7 +1402,7 @@
     <value>67, 23</value>
   </data>
   <data name="bFileFromTags.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="bFileFromTags.Text" xml:space="preserve">
     <value>From Tags</value>
@@ -1432,7 +1432,7 @@
     <value>103, 20</value>
   </data>
   <data name="numYTMDislikes.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
+    <value>42</value>
   </data>
   <data name="numYTMDislikes.ToolTip" xml:space="preserve">
     <value>Number of Dislikes</value>
@@ -1459,7 +1459,7 @@
     <value>103, 20</value>
   </data>
   <data name="numYTMLikes.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
+    <value>41</value>
   </data>
   <data name="numYTMLikes.ToolTip" xml:space="preserve">
     <value>Number of Likes</value>
@@ -1826,7 +1826,7 @@ Double Right Click to Delete</value>
     <value>125, 13</value>
   </data>
   <data name="lRatingYouTubeMusic.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
+    <value>39</value>
   </data>
   <data name="lRatingYouTubeMusic.Text" xml:space="preserve">
     <value>Rating (YouTube Music):</value>
@@ -1853,7 +1853,7 @@ Double Right Click to Delete</value>
     <value>103, 20</value>
   </data>
   <data name="numRatingYouTubeMusic.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
+    <value>40</value>
   </data>
   <data name="&gt;&gt;numRatingYouTubeMusic.Name" xml:space="preserve">
     <value>numRatingYouTubeMusic</value>
@@ -1877,7 +1877,7 @@ Double Right Click to Delete</value>
     <value>440, 45</value>
   </data>
   <data name="tbStarsYouTubeMusic.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
+    <value>43</value>
   </data>
   <data name="&gt;&gt;tbStarsYouTubeMusic.Name" xml:space="preserve">
     <value>tbStarsYouTubeMusic</value>
