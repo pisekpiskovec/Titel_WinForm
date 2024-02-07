@@ -6,7 +6,6 @@ using System.IO;
 using Titel_WinForm.Properties;
 using Microsoft.Win32;
 using System.Drawing.Imaging;
-using System.Linq;
 
 namespace Titel_WinForm
 {
@@ -307,6 +306,7 @@ namespace Titel_WinForm
                 if (numRatingBlank.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "", true).Rating = Convert.ToByte(numRatingBlank.Value); }
                 if (numRatingSpotify.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "open.spotify.com", true).Rating = Convert.ToByte(numRatingSpotify.Value); }
                 if (numRatingYouTube.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "youtube.com", true).Rating = Convert.ToByte(numRatingYouTube.Value); }
+                if (numRatingYouTubeMusic.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "music.youtube.com", true).Rating = Convert.ToByte(numRatingYouTubeMusic.Value); }
                 if (numRatingSoundcloud.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "soundcloud.com", true).Rating = Convert.ToByte(numRatingSoundcloud.Value); }
 
                 musFile.RemoveTags(TagTypes.Id3v1);
@@ -362,6 +362,7 @@ namespace Titel_WinForm
                         if (numRatingBlank.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "", true).Rating = Convert.ToByte(numRatingBlank.Value); }
                         if (numRatingSpotify.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "open.spotify.com", true).Rating = Convert.ToByte(numRatingSpotify.Value); }
                         if (numRatingYouTube.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "youtube.com", true).Rating = Convert.ToByte(numRatingYouTube.Value); }
+                        if (numRatingYouTubeMusic.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "music.youtube.com", true).Rating = Convert.ToByte(numRatingYouTubeMusic.Value); }
                         if (numRatingSoundcloud.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "soundcloud.com", true).Rating = Convert.ToByte(numRatingSoundcloud.Value); }
 
                         musFile.RemoveTags(TagTypes.Id3v1);
