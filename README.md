@@ -18,14 +18,18 @@ Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make yo
 
 (Newly opened window)
 
-![Window with a song loaded](https://github.com/pisekpiskovec/Titel_WinForm/blob/master/Titel%20(WinForm)/readme_resources/audio_loaded_unchanged.png)
+![Window with a song loaded](https://github.com/pisekpiskovec/Titel_WinForm/blob/master/Titel%20(WinForm)/readme_resources/titel_audio_loaded.png)
 
 (Window with a song loaded)
+
+![About dialog](https://github.com/pisekpiskovec/Titel_WinForm/blob/master/Titel%20(WinForm)/readme_resources/tiutel_about.png)
+
+(About dialog)
 
 ## Features
 
 * Changing file name
-* Editing song's metadata
+* Editing song's metadata + album art
 * Adding rating from main streaming services (Spotify, YouTube, SoundCloud) (Not importing)
 
 ## Keyboard shortcuts
