@@ -22,7 +22,7 @@ Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make yo
 
 (Window with a song loaded)
 
-![About dialog](https://github.com/pisekpiskovec/Titel_WinForm/blob/master/Titel%20(WinForm)/readme_resources/tiutel_about.png)
+![About dialog](https://github.com/pisekpiskovec/Titel_WinForm/blob/master/Titel%20(WinForm)/readme_resources/titel_about.png)
 
 (About dialog)
 
