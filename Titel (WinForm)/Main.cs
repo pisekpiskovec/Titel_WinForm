@@ -1,4 +1,4 @@
-﻿using System;   
+﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
 using TagLib;
@@ -50,7 +50,8 @@ namespace Titel_WinForm
             {
                 if (openFileDiMP3.ShowDialog() == DialogResult.OK) { loadMusic(openFileDiMP3.FileName); }
                 else { fileStatus(0); }
-            } catch { fileStatus(0); MessageBox.Show("Opening dialog failed. Please try again.", "Opening dialog failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            }
+            catch { fileStatus(0); MessageBox.Show("Opening dialog failed. Please try again.", "Opening dialog failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
         private void numRating_ValueChanged(object sender, EventArgs e)
@@ -154,7 +155,9 @@ namespace Titel_WinForm
             return returningValue;
         }
 
-        private void Form1_Load(object sender, EventArgs e) { this.Location = Settings.Default.lastPos; fileStatus(0); pBoxAlbum.AllowDrop = true; numDate.Value = DateTime.Today.Year; tsbCloseFile.Enabled = false; albumArtworkURL = "null♪"; CreateExtend(); if (_args.Length > 0)
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.Location = Settings.Default.lastPos; fileStatus(0); pBoxAlbum.AllowDrop = true; numDate.Value = DateTime.Today.Year; tsbCloseFile.Enabled = false; albumArtworkURL = "null♪"; CreateExtend(); if (_args.Length > 0)
             {
                 if (System.IO.File.Exists(_args[0]) && new System.IO.FileInfo(_args[0]).Extension == ".mp3") { loadMusic(_args[0]); }
                 else if (System.IO.File.Exists(_args[0]) && new System.IO.FileInfo(_args[0]).Extension == ".templ") { loadTemplate(_args[0]); }
@@ -331,7 +334,8 @@ namespace Titel_WinForm
             {
                 saveFileDiMP3.InitialDirectory = Settings.Default.sfdMp3;
                 if (tbFileName.Text != musFileSName) { saveFileDiMP3.FileName = tbFileName.Text; }
-                try {
+                try
+                {
                     if (saveFileDiMP3.ShowDialog() == DialogResult.OK)
                     {
                         trimTextBoxes(tbFileName); trimTextBoxes(tbArtist); trimTextBoxes(tbTitle); trimTextBoxes(tbAlbum); trimTextBoxes(tbGenre); trimTextBoxes(tbAlbumArtist); trimTextBoxes(tbComposer); trimTextBoxes(tbRemixer);
@@ -369,14 +373,16 @@ namespace Titel_WinForm
                         musFile.Save();
                     }
                     else if (tbFileName.Text == "") { MessageBox.Show("Enter file name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); tbFileName.Text = musFileSName; }
-                    } catch { MessageBox.Show("Opening dialog failed. Please try again.", "Opening dialog failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
                 }
+                catch { MessageBox.Show("Opening dialog failed. Please try again.", "Opening dialog failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            }
         }
 
         private void tsmiSaveTemplate_Click(object sender, EventArgs e)
         {
             saveFileDiTempl.InitialDirectory = Settings.Default.sfdTempl;
-            try {
+            try
+            {
                 if (saveFileDiTempl.ShowDialog() == DialogResult.OK)
                 {
                     Settings.Default.sfdTempl = new System.IO.FileInfo(saveFileDiTempl.FileName).DirectoryName;
@@ -386,8 +392,10 @@ namespace Titel_WinForm
                         if (albumArtworkURL == "null♪") { inputing[16] = "null"; } else if (albumArtworkURL == "Album artwork♪") { inputing[16] = ""; } else if (albumArtworkURL != "null♪" && albumArtworkURL != "Album artwork♪") { inputing[16] = "custom"; inputing[17] = albumArtworkURL; }
 
                         System.IO.File.WriteAllLines(saveFileDiTempl.FileName, inputing);
-                    } }
-            } catch { MessageBox.Show("Opening dialog failed. Please try again.", "Opening dialog failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                    }
+                }
+            }
+            catch { MessageBox.Show("Opening dialog failed. Please try again.", "Opening dialog failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
         private void tsmiSaveImage_Click(object sender, EventArgs e)
@@ -402,14 +410,17 @@ namespace Titel_WinForm
                         Bitmap bmp = new Bitmap(Image.FromStream(new MemoryStream(musFileTag.Pictures[0].Data.Data)));
                         bmp.Save(ms, ImageFormat.Png);
                         byte[] bytes = ms.ToArray();
-                        System.IO.File.WriteAllBytes(Path.Combine(musFilePath,tbAlbum.Text + ".png"), bytes);
-                    } catch { MessageBox.Show("An error occured. Cannot save into already existing file.", "File already exists", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                        System.IO.File.WriteAllBytes(Path.Combine(musFilePath, tbAlbum.Text + ".png"), bytes);
+                    }
+                    catch { MessageBox.Show("An error occured. Cannot save into already existing file.", "File already exists", MessageBoxButtons.OK, MessageBoxIcon.Error); }
                 }
             }
         }
 
-        private void pBoxAlbum_DragDrop(object sender, DragEventArgs e) {
-            if (e.Data.GetDataPresent(DataFormats.FileDrop)) { 
+        private void pBoxAlbum_DragDrop(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
                 string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
                 if (Path.GetExtension(files[0]) == ".mp3") { loadMusic(files[0]); }
                 else if (Path.GetExtension(files[0]) == ".templ") { loadTemplate(files[0]); }
@@ -509,12 +520,28 @@ namespace Titel_WinForm
         void youtubeCalculator(NumericUpDown likes, NumericUpDown dislikes, NumericUpDown returning) { decimal val = (likes.Value / (dislikes.Value + likes.Value)) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
         void soundcloudCalculator(NumericUpDown plays, NumericUpDown likes, NumericUpDown reposts, NumericUpDown returning) { decimal val = ((likes.Value + reposts.Value) / plays.Value) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
         private void numBlank_ValueChanged(object sender, EventArgs e) { spotifyLikeCalculator(numBlankStars, numBlankMaxStars, numRatingBlank); }
-        private void numSpotify_ValueChanged(object sender, EventArgs e) { numSpotifyPlays.Maximum = numSpotifyMaxPlays.Value; if (numSpotifyPlays.Value > numSpotifyMaxPlays.Value) numSpotifyPlays.Value = numSpotifyMaxPlays.Value; spotifyLikeCalculator(numSpotifyPlays, numSpotifyMaxPlays, numRatingSpotify); if (numRatingSpotify.Value == 0 && numSpotifyPlays.Value != 0) { numRatingSpotify.Value = 1; } if (numSpotifyMaxPlays.Value == 0) { numSpotifyPlays.Enabled = false; } else { numSpotifyPlays.Enabled = true; } }
+        private void numSpotify_ValueChanged(object sender, EventArgs e)
+        {
+            numSpotifyPlays.Maximum = numSpotifyMaxPlays.Value;
+            if (numSpotifyPlays.Value > numSpotifyMaxPlays.Value) numSpotifyPlays.Value = numSpotifyMaxPlays.Value;
+            spotifyLikeCalculator(numSpotifyPlays, numSpotifyMaxPlays, numRatingSpotify);
+            if (numRatingSpotify.Value == 0 && numSpotifyPlays.Value != 0) { numRatingSpotify.Value = 1; }
+            if (numSpotifyMaxPlays.Value == 0) { numSpotifyPlays.Enabled = false; } else { numSpotifyPlays.Enabled = true; }
+        }
+
         private void numYT_ValueChanged(object sender, EventArgs e) { youtubeCalculator(numYTLikes, numYTDislikes, numRatingYouTube); }
         private void numYTM_ValueChanged(object sender, EventArgs e) { youtubeCalculator(numYTMLikes, numYTMDislikes, numRatingYouTubeMusic); }
-        private void numSC_ValueChanged(object sender, EventArgs e) { soundcloudCalculator(numSCPlays, numSCLikes, numSCRepost, numRatingSoundcloud); }
-        private void tDontNull_Tick(object sender, EventArgs e) { if (numBlankMaxStars.Value == 0) { numBlankStars.Enabled = false; } else { numBlankStars.Enabled = true; } if (numSCPlays.Value == 0) { numSCLikes.Enabled = false; numSCRepost.Enabled = false; } else { numSCLikes.Enabled = true; numSCRepost.Enabled = true; } }
+        private void numSC_ValueChanged(object sender, EventArgs e)
+        {
+            numSCLikes.Maximum = numSCPlays.Value; numSCRepost.Maximum = numSCPlays.Value;
+            if (numSCLikes.Value > numSCPlays.Value) numSCLikes.Value = numSCPlays.Value;
+            if (numSCRepost.Value > numSCPlays.Value) numSCRepost.Value = numSCPlays.Value;
+            soundcloudCalculator(numSCPlays, numSCLikes, numSCRepost, numRatingSoundcloud);
+            if (numRatingSoundcloud.Value == 0 && numSCLikes.Value != 0 && numSCRepost.Value != 0) { numRatingSoundcloud.Value = 1; }
+            if (numSCPlays.Value == 0) { numSCLikes.Enabled = false; numSCRepost.Enabled = false; } else { numSCLikes.Enabled = true; numSCRepost.Enabled = true; }
+        }
 
+        private void tDontNull_Tick(object sender, EventArgs e) { if (numBlankMaxStars.Value == 0) { numBlankStars.Enabled = false; } else { numBlankStars.Enabled = true; } if (numSCPlays.Value == 0) { numSCLikes.Enabled = false; numSCRepost.Enabled = false; } else { numSCLikes.Enabled = true; numSCRepost.Enabled = true; } }
         private void tsbOpenTempl_Click(object sender, EventArgs e)
         {
             openFileDiTempl.InitialDirectory = Settings.Default.ofdTempl;
@@ -547,7 +574,7 @@ namespace Titel_WinForm
                 }
                 else if (e.KeyCode == Keys.F6)
                 {
-                    e.SuppressKeyPress = true; this.Location= new Point(0, 0);
+                    e.SuppressKeyPress = true; this.Location = new Point(0, 0);
                 }
             }
             else if (e.Control)
@@ -570,7 +597,7 @@ namespace Titel_WinForm
                 }
             }
         }
-        
+
         private void CreateExtend()
         {
             string appName = "Titel";
@@ -591,7 +618,7 @@ namespace Titel_WinForm
             Registry.CurrentUser.CreateSubKey(string.Format(@"Applications\{0}\shell\open\command", exeName)).SetValue("", exePath + "\"%1\"");
             Registry.CurrentUser.CreateSubKey(string.Format(@"Applications\{0}\shell\edit\command", exeName)).SetValue("", exePath + "\"%1\"");
         }
-    
+
         void loadTemplate(string fileLoc)
         {
             Settings.Default.ofdTempl = new System.IO.FileInfo(fileLoc).DirectoryName;
@@ -622,7 +649,7 @@ namespace Titel_WinForm
 
             tbTitle.Focus();
         }
-    
+
         void loadMusic(string fileLoc)
         {
             fileStatus(1);
@@ -672,5 +699,6 @@ namespace Titel_WinForm
 
         private void numSpotifyMaxPlays_Leave(object sender, EventArgs e) { if (numSpotifyMaxPlays.Value == 0) { numSpotifyPlays.Enabled = false; } else { numSpotifyPlays.Enabled = true; } }
         private void tslChanges_Click(object sender, EventArgs e) { About abt = new About(); abt.ShowDialog(); }
+        private void numSCPlays_Leave(object sender, EventArgs e) { if (numSCPlays.Value == 0) { numSCLikes.Enabled = false; numSCRepost.Enabled = false; } else { numSCLikes.Enabled = true; numSCRepost.Enabled = true; } }
     }
 }

@@ -556,6 +556,7 @@
             this.toolTip.SetToolTip(this.numSCPlays, resources.GetString("numSCPlays.ToolTip"));
             this.numSCPlays.ValueChanged += new System.EventHandler(this.numSC_ValueChanged);
             this.numSCPlays.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.numSCPlays.Leave += new System.EventHandler(this.numSCPlays_Leave);
             // 
             // numSCRepost
             // 
