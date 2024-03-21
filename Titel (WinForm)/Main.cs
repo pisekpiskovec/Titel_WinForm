@@ -50,8 +50,7 @@ namespace Titel_WinForm
             {
                 if (openFileDiMP3.ShowDialog() == DialogResult.OK) { loadMusic(openFileDiMP3.FileName); }
                 else { fileStatus(0); }
-            }
-            catch { fileStatus(0); MessageBox.Show("Opening dialog failed. Please try again.", "Opening dialog failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            } catch { fileStatus(0); MessageBox.Show("Opening dialog failed. Please try again.", "Opening dialog failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
         private void numRating_ValueChanged(object sender, EventArgs e)
@@ -334,12 +333,10 @@ namespace Titel_WinForm
             {
                 saveFileDiMP3.InitialDirectory = Settings.Default.sfdMp3;
                 if (tbFileName.Text != musFileSName) { saveFileDiMP3.FileName = tbFileName.Text; }
-                try
-                {
+                try {
                     if (saveFileDiMP3.ShowDialog() == DialogResult.OK)
                     {
                         trimTextBoxes(tbFileName); trimTextBoxes(tbArtist); trimTextBoxes(tbTitle); trimTextBoxes(tbAlbum); trimTextBoxes(tbGenre); trimTextBoxes(tbAlbumArtist); trimTextBoxes(tbComposer); trimTextBoxes(tbRemixer);
-
 
                         TagLib.Id3v2.Tag.DefaultVersion = 3;
                         TagLib.Id3v2.Tag.ForceDefaultVersion = true;
@@ -373,16 +370,14 @@ namespace Titel_WinForm
                         musFile.Save();
                     }
                     else if (tbFileName.Text == "") { MessageBox.Show("Enter file name.", "Invalid file name", MessageBoxButtons.OK, MessageBoxIcon.Error); tbFileName.Text = musFileSName; }
-                }
-                catch { MessageBox.Show("Opening dialog failed. Please try again.", "Opening dialog failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                } catch { MessageBox.Show("Opening dialog failed. Please try again.", "Opening dialog failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             }
         }
 
         private void tsmiSaveTemplate_Click(object sender, EventArgs e)
         {
             saveFileDiTempl.InitialDirectory = Settings.Default.sfdTempl;
-            try
-            {
+            try {
                 if (saveFileDiTempl.ShowDialog() == DialogResult.OK)
                 {
                     Settings.Default.sfdTempl = new System.IO.FileInfo(saveFileDiTempl.FileName).DirectoryName;
@@ -394,8 +389,7 @@ namespace Titel_WinForm
                         System.IO.File.WriteAllLines(saveFileDiTempl.FileName, inputing);
                     }
                 }
-            }
-            catch { MessageBox.Show("Opening dialog failed. Please try again.", "Opening dialog failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            } catch { MessageBox.Show("Opening dialog failed. Please try again.", "Opening dialog failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
         private void tsmiSaveImage_Click(object sender, EventArgs e)
@@ -405,22 +399,18 @@ namespace Titel_WinForm
             {
                 using (MemoryStream ms = new MemoryStream())
                 {
-                    try
-                    {
+                    try {
                         Bitmap bmp = new Bitmap(Image.FromStream(new MemoryStream(musFileTag.Pictures[0].Data.Data)));
                         bmp.Save(ms, ImageFormat.Png);
                         byte[] bytes = ms.ToArray();
                         System.IO.File.WriteAllBytes(Path.Combine(musFilePath, tbAlbum.Text + ".png"), bytes);
-                    }
-                    catch { MessageBox.Show("An error occured. Cannot save into already existing file.", "File already exists", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                    } catch { MessageBox.Show("An error occured. Cannot save into already existing file.", "File already exists", MessageBoxButtons.OK, MessageBoxIcon.Error); }
                 }
             }
         }
 
-        private void pBoxAlbum_DragDrop(object sender, DragEventArgs e)
-        {
-            if (e.Data.GetDataPresent(DataFormats.FileDrop))
-            {
+        private void pBoxAlbum_DragDrop(object sender, DragEventArgs e) {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop)) {
                 string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
                 if (Path.GetExtension(files[0]) == ".mp3") { loadMusic(files[0]); }
                 else if (Path.GetExtension(files[0]) == ".templ") { loadTemplate(files[0]); }
@@ -434,8 +424,8 @@ namespace Titel_WinForm
                 }
             }
         }
-        private void pBoxAlbum_DragEnter(object sender, DragEventArgs e) { e.Effect = DragDropEffects.Copy; }
 
+        private void pBoxAlbum_DragEnter(object sender, DragEventArgs e) { e.Effect = DragDropEffects.Copy; }
         private void pBoxAlbum_MouseClick(object sender, MouseEventArgs e)
         {
             switch (e.Button)
@@ -451,8 +441,7 @@ namespace Titel_WinForm
                             albumArtworkURL = "Album artwork♪";
                         }
                         else { pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px; lResulution.Text = "null"; }
-                    }
-                    break;
+                    } break;
             }
         }
 
@@ -465,8 +454,7 @@ namespace Titel_WinForm
                         pBoxAlbum.BackgroundImage = Resources.generic_music_file_100px;
                         lResulution.Text = "null";
                         albumArtworkURL = "null♪";
-                    }
-                    break;
+                    } break;
             }
         }
 
