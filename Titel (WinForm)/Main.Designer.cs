@@ -1,4 +1,6 @@
-﻿namespace Titel_WinForm
+﻿using System;
+
+namespace Titel_WinForm
 {
     partial class Main
     {
@@ -332,11 +334,7 @@
             0,
             0});
             this.numDate.Name = "numDate";
-            this.numDate.Value = new decimal(new int[] {
-            2022,
-            0,
-            0,
-            0});
+            this.numDate.Value = new System.DateTime(2024, 3, 21, 0, 0, 0, 0).Year;
             this.numDate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.numDate.Leave += new System.EventHandler(this.numDate_Leave);
             // 
@@ -608,6 +606,7 @@
             // 
             // pBoxAlbum
             // 
+            this.pBoxAlbum.AllowDrop = true;
             resources.ApplyResources(this.pBoxAlbum, "pBoxAlbum");
             this.pBoxAlbum.Name = "pBoxAlbum";
             this.pBoxAlbum.TabStop = false;

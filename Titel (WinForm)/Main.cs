@@ -18,7 +18,6 @@ namespace Titel_WinForm
         string[] _args;
 
         public Main(string[] args) { InitializeComponent(); _args = args; }
-
         private void fileStatus(int status)
         {
             switch (status)
@@ -46,8 +45,7 @@ namespace Titel_WinForm
         {
             tFileChanged.Stop();
             openFileDiMP3.InitialDirectory = Settings.Default.ofdMp3;
-            try
-            {
+            try {
                 if (openFileDiMP3.ShowDialog() == DialogResult.OK) { loadMusic(openFileDiMP3.FileName); }
                 else { fileStatus(0); }
             } catch { fileStatus(0); MessageBox.Show("Opening dialog failed. Please try again.", "Opening dialog failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
@@ -63,30 +61,15 @@ namespace Titel_WinForm
             else if (numRatingBlank.Value >= 224 && numRatingBlank.Value <= 255) { tbStarsBlank.Value = 5; }
         }
 
-        private void tbStarsBlank_Scroll(object sender, EventArgs e)
-        {
-            switch (tbStarsBlank.Value)
-            {
-                case 0:
-                    numRatingBlank.Value = 0;
-                    break;
-                case 1:
-                    numRatingBlank.Value = 31;
-                    break;
-                case 2:
-                    numRatingBlank.Value = 95;
-                    break;
-                case 3:
-                    numRatingBlank.Value = 159;
-                    break;
-                case 4:
-                    numRatingBlank.Value = 223;
-                    break;
-                case 5:
-                    numRatingBlank.Value = 225;
-                    break;
+        private void tbStarsBlank_Scroll(object sender, EventArgs e) {
+            switch (tbStarsBlank.Value) {
+                case 0: numRatingBlank.Value = 0; break;
+                case 1: numRatingBlank.Value = 31; break;
+                case 2: numRatingBlank.Value = 95; break;
+                case 3: numRatingBlank.Value = 159; break;
+                case 4: numRatingBlank.Value = 223; break;
+                case 5: numRatingBlank.Value = 225; break;
             }
-
         }
 
         private void bOpenPicture_Click(object sender, EventArgs e)
@@ -103,60 +86,32 @@ namespace Titel_WinForm
         }
 
         private void tFileChanged_Tick(object sender, EventArgs e) { if (Checker("album") == true || Checker("albumArtist") == true || Checker("artist") == true || Checker("composers") == true || Checker("fileName") == true || Checker("genres") == true || Checker("title") == true || Checker("year") == true || Checker("track") == true || Checker("rating") == true || Checker("albumArtwork") == true || Checker("disk") == true || Checker("remixer") == true) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; } }
-
         Boolean Checker(String stringTag)
         {
             var musFileTag = TagLib.File.Create(musFileName).Tag;
             bool returningValue = false;
-
             switch (stringTag)
             {
-                case "album":
-                    if (chbAlbum.Checked == true && tbAlbum.Text != musFileTag.Album) { returningValue = true; }
-                    break;
-                case "albumArtist":
-                    if (chbAlbumArtists.Checked == true && tbAlbumArtist.Text != string.Join("|", musFileTag.AlbumArtists)) { returningValue = true; }
-                    break;
-                case "artist":
-                    if (tbArtist.Text != string.Join("|", musFileTag.Performers)) { returningValue = true; }
-                    break;
-                case "composers":
-                    if (chbComposers.Checked == true && tbComposer.Text != string.Join("|", musFileTag.Composers)) { returningValue = true; }
-                    break;
-                case "fileName":
-                    if (tbFileName.Text != musFileSName) { returningValue = true; }
-                    break;
-                case "genres":
-                    if (chbGenres.Checked == true && tbGenre.Text != string.Join("|", musFileTag.Genres)) { returningValue = true; }
-                    break;
-                case "title":
-                    if (tbTitle.Text != musFileTag.Title) { returningValue = true; }
-                    break;
-                case "year":
-                    if (chbYear.Checked == true && numDate.Value != musFileTag.Year) { returningValue = true; }
-                    break;
-                case "track":
-                    if (chbTrack.Checked == true && numTrackNumber.Value != musFileTag.Track) { returningValue = true; }
-                    break;
-                case "rating":
-                    if (numRatingBlank.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "", true).Rating || numRatingSpotify.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "open.spotify.com", true).Rating || numRatingYouTube.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "youtube.com", true).Rating || numRatingSoundcloud.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "soundcloud.com", true).Rating) { returningValue = true; }
-                    break;
-                case "albumArtwork":
-                    if (albumArtworkURL != "Album artwork♪") { returningValue = true; }
-                    break;
-                case "disk":
-                    if (chbDisk.Checked == true && numDiscNumber.Value != musFileTag.Disc) { returningValue = true; }
-                    break;
-                case "remixer":
-                    if (chbRemixer.Checked == true && tbRemixer.Text != musFileTag.RemixedBy) { returningValue = true; }
-                    break;
+                case "album": if (chbAlbum.Checked == true && tbAlbum.Text != musFileTag.Album) { returningValue = true; } break;
+                case "albumArtist": if (chbAlbumArtists.Checked == true && tbAlbumArtist.Text != string.Join("|", musFileTag.AlbumArtists)) { returningValue = true; } break;
+                case "artist": if (tbArtist.Text != string.Join("|", musFileTag.Performers)) { returningValue = true; } break;
+                case "composers": if (chbComposers.Checked == true && tbComposer.Text != string.Join("|", musFileTag.Composers)) { returningValue = true; } break;
+                case "fileName": if (tbFileName.Text != musFileSName) { returningValue = true; } break;
+                case "genres": if (chbGenres.Checked == true && tbGenre.Text != string.Join("|", musFileTag.Genres)) { returningValue = true; } break;
+                case "title": if (tbTitle.Text != musFileTag.Title) { returningValue = true; } break;
+                case "year": if (chbYear.Checked == true && numDate.Value != musFileTag.Year) { returningValue = true; } break;
+                case "track": if (chbTrack.Checked == true && numTrackNumber.Value != musFileTag.Track) { returningValue = true; } break;
+                case "rating": if (numRatingBlank.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "", true).Rating || numRatingSpotify.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "open.spotify.com", true).Rating || numRatingYouTube.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "youtube.com", true).Rating || numRatingSoundcloud.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "soundcloud.com", true).Rating) { returningValue = true; } break;
+                case "albumArtwork": if (albumArtworkURL != "Album artwork♪") { returningValue = true; } break;
+                case "disk": if (chbDisk.Checked == true && numDiscNumber.Value != musFileTag.Disc) { returningValue = true; } break;
+                case "remixer": if (chbRemixer.Checked == true && tbRemixer.Text != musFileTag.RemixedBy) { returningValue = true; } break;
             }
             return returningValue;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.Location = Settings.Default.lastPos; fileStatus(0); pBoxAlbum.AllowDrop = true; numDate.Value = DateTime.Today.Year; tsbCloseFile.Enabled = false; albumArtworkURL = "null♪"; CreateExtend(); if (_args.Length > 0)
+            this.Location = Settings.Default.lastPos; fileStatus(0); albumArtworkURL = "null♪"; CreateExtend(); if (_args.Length > 0)
             {
                 if (System.IO.File.Exists(_args[0]) && new System.IO.FileInfo(_args[0]).Extension == ".mp3") { loadMusic(_args[0]); }
                 else if (System.IO.File.Exists(_args[0]) && new System.IO.FileInfo(_args[0]).Extension == ".templ") { loadTemplate(_args[0]); }
@@ -207,24 +162,12 @@ namespace Titel_WinForm
         {
             switch (tbStarsSpotify.Value)
             {
-                case 0:
-                    numRatingSpotify.Value = 0;
-                    break;
-                case 1:
-                    numRatingSpotify.Value = 31;
-                    break;
-                case 2:
-                    numRatingSpotify.Value = 95;
-                    break;
-                case 3:
-                    numRatingSpotify.Value = 159;
-                    break;
-                case 4:
-                    numRatingSpotify.Value = 223;
-                    break;
-                case 5:
-                    numRatingSpotify.Value = 225;
-                    break;
+                case 0: numRatingSpotify.Value = 0; break;
+                case 1: numRatingSpotify.Value = 31; break;
+                case 2: numRatingSpotify.Value = 95; break;
+                case 3: numRatingSpotify.Value = 159; break;
+                case 4: numRatingSpotify.Value = 223; break;
+                case 5: numRatingSpotify.Value = 225; break;
             }
         }
 
@@ -232,24 +175,12 @@ namespace Titel_WinForm
         {
             switch (tbStarsYouTube.Value)
             {
-                case 0:
-                    numRatingYouTube.Value = 0;
-                    break;
-                case 1:
-                    numRatingYouTube.Value = 31;
-                    break;
-                case 2:
-                    numRatingYouTube.Value = 95;
-                    break;
-                case 3:
-                    numRatingYouTube.Value = 159;
-                    break;
-                case 4:
-                    numRatingYouTube.Value = 223;
-                    break;
-                case 5:
-                    numRatingYouTube.Value = 225;
-                    break;
+                case 0: numRatingYouTube.Value = 0; break;
+                case 1: numRatingYouTube.Value = 31; break;
+                case 2: numRatingYouTube.Value = 95; break;
+                case 3: numRatingYouTube.Value = 159; break;
+                case 4: numRatingYouTube.Value = 223; break;
+                case 5: numRatingYouTube.Value = 225; break;
             }
         }
 
@@ -257,24 +188,12 @@ namespace Titel_WinForm
         {
             switch (tbStarsSoundcloud.Value)
             {
-                case 0:
-                    numRatingSoundcloud.Value = 0;
-                    break;
-                case 1:
-                    numRatingSoundcloud.Value = 31;
-                    break;
-                case 2:
-                    numRatingSoundcloud.Value = 95;
-                    break;
-                case 3:
-                    numRatingSoundcloud.Value = 159;
-                    break;
-                case 4:
-                    numRatingSoundcloud.Value = 223;
-                    break;
-                case 5:
-                    numRatingSoundcloud.Value = 225;
-                    break;
+                case 0: numRatingSoundcloud.Value = 0; break;
+                case 1: numRatingSoundcloud.Value = 31; break;
+                case 2: numRatingSoundcloud.Value = 95; break;
+                case 3: numRatingSoundcloud.Value = 159; break;
+                case 4: numRatingSoundcloud.Value = 223; break;
+                case 5: numRatingSoundcloud.Value = 225; break;
             }
         }
 
@@ -459,7 +378,6 @@ namespace Titel_WinForm
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e) { Settings.Default.lastPos = this.Location; Settings.Default.Save(); }
-
         private void tsbCloseFile_Click(object sender, EventArgs e)
         {
             if (tslChanges.Text == "No changes")
@@ -541,48 +459,21 @@ namespace Titel_WinForm
         {
             if (e.Control && e.Shift)
             {
-                if (e.KeyCode == Keys.O)
-                {
-                    e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsbOpenTempl.PerformClick()));
-                }
-                else if (e.KeyCode == Keys.S)
-                {
-                    e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsmiSaveAs.PerformClick()));
-                }
+                if (e.KeyCode == Keys.O) { e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsbOpenTempl.PerformClick())); }
+                else if (e.KeyCode == Keys.S) { e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsmiSaveAs.PerformClick())); }
             }
             else if (e.Control && e.Alt)
             {
-                if (e.KeyCode == Keys.O)
-                {
-                    e.SuppressKeyPress = true; BeginInvoke(new Action(() => bOpenPicture.PerformClick()));
-                }
-                else if (e.KeyCode == Keys.S)
-                {
-                    e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsmiSaveTemplate.PerformClick()));
-                }
-                else if (e.KeyCode == Keys.F6)
-                {
-                    e.SuppressKeyPress = true; this.Location = new Point(0, 0);
-                }
+                if (e.KeyCode == Keys.O) { e.SuppressKeyPress = true; BeginInvoke(new Action(() => bOpenPicture.PerformClick())); }
+                else if (e.KeyCode == Keys.S) { e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsmiSaveTemplate.PerformClick())); }
+                else if (e.KeyCode == Keys.F6) { e.SuppressKeyPress = true; this.Location = new Point(0, 0); }
             }
             else if (e.Control)
             {
-                if (e.KeyCode == Keys.O)
-                {
-                    e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsbOpenMP3.PerformClick()));
-                }
-                else if (e.KeyCode == Keys.S)
-                {
-                    e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsmiSave.PerformClick()));
-                }
-                else if (e.KeyCode == Keys.W)
-                {
-                    e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsbCloseFile.PerformClick()));
-                }
-                else if (e.KeyCode == Keys.D)
-                {
-                    e.SuppressKeyPress = true; BeginInvoke(new Action(() => bFileFromTags.PerformClick()));
-                }
+                if (e.KeyCode == Keys.O) { e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsbOpenMP3.PerformClick())); }
+                else if (e.KeyCode == Keys.S) { e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsmiSave.PerformClick())); }
+                else if (e.KeyCode == Keys.W) { e.SuppressKeyPress = true; BeginInvoke(new Action(() => tsbCloseFile.PerformClick())); }
+                else if (e.KeyCode == Keys.D) { e.SuppressKeyPress = true; BeginInvoke(new Action(() => bFileFromTags.PerformClick())); }
             }
         }
 
