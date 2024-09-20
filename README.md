@@ -13,6 +13,7 @@ Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make yo
 * [ ] Load and save YouTube Music data from template
 * [x] Fix SoundCloud rating
 * [ ] AIFF, WAW support
+* [ ] Remove/replace more no no chars in file name ( `-`, `.`)
 
 ## Screenshots
 
