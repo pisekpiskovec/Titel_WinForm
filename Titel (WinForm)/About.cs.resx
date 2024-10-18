@@ -118,18 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pbIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pbIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 64</value>
-  </data>
   <data name="pbIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
-  </data>
-  <data name="lAbout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="gbAbout.Text" xml:space="preserve">
     <value>O programu</value>
@@ -163,6 +153,25 @@
   </data>
   <data name="gbShortcuts.Text" xml:space="preserve">
     <value>Zkratky</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="rbTemplRevA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 53</value>
+  </data>
+  <data name="rbTemplRevA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 17</value>
+  </data>
+  <data name="rbTemplRevA.Text" xml:space="preserve">
+    <value>TEMPL1a</value>
+  </data>
+  <data name="rbTemplRevA.ToolTip" xml:space="preserve">
+    <value>Formát šablony s podporou YouTube Music</value>
+  </data>
+  <data name="rbTempl.ToolTip" xml:space="preserve">
+    <value>Formát šablony bez podpory YouTube Music</value>
+  </data>
+  <data name="gbSettings.Text" xml:space="preserve">
+    <value>Nastavení</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>O programu Titel</value>

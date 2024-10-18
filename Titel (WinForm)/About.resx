@@ -117,107 +117,50 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lbShortcuts.Items6" xml:space="preserve">
-    <value>Open Picture | Ctrl+Alt+O</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="gbShortcuts.Text" xml:space="preserve">
-    <value>Shortcuts</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pbIcon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>402, 224</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pbIcon.Location" type="System.Drawing.Point, System.Drawing">
     <value>308, 18</value>
   </data>
-  <data name="&gt;&gt;lbShortcuts.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="gbShortcuts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>378, 100</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>AutoSize</value>
-  </data>
-  <data name="lbShortcuts.Items" xml:space="preserve">
-    <value>Open File | Ctrl+O</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lbShortcuts.Items2" xml:space="preserve">
-    <value>Save | Ctrl+S</value>
-  </data>
-  <data name="&gt;&gt;gbAbout.Name" xml:space="preserve">
-    <value>gbAbout</value>
-  </data>
-  <data name="&gt;&gt;gbShortcuts.Name" xml:space="preserve">
-    <value>gbShortcuts</value>
-  </data>
-  <data name="gbShortcuts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 118</value>
-  </data>
-  <data name="&gt;&gt;lbShortcuts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lbShortcuts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 19</value>
-  </data>
-  <data name="&gt;&gt;lAbout.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lAbout.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbShortcuts.Items3" xml:space="preserve">
-    <value>Save As... | Ctrl+Shift+S</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pbIcon.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 64</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>About Titel</value>
+  <data name="pbIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gbAbout.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="lbShortcuts.Items5" xml:space="preserve">
-    <value>Close File | Ctrl+W</value>
-  </data>
-  <data name="lbShortcuts.Items1" xml:space="preserve">
-    <value>Open Template | Ctrl+Shift+O</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pbIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;pbIcon.Name" xml:space="preserve">
     <value>pbIcon</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
   <data name="&gt;&gt;pbIcon.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbShortcuts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pbIcon.Parent" xml:space="preserve">
     <value>gbAbout</value>
   </data>
-  <data name="pbIcon.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;pbIcon.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lAbout.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lAbout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lAbout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="lAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 52</value>
+  </data>
+  <data name="lAbout.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="lAbout.Text" xml:space="preserve">
     <value>Titel_WinForm
@@ -225,91 +168,232 @@ ver. 1.2.0
 TagLibSharp
 ver. 2.3.0</value>
   </data>
+  <data name="&gt;&gt;lAbout.Name" xml:space="preserve">
+    <value>lAbout</value>
+  </data>
+  <data name="&gt;&gt;lAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lAbout.Parent" xml:space="preserve">
+    <value>gbAbout</value>
+  </data>
+  <data name="&gt;&gt;lAbout.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gbAbout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="gbAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 100</value>
+  </data>
+  <data name="gbAbout.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gbAbout.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="&gt;&gt;gbAbout.Name" xml:space="preserve">
+    <value>gbAbout</value>
+  </data>
+  <data name="&gt;&gt;gbAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbAbout.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbAbout.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbShortcuts.Items" xml:space="preserve">
+    <value>Open File | Ctrl+O</value>
+  </data>
+  <data name="lbShortcuts.Items1" xml:space="preserve">
+    <value>Open Template | Ctrl+Shift+O</value>
+  </data>
+  <data name="lbShortcuts.Items2" xml:space="preserve">
+    <value>Save | Ctrl+S</value>
+  </data>
+  <data name="lbShortcuts.Items3" xml:space="preserve">
+    <value>Save As... | Ctrl+Shift+S</value>
+  </data>
+  <data name="lbShortcuts.Items4" xml:space="preserve">
+    <value>Save Template | Ctrl+Alt+S</value>
+  </data>
+  <data name="lbShortcuts.Items5" xml:space="preserve">
+    <value>Close File | Ctrl+W</value>
+  </data>
+  <data name="lbShortcuts.Items6" xml:space="preserve">
+    <value>Open Picture | Ctrl+Alt+O</value>
+  </data>
+  <data name="lbShortcuts.Items7" xml:space="preserve">
+    <value>File Name From Tags | Ctrl+D</value>
+  </data>
   <data name="lbShortcuts.Items8" xml:space="preserve">
     <value>Reset Window's Position | Ctrl+Alt+F6</value>
   </data>
-  <data name="lAbout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 24</value>
+  <data name="lbShortcuts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 19</value>
   </data>
-  <data name="lAbout.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbShortcuts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>363, 67</value>
+  </data>
+  <data name="lbShortcuts.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;lbShortcuts.Name" xml:space="preserve">
     <value>lbShortcuts</value>
   </data>
-  <data name="lbShortcuts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>363, 67</value>
-  </data>
-  <data name="&gt;&gt;gbShortcuts.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;lbShortcuts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbShortcuts.Parent" xml:space="preserve">
     <value>gbShortcuts</value>
   </data>
-  <data name="gbAbout.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;lbShortcuts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gbShortcuts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 118</value>
+  </data>
+  <data name="gbShortcuts.Size" type="System.Drawing.Size, System.Drawing">
     <value>378, 100</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
-  </data>
-  <data name="&gt;&gt;gbAbout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pbIcon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>308, 18</value>
-  </data>
-  <data name="lbShortcuts.Items7" xml:space="preserve">
-    <value>File Name From Tags | Ctrl+D</value>
-  </data>
-  <data name="&gt;&gt;gbAbout.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lbShortcuts.Items4" xml:space="preserve">
-    <value>Save Template | Ctrl+Alt+S</value>
-  </data>
-  <data name="lAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 52</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="gbAbout.Text" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="gbAbout.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>gbAbout</value>
-  </data>
-  <data name="lbShortcuts.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lAbout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lAbout.Name" xml:space="preserve">
-    <value>lAbout</value>
-  </data>
-  <data name="&gt;&gt;gbShortcuts.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="gbAbout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
   </data>
   <data name="gbShortcuts.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;pbIcon.ZOrder" xml:space="preserve">
+  <data name="gbShortcuts.Text" xml:space="preserve">
+    <value>Shortcuts</value>
+  </data>
+  <data name="&gt;&gt;gbShortcuts.Name" xml:space="preserve">
+    <value>gbShortcuts</value>
+  </data>
+  <data name="&gt;&gt;gbShortcuts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbShortcuts.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbShortcuts.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rbTemplRevA.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbTemplRevA.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbTemplRevA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 53</value>
+  </data>
+  <data name="rbTemplRevA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 17</value>
+  </data>
+  <data name="rbTemplRevA.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="rbTemplRevA.Text" xml:space="preserve">
+    <value>TEMPL1a</value>
+  </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="rbTemplRevA.ToolTip" xml:space="preserve">
+    <value>Template format with YouTube Music support</value>
+  </data>
+  <data name="&gt;&gt;rbTemplRevA.Name" xml:space="preserve">
+    <value>rbTemplRevA</value>
+  </data>
+  <data name="&gt;&gt;rbTemplRevA.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbTemplRevA.Parent" xml:space="preserve">
+    <value>gbSettings</value>
+  </data>
+  <data name="&gt;&gt;rbTemplRevA.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;lAbout.Parent" xml:space="preserve">
-    <value>gbAbout</value>
+  <data name="rbTempl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbTempl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbTempl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 30</value>
+  </data>
+  <data name="rbTempl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 17</value>
+  </data>
+  <data name="rbTempl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rbTempl.Text" xml:space="preserve">
+    <value>TEMPL1</value>
+  </data>
+  <data name="rbTempl.ToolTip" xml:space="preserve">
+    <value>Template format withou YouTube Music support</value>
+  </data>
+  <data name="&gt;&gt;rbTempl.Name" xml:space="preserve">
+    <value>rbTempl</value>
+  </data>
+  <data name="&gt;&gt;rbTempl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbTempl.Parent" xml:space="preserve">
+    <value>gbSettings</value>
+  </data>
+  <data name="&gt;&gt;rbTempl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gbSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 224</value>
+  </data>
+  <data name="gbSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 100</value>
+  </data>
+  <data name="gbSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gbSettings.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;gbSettings.Name" xml:space="preserve">
+    <value>gbSettings</value>
+  </data>
+  <data name="&gt;&gt;gbSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbSettings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>cs</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>402, 330</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>About Titel</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

@@ -25,3 +25,7 @@ Inside of that file, you'll need to fill 18 lines containing all metadata.
 
 * line 17 → Album art mode values: ["null", "empty", "custom", "my", "file", "own", "skip", ""]
 * line 18 → Album art path
+
+---
+
+* line 19 → YouTube Music rating (Only in TEMPL1a)(number) values: <0; 255>
