@@ -97,7 +97,7 @@ namespace Titel_WinForm.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool templYTMSupport {
             get {
                 return ((bool)(this["templYTMSupport"]));
