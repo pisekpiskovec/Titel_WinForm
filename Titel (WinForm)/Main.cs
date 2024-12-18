@@ -420,7 +420,25 @@ namespace Titel_WinForm
             }
         }
 
-        private void bFileFromTags_Click(object sender, EventArgs e) { if (musFileName != null) { trimTextBoxes(tbArtist); trimTextBoxes(tbTitle); tbFileName.Text = tbArtist.Text.Split('|')[0] + " - " + tbTitle.Text + ".mp3"; foreach (var c in Path.GetInvalidFileNameChars()) { tbFileName.Text = tbFileName.Text.Replace(c, '_'); } tbFileName.Text = tbFileName.Text.Replace("'", ""); tbFileName.Text = tbFileName.Text.Replace(',', '_'); tbFileName.Text = tbFileName.Text.Replace('[', '('); tbFileName.Text = tbFileName.Text.Replace(']', ')'); } }
+        private void bFileFromTags_Click(object sender, EventArgs e)
+        {
+            if (musFileName != null)
+            {
+                trimTextBoxes(tbArtist);
+                trimTextBoxes(tbTitle);
+                string titleText = tbTitle.Text;
+                foreach (var c in Path.GetInvalidFileNameChars())
+                    titleText = titleText.Replace(c, '_');
+                titleText = titleText.Replace("'", "");
+                titleText = titleText.Replace(',', '_');
+                titleText = titleText.Replace('.', '_');
+                titleText = titleText.Replace('-', '_');
+                titleText = titleText.Replace('[', '(');
+                titleText = titleText.Replace(']', ')');
+                tbFileName.Text = tbArtist.Text.Split('|')[0] + " - " + titleText + ".mp3";
+            }
+        }
+
         private void numDate_Leave(object sender, EventArgs e) { if (numDate.Text == "") { numDate.Value = DateTime.Today.Year; numDate.Text = Convert.ToString(DateTime.Today.Year); } }
         private void trimTextBoxes(System.Windows.Forms.TextBox tb) { tb.Text = tb.Text.Trim(); }
         void spotifyLikeCalculator(NumericUpDown current, NumericUpDown maximum, NumericUpDown returning) { decimal val = (current.Value / maximum.Value) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
