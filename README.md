@@ -11,7 +11,7 @@ Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make yo
 ## To-Do
 
 * [ ] AIFF, WAW support
-* [ ] UTF-8 file loading coding
+* [x] UTF-8 file loading coding
 * [ ] Remove/replace more no no chars in file name ( `-`, `.`)
 * [x] Fix not saving images in TEMPL1a
 

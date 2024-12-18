@@ -306,7 +306,7 @@ namespace Titel_WinForm
                         string[] inputing = { tbArtist.Text, tbTitle.Text, tbAlbum.Text, numDate.Value.ToString(), numTrackNumber.Value.ToString(), numDiscNumber.Value.ToString(), tbGenre.Text, tbAlbumArtist.Text, tbComposer.Text, tbRemixer.Text, numRatingBlank.Value.ToString(), numBlankMaxStars.Value.ToString(), numRatingSpotify.Value.ToString(), numSpotifyMaxPlays.Value.ToString(), numRatingYouTube.Value.ToString(), numRatingSoundcloud.Value.ToString(), "", ""};
                         if (albumArtworkURL == "null♪") { inputing[16] = "null"; } else if (albumArtworkURL == "Album artwork♪") { inputing[16] = ""; } else if (albumArtworkURL != "null♪" && albumArtworkURL != "Album artwork♪") { inputing[16] = "custom"; inputing[17] = albumArtworkURL; }
                         if(Settings.Default.templYTMSupport) inputing = inputing.Concat(new string[] { numRatingYouTubeMusic.Value.ToString() }).ToArray();
-                        System.IO.File.WriteAllLines(saveFileDiTempl.FileName, inputing);
+                        System.IO.File.WriteAllLines(saveFileDiTempl.FileName, inputing, System.Text.Encoding.UTF8);
                     }
                 }
             } catch { MessageBox.Show("Opening dialog failed. Please try again.", "Opening dialog failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
@@ -502,7 +502,7 @@ namespace Titel_WinForm
         void loadTemplate(string fileLoc)
         {
             Settings.Default.ofdTempl = new System.IO.FileInfo(fileLoc).DirectoryName;
-            StreamReader reader = new StreamReader(fileLoc, System.Text.Encoding.Default);
+            StreamReader reader = new StreamReader(fileLoc, System.Text.Encoding.UTF8);
             string[] inputing = reader.ReadToEnd().Split('\n');
 
             tbArtist.Text = inputing[0];
