@@ -6,6 +6,7 @@ using System.IO;
 using Titel_WinForm.Properties;
 using Microsoft.Win32;
 using System.Drawing.Imaging;
+using System.Linq;
 
 namespace Titel_WinForm
 {
@@ -302,11 +303,10 @@ namespace Titel_WinForm
                     Settings.Default.sfdTempl = new System.IO.FileInfo(saveFileDiTempl.FileName).DirectoryName;
                     if (saveFileDiTempl.FileName != "")
                     {
-                        string[] inputing = { tbArtist.Text, tbTitle.Text, tbAlbum.Text, numDate.Value.ToString(), numTrackNumber.Value.ToString(), numDiscNumber.Value.ToString(), tbGenre.Text, tbAlbumArtist.Text, tbComposer.Text, tbRemixer.Text, numRatingBlank.Value.ToString(), numBlankMaxStars.Value.ToString(), numRatingSpotify.Value.ToString(), numSpotifyMaxPlays.Value.ToString(), numRatingYouTube.Value.ToString(), numRatingSoundcloud.Value.ToString(), "", "" };
-                        string[] inputingA = { tbArtist.Text, tbTitle.Text, tbAlbum.Text, numDate.Value.ToString(), numTrackNumber.Value.ToString(), numDiscNumber.Value.ToString(), tbGenre.Text, tbAlbumArtist.Text, tbComposer.Text, tbRemixer.Text, numRatingBlank.Value.ToString(), numBlankMaxStars.Value.ToString(), numRatingSpotify.Value.ToString(), numSpotifyMaxPlays.Value.ToString(), numRatingYouTube.Value.ToString(), numRatingSoundcloud.Value.ToString(), "", "", numRatingYouTubeMusic.Value.ToString() };
+                        string[] inputing = { tbArtist.Text, tbTitle.Text, tbAlbum.Text, numDate.Value.ToString(), numTrackNumber.Value.ToString(), numDiscNumber.Value.ToString(), tbGenre.Text, tbAlbumArtist.Text, tbComposer.Text, tbRemixer.Text, numRatingBlank.Value.ToString(), numBlankMaxStars.Value.ToString(), numRatingSpotify.Value.ToString(), numSpotifyMaxPlays.Value.ToString(), numRatingYouTube.Value.ToString(), numRatingSoundcloud.Value.ToString(), "", ""};
                         if (albumArtworkURL == "null♪") { inputing[16] = "null"; } else if (albumArtworkURL == "Album artwork♪") { inputing[16] = ""; } else if (albumArtworkURL != "null♪" && albumArtworkURL != "Album artwork♪") { inputing[16] = "custom"; inputing[17] = albumArtworkURL; }
-
-                        System.IO.File.WriteAllLines(saveFileDiTempl.FileName, Settings.Default.templYTMSupport ? inputingA : inputing);
+                        if(Settings.Default.templYTMSupport) inputing = inputing.Concat(new string[] { numRatingYouTubeMusic.Value.ToString() }).ToArray();
+                        System.IO.File.WriteAllLines(saveFileDiTempl.FileName, inputing);
                     }
                 }
             } catch { MessageBox.Show("Opening dialog failed. Please try again.", "Opening dialog failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
