@@ -53,7 +53,6 @@ namespace Titel_WinForm
             this.tbAlbumArtist = new System.Windows.Forms.TextBox();
             this.lArtist = new System.Windows.Forms.Label();
             this.lTitle = new System.Windows.Forms.Label();
-            this.lPicture = new System.Windows.Forms.Label();
             this.lResulution = new System.Windows.Forms.Label();
             this.bOpenPicture = new System.Windows.Forms.Button();
             this.openFileDiPic = new System.Windows.Forms.OpenFileDialog();
@@ -99,6 +98,12 @@ namespace Titel_WinForm
             this.openFileDiTempl = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDiTempl = new System.Windows.Forms.SaveFileDialog();
             this.saveFileDiMP3 = new System.Windows.Forms.SaveFileDialog();
+            this.tbSortArtist = new System.Windows.Forms.TextBox();
+            this.tbSortTitle = new System.Windows.Forms.TextBox();
+            this.tbSortAlbum = new System.Windows.Forms.TextBox();
+            this.chbSortArtist = new System.Windows.Forms.CheckBox();
+            this.chbSortTitle = new System.Windows.Forms.CheckBox();
+            this.chbSortAlbum = new System.Windows.Forms.CheckBox();
             this.tsTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numTrackNumber)).BeginInit();
@@ -267,11 +272,6 @@ namespace Titel_WinForm
             // 
             resources.ApplyResources(this.lTitle, "lTitle");
             this.lTitle.Name = "lTitle";
-            // 
-            // lPicture
-            // 
-            resources.ApplyResources(this.lPicture, "lPicture");
-            this.lPicture.Name = "lPicture";
             // 
             // lResulution
             // 
@@ -693,10 +693,49 @@ namespace Titel_WinForm
             resources.ApplyResources(this.saveFileDiMP3, "saveFileDiMP3");
             this.saveFileDiMP3.RestoreDirectory = true;
             // 
+            // tbSortArtist
+            // 
+            resources.ApplyResources(this.tbSortArtist, "tbSortArtist");
+            this.tbSortArtist.Name = "tbSortArtist";
+            // 
+            // tbSortTitle
+            // 
+            resources.ApplyResources(this.tbSortTitle, "tbSortTitle");
+            this.tbSortTitle.Name = "tbSortTitle";
+            // 
+            // tbSortAlbum
+            // 
+            resources.ApplyResources(this.tbSortAlbum, "tbSortAlbum");
+            this.tbSortAlbum.Name = "tbSortAlbum";
+            // 
+            // chbSortArtist
+            // 
+            resources.ApplyResources(this.chbSortArtist, "chbSortArtist");
+            this.chbSortArtist.Name = "chbSortArtist";
+            this.chbSortArtist.UseVisualStyleBackColor = true;
+            // 
+            // chbSortTitle
+            // 
+            resources.ApplyResources(this.chbSortTitle, "chbSortTitle");
+            this.chbSortTitle.Name = "chbSortTitle";
+            this.chbSortTitle.UseVisualStyleBackColor = true;
+            // 
+            // chbSortAlbum
+            // 
+            resources.ApplyResources(this.chbSortAlbum, "chbSortAlbum");
+            this.chbSortAlbum.Name = "chbSortAlbum";
+            this.chbSortAlbum.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.chbSortAlbum);
+            this.Controls.Add(this.chbSortTitle);
+            this.Controls.Add(this.chbSortArtist);
+            this.Controls.Add(this.tbSortAlbum);
+            this.Controls.Add(this.tbSortTitle);
+            this.Controls.Add(this.tbSortArtist);
             this.Controls.Add(this.numYTMDislikes);
             this.Controls.Add(this.numYTMLikes);
             this.Controls.Add(this.numRatingYouTubeMusic);
@@ -725,7 +764,6 @@ namespace Titel_WinForm
             this.Controls.Add(this.numDate);
             this.Controls.Add(this.bOpenPicture);
             this.Controls.Add(this.lResulution);
-            this.Controls.Add(this.lPicture);
             this.Controls.Add(this.pBoxAlbum);
             this.Controls.Add(this.lTitle);
             this.Controls.Add(this.lArtist);
@@ -796,7 +834,6 @@ namespace Titel_WinForm
         private System.Windows.Forms.Label lArtist;
         private System.Windows.Forms.Label lTitle;
         private System.Windows.Forms.PictureBox pBoxAlbum;
-        private System.Windows.Forms.Label lPicture;
         private System.Windows.Forms.Label lResulution;
         private System.Windows.Forms.Button bOpenPicture;
         private System.Windows.Forms.OpenFileDialog openFileDiPic;
@@ -850,6 +887,12 @@ namespace Titel_WinForm
         private System.Windows.Forms.NumericUpDown numYTMLikes;
         private System.Windows.Forms.NumericUpDown numRatingYouTubeMusic;
         private System.Windows.Forms.TrackBar tbStarsYouTubeMusic;
+        private System.Windows.Forms.TextBox tbSortArtist;
+        private System.Windows.Forms.TextBox tbSortTitle;
+        private System.Windows.Forms.TextBox tbSortAlbum;
+        private System.Windows.Forms.CheckBox chbSortArtist;
+        private System.Windows.Forms.CheckBox chbSortTitle;
+        private System.Windows.Forms.CheckBox chbSortAlbum;
     }
 }
 

@@ -279,6 +279,9 @@ namespace Titel_WinForm
                         if (chbAlbumArtists.Checked == true) { musFile.Tag.AlbumArtists = tbAlbumArtist.Text.Split('|'); }
                         if (chbComposers.Checked == true) { musFile.Tag.Composers = tbComposer.Text.Split('|'); }
                         if (chbRemixer.Checked == true) { musFile.Tag.RemixedBy = tbRemixer.Text; }
+                        if (chbSortArtist.Checked == true) { musFile.Tag.PerformersSort = tbRemixer.Text; }
+                        if (chbSortTitle.Checked == true) { musFile.Tag.TitleSort = tbRemixer.Text; }
+                        if (chbSortAlbum.Checked == true) { musFile.Tag.AlbumSort = tbRemixer.Text; }
 
                         if (numRatingBlank.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "", true).Rating = Convert.ToByte(numRatingBlank.Value); }
                         if (numRatingSpotify.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "open.spotify.com", true).Rating = Convert.ToByte(numRatingSpotify.Value); }

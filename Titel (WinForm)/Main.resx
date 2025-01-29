@@ -121,31 +121,6 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tsTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tsTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>464, 25</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tsTop.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tsTop.Text" xml:space="preserve">
-    <value>toolStrip</value>
-  </data>
-  <data name="&gt;&gt;tsTop.Name" xml:space="preserve">
-    <value>tsTop</value>
-  </data>
-  <data name="&gt;&gt;tsTop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsTop.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tsTop.ZOrder" xml:space="preserve">
-    <value>39</value>
-  </data>
   <data name="tsbOpenMP3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -202,42 +177,6 @@
   </data>
   <data name="tsbOpenTempl.ToolTipText" xml:space="preserve">
     <value>Open Template (Ctrl+Shift+O)</value>
-  </data>
-  <data name="tssbSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQhSURBVHhe7ZTLilNhEAYHBNHHm9t63s6tF1yoL6f5Qilo
-        l79BSOfkpAtqY/WZ+U7CeDcMwzAMwzAMwzAMwzAMwzAMG+fx8fH7znz//Pz8mtfbPvICe/DLy8vLG15x
-        28j4vXgdX4IM340PDw8fNv/fkQ3fk/f391+fnp7e8rrbw0bv0I+b/UuQsUfJS+y5SD4Z+xmRXLDbf7nZ
-        vwQbG8lL7LlIPhn7GZFcsNt4+JDf2b//dJNfgg2N5CX2XCSfjP2MSC7YbTz8N/Pq6r4EGxnJS+y5SD4Z
-        +xmRXLDbmHbKl3Dw22a+BBl3lLzEnovkk7GfEckFu43k6/oSZNhR8hJ7LpJPxn5GJBfsNpKPXM2XIKOO
-        kpfYc5F8Nux3RvIvruJLkEFHyUvsuUg+G/Y7I/k3Dl/C60P79OftH37mvB8Zc5S8xJ6L5LNhvzOSC6f8
-        JXDaj42J5CX2XCSfDfudkaz86y+Bs35sTCQvseci+WzY74zkv8KX8F/Png0bE8lL7LlIPhv2OyN5iT0X
-        yf3YmEheYs9dUmYtseciuR8bE8lL7LlLyqwl9lwk92NjInmJPXdJmbXEnovkfmxMJC+x5y4ps5bYc5Hc
-        j42J5CX23CVl1hJ7LpL7sTGRvMSeu6TMWmLPRXI/NiaSd4e9ayT3Y2MieXfYu0ZyPzYmkneHvWsk92Nj
-        Inl32LtGcj82JpJ3h71rJPdjYyJ5d9i7RnI/NiaSd4e9ayT3Y2MieXfYu0ZyPzYmkneHvWsk92NjIrlg
-        t1uUuQW7jeR+bEwkF+x2izK3YLeR3I+NieSC3W5R5hbsNpL7sTGRXLDbLcrcgt1Gcj82JpILdrtFmVuw
-        20jux8ZEcsFutyhzC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2Nb
-        Irlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu
-        2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Yb
-        yf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7
-        tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J
-        5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlg
-        t5Hcj425Rfk4+rExtygfRz825hbl4+jHxtyifBz92JhblI+jHxtzi/JxDMMwDMMwDMMwDMMwDMMwDMM2
-        ubv7AdlPxmSlnt0QAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="tssbSave.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tssbSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 22</value>
-  </data>
-  <data name="tssbSave.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="tssbSave.ToolTipText" xml:space="preserve">
-    <value>Save... or Save as...</value>
   </data>
   <data name="tsmiSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -339,6 +278,43 @@
   <data name="tsmiSaveImage.Text" xml:space="preserve">
     <value>Save Image</value>
   </data>
+  <data name="tssbSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQhSURBVHhe7ZTLilNhEAYHBNHHm9t63s6tF1yoL6f5Qilo
+        l79BSOfkpAtqY/WZ+U7CeDcMwzAMwzAMwzAMwzAMwzAMG+fx8fH7znz//Pz8mtfbPvICe/DLy8vLG15x
+        28j4vXgdX4IM340PDw8fNv/fkQ3fk/f391+fnp7e8rrbw0bv0I+b/UuQsUfJS+y5SD4Z+xmRXLDbf7nZ
+        vwQbG8lL7LlIPhn7GZFcsNt4+JDf2b//dJNfgg2N5CX2XCSfjP2MSC7YbTz8N/Pq6r4EGxnJS+y5SD4Z
+        +xmRXLDbmHbKl3Dw22a+BBl3lLzEnovkk7GfEckFu43k6/oSZNhR8hJ7LpJPxn5GJBfsNpKPXM2XIKOO
+        kpfYc5F8Nux3RvIvruJLkEFHyUvsuUg+G/Y7I/k3Dl/C60P79OftH37mvB8Zc5S8xJ6L5LNhvzOSC6f8
+        JXDaj42J5CX2XCSfDfudkaz86y+Bs35sTCQvseci+WzY74zkv8KX8F/Png0bE8lL7LlIPhv2OyN5iT0X
+        yf3YmEheYs9dUmYtseciuR8bE8lL7LlLyqwl9lwk92NjInmJPXdJmbXEnovkfmxMJC+x5y4ps5bYc5Hc
+        j42J5CX23CVl1hJ7LpL7sTGRvMSeu6TMWmLPRXI/NiaSd4e9ayT3Y2MieXfYu0ZyPzYmkneHvWsk92Nj
+        Inl32LtGcj82JpJ3h71rJPdjYyJ5d9i7RnI/NiaSd4e9ayT3Y2MieXfYu0ZyPzYmkneHvWsk92NjIrlg
+        t1uUuQW7jeR+bEwkF+x2izK3YLeR3I+NieSC3W5R5hbsNpL7sTGRXLDbLcrcgt1Gcj82JpILdrtFmVuw
+        20jux8ZEcsFutyhzC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2Nb
+        Irlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu
+        2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Yb
+        yf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7
+        tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J
+        5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlg
+        t5Hcj425Rfk4+rExtygfRz825hbl4+jHxtyifBz92JhblI+jHxtzi/JxDMMwDMMwDMMwDMMwDMMwDMM2
+        ubv7AdlPxmSlnt0QAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tssbSave.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="tssbSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 22</value>
+  </data>
+  <data name="tssbSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="tssbSave.ToolTipText" xml:space="preserve">
+    <value>Save... or Save as...</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tsbCloseFile.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -404,6 +380,30 @@
   <data name="tslChanges.ToolTipText" xml:space="preserve">
     <value>Status</value>
   </data>
+  <data name="tsTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>464, 25</value>
+  </data>
+  <data name="tsTop.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tsTop.Text" xml:space="preserve">
+    <value>toolStrip</value>
+  </data>
+  <data name="&gt;&gt;tsTop.Name" xml:space="preserve">
+    <value>tsTop</value>
+  </data>
+  <data name="&gt;&gt;tsTop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsTop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tsTop.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
   <metadata name="openFileDiMP3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>99, 17</value>
   </metadata>
@@ -413,9 +413,6 @@
   <data name="openFileDiMP3.Title" xml:space="preserve">
     <value>Open MP3 file...</value>
   </data>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>494, 20</value>
-  </metadata>
   <data name="lFileName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -435,6 +432,9 @@
   <data name="lFileName.Text" xml:space="preserve">
     <value>File:</value>
   </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>494, 20</value>
+  </metadata>
   <data name="lFileName.ToolTip" xml:space="preserve">
     <value>Name of the file</value>
   </data>
@@ -448,13 +448,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lFileName.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>43</value>
   </data>
   <data name="tbFileName.Location" type="System.Drawing.Point, System.Drawing">
     <value>44, 31</value>
   </data>
   <data name="tbFileName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>294, 20</value>
+    <value>335, 20</value>
   </data>
   <data name="tbFileName.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -469,13 +469,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbFileName.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>42</value>
   </data>
   <data name="tbArtist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>78, 79</value>
+    <value>119, 79</value>
   </data>
   <data name="tbArtist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 20</value>
+    <value>227, 20</value>
   </data>
   <data name="tbArtist.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -490,13 +490,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbArtist.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>41</value>
   </data>
   <data name="tbTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>78, 105</value>
+    <value>119, 105</value>
   </data>
   <data name="tbTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 20</value>
+    <value>227, 20</value>
   </data>
   <data name="tbTitle.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -511,13 +511,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbTitle.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>40</value>
   </data>
   <data name="tbAlbum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>78, 131</value>
+    <value>119, 131</value>
   </data>
   <data name="tbAlbum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 20</value>
+    <value>227, 20</value>
   </data>
   <data name="tbAlbum.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -532,13 +532,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbAlbum.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>39</value>
   </data>
   <data name="tbGenre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 284</value>
+    <value>119, 240</value>
   </data>
   <data name="tbGenre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 20</value>
+    <value>333, 20</value>
   </data>
   <data name="tbGenre.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -553,13 +553,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbGenre.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>38</value>
   </data>
   <data name="tbAlbumArtist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 310</value>
+    <value>119, 266</value>
   </data>
   <data name="tbAlbumArtist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 20</value>
+    <value>333, 20</value>
   </data>
   <data name="tbAlbumArtist.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -574,7 +574,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbAlbumArtist.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>37</value>
   </data>
   <data name="lArtist.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -583,7 +583,7 @@
     <value>NoControl</value>
   </data>
   <data name="lArtist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 82</value>
+    <value>53, 82</value>
   </data>
   <data name="lArtist.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 13</value>
@@ -604,7 +604,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lArtist.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>36</value>
   </data>
   <data name="lTitle.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -613,7 +613,7 @@
     <value>NoControl</value>
   </data>
   <data name="lTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 108</value>
+    <value>83, 108</value>
   </data>
   <data name="lTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 13</value>
@@ -634,49 +634,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lTitle.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>35</value>
   </data>
-  <data name="lPicture.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lPicture.Location" type="System.Drawing.Point, System.Drawing">
-    <value>242, 198</value>
-  </data>
-  <data name="lPicture.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 13</value>
-  </data>
-  <data name="lPicture.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="lPicture.Text" xml:space="preserve">
-    <value>Pictures[0]:</value>
-  </data>
-  <data name="&gt;&gt;lPicture.Name" xml:space="preserve">
-    <value>lPicture</value>
-  </data>
-  <data name="&gt;&gt;lPicture.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lPicture.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lPicture.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>494, 20</value>
-  </metadata>
   <data name="lResulution.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lResulution.Location" type="System.Drawing.Point, System.Drawing">
-    <value>278, 198</value>
+    <value>352, 63</value>
   </data>
   <data name="lResulution.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 13</value>
+    <value>100, 13</value>
   </data>
   <data name="lResulution.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -700,13 +667,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lResulution.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>33</value>
   </data>
   <data name="bOpenPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="bOpenPicture.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 193</value>
+    <value>352, 185</value>
   </data>
   <data name="bOpenPicture.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -730,7 +697,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bOpenPicture.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>32</value>
   </data>
   <metadata name="openFileDiPic.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>233, 17</value>
@@ -742,10 +709,10 @@
     <value>Open image file...</value>
   </data>
   <data name="numDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>78, 157</value>
+    <value>119, 157</value>
   </data>
   <data name="numDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 20</value>
+    <value>227, 20</value>
   </data>
   <data name="numDate.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -760,13 +727,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numDate.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>31</value>
   </data>
   <data name="numTrackNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 232</value>
+    <value>119, 188</value>
   </data>
   <data name="numTrackNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 20</value>
+    <value>227, 20</value>
   </data>
   <data name="numTrackNumber.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -784,13 +751,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numTrackNumber.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>30</value>
   </data>
   <data name="tbStarsSpotify.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="tbStarsSpotify.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 426</value>
+    <value>12, 450</value>
   </data>
   <data name="tbStarsSpotify.Size" type="System.Drawing.Size, System.Drawing">
     <value>440, 45</value>
@@ -808,16 +775,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbStarsSpotify.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>27</value>
   </data>
   <data name="numRatingSpotify.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 402</value>
+    <value>119, 424</value>
   </data>
   <data name="numRatingSpotify.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 0, 3</value>
   </data>
   <data name="numRatingSpotify.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 20</value>
+    <value>111, 20</value>
   </data>
   <data name="numRatingSpotify.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -832,7 +799,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numRatingSpotify.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>28</value>
   </data>
   <data name="lRatingSpotify.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -841,7 +808,7 @@
     <value>NoControl</value>
   </data>
   <data name="lRatingSpotify.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 402</value>
+    <value>31, 426</value>
   </data>
   <data name="lRatingSpotify.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 13</value>
@@ -862,13 +829,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lRatingSpotify.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>29</value>
   </data>
   <data name="tbStarsYouTube.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="tbStarsYouTube.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 482</value>
+    <value>12, 501</value>
   </data>
   <data name="tbStarsYouTube.Size" type="System.Drawing.Size, System.Drawing">
     <value>440, 45</value>
@@ -886,16 +853,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbStarsYouTube.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>24</value>
   </data>
   <data name="numRatingYouTube.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 456</value>
+    <value>119, 475</value>
   </data>
   <data name="numRatingYouTube.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 0, 3</value>
   </data>
   <data name="numRatingYouTube.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 20</value>
+    <value>111, 20</value>
   </data>
   <data name="numRatingYouTube.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -910,7 +877,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numRatingYouTube.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>25</value>
   </data>
   <data name="lRatingYouTube.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -919,7 +886,7 @@
     <value>NoControl</value>
   </data>
   <data name="lRatingYouTube.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 458</value>
+    <value>19, 477</value>
   </data>
   <data name="lRatingYouTube.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 13</value>
@@ -940,13 +907,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lRatingYouTube.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>26</value>
   </data>
   <data name="tbStarsSoundcloud.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="tbStarsSoundcloud.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 593</value>
+    <value>12, 603</value>
   </data>
   <data name="tbStarsSoundcloud.Size" type="System.Drawing.Size, System.Drawing">
     <value>440, 45</value>
@@ -964,16 +931,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbStarsSoundcloud.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>21</value>
   </data>
   <data name="numRatingSoundcloud.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 567</value>
-  </data>
-  <data name="numRatingSoundcloud.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 0, 3</value>
+    <value>119, 577</value>
   </data>
   <data name="numRatingSoundcloud.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 20</value>
+    <value>81, 20</value>
   </data>
   <data name="numRatingSoundcloud.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -988,7 +952,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numRatingSoundcloud.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>22</value>
   </data>
   <data name="lRatingSoundcloud.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -997,7 +961,7 @@
     <value>NoControl</value>
   </data>
   <data name="lRatingSoundcloud.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 569</value>
+    <value>12, 579</value>
   </data>
   <data name="lRatingSoundcloud.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 13</value>
@@ -1018,13 +982,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lRatingSoundcloud.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>23</value>
   </data>
   <data name="tbComposer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 336</value>
+    <value>119, 292</value>
   </data>
   <data name="tbComposer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 20</value>
+    <value>333, 20</value>
   </data>
   <data name="tbComposer.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -1039,16 +1003,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbComposer.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>20</value>
   </data>
   <metadata name="tFileChanged.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>387, 17</value>
   </metadata>
   <data name="numDiscNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 258</value>
+    <value>119, 214</value>
   </data>
   <data name="numDiscNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 20</value>
+    <value>333, 20</value>
   </data>
   <data name="numDiscNumber.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1066,19 +1030,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numDiscNumber.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>19</value>
   </data>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>494, 20</value>
-  </metadata>
   <data name="numSpotifyMaxPlays.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 402</value>
+    <value>341, 424</value>
   </data>
   <data name="numSpotifyMaxPlays.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 3, 3</value>
   </data>
   <data name="numSpotifyMaxPlays.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>111, 20</value>
   </data>
   <data name="numSpotifyMaxPlays.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -1096,19 +1057,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numSpotifyMaxPlays.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>15</value>
   </data>
   <data name="numSpotifyPlays.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="numSpotifyPlays.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 402</value>
+    <value>230, 424</value>
   </data>
   <data name="numSpotifyPlays.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
   <data name="numSpotifyPlays.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 20</value>
+    <value>111, 20</value>
   </data>
   <data name="numSpotifyPlays.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -1126,16 +1087,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numSpotifyPlays.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>16</value>
   </data>
   <data name="numYTDislikes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 456</value>
+    <value>341, 475</value>
   </data>
   <data name="numYTDislikes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 3, 3</value>
   </data>
   <data name="numYTDislikes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>111, 20</value>
   </data>
   <data name="numYTDislikes.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -1153,16 +1114,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numYTDislikes.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>13</value>
   </data>
   <data name="numYTLikes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 456</value>
+    <value>230, 475</value>
   </data>
   <data name="numYTLikes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
   <data name="numYTLikes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 20</value>
+    <value>111, 20</value>
   </data>
   <data name="numYTLikes.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -1180,16 +1141,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numYTLikes.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>14</value>
   </data>
   <data name="numSCLikes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>298, 567</value>
+    <value>287, 577</value>
   </data>
   <data name="numSCLikes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
   <data name="numSCLikes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 20</value>
+    <value>81, 20</value>
   </data>
   <data name="numSCLikes.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -1207,16 +1168,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numSCLikes.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>11</value>
   </data>
   <data name="numSCPlays.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 567</value>
+    <value>203, 577</value>
   </data>
   <data name="numSCPlays.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 3, 0, 3</value>
+    <value>0, 3, 3, 3</value>
   </data>
   <data name="numSCPlays.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 20</value>
+    <value>81, 20</value>
   </data>
   <data name="numSCPlays.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -1234,16 +1195,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numSCPlays.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>12</value>
   </data>
   <data name="numSCRepost.Location" type="System.Drawing.Point, System.Drawing">
-    <value>370, 567</value>
-  </data>
-  <data name="numSCRepost.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 3, 3, 3</value>
+    <value>371, 577</value>
   </data>
   <data name="numSCRepost.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 20</value>
+    <value>81, 20</value>
   </data>
   <data name="numSCRepost.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -1261,7 +1219,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numSCRepost.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>10</value>
   </data>
   <data name="bFileFromTags.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1273,7 +1231,7 @@
     <value>NoControl</value>
   </data>
   <data name="bFileFromTags.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 28</value>
+    <value>385, 29</value>
   </data>
   <data name="bFileFromTags.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 23</value>
@@ -1297,16 +1255,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bFileFromTags.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>17</value>
   </data>
   <data name="numYTMDislikes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 512</value>
+    <value>341, 526</value>
   </data>
   <data name="numYTMDislikes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 3, 3</value>
   </data>
   <data name="numYTMDislikes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 20</value>
+    <value>111, 20</value>
   </data>
   <data name="numYTMDislikes.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -1324,16 +1282,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numYTMDislikes.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>6</value>
   </data>
   <data name="numYTMLikes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 512</value>
+    <value>230, 526</value>
   </data>
   <data name="numYTMLikes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
   <data name="numYTMLikes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 20</value>
+    <value>111, 20</value>
   </data>
   <data name="numYTMLikes.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -1351,7 +1309,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numYTMLikes.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>7</value>
   </data>
   <data name="pBoxAlbum.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1405,7 +1363,7 @@
 </value>
   </data>
   <data name="pBoxAlbum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 77</value>
+    <value>352, 79</value>
   </data>
   <data name="pBoxAlbum.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
@@ -1427,13 +1385,13 @@ Double Right Click to Delete</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pBoxAlbum.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>34</value>
   </data>
   <data name="tbRemixer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 362</value>
+    <value>119, 318</value>
   </data>
   <data name="tbRemixer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 20</value>
+    <value>333, 20</value>
   </data>
   <data name="tbRemixer.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -1448,7 +1406,7 @@ Double Right Click to Delete</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbRemixer.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>18</value>
   </data>
   <data name="chbAlbum.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1457,7 +1415,7 @@ Double Right Click to Delete</value>
     <value>NoControl</value>
   </data>
   <data name="chbAlbum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 133</value>
+    <value>55, 133</value>
   </data>
   <data name="chbAlbum.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 17</value>
@@ -1478,7 +1436,7 @@ Double Right Click to Delete</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chbAlbum.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>45</value>
   </data>
   <data name="chbYear.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1487,7 +1445,7 @@ Double Right Click to Delete</value>
     <value>NoControl</value>
   </data>
   <data name="chbYear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 158</value>
+    <value>62, 158</value>
   </data>
   <data name="chbYear.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 17</value>
@@ -1508,7 +1466,7 @@ Double Right Click to Delete</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chbYear.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>46</value>
   </data>
   <data name="chbTrack.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1517,7 +1475,7 @@ Double Right Click to Delete</value>
     <value>NoControl</value>
   </data>
   <data name="chbTrack.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 233</value>
+    <value>56, 189</value>
   </data>
   <data name="chbTrack.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 17</value>
@@ -1538,7 +1496,7 @@ Double Right Click to Delete</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chbTrack.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>47</value>
   </data>
   <data name="chbDisk.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1547,7 +1505,7 @@ Double Right Click to Delete</value>
     <value>NoControl</value>
   </data>
   <data name="chbDisk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 259</value>
+    <value>63, 215</value>
   </data>
   <data name="chbDisk.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 17</value>
@@ -1568,7 +1526,7 @@ Double Right Click to Delete</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chbDisk.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>48</value>
   </data>
   <data name="chbGenres.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1577,7 +1535,7 @@ Double Right Click to Delete</value>
     <value>NoControl</value>
   </data>
   <data name="chbGenres.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 286</value>
+    <value>50, 242</value>
   </data>
   <data name="chbGenres.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 17</value>
@@ -1598,7 +1556,7 @@ Double Right Click to Delete</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chbGenres.ZOrder" xml:space="preserve">
-    <value>44</value>
+    <value>49</value>
   </data>
   <data name="chbAlbumArtists.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1607,7 +1565,7 @@ Double Right Click to Delete</value>
     <value>NoControl</value>
   </data>
   <data name="chbAlbumArtists.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 312</value>
+    <value>24, 268</value>
   </data>
   <data name="chbAlbumArtists.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 17</value>
@@ -1628,7 +1586,7 @@ Double Right Click to Delete</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chbAlbumArtists.ZOrder" xml:space="preserve">
-    <value>45</value>
+    <value>50</value>
   </data>
   <data name="chbComposers.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1637,7 +1595,7 @@ Double Right Click to Delete</value>
     <value>NoControl</value>
   </data>
   <data name="chbComposers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 338</value>
+    <value>32, 294</value>
   </data>
   <data name="chbComposers.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 17</value>
@@ -1658,7 +1616,7 @@ Double Right Click to Delete</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chbComposers.ZOrder" xml:space="preserve">
-    <value>46</value>
+    <value>51</value>
   </data>
   <data name="chbRemixer.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1667,7 +1625,7 @@ Double Right Click to Delete</value>
     <value>NoControl</value>
   </data>
   <data name="chbRemixer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 364</value>
+    <value>29, 320</value>
   </data>
   <data name="chbRemixer.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 17</value>
@@ -1688,7 +1646,7 @@ Double Right Click to Delete</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chbRemixer.ZOrder" xml:space="preserve">
-    <value>47</value>
+    <value>52</value>
   </data>
   <data name="lRatingYouTubeMusic.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1697,16 +1655,16 @@ Double Right Click to Delete</value>
     <value>NoControl</value>
   </data>
   <data name="lRatingYouTubeMusic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 514</value>
+    <value>18, 528</value>
   </data>
   <data name="lRatingYouTubeMusic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 13</value>
+    <value>95, 13</value>
   </data>
   <data name="lRatingYouTubeMusic.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
   </data>
   <data name="lRatingYouTubeMusic.Text" xml:space="preserve">
-    <value>Rating (YouTube Music):</value>
+    <value>Rating (YT Music):</value>
   </data>
   <data name="&gt;&gt;lRatingYouTubeMusic.Name" xml:space="preserve">
     <value>lRatingYouTubeMusic</value>
@@ -1718,16 +1676,16 @@ Double Right Click to Delete</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lRatingYouTubeMusic.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>9</value>
   </data>
   <data name="numRatingYouTubeMusic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 512</value>
+    <value>119, 526</value>
   </data>
   <data name="numRatingYouTubeMusic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 0, 3</value>
   </data>
   <data name="numRatingYouTubeMusic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 20</value>
+    <value>111, 20</value>
   </data>
   <data name="numRatingYouTubeMusic.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -1742,13 +1700,13 @@ Double Right Click to Delete</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;numRatingYouTubeMusic.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>8</value>
   </data>
   <data name="tbStarsYouTubeMusic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="tbStarsYouTubeMusic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 538</value>
+    <value>12, 552</value>
   </data>
   <data name="tbStarsYouTubeMusic.Size" type="System.Drawing.Size, System.Drawing">
     <value>440, 45</value>
@@ -1766,7 +1724,7 @@ Double Right Click to Delete</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbStarsYouTubeMusic.ZOrder" xml:space="preserve">
-    <value>48</value>
+    <value>53</value>
   </data>
   <metadata name="tDontNull.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>584, 20</value>
@@ -1797,6 +1755,150 @@ Double Right Click to Delete</value>
   </data>
   <data name="saveFileDiMP3.Title" xml:space="preserve">
     <value>Save MP3 as...</value>
+  </data>
+  <data name="tbSortArtist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 344</value>
+  </data>
+  <data name="tbSortArtist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 20</value>
+  </data>
+  <data name="tbSortArtist.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;tbSortArtist.Name" xml:space="preserve">
+    <value>tbSortArtist</value>
+  </data>
+  <data name="&gt;&gt;tbSortArtist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbSortArtist.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbSortArtist.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tbSortTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 371</value>
+  </data>
+  <data name="tbSortTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 20</value>
+  </data>
+  <data name="tbSortTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;tbSortTitle.Name" xml:space="preserve">
+    <value>tbSortTitle</value>
+  </data>
+  <data name="&gt;&gt;tbSortTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbSortTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbSortTitle.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tbSortAlbum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 398</value>
+  </data>
+  <data name="tbSortAlbum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 20</value>
+  </data>
+  <data name="tbSortAlbum.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;tbSortAlbum.Name" xml:space="preserve">
+    <value>tbSortAlbum</value>
+  </data>
+  <data name="&gt;&gt;tbSortAlbum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbSortAlbum.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbSortAlbum.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chbSortArtist.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chbSortArtist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 346</value>
+  </data>
+  <data name="chbSortArtist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 17</value>
+  </data>
+  <data name="chbSortArtist.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="chbSortArtist.Text" xml:space="preserve">
+    <value>Performers Sort:</value>
+  </data>
+  <data name="&gt;&gt;chbSortArtist.Name" xml:space="preserve">
+    <value>chbSortArtist</value>
+  </data>
+  <data name="&gt;&gt;chbSortArtist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbSortArtist.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chbSortArtist.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chbSortTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chbSortTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 373</value>
+  </data>
+  <data name="chbSortTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 17</value>
+  </data>
+  <data name="chbSortTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="chbSortTitle.Text" xml:space="preserve">
+    <value>Title Sort:</value>
+  </data>
+  <data name="&gt;&gt;chbSortTitle.Name" xml:space="preserve">
+    <value>chbSortTitle</value>
+  </data>
+  <data name="&gt;&gt;chbSortTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbSortTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chbSortTitle.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chbSortAlbum.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chbSortAlbum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 400</value>
+  </data>
+  <data name="chbSortAlbum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 17</value>
+  </data>
+  <data name="chbSortAlbum.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="chbSortAlbum.Text" xml:space="preserve">
+    <value>Album Sort</value>
+  </data>
+  <data name="&gt;&gt;chbSortAlbum.Name" xml:space="preserve">
+    <value>chbSortAlbum</value>
+  </data>
+  <data name="&gt;&gt;chbSortAlbum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbSortAlbum.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chbSortAlbum.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
