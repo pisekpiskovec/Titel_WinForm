@@ -599,5 +599,40 @@ namespace Titel_WinForm
         private void numSpotifyMaxPlays_Leave(object sender, EventArgs e) { if (numSpotifyMaxPlays.Value == 0) { numSpotifyPlays.Enabled = false; } else { numSpotifyPlays.Enabled = true; } }
         private void tslChanges_Click(object sender, EventArgs e) { About abt = new About(); abt.ShowDialog(); }
         private void numSCPlays_Leave(object sender, EventArgs e) { if (numSCPlays.Value == 0) { numSCLikes.Enabled = false; numSCRepost.Enabled = false; } else { numSCLikes.Enabled = true; numSCRepost.Enabled = true; } }
+
+        private void pBoxAlbum_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lArtist_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lResulution_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbComposer_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbGenre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chbComposers_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbAlbum_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

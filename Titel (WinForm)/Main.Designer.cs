@@ -56,9 +56,6 @@ namespace Titel_WinForm
             this.lPicture = new System.Windows.Forms.Label();
             this.lResulution = new System.Windows.Forms.Label();
             this.bOpenPicture = new System.Windows.Forms.Button();
-            this.lRatingBlank = new System.Windows.Forms.Label();
-            this.numRatingBlank = new System.Windows.Forms.NumericUpDown();
-            this.tbStarsBlank = new System.Windows.Forms.TrackBar();
             this.openFileDiPic = new System.Windows.Forms.OpenFileDialog();
             this.numDate = new System.Windows.Forms.NumericUpDown();
             this.numTrackNumber = new System.Windows.Forms.NumericUpDown();
@@ -75,8 +72,6 @@ namespace Titel_WinForm
             this.tFileChanged = new System.Windows.Forms.Timer(this.components);
             this.numDiscNumber = new System.Windows.Forms.NumericUpDown();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.numBlankStars = new System.Windows.Forms.NumericUpDown();
-            this.numBlankMaxStars = new System.Windows.Forms.NumericUpDown();
             this.numSpotifyMaxPlays = new System.Windows.Forms.NumericUpDown();
             this.numSpotifyPlays = new System.Windows.Forms.NumericUpDown();
             this.numYTDislikes = new System.Windows.Forms.NumericUpDown();
@@ -105,8 +100,6 @@ namespace Titel_WinForm
             this.saveFileDiTempl = new System.Windows.Forms.SaveFileDialog();
             this.saveFileDiMP3 = new System.Windows.Forms.SaveFileDialog();
             this.tsTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRatingBlank)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbStarsBlank)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numTrackNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbStarsSpotify)).BeginInit();
@@ -116,8 +109,6 @@ namespace Titel_WinForm
             ((System.ComponentModel.ISupportInitialize)(this.tbStarsSoundcloud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numRatingSoundcloud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDiscNumber)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numBlankStars)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numBlankMaxStars)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSpotifyMaxPlays)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSpotifyPlays)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numYTDislikes)).BeginInit();
@@ -134,7 +125,6 @@ namespace Titel_WinForm
             // 
             // tsTop
             // 
-            resources.ApplyResources(this.tsTop, "tsTop");
             this.tsTop.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbOpenMP3,
             this.tsbOpenTempl,
@@ -142,34 +132,34 @@ namespace Titel_WinForm
             this.tsbCloseFile,
             this.tsSp,
             this.tslChanges});
+            resources.ApplyResources(this.tsTop, "tsTop");
             this.tsTop.Name = "tsTop";
             this.tsTop.Stretch = true;
-            this.toolTip.SetToolTip(this.tsTop, resources.GetString("tsTop.ToolTip"));
             // 
             // tsbOpenMP3
             // 
-            resources.ApplyResources(this.tsbOpenMP3, "tsbOpenMP3");
             this.tsbOpenMP3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.tsbOpenMP3, "tsbOpenMP3");
             this.tsbOpenMP3.Name = "tsbOpenMP3";
             this.tsbOpenMP3.Click += new System.EventHandler(this.tsbtnOpen_Click);
             // 
             // tsbOpenTempl
             // 
-            resources.ApplyResources(this.tsbOpenTempl, "tsbOpenTempl");
             this.tsbOpenTempl.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbOpenTempl.Image = global::Titel_WinForm.Properties.Resources.file_invoice_96px;
+            resources.ApplyResources(this.tsbOpenTempl, "tsbOpenTempl");
             this.tsbOpenTempl.Name = "tsbOpenTempl";
             this.tsbOpenTempl.Click += new System.EventHandler(this.tsbOpenTempl_Click);
             // 
             // tssbSave
             // 
-            resources.ApplyResources(this.tssbSave, "tssbSave");
             this.tssbSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tssbSave.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiSave,
             this.tsmiSaveAs,
             this.tsmiSaveTemplate,
             this.tsmiSaveImage});
+            resources.ApplyResources(this.tssbSave, "tssbSave");
             this.tssbSave.Name = "tssbSave";
             this.tssbSave.ButtonClick += new System.EventHandler(this.tssbSave_ButtonClick);
             // 
@@ -187,34 +177,34 @@ namespace Titel_WinForm
             // 
             // tsmiSaveTemplate
             // 
-            resources.ApplyResources(this.tsmiSaveTemplate, "tsmiSaveTemplate");
             this.tsmiSaveTemplate.Image = global::Titel_WinForm.Properties.Resources.create_96px;
             this.tsmiSaveTemplate.Name = "tsmiSaveTemplate";
+            resources.ApplyResources(this.tsmiSaveTemplate, "tsmiSaveTemplate");
             this.tsmiSaveTemplate.Click += new System.EventHandler(this.tsmiSaveTemplate_Click);
             // 
             // tsmiSaveImage
             // 
-            resources.ApplyResources(this.tsmiSaveImage, "tsmiSaveImage");
             this.tsmiSaveImage.Image = global::Titel_WinForm.Properties.Resources.save_image_96px;
             this.tsmiSaveImage.Name = "tsmiSaveImage";
+            resources.ApplyResources(this.tsmiSaveImage, "tsmiSaveImage");
             this.tsmiSaveImage.Click += new System.EventHandler(this.tsmiSaveImage_Click);
             // 
             // tsbCloseFile
             // 
-            resources.ApplyResources(this.tsbCloseFile, "tsbCloseFile");
             this.tsbCloseFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.tsbCloseFile, "tsbCloseFile");
             this.tsbCloseFile.Name = "tsbCloseFile";
             this.tsbCloseFile.Click += new System.EventHandler(this.tsbCloseFile_Click);
             // 
             // tsSp
             // 
-            resources.ApplyResources(this.tsSp, "tsSp");
             this.tsSp.Name = "tsSp";
+            resources.ApplyResources(this.tsSp, "tsSp");
             // 
             // tslChanges
             // 
-            resources.ApplyResources(this.tslChanges, "tslChanges");
             this.tslChanges.Name = "tslChanges";
+            resources.ApplyResources(this.tslChanges, "tslChanges");
             this.tslChanges.Click += new System.EventHandler(this.tslChanges_Click);
             // 
             // openFileDiMP3
@@ -233,67 +223,62 @@ namespace Titel_WinForm
             // 
             resources.ApplyResources(this.tbFileName, "tbFileName");
             this.tbFileName.Name = "tbFileName";
-            this.toolTip.SetToolTip(this.tbFileName, resources.GetString("tbFileName.ToolTip"));
             this.tbFileName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // tbArtist
             // 
             resources.ApplyResources(this.tbArtist, "tbArtist");
             this.tbArtist.Name = "tbArtist";
-            this.toolTip.SetToolTip(this.tbArtist, resources.GetString("tbArtist.ToolTip"));
             this.tbArtist.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // tbTitle
             // 
             resources.ApplyResources(this.tbTitle, "tbTitle");
             this.tbTitle.Name = "tbTitle";
-            this.toolTip.SetToolTip(this.tbTitle, resources.GetString("tbTitle.ToolTip"));
             this.tbTitle.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // tbAlbum
             // 
             resources.ApplyResources(this.tbAlbum, "tbAlbum");
             this.tbAlbum.Name = "tbAlbum";
-            this.toolTip.SetToolTip(this.tbAlbum, resources.GetString("tbAlbum.ToolTip"));
+            this.tbAlbum.TextChanged += new System.EventHandler(this.tbAlbum_TextChanged);
             this.tbAlbum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // tbGenre
             // 
             resources.ApplyResources(this.tbGenre, "tbGenre");
             this.tbGenre.Name = "tbGenre";
-            this.toolTip.SetToolTip(this.tbGenre, resources.GetString("tbGenre.ToolTip"));
+            this.tbGenre.TextChanged += new System.EventHandler(this.tbGenre_TextChanged);
             this.tbGenre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // tbAlbumArtist
             // 
             resources.ApplyResources(this.tbAlbumArtist, "tbAlbumArtist");
             this.tbAlbumArtist.Name = "tbAlbumArtist";
-            this.toolTip.SetToolTip(this.tbAlbumArtist, resources.GetString("tbAlbumArtist.ToolTip"));
             this.tbAlbumArtist.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // lArtist
             // 
             resources.ApplyResources(this.lArtist, "lArtist");
             this.lArtist.Name = "lArtist";
-            this.toolTip.SetToolTip(this.lArtist, resources.GetString("lArtist.ToolTip"));
+            this.lArtist.Click += new System.EventHandler(this.lArtist_Click);
             // 
             // lTitle
             // 
             resources.ApplyResources(this.lTitle, "lTitle");
             this.lTitle.Name = "lTitle";
-            this.toolTip.SetToolTip(this.lTitle, resources.GetString("lTitle.ToolTip"));
             // 
             // lPicture
             // 
             resources.ApplyResources(this.lPicture, "lPicture");
             this.lPicture.Name = "lPicture";
-            this.toolTip.SetToolTip(this.lPicture, resources.GetString("lPicture.ToolTip"));
             // 
             // lResulution
             // 
             resources.ApplyResources(this.lResulution, "lResulution");
             this.lResulution.Name = "lResulution";
             this.toolTip.SetToolTip(this.lResulution, resources.GetString("lResulution.ToolTip"));
+            this.lResulution.Click += new System.EventHandler(this.lResulution_Click);
             // 
             // bOpenPicture
             // 
@@ -303,35 +288,6 @@ namespace Titel_WinForm
             this.bOpenPicture.UseVisualStyleBackColor = true;
             this.bOpenPicture.Click += new System.EventHandler(this.bOpenPicture_Click);
             this.bOpenPicture.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            // 
-            // lRatingBlank
-            // 
-            resources.ApplyResources(this.lRatingBlank, "lRatingBlank");
-            this.lRatingBlank.Name = "lRatingBlank";
-            this.toolTip.SetToolTip(this.lRatingBlank, resources.GetString("lRatingBlank.ToolTip"));
-            // 
-            // numRatingBlank
-            // 
-            resources.ApplyResources(this.numRatingBlank, "numRatingBlank");
-            this.numRatingBlank.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numRatingBlank.Name = "numRatingBlank";
-            this.toolTip.SetToolTip(this.numRatingBlank, resources.GetString("numRatingBlank.ToolTip"));
-            this.numRatingBlank.ValueChanged += new System.EventHandler(this.numRating_ValueChanged);
-            this.numRatingBlank.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            // 
-            // tbStarsBlank
-            // 
-            resources.ApplyResources(this.tbStarsBlank, "tbStarsBlank");
-            this.tbStarsBlank.LargeChange = 1;
-            this.tbStarsBlank.Maximum = 5;
-            this.tbStarsBlank.Name = "tbStarsBlank";
-            this.toolTip.SetToolTip(this.tbStarsBlank, resources.GetString("tbStarsBlank.ToolTip"));
-            this.tbStarsBlank.Scroll += new System.EventHandler(this.tbStarsBlank_Scroll);
-            this.tbStarsBlank.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // openFileDiPic
             // 
@@ -347,7 +303,6 @@ namespace Titel_WinForm
             0,
             0});
             this.numDate.Name = "numDate";
-            this.toolTip.SetToolTip(this.numDate, resources.GetString("numDate.ToolTip"));
             this.numDate.Value = new decimal(new int[] {
             2024,
             0,
@@ -365,7 +320,6 @@ namespace Titel_WinForm
             0,
             0});
             this.numTrackNumber.Name = "numTrackNumber";
-            this.toolTip.SetToolTip(this.numTrackNumber, resources.GetString("numTrackNumber.ToolTip"));
             this.numTrackNumber.Value = new decimal(new int[] {
             1,
             0,
@@ -379,7 +333,6 @@ namespace Titel_WinForm
             this.tbStarsSpotify.LargeChange = 1;
             this.tbStarsSpotify.Maximum = 5;
             this.tbStarsSpotify.Name = "tbStarsSpotify";
-            this.toolTip.SetToolTip(this.tbStarsSpotify, resources.GetString("tbStarsSpotify.ToolTip"));
             this.tbStarsSpotify.Scroll += new System.EventHandler(this.tbStarsSpotify_Scroll);
             this.tbStarsSpotify.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
@@ -392,7 +345,6 @@ namespace Titel_WinForm
             0,
             0});
             this.numRatingSpotify.Name = "numRatingSpotify";
-            this.toolTip.SetToolTip(this.numRatingSpotify, resources.GetString("numRatingSpotify.ToolTip"));
             this.numRatingSpotify.ValueChanged += new System.EventHandler(this.numRatingSpotify_ValueChanged);
             this.numRatingSpotify.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
@@ -400,7 +352,6 @@ namespace Titel_WinForm
             // 
             resources.ApplyResources(this.lRatingSpotify, "lRatingSpotify");
             this.lRatingSpotify.Name = "lRatingSpotify";
-            this.toolTip.SetToolTip(this.lRatingSpotify, resources.GetString("lRatingSpotify.ToolTip"));
             // 
             // tbStarsYouTube
             // 
@@ -408,7 +359,6 @@ namespace Titel_WinForm
             this.tbStarsYouTube.LargeChange = 1;
             this.tbStarsYouTube.Maximum = 5;
             this.tbStarsYouTube.Name = "tbStarsYouTube";
-            this.toolTip.SetToolTip(this.tbStarsYouTube, resources.GetString("tbStarsYouTube.ToolTip"));
             this.tbStarsYouTube.Scroll += new System.EventHandler(this.tbStarsYouTube_Scroll);
             this.tbStarsYouTube.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
@@ -421,7 +371,6 @@ namespace Titel_WinForm
             0,
             0});
             this.numRatingYouTube.Name = "numRatingYouTube";
-            this.toolTip.SetToolTip(this.numRatingYouTube, resources.GetString("numRatingYouTube.ToolTip"));
             this.numRatingYouTube.ValueChanged += new System.EventHandler(this.numRatingYouTube_ValueChanged);
             this.numRatingYouTube.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
@@ -429,7 +378,6 @@ namespace Titel_WinForm
             // 
             resources.ApplyResources(this.lRatingYouTube, "lRatingYouTube");
             this.lRatingYouTube.Name = "lRatingYouTube";
-            this.toolTip.SetToolTip(this.lRatingYouTube, resources.GetString("lRatingYouTube.ToolTip"));
             // 
             // tbStarsSoundcloud
             // 
@@ -437,7 +385,6 @@ namespace Titel_WinForm
             this.tbStarsSoundcloud.LargeChange = 1;
             this.tbStarsSoundcloud.Maximum = 5;
             this.tbStarsSoundcloud.Name = "tbStarsSoundcloud";
-            this.toolTip.SetToolTip(this.tbStarsSoundcloud, resources.GetString("tbStarsSoundcloud.ToolTip"));
             this.tbStarsSoundcloud.Scroll += new System.EventHandler(this.tbStarsSoundcloud_Scroll);
             this.tbStarsSoundcloud.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
@@ -450,7 +397,6 @@ namespace Titel_WinForm
             0,
             0});
             this.numRatingSoundcloud.Name = "numRatingSoundcloud";
-            this.toolTip.SetToolTip(this.numRatingSoundcloud, resources.GetString("numRatingSoundcloud.ToolTip"));
             this.numRatingSoundcloud.ValueChanged += new System.EventHandler(this.numRatingSoundcloud_ValueChanged);
             this.numRatingSoundcloud.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
@@ -458,13 +404,12 @@ namespace Titel_WinForm
             // 
             resources.ApplyResources(this.lRatingSoundcloud, "lRatingSoundcloud");
             this.lRatingSoundcloud.Name = "lRatingSoundcloud";
-            this.toolTip.SetToolTip(this.lRatingSoundcloud, resources.GetString("lRatingSoundcloud.ToolTip"));
             // 
             // tbComposer
             // 
             resources.ApplyResources(this.tbComposer, "tbComposer");
             this.tbComposer.Name = "tbComposer";
-            this.toolTip.SetToolTip(this.tbComposer, resources.GetString("tbComposer.ToolTip"));
+            this.tbComposer.TextChanged += new System.EventHandler(this.tbComposer_TextChanged);
             this.tbComposer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // tFileChanged
@@ -481,30 +426,12 @@ namespace Titel_WinForm
             0,
             0});
             this.numDiscNumber.Name = "numDiscNumber";
-            this.toolTip.SetToolTip(this.numDiscNumber, resources.GetString("numDiscNumber.ToolTip"));
             this.numDiscNumber.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numDiscNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            // 
-            // numBlankStars
-            // 
-            resources.ApplyResources(this.numBlankStars, "numBlankStars");
-            this.numBlankStars.DecimalPlaces = 1;
-            this.numBlankStars.Name = "numBlankStars";
-            this.toolTip.SetToolTip(this.numBlankStars, resources.GetString("numBlankStars.ToolTip"));
-            this.numBlankStars.ValueChanged += new System.EventHandler(this.numBlank_ValueChanged);
-            this.numBlankStars.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            // 
-            // numBlankMaxStars
-            // 
-            resources.ApplyResources(this.numBlankMaxStars, "numBlankMaxStars");
-            this.numBlankMaxStars.Name = "numBlankMaxStars";
-            this.toolTip.SetToolTip(this.numBlankMaxStars, resources.GetString("numBlankMaxStars.ToolTip"));
-            this.numBlankMaxStars.ValueChanged += new System.EventHandler(this.numBlank_ValueChanged);
-            this.numBlankMaxStars.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // numSpotifyMaxPlays
             // 
@@ -636,11 +563,12 @@ namespace Titel_WinForm
             // 
             // pBoxAlbum
             // 
-            resources.ApplyResources(this.pBoxAlbum, "pBoxAlbum");
             this.pBoxAlbum.AllowDrop = true;
+            resources.ApplyResources(this.pBoxAlbum, "pBoxAlbum");
             this.pBoxAlbum.Name = "pBoxAlbum";
             this.pBoxAlbum.TabStop = false;
             this.toolTip.SetToolTip(this.pBoxAlbum, resources.GetString("pBoxAlbum.ToolTip"));
+            this.pBoxAlbum.Click += new System.EventHandler(this.pBoxAlbum_Click);
             this.pBoxAlbum.DragDrop += new System.Windows.Forms.DragEventHandler(this.pBoxAlbum_DragDrop);
             this.pBoxAlbum.DragEnter += new System.Windows.Forms.DragEventHandler(this.pBoxAlbum_DragEnter);
             this.pBoxAlbum.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseClick);
@@ -650,7 +578,6 @@ namespace Titel_WinForm
             // 
             resources.ApplyResources(this.tbRemixer, "tbRemixer");
             this.tbRemixer.Name = "tbRemixer";
-            this.toolTip.SetToolTip(this.tbRemixer, resources.GetString("tbRemixer.ToolTip"));
             this.tbRemixer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // chbAlbum
@@ -659,7 +586,6 @@ namespace Titel_WinForm
             this.chbAlbum.Checked = true;
             this.chbAlbum.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chbAlbum.Name = "chbAlbum";
-            this.toolTip.SetToolTip(this.chbAlbum, resources.GetString("chbAlbum.ToolTip"));
             this.chbAlbum.UseVisualStyleBackColor = true;
             this.chbAlbum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
@@ -669,7 +595,6 @@ namespace Titel_WinForm
             this.chbYear.Checked = true;
             this.chbYear.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chbYear.Name = "chbYear";
-            this.toolTip.SetToolTip(this.chbYear, resources.GetString("chbYear.ToolTip"));
             this.chbYear.UseVisualStyleBackColor = true;
             this.chbYear.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
@@ -679,7 +604,6 @@ namespace Titel_WinForm
             this.chbTrack.Checked = true;
             this.chbTrack.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chbTrack.Name = "chbTrack";
-            this.toolTip.SetToolTip(this.chbTrack, resources.GetString("chbTrack.ToolTip"));
             this.chbTrack.UseVisualStyleBackColor = true;
             this.chbTrack.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
@@ -687,7 +611,6 @@ namespace Titel_WinForm
             // 
             resources.ApplyResources(this.chbDisk, "chbDisk");
             this.chbDisk.Name = "chbDisk";
-            this.toolTip.SetToolTip(this.chbDisk, resources.GetString("chbDisk.ToolTip"));
             this.chbDisk.UseVisualStyleBackColor = true;
             this.chbDisk.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
@@ -697,7 +620,6 @@ namespace Titel_WinForm
             this.chbGenres.Checked = true;
             this.chbGenres.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chbGenres.Name = "chbGenres";
-            this.toolTip.SetToolTip(this.chbGenres, resources.GetString("chbGenres.ToolTip"));
             this.chbGenres.UseVisualStyleBackColor = true;
             this.chbGenres.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
@@ -705,7 +627,6 @@ namespace Titel_WinForm
             // 
             resources.ApplyResources(this.chbAlbumArtists, "chbAlbumArtists");
             this.chbAlbumArtists.Name = "chbAlbumArtists";
-            this.toolTip.SetToolTip(this.chbAlbumArtists, resources.GetString("chbAlbumArtists.ToolTip"));
             this.chbAlbumArtists.UseVisualStyleBackColor = true;
             this.chbAlbumArtists.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
@@ -713,15 +634,14 @@ namespace Titel_WinForm
             // 
             resources.ApplyResources(this.chbComposers, "chbComposers");
             this.chbComposers.Name = "chbComposers";
-            this.toolTip.SetToolTip(this.chbComposers, resources.GetString("chbComposers.ToolTip"));
             this.chbComposers.UseVisualStyleBackColor = true;
+            this.chbComposers.CheckedChanged += new System.EventHandler(this.chbComposers_CheckedChanged);
             this.chbComposers.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // chbRemixer
             // 
             resources.ApplyResources(this.chbRemixer, "chbRemixer");
             this.chbRemixer.Name = "chbRemixer";
-            this.toolTip.SetToolTip(this.chbRemixer, resources.GetString("chbRemixer.ToolTip"));
             this.chbRemixer.UseVisualStyleBackColor = true;
             this.chbRemixer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
@@ -729,7 +649,6 @@ namespace Titel_WinForm
             // 
             resources.ApplyResources(this.lRatingYouTubeMusic, "lRatingYouTubeMusic");
             this.lRatingYouTubeMusic.Name = "lRatingYouTubeMusic";
-            this.toolTip.SetToolTip(this.lRatingYouTubeMusic, resources.GetString("lRatingYouTubeMusic.ToolTip"));
             // 
             // numRatingYouTubeMusic
             // 
@@ -740,7 +659,6 @@ namespace Titel_WinForm
             0,
             0});
             this.numRatingYouTubeMusic.Name = "numRatingYouTubeMusic";
-            this.toolTip.SetToolTip(this.numRatingYouTubeMusic, resources.GetString("numRatingYouTubeMusic.ToolTip"));
             this.numRatingYouTubeMusic.ValueChanged += new System.EventHandler(this.numRatingYouTubeMusic_ValueChanged);
             this.numRatingYouTubeMusic.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
@@ -750,7 +668,6 @@ namespace Titel_WinForm
             this.tbStarsYouTubeMusic.LargeChange = 1;
             this.tbStarsYouTubeMusic.Maximum = 5;
             this.tbStarsYouTubeMusic.Name = "tbStarsYouTubeMusic";
-            this.toolTip.SetToolTip(this.tbStarsYouTubeMusic, resources.GetString("tbStarsYouTubeMusic.ToolTip"));
             // 
             // tDontNull
             // 
@@ -806,9 +723,6 @@ namespace Titel_WinForm
             this.Controls.Add(this.lRatingSpotify);
             this.Controls.Add(this.numTrackNumber);
             this.Controls.Add(this.numDate);
-            this.Controls.Add(this.tbStarsBlank);
-            this.Controls.Add(this.numRatingBlank);
-            this.Controls.Add(this.lRatingBlank);
             this.Controls.Add(this.bOpenPicture);
             this.Controls.Add(this.lResulution);
             this.Controls.Add(this.lPicture);
@@ -831,21 +745,16 @@ namespace Titel_WinForm
             this.Controls.Add(this.chbAlbumArtists);
             this.Controls.Add(this.chbComposers);
             this.Controls.Add(this.chbRemixer);
-            this.Controls.Add(this.numBlankStars);
-            this.Controls.Add(this.numBlankMaxStars);
             this.Controls.Add(this.tbStarsYouTubeMusic);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "Main";
-            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.tsTop.ResumeLayout(false);
             this.tsTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRatingBlank)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbStarsBlank)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numTrackNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbStarsSpotify)).EndInit();
@@ -855,8 +764,6 @@ namespace Titel_WinForm
             ((System.ComponentModel.ISupportInitialize)(this.tbStarsSoundcloud)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numRatingSoundcloud)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDiscNumber)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numBlankStars)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numBlankMaxStars)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSpotifyMaxPlays)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSpotifyPlays)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numYTDislikes)).EndInit();
@@ -892,8 +799,6 @@ namespace Titel_WinForm
         private System.Windows.Forms.Label lPicture;
         private System.Windows.Forms.Label lResulution;
         private System.Windows.Forms.Button bOpenPicture;
-        private System.Windows.Forms.Label lRatingBlank;
-        private System.Windows.Forms.TrackBar tbStarsBlank;
         private System.Windows.Forms.OpenFileDialog openFileDiPic;
         private System.Windows.Forms.ToolStripLabel tslChanges;
         private System.Windows.Forms.NumericUpDown numDate;
@@ -923,9 +828,6 @@ namespace Titel_WinForm
         private System.Windows.Forms.CheckBox chbAlbumArtists;
         private System.Windows.Forms.CheckBox chbComposers;
         private System.Windows.Forms.CheckBox chbRemixer;
-        private System.Windows.Forms.NumericUpDown numBlankStars;
-        private System.Windows.Forms.NumericUpDown numBlankMaxStars;
-        private System.Windows.Forms.NumericUpDown numRatingBlank;
         private System.Windows.Forms.NumericUpDown numRatingSpotify;
         private System.Windows.Forms.NumericUpDown numRatingYouTube;
         private System.Windows.Forms.NumericUpDown numRatingSoundcloud;
