@@ -52,27 +52,6 @@ namespace Titel_WinForm
             } catch { fileStatus(0); MessageBox.Show("Opening dialog failed. Please try again.", "Opening dialog failed", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
-        private void numRating_ValueChanged(object sender, EventArgs e)
-        {
-            if (numRatingBlank.Value == 0) { tbStarsBlank.Value = 0; }
-            else if (numRatingBlank.Value >= 1 && numRatingBlank.Value <= 31) { tbStarsBlank.Value = 1; }
-            else if (numRatingBlank.Value >= 32 && numRatingBlank.Value <= 95) { tbStarsBlank.Value = 2; }
-            else if (numRatingBlank.Value >= 96 && numRatingBlank.Value <= 159) { tbStarsBlank.Value = 3; }
-            else if (numRatingBlank.Value >= 160 && numRatingBlank.Value <= 223) { tbStarsBlank.Value = 4; }
-            else if (numRatingBlank.Value >= 224 && numRatingBlank.Value <= 255) { tbStarsBlank.Value = 5; }
-        }
-
-        private void tbStarsBlank_Scroll(object sender, EventArgs e) {
-            switch (tbStarsBlank.Value) {
-                case 0: numRatingBlank.Value = 0; break;
-                case 1: numRatingBlank.Value = 31; break;
-                case 2: numRatingBlank.Value = 95; break;
-                case 3: numRatingBlank.Value = 159; break;
-                case 4: numRatingBlank.Value = 223; break;
-                case 5: numRatingBlank.Value = 225; break;
-            }
-        }
-
         private void bOpenPicture_Click(object sender, EventArgs e)
         {
             openFileDiPic.InitialDirectory = Settings.Default.ofdPic;
@@ -102,7 +81,7 @@ namespace Titel_WinForm
                 case "title": if (tbTitle.Text != musFileTag.Title) { returningValue = true; } break;
                 case "year": if (chbYear.Checked == true && numDate.Value != musFileTag.Year) { returningValue = true; } break;
                 case "track": if (chbTrack.Checked == true && numTrackNumber.Value != musFileTag.Track) { returningValue = true; } break;
-                case "rating": if (numRatingBlank.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "", true).Rating || numRatingSpotify.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "open.spotify.com", true).Rating || numRatingYouTube.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "youtube.com", true).Rating || numRatingSoundcloud.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "soundcloud.com", true).Rating) { returningValue = true; } break;
+                case "rating": if (numRatingSpotify.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "open.spotify.com", true).Rating || numRatingYouTube.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "youtube.com", true).Rating || numRatingSoundcloud.Value != TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)TagLib.File.Create(musFileName).GetTag(TagLib.TagTypes.Id3v2), "soundcloud.com", true).Rating) { returningValue = true; } break;
                 case "albumArtwork": if (albumArtworkURL != "Album artwork♪") { returningValue = true; } break;
                 case "disk": if (chbDisk.Checked == true && numDiscNumber.Value != musFileTag.Disc) { returningValue = true; } break;
                 case "remixer": if (chbRemixer.Checked == true && tbRemixer.Text != musFileTag.RemixedBy) { returningValue = true; } break;
@@ -225,7 +204,6 @@ namespace Titel_WinForm
                 if (chbComposers.Checked == true) { musFile.Tag.Composers = tbComposer.Text.Split('|'); }
                 if (chbRemixer.Checked == true) { musFile.Tag.RemixedBy = tbRemixer.Text; }
 
-                if (numRatingBlank.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "", true).Rating = Convert.ToByte(numRatingBlank.Value); }
                 if (numRatingSpotify.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "open.spotify.com", true).Rating = Convert.ToByte(numRatingSpotify.Value); }
                 if (numRatingYouTube.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "youtube.com", true).Rating = Convert.ToByte(numRatingYouTube.Value); }
                 if (numRatingYouTubeMusic.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "music.youtube.com", true).Rating = Convert.ToByte(numRatingYouTubeMusic.Value); }
@@ -283,7 +261,6 @@ namespace Titel_WinForm
                         if (chbSortTitle.Checked == true) { musFile.Tag.TitleSort = tbRemixer.Text; }
                         if (chbSortAlbum.Checked == true) { musFile.Tag.AlbumSort = tbRemixer.Text; }
 
-                        if (numRatingBlank.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "", true).Rating = Convert.ToByte(numRatingBlank.Value); }
                         if (numRatingSpotify.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "open.spotify.com", true).Rating = Convert.ToByte(numRatingSpotify.Value); }
                         if (numRatingYouTube.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "youtube.com", true).Rating = Convert.ToByte(numRatingYouTube.Value); }
                         if (numRatingYouTubeMusic.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "music.youtube.com", true).Rating = Convert.ToByte(numRatingYouTubeMusic.Value); }
@@ -306,7 +283,7 @@ namespace Titel_WinForm
                     Settings.Default.sfdTempl = new System.IO.FileInfo(saveFileDiTempl.FileName).DirectoryName;
                     if (saveFileDiTempl.FileName != "")
                     {
-                        string[] inputing = { tbArtist.Text, tbTitle.Text, tbAlbum.Text, numDate.Value.ToString(), numTrackNumber.Value.ToString(), numDiscNumber.Value.ToString(), tbGenre.Text, tbAlbumArtist.Text, tbComposer.Text, tbRemixer.Text, numRatingBlank.Value.ToString(), numBlankMaxStars.Value.ToString(), numRatingSpotify.Value.ToString(), numSpotifyMaxPlays.Value.ToString(), numRatingYouTube.Value.ToString(), numRatingSoundcloud.Value.ToString(), "", ""};
+                        string[] inputing = { tbArtist.Text, tbTitle.Text, tbAlbum.Text, numDate.Value.ToString(), numTrackNumber.Value.ToString(), numDiscNumber.Value.ToString(), tbGenre.Text, tbAlbumArtist.Text, tbComposer.Text, tbRemixer.Text, "", "", numRatingSpotify.Value.ToString(), numSpotifyMaxPlays.Value.ToString(), numRatingYouTube.Value.ToString(), numRatingSoundcloud.Value.ToString(), "", ""};
                         if (albumArtworkURL == "null♪") { inputing[16] = "null"; } else if (albumArtworkURL == "Album artwork♪") { inputing[16] = ""; } else if (albumArtworkURL != "null♪" && albumArtworkURL != "Album artwork♪") { inputing[16] = "custom"; inputing[17] = albumArtworkURL; }
                         if(Settings.Default.templYTMSupport) inputing = inputing.Concat(new string[] { numRatingYouTubeMusic.Value.ToString() }).ToArray();
                         System.IO.File.WriteAllLines(saveFileDiTempl.FileName, inputing, System.Text.Encoding.UTF8);
@@ -404,7 +381,6 @@ namespace Titel_WinForm
                 tbAlbumArtist.Text = null;
                 tbComposer.Text = null;
                 tbRemixer.Text = null;
-                numRatingBlank.Value = 0;
                 numRatingSpotify.Value = 0;
                 numRatingYouTube.Value = 0;
                 numRatingSoundcloud.Value = 0;
@@ -447,7 +423,6 @@ namespace Titel_WinForm
         void spotifyLikeCalculator(NumericUpDown current, NumericUpDown maximum, NumericUpDown returning) { decimal val = (current.Value / maximum.Value) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
         void youtubeCalculator(NumericUpDown likes, NumericUpDown dislikes, NumericUpDown returning) { decimal val = (likes.Value / (dislikes.Value + likes.Value)) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
         void soundcloudCalculator(NumericUpDown plays, NumericUpDown likes, NumericUpDown reposts, NumericUpDown returning) { decimal val = ((likes.Value + reposts.Value) / plays.Value) * 255; returning.Value = Math.Round(val, 1, MidpointRounding.AwayFromZero); }
-        private void numBlank_ValueChanged(object sender, EventArgs e) { spotifyLikeCalculator(numBlankStars, numBlankMaxStars, numRatingBlank); }
         private void numSpotify_ValueChanged(object sender, EventArgs e)
         {
             numSpotifyPlays.Maximum = numSpotifyMaxPlays.Value;
@@ -469,7 +444,7 @@ namespace Titel_WinForm
             numSCLikes.Enabled = numSCRepost.Enabled = numSCPlays.Value > 0;
         }
 
-        private void tDontNull_Tick(object sender, EventArgs e) { if (numBlankMaxStars.Value == 0) { numBlankStars.Enabled = false; } else { numBlankStars.Enabled = true; } if (numSCPlays.Value == 0) { numSCLikes.Enabled = false; numSCRepost.Enabled = false; } else { numSCLikes.Enabled = true; numSCRepost.Enabled = true; } }
+        private void tDontNull_Tick(object sender, EventArgs e) { if (numSCPlays.Value == 0) { numSCLikes.Enabled = false; numSCRepost.Enabled = false; } else { numSCLikes.Enabled = true; numSCRepost.Enabled = true; } }
         private void tsbOpenTempl_Click(object sender, EventArgs e)
         {
             openFileDiTempl.InitialDirectory = Settings.Default.ofdTempl;
@@ -536,8 +511,6 @@ namespace Titel_WinForm
             tbAlbumArtist.Text = inputing[7];
             tbComposer.Text = inputing[8];
             tbRemixer.Text = inputing[9];
-            numRatingBlank.Value = Convert.ToDecimal(inputing[10]);
-            numBlankMaxStars.Value = Convert.ToDecimal(inputing[11]);
             numRatingSpotify.Value = Convert.ToDecimal(inputing[12]);
             numSpotifyMaxPlays.Value = Convert.ToDecimal(inputing[13]);
             numRatingYouTube.Value = Convert.ToDecimal(inputing[14]);
@@ -590,7 +563,6 @@ namespace Titel_WinForm
             if (musFile.Tag.RemixedBy != null) { chbRemixer.Checked = true; } else { chbRemixer.Checked = false; }
             tbRemixer.Text = musFile.Tag.RemixedBy;
 
-            numRatingBlank.Value = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "", true).Rating;
             numRatingSpotify.Value = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "open.spotify.com", true).Rating;
             numRatingYouTube.Value = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "youtube.com", true).Rating;
             numRatingSoundcloud.Value = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "soundcloud.com", true).Rating;
@@ -602,40 +574,5 @@ namespace Titel_WinForm
         private void numSpotifyMaxPlays_Leave(object sender, EventArgs e) { if (numSpotifyMaxPlays.Value == 0) { numSpotifyPlays.Enabled = false; } else { numSpotifyPlays.Enabled = true; } }
         private void tslChanges_Click(object sender, EventArgs e) { About abt = new About(); abt.ShowDialog(); }
         private void numSCPlays_Leave(object sender, EventArgs e) { if (numSCPlays.Value == 0) { numSCLikes.Enabled = false; numSCRepost.Enabled = false; } else { numSCLikes.Enabled = true; numSCRepost.Enabled = true; } }
-
-        private void pBoxAlbum_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lArtist_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lResulution_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbComposer_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbGenre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chbComposers_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbAlbum_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

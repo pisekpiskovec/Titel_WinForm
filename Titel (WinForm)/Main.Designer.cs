@@ -246,14 +246,12 @@ namespace Titel_WinForm
             // 
             resources.ApplyResources(this.tbAlbum, "tbAlbum");
             this.tbAlbum.Name = "tbAlbum";
-            this.tbAlbum.TextChanged += new System.EventHandler(this.tbAlbum_TextChanged);
             this.tbAlbum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // tbGenre
             // 
             resources.ApplyResources(this.tbGenre, "tbGenre");
             this.tbGenre.Name = "tbGenre";
-            this.tbGenre.TextChanged += new System.EventHandler(this.tbGenre_TextChanged);
             this.tbGenre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // tbAlbumArtist
@@ -266,7 +264,6 @@ namespace Titel_WinForm
             // 
             resources.ApplyResources(this.lArtist, "lArtist");
             this.lArtist.Name = "lArtist";
-            this.lArtist.Click += new System.EventHandler(this.lArtist_Click);
             // 
             // lTitle
             // 
@@ -278,7 +275,6 @@ namespace Titel_WinForm
             resources.ApplyResources(this.lResulution, "lResulution");
             this.lResulution.Name = "lResulution";
             this.toolTip.SetToolTip(this.lResulution, resources.GetString("lResulution.ToolTip"));
-            this.lResulution.Click += new System.EventHandler(this.lResulution_Click);
             // 
             // bOpenPicture
             // 
@@ -409,7 +405,6 @@ namespace Titel_WinForm
             // 
             resources.ApplyResources(this.tbComposer, "tbComposer");
             this.tbComposer.Name = "tbComposer";
-            this.tbComposer.TextChanged += new System.EventHandler(this.tbComposer_TextChanged);
             this.tbComposer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // tFileChanged
@@ -568,7 +563,6 @@ namespace Titel_WinForm
             this.pBoxAlbum.Name = "pBoxAlbum";
             this.pBoxAlbum.TabStop = false;
             this.toolTip.SetToolTip(this.pBoxAlbum, resources.GetString("pBoxAlbum.ToolTip"));
-            this.pBoxAlbum.Click += new System.EventHandler(this.pBoxAlbum_Click);
             this.pBoxAlbum.DragDrop += new System.Windows.Forms.DragEventHandler(this.pBoxAlbum_DragDrop);
             this.pBoxAlbum.DragEnter += new System.Windows.Forms.DragEventHandler(this.pBoxAlbum_DragEnter);
             this.pBoxAlbum.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pBoxAlbum_MouseClick);
@@ -635,7 +629,6 @@ namespace Titel_WinForm
             resources.ApplyResources(this.chbComposers, "chbComposers");
             this.chbComposers.Name = "chbComposers";
             this.chbComposers.UseVisualStyleBackColor = true;
-            this.chbComposers.CheckedChanged += new System.EventHandler(this.chbComposers_CheckedChanged);
             this.chbComposers.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // chbRemixer
