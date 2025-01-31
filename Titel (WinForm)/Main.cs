@@ -514,7 +514,7 @@ namespace Titel_WinForm
             numRatingSpotify.Value = Convert.ToDecimal(inputing[12]);
             numSpotifyMaxPlays.Value = Convert.ToDecimal(inputing[13]);
             numRatingYouTube.Value = Convert.ToDecimal(inputing[14]);
-            if (Settings.Default.templYTMSupport) numRatingYouTubeMusic.Value = Convert.ToDecimal(inputing[18]);
+            if (Settings.Default.templYTMSupport) numRatingYouTubeMusic.Value = decimal.TryParse(inputing.ElementAtOrDefault(18) ?? "0.0", out decimal result) ? result : 0.0m;
             numRatingSoundcloud.Value = Convert.ToDecimal(inputing[15]);
 
             string picMode = inputing[16].ToString().Trim().ToLower();
