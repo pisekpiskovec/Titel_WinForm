@@ -112,6 +112,7 @@ namespace Titel_WinForm
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            numDate.Value = DateTime.Today.Year;
             this.Location = Settings.Default.lastPos; fileStatus(0); albumArtworkURL = "null♪"; CreateExtend(); if (_args.Length > 0)
             {
                 if (System.IO.File.Exists(_args[0]) && new System.IO.FileInfo(_args[0]).Extension == ".mp3") { loadMusic(_args[0]); }
