@@ -65,7 +65,7 @@ namespace Titel_WinForm
             }
         }
 
-        private void tFileChanged_Tick(object sender, EventArgs e) { if (Checker("album") == true || Checker("albumArtist") == true || Checker("artist") == true || Checker("composers") == true || Checker("fileName") == true || Checker("genres") == true || Checker("title") == true || Checker("year") == true || Checker("track") == true || Checker("rating") == true || Checker("albumArtwork") == true || Checker("disk") == true || Checker("remixer") == true) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; } }
+        private void tFileChanged_Tick(object sender, EventArgs e) { if (Checker("album") == true || Checker("albumArtist") == true || Checker("artist") == true || Checker("composers") == true || Checker("fileName") == true || Checker("genres") == true || Checker("title") == true || Checker("year") == true || Checker("track") == true || Checker("rating") == true || Checker("albumArtwork") == true || Checker("disk") == true || Checker("remixer") == true || Checker("sorting")) { fileStatus(3); tsbCloseFile.Enabled = false; } else { fileStatus(2); tsbCloseFile.Enabled = true; } }
         Boolean Checker(String stringTag)
         {
             var musFileTag = TagLib.File.Create(musFileName).Tag;
@@ -85,6 +85,7 @@ namespace Titel_WinForm
                 case "albumArtwork": if (albumArtworkURL != "Album artwork♪") { returningValue = true; } break;
                 case "disk": if (chbDisk.Checked == true && numDiscNumber.Value != musFileTag.Disc) { returningValue = true; } break;
                 case "remixer": if (chbRemixer.Checked == true && tbRemixer.Text != musFileTag.RemixedBy) { returningValue = true; } break;
+                case "sorting": if ((chbSortAlbum.Checked == true && tbSortAlbum.Text != musFileTag.AlbumSort) || (chbSortArtist.Checked == true && tbSortArtist.Text != string.Join("|", musFileTag.PerformersSort)) || (chbSortTitle.Checked == true && tbSortTitle.Text != musFileTag.TitleSort)) { returningValue = true; } break;
             }
             return returningValue;
         }
@@ -203,6 +204,9 @@ namespace Titel_WinForm
                 if (chbAlbumArtists.Checked == true) { musFile.Tag.AlbumArtists = tbAlbumArtist.Text.Split('|'); }
                 if (chbComposers.Checked == true) { musFile.Tag.Composers = tbComposer.Text.Split('|'); }
                 if (chbRemixer.Checked == true) { musFile.Tag.RemixedBy = tbRemixer.Text; }
+                if (chbSortArtist.Checked == true) { musFile.Tag.PerformersSort = tbSortArtist.Text.Split('|'); }
+                if (chbSortTitle.Checked == true) { musFile.Tag.TitleSort = tbSortTitle.Text; }
+                if (chbSortAlbum.Checked == true) { musFile.Tag.AlbumSort = tbSortAlbum.Text; }
 
                 if (numRatingSpotify.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "open.spotify.com", true).Rating = Convert.ToByte(numRatingSpotify.Value); }
                 if (numRatingYouTube.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "youtube.com", true).Rating = Convert.ToByte(numRatingYouTube.Value); }
@@ -257,9 +261,9 @@ namespace Titel_WinForm
                         if (chbAlbumArtists.Checked == true) { musFile.Tag.AlbumArtists = tbAlbumArtist.Text.Split('|'); }
                         if (chbComposers.Checked == true) { musFile.Tag.Composers = tbComposer.Text.Split('|'); }
                         if (chbRemixer.Checked == true) { musFile.Tag.RemixedBy = tbRemixer.Text; }
-                        if (chbSortArtist.Checked == true) { musFile.Tag.PerformersSort = tbRemixer.Text; }
-                        if (chbSortTitle.Checked == true) { musFile.Tag.TitleSort = tbRemixer.Text; }
-                        if (chbSortAlbum.Checked == true) { musFile.Tag.AlbumSort = tbRemixer.Text; }
+                        if (chbSortArtist.Checked == true) { musFile.Tag.PerformersSort = tbSortArtist.Text.Split('|'); }
+                        if (chbSortTitle.Checked == true) { musFile.Tag.TitleSort = tbSortTitle.Text; }
+                        if (chbSortAlbum.Checked == true) { musFile.Tag.AlbumSort = tbSortAlbum.Text; }
 
                         if (numRatingSpotify.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "open.spotify.com", true).Rating = Convert.ToByte(numRatingSpotify.Value); }
                         if (numRatingYouTube.Value != 0) { TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "youtube.com", true).Rating = Convert.ToByte(numRatingYouTube.Value); }
@@ -283,9 +287,9 @@ namespace Titel_WinForm
                     Settings.Default.sfdTempl = new System.IO.FileInfo(saveFileDiTempl.FileName).DirectoryName;
                     if (saveFileDiTempl.FileName != "")
                     {
-                        string[] inputing = { tbArtist.Text, tbTitle.Text, tbAlbum.Text, numDate.Value.ToString(), numTrackNumber.Value.ToString(), numDiscNumber.Value.ToString(), tbGenre.Text, tbAlbumArtist.Text, tbComposer.Text, tbRemixer.Text, "", "", numRatingSpotify.Value.ToString(), numSpotifyMaxPlays.Value.ToString(), numRatingYouTube.Value.ToString(), numRatingSoundcloud.Value.ToString(), "", ""};
+                        string[] inputing = { tbArtist.Text, tbTitle.Text, tbAlbum.Text, numDate.Value.ToString(), numTrackNumber.Value.ToString(), numDiscNumber.Value.ToString(), tbGenre.Text, tbAlbumArtist.Text, tbComposer.Text, tbRemixer.Text, "", "", numRatingSpotify.Value.ToString(), numSpotifyMaxPlays.Value.ToString(), numRatingYouTube.Value.ToString(), numRatingSoundcloud.Value.ToString(), "", "", "", "", ""};
                         if (albumArtworkURL == "null♪") { inputing[16] = "null"; } else if (albumArtworkURL == "Album artwork♪") { inputing[16] = ""; } else if (albumArtworkURL != "null♪" && albumArtworkURL != "Album artwork♪") { inputing[16] = "custom"; inputing[17] = albumArtworkURL; }
-                        if(Settings.Default.templYTMSupport) inputing = inputing.Concat(new string[] { numRatingYouTubeMusic.Value.ToString() }).ToArray();
+                        if(Settings.Default.templYTMSupport) inputing = inputing.Concat(new string[] { numRatingYouTubeMusic.Value.ToString(), tbSortArtist.Text, tbSortTitle.Text, tbSortAlbum.Text }).ToArray();
                         System.IO.File.WriteAllLines(saveFileDiTempl.FileName, inputing, System.Text.Encoding.UTF8);
                     }
                 }
@@ -384,6 +388,9 @@ namespace Titel_WinForm
                 numRatingSpotify.Value = 0;
                 numRatingYouTube.Value = 0;
                 numRatingSoundcloud.Value = 0;
+                tbSortArtist.Text = null;
+                tbSortTitle.Text = null;
+                tbSortAlbum.Text = null;
 
                 chbAlbum.Checked = true;
                 chbYear.Checked = true;
@@ -515,6 +522,9 @@ namespace Titel_WinForm
             numSpotifyMaxPlays.Value = Convert.ToDecimal(inputing[13]);
             numRatingYouTube.Value = Convert.ToDecimal(inputing[14]);
             if (Settings.Default.templYTMSupport) numRatingYouTubeMusic.Value = decimal.TryParse(inputing.ElementAtOrDefault(18) ?? "0.0", out decimal result) ? result : 0.0m;
+            if (Settings.Default.templYTMSupport) tbSortArtist.Text = inputing.ElementAtOrDefault(19) ?? "";
+            if (Settings.Default.templYTMSupport) tbSortTitle.Text = inputing.ElementAtOrDefault(20) ?? "";
+            if (Settings.Default.templYTMSupport) tbSortAlbum.Text = inputing.ElementAtOrDefault(21) ?? "";
             numRatingSoundcloud.Value = Convert.ToDecimal(inputing[15]);
 
             string picMode = inputing[16].ToString().Trim().ToLower();
@@ -562,6 +572,12 @@ namespace Titel_WinForm
             tbComposer.Text = string.Join("|", musFile.Tag.Composers);
             if (musFile.Tag.RemixedBy != null) { chbRemixer.Checked = true; } else { chbRemixer.Checked = false; }
             tbRemixer.Text = musFile.Tag.RemixedBy;
+            if (musFile.Tag.PerformersSort != null) { chbSortArtist.Checked = true; } else { chbSortArtist.Checked = false; }
+            tbSortArtist.Text = string.Join("|", musFile.Tag.PerformersSort);
+            if (musFile.Tag.TitleSort != null) { chbSortTitle.Checked = true; } else { chbSortTitle.Checked = false; }
+            tbSortTitle.Text = musFile.Tag.TitleSort;
+            if (musFile.Tag.AlbumSort != null) { chbSortAlbum.Checked = true; } else { chbSortAlbum.Checked = false; }
+            tbSortAlbum.Text = musFile.Tag.AlbumSort;
 
             numRatingSpotify.Value = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "open.spotify.com", true).Rating;
             numRatingYouTube.Value = TagLib.Id3v2.PopularimeterFrame.Get((TagLib.Id3v2.Tag)musFile.GetTag(TagLib.TagTypes.Id3v2), "youtube.com", true).Rating;
