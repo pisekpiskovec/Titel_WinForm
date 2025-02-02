@@ -10,6 +10,8 @@ Inspired by KDE's Kid3 Audio tagger, Titel is a one-file-only utility to make yo
 
 ## To-Do
 
+* [x] Redesign
+
 ## Screenshots
 
 ![Newly opened window](https://github.com/pisekpiskovec/Titel_WinForm/blob/master/Titel%20(WinForm)/readme_resources/titel_new_window.png)
