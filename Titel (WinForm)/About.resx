@@ -283,16 +283,16 @@ ver. 2.3.0</value>
     <value>NoControl</value>
   </data>
   <data name="rbTemplRevA.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 53</value>
+    <value>150, 53</value>
   </data>
   <data name="rbTemplRevA.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 17</value>
+    <value>78, 17</value>
   </data>
   <data name="rbTemplRevA.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="rbTemplRevA.Text" xml:space="preserve">
-    <value>TEMPL1a</value>
+    <value>TEMPL1ex</value>
   </data>
   <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

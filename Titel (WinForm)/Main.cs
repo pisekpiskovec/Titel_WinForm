@@ -289,7 +289,7 @@ namespace Titel_WinForm
                     {
                         string[] inputing = { tbArtist.Text, tbTitle.Text, tbAlbum.Text, numDate.Value.ToString(), numTrackNumber.Value.ToString(), numDiscNumber.Value.ToString(), tbGenre.Text, tbAlbumArtist.Text, tbComposer.Text, tbRemixer.Text, "", "", numRatingSpotify.Value.ToString(), numSpotifyMaxPlays.Value.ToString(), numRatingYouTube.Value.ToString(), numRatingSoundcloud.Value.ToString(), "", "", "", "", ""};
                         if (albumArtworkURL == "null♪") { inputing[16] = "null"; } else if (albumArtworkURL == "Album artwork♪") { inputing[16] = ""; } else if (albumArtworkURL != "null♪" && albumArtworkURL != "Album artwork♪") { inputing[16] = "custom"; inputing[17] = albumArtworkURL; }
-                        if(Settings.Default.templYTMSupport) inputing = inputing.Concat(new string[] { numRatingYouTubeMusic.Value.ToString(), tbSortArtist.Text, tbSortTitle.Text, tbSortAlbum.Text }).ToArray();
+                        if(Settings.Default.templExtended) inputing = inputing.Concat(new string[] { numRatingYouTubeMusic.Value.ToString(), tbSortArtist.Text, tbSortTitle.Text, tbSortAlbum.Text }).ToArray();
                         System.IO.File.WriteAllLines(saveFileDiTempl.FileName, inputing, System.Text.Encoding.UTF8);
                     }
                 }
@@ -521,10 +521,10 @@ namespace Titel_WinForm
             numRatingSpotify.Value = Convert.ToDecimal(inputing[12]);
             numSpotifyMaxPlays.Value = Convert.ToDecimal(inputing[13]);
             numRatingYouTube.Value = Convert.ToDecimal(inputing[14]);
-            if (Settings.Default.templYTMSupport) numRatingYouTubeMusic.Value = decimal.TryParse(inputing.ElementAtOrDefault(18) ?? "0.0", out decimal result) ? result : 0.0m;
-            if (Settings.Default.templYTMSupport) tbSortArtist.Text = inputing.ElementAtOrDefault(19) ?? "";
-            if (Settings.Default.templYTMSupport) tbSortTitle.Text = inputing.ElementAtOrDefault(20) ?? "";
-            if (Settings.Default.templYTMSupport) tbSortAlbum.Text = inputing.ElementAtOrDefault(21) ?? "";
+            if (Settings.Default.templExtended) numRatingYouTubeMusic.Value = decimal.TryParse(inputing.ElementAtOrDefault(18) ?? "0.0", out decimal result) ? result : 0.0m;
+            if (Settings.Default.templExtended) tbSortArtist.Text = inputing.ElementAtOrDefault(19) ?? "";
+            if (Settings.Default.templExtended) tbSortTitle.Text = inputing.ElementAtOrDefault(20) ?? "";
+            if (Settings.Default.templExtended) tbSortAlbum.Text = inputing.ElementAtOrDefault(21) ?? "";
             numRatingSoundcloud.Value = Convert.ToDecimal(inputing[15]);
 
             string picMode = inputing[16].ToString().Trim().ToLower();

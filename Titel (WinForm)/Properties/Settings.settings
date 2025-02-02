@@ -20,7 +20,7 @@
     <Setting Name="sfdTempl" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="templYTMSupport" Type="System.Boolean" Scope="User">
+    <Setting Name="templExtended" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>

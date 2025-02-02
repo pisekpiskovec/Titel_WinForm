@@ -117,53 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pbIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>AutoSize</value>
+  <data name="pbIcon.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="gbAbout.Text" xml:space="preserve">
-    <value>O programu</value>
+  <data name="lAbout.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="gbShortcuts.Text" xml:space="preserve">
-    <value>Zkratky</value>
+  <data name="gbAbout.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="lbShortcuts.Items" xml:space="preserve">
-    <value>Otevřít Soubor | Ctrl+O</value>
+  <data name="lbShortcuts.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="lbShortcuts.Items1" xml:space="preserve">
-    <value>Otevřít Předlohu | Ctrl+Shift+O</value>
+  <data name="gbShortcuts.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="lbShortcuts.Items2" xml:space="preserve">
-    <value>Uložit | Ctrl+S</value>
+  <data name="gbSettings.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="lbShortcuts.Items3" xml:space="preserve">
-    <value>Uložit jako... | Ctrl+Shift+S</value>
-  </data>
-  <data name="lbShortcuts.Items4" xml:space="preserve">
-    <value>Uložit Předlohu | Ctrl+Alt+S</value>
-  </data>
-  <data name="lbShortcuts.Items5" xml:space="preserve">
-    <value>Zavřít Soubor | Ctrl+W</value>
-  </data>
-  <data name="lbShortcuts.Items6" xml:space="preserve">
-    <value>Otevřít Obrázek | Ctrl+Alt+O</value>
-  </data>
-  <data name="lbShortcuts.Items7" xml:space="preserve">
-    <value>Název Souboru ze Značek | Ctrl+D</value>
-  </data>
-  <data name="lbShortcuts.Items8" xml:space="preserve">
-    <value>Resetovat Polohu Okna | Ctrl+Alt+F6</value>
-  </data>
-  <data name="gbSettings.Text" xml:space="preserve">
-    <value>Nastavení</value>
-  </data>
-  <data name="rbTemplRevA.ToolTip" xml:space="preserve">
-    <value>Formát šablony s podporou YouTube Music</value>
-  </data>
-  <data name="rbTempl.ToolTip" xml:space="preserve">
-    <value>Formát šablony bez podpory YouTube Music</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>O programu Titel</value>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>
