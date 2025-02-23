@@ -121,34 +121,34 @@
   <data name="tsbOpenMP3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        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
+        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
-        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
+        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
-        xP3gSkriclwXSdyMmyGJ+8GVxJe3t7efiEvu+O/KGkyPUWVNP7iSy+ofx87n84vhe3FDXomPrcXT0m7K
-        cP/YsqYfXMkbOZvNLsWjfu6/bspO8DDjVma4a2xZ0w+u5B78J/wubshH8fha3JRn9vrLGJZmpsiafnAl
-        R/T7uCn67Run4lVyUN+7y9prYmaMKmv6IUq9E37JlxVbeiz1jRjhV/Hnd+OmvBQ35DFqXGX4nLFlTX/o
-        5/2fOHHiSd5o34+D+joer/dNE6MYN0K/m+bz8EzsfHE5W5aa+wv9Voz40vFUHNKr4QdxEN+sra39PTyc
-        Cqk0oV/mEweypldK3JT3wosVN4X1E454lTyoN9m4GafisD6MLyXfxqP+ZmQPcy+yaqKVuAmPhrM4vLfi
-        4Xz8B93Pw0O9GRk7sQrHjx9/JF4lG3GgZ+JRP0Sp+VdfMWJibHRT4v1kR+8ncdAXrvXd81w+kc3wTT7+
-        fCE+9ifxxK1gc3PzIf44MTExMbHMgQP/AsfzFc7Fb0JPAAAAAElFTkSuQmCC
+        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
 </value>
   </data>
   <data name="tsbOpenMP3.Text" xml:space="preserve">
@@ -162,89 +162,6 @@
   </data>
   <data name="tsbOpenTempl.ToolTipText" xml:space="preserve">
     <value>Otevřít šablonu (Ctrl+Shift+O)</value>
-  </data>
-  <data name="tssbSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQhSURBVHhe7ZTLilNhEAYHBNHHm9t63s6tF1yoL6f5Qilo
-        l79BSOfkpAtqY/WZ+U7CeDcMwzAMwzAMwzAMwzAMwzAMG+fx8fH7znz//Pz8mtfbPvICe/DLy8vLG15x
-        28j4vXgdX4IM340PDw8fNv/fkQ3fk/f391+fnp7e8rrbw0bv0I+b/UuQsUfJS+y5SD4Z+xmRXLDbf7nZ
-        vwQbG8lL7LlIPhn7GZFcsNt4+JDf2b//dJNfgg2N5CX2XCSfjP2MSC7YbTz8N/Pq6r4EGxnJS+y5SD4Z
-        +xmRXLDbmHbKl3Dw22a+BBl3lLzEnovkk7GfEckFu43k6/oSZNhR8hJ7LpJPxn5GJBfsNpKPXM2XIKOO
-        kpfYc5F8Nux3RvIvruJLkEFHyUvsuUg+G/Y7I/k3Dl/C60P79OftH37mvB8Zc5S8xJ6L5LNhvzOSC6f8
-        JXDaj42J5CX2XCSfDfudkaz86y+Bs35sTCQvseci+WzY74zkv8KX8F/Png0bE8lL7LlIPhv2OyN5iT0X
-        yf3YmEheYs9dUmYtseciuR8bE8lL7LlLyqwl9lwk92NjInmJPXdJmbXEnovkfmxMJC+x5y4ps5bYc5Hc
-        j42J5CX23CVl1hJ7LpL7sTGRvMSeu6TMWmLPRXI/NiaSd4e9ayT3Y2MieXfYu0ZyPzYmkneHvWsk92Nj
-        Inl32LtGcj82JpJ3h71rJPdjYyJ5d9i7RnI/NiaSd4e9ayT3Y2MieXfYu0ZyPzYmkneHvWsk92NjIrlg
-        t1uUuQW7jeR+bEwkF+x2izK3YLeR3I+NieSC3W5R5hbsNpL7sTGRXLDbLcrcgt1Gcj82JpILdrtFmVuw
-        20jux8ZEcsFutyhzC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2Nb
-        Irlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu
-        2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Yb
-        yf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7
-        tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J
-        5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlg
-        t5Hcj425Rfk4+rExtygfRz825hbl4+jHxtyifBz92JhblI+jHxtzi/JxDMMwDMMwDMMwDMMwDMMwDMM2
-        ubv7AdlPxmSlnt0QAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="tssbSave.Text" xml:space="preserve">
-    <value>Uložit</value>
-  </data>
-  <data name="tssbSave.ToolTipText" xml:space="preserve">
-    <value>Uložit... nebo Uložit jako...</value>
-  </data>
-  <data name="tsbCloseFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="tsbCloseFile.Text" xml:space="preserve">
-    <value>Zavřít soubor</value>
-  </data>
-  <data name="tsbCloseFile.ToolTipText" xml:space="preserve">
-    <value>Zavřít soubor (Ctrl+W)</value>
-  </data>
-  <data name="tslChanges.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 22</value>
-  </data>
-  <data name="tslChanges.Text" xml:space="preserve">
-    <value>Stav</value>
-  </data>
-  <data name="tslChanges.ToolTipText" xml:space="preserve">
-    <value>Stav</value>
   </data>
   <data name="tsmiSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -325,6 +242,89 @@
   <data name="tsmiSaveImage.Text" xml:space="preserve">
     <value>Uložit obrázek</value>
   </data>
+  <data name="tssbSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQhSURBVHhe7ZTLilNhEAYHBNHHm9t63s6tF1yoL6f5Qilo
+        l79BSOfkpAtqY/WZ+U7CeDcMwzAMwzAMwzAMwzAMwzAMG+fx8fH7znz//Pz8mtfbPvICe/DLy8vLG15x
+        28j4vXgdX4IM340PDw8fNv/fkQ3fk/f391+fnp7e8rrbw0bv0I+b/UuQsUfJS+y5SD4Z+xmRXLDbf7nZ
+        vwQbG8lL7LlIPhn7GZFcsNt4+JDf2b//dJNfgg2N5CX2XCSfjP2MSC7YbTz8N/Pq6r4EGxnJS+y5SD4Z
+        +xmRXLDbmHbKl3Dw22a+BBl3lLzEnovkk7GfEckFu43k6/oSZNhR8hJ7LpJPxn5GJBfsNpKPXM2XIKOO
+        kpfYc5F8Nux3RvIvruJLkEFHyUvsuUg+G/Y7I/k3Dl/C60P79OftH37mvB8Zc5S8xJ6L5LNhvzOSC6f8
+        JXDaj42J5CX2XCSfDfudkaz86y+Bs35sTCQvseci+WzY74zkv8KX8F/Png0bE8lL7LlIPhv2OyN5iT0X
+        yf3YmEheYs9dUmYtseciuR8bE8lL7LlLyqwl9lwk92NjInmJPXdJmbXEnovkfmxMJC+x5y4ps5bYc5Hc
+        j42J5CX23CVl1hJ7LpL7sTGRvMSeu6TMWmLPRXI/NiaSd4e9ayT3Y2MieXfYu0ZyPzYmkneHvWsk92Nj
+        Inl32LtGcj82JpJ3h71rJPdjYyJ5d9i7RnI/NiaSd4e9ayT3Y2MieXfYu0ZyPzYmkneHvWsk92NjIrlg
+        t1uUuQW7jeR+bEwkF+x2izK3YLeR3I+NieSC3W5R5hbsNpL7sTGRXLDbLcrcgt1Gcj82JpILdrtFmVuw
+        20jux8ZEcsFutyhzC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2Nb
+        Irlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu
+        2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Yb
+        yf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7
+        tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J
+        5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlgt5Hcj42J5ILdRnI7tiWSC3Ybyf3YmEgu2G0kt2NbIrlg
+        t5Hcj425Rfk4+rExtygfRz825hbl4+jHxtyifBz92JhblI+jHxtzi/JxDMMwDMMwDMMwDMMwDMMwDMM2
+        ubv7AdlPxmSlnt0QAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tssbSave.Text" xml:space="preserve">
+    <value>Uložit</value>
+  </data>
+  <data name="tssbSave.ToolTipText" xml:space="preserve">
+    <value>Uložit... nebo Uložit jako...</value>
+  </data>
+  <data name="tsbCloseFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="tsbCloseFile.Text" xml:space="preserve">
+    <value>Zavřít soubor</value>
+  </data>
+  <data name="tsbCloseFile.ToolTipText" xml:space="preserve">
+    <value>Zavřít soubor (Ctrl+W)</value>
+  </data>
+  <data name="tslChanges.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 22</value>
+  </data>
+  <data name="tslChanges.Text" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="tslChanges.ToolTipText" xml:space="preserve">
+    <value>Stav</value>
+  </data>
   <data name="openFileDiMP3.Filter" xml:space="preserve">
     <value>Zvukové soubory MP3|*.mp3|Zvukové soubory AIFF|*.aiff</value>
   </data>
@@ -344,37 +344,37 @@
     <value>323, 20</value>
   </data>
   <data name="tbArtist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 79</value>
+    <value>157, 79</value>
   </data>
   <data name="tbArtist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 20</value>
+    <value>189, 20</value>
   </data>
   <data name="tbTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 105</value>
+    <value>157, 105</value>
   </data>
   <data name="tbTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 20</value>
+    <value>189, 20</value>
   </data>
   <data name="tbAlbum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 131</value>
+    <value>157, 131</value>
   </data>
   <data name="tbAlbum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 20</value>
+    <value>189, 20</value>
   </data>
   <data name="tbGenre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 240</value>
+    <value>157, 240</value>
   </data>
   <data name="tbGenre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 20</value>
+    <value>295, 20</value>
   </data>
   <data name="tbAlbumArtist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 266</value>
+    <value>157, 266</value>
   </data>
   <data name="tbAlbumArtist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 20</value>
+    <value>295, 20</value>
   </data>
   <data name="lArtist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 108</value>
+    <value>105, 108</value>
   </data>
   <data name="lArtist.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 13</value>
@@ -383,7 +383,7 @@
     <value>Umělec:</value>
   </data>
   <data name="lTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 82</value>
+    <value>110, 82</value>
   </data>
   <data name="lTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
@@ -404,25 +404,25 @@
     <value>Otevřít soubor obrázku...</value>
   </data>
   <data name="numDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 157</value>
+    <value>157, 157</value>
   </data>
   <data name="numDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 20</value>
+    <value>189, 20</value>
   </data>
   <data name="numTrackNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 188</value>
+    <value>157, 188</value>
   </data>
   <data name="numTrackNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 20</value>
+    <value>189, 20</value>
   </data>
   <data name="numRatingSpotify.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 424</value>
+    <value>157, 424</value>
   </data>
   <data name="numRatingSpotify.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>98, 20</value>
   </data>
   <data name="lRatingSpotify.Location" type="System.Drawing.Point, System.Drawing">
-    <value>99, 426</value>
+    <value>46, 426</value>
   </data>
   <data name="lRatingSpotify.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 13</value>
@@ -431,13 +431,13 @@
     <value>Hodnocení (Spotify):</value>
   </data>
   <data name="numRatingYouTube.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 475</value>
+    <value>157, 475</value>
   </data>
   <data name="numRatingYouTube.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>98, 20</value>
   </data>
   <data name="lRatingYouTube.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 477</value>
+    <value>34, 477</value>
   </data>
   <data name="lRatingYouTube.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 13</value>
@@ -446,17 +446,17 @@
     <value>Hodnocení (YouTube):</value>
   </data>
   <data name="numRatingSoundcloud.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 577</value>
+    <value>157, 577</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="numRatingSoundcloud.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 1, 3</value>
   </data>
   <data name="numRatingSoundcloud.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 20</value>
+    <value>73, 20</value>
   </data>
   <data name="lRatingSoundcloud.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 579</value>
+    <value>20, 579</value>
   </data>
   <data name="lRatingSoundcloud.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 13</value>
@@ -465,22 +465,22 @@
     <value>Hodnocení (SoundCloud):</value>
   </data>
   <data name="tbComposer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 292</value>
+    <value>157, 292</value>
   </data>
   <data name="tbComposer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 20</value>
+    <value>295, 20</value>
   </data>
   <data name="numDiscNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 214</value>
+    <value>157, 214</value>
   </data>
   <data name="numDiscNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 20</value>
+    <value>295, 20</value>
   </data>
   <data name="numSpotifyMaxPlays.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 424</value>
+    <value>354, 424</value>
   </data>
   <data name="numSpotifyMaxPlays.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>98, 20</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="numSpotifyMaxPlays.ThousandsSeparator" type="System.Boolean, mscorlib">
@@ -490,13 +490,13 @@
     <value>Nejpřehrávanější skladba v albu</value>
   </data>
   <data name="numSpotifyPlays.Location" type="System.Drawing.Point, System.Drawing">
-    <value>291, 424</value>
+    <value>256, 424</value>
   </data>
   <data name="numSpotifyPlays.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 3, 1, 3</value>
   </data>
   <data name="numSpotifyPlays.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>98, 20</value>
   </data>
   <data name="numSpotifyPlays.ThousandsSeparator" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -505,10 +505,10 @@
     <value>Počet přehrání</value>
   </data>
   <data name="numYTDislikes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 475</value>
+    <value>354, 475</value>
   </data>
   <data name="numYTDislikes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>98, 20</value>
   </data>
   <data name="numYTDislikes.ThousandsSeparator" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -517,13 +517,13 @@
     <value>Počet palců dolu</value>
   </data>
   <data name="numYTLikes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>291, 475</value>
+    <value>256, 475</value>
   </data>
   <data name="numYTLikes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 3, 1, 3</value>
   </data>
   <data name="numYTLikes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>98, 20</value>
   </data>
   <data name="numYTLikes.ThousandsSeparator" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -532,10 +532,10 @@
     <value>Počet palců nahoru</value>
   </data>
   <data name="numSCLikes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>331, 577</value>
+    <value>305, 577</value>
   </data>
   <data name="numSCLikes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 20</value>
+    <value>73, 20</value>
   </data>
   <data name="numSCLikes.ThousandsSeparator" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -544,13 +544,13 @@
     <value>Počet srdíček</value>
   </data>
   <data name="numSCPlays.Location" type="System.Drawing.Point, System.Drawing">
-    <value>271, 577</value>
+    <value>231, 577</value>
   </data>
   <data name="numSCPlays.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 3, 0, 3</value>
   </data>
   <data name="numSCPlays.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 20</value>
+    <value>73, 20</value>
   </data>
   <data name="numSCPlays.ThousandsSeparator" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -559,13 +559,13 @@
     <value>Počet přehrání</value>
   </data>
   <data name="numSCRepost.Location" type="System.Drawing.Point, System.Drawing">
-    <value>392, 577</value>
+    <value>379, 577</value>
   </data>
   <data name="numSCRepost.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 3, 3, 3</value>
   </data>
   <data name="numSCRepost.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 20</value>
+    <value>73, 20</value>
   </data>
   <data name="numSCRepost.ThousandsSeparator" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -586,19 +586,19 @@
     <value>Vybrat název souboru ze značek Umělec a Název (Ctrl+D)</value>
   </data>
   <data name="numYTMDislikes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 526</value>
+    <value>354, 526</value>
   </data>
   <data name="numYTMDislikes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>98, 20</value>
   </data>
   <data name="numYTMLikes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>291, 526</value>
+    <value>256, 526</value>
   </data>
   <data name="numYTMLikes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 3, 1, 3</value>
   </data>
   <data name="numYTMLikes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>98, 20</value>
   </data>
   <data name="pBoxAlbum.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -650,16 +650,16 @@
 Dvojtým pravým kliknutím smažete</value>
   </data>
   <data name="tbRemixer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 318</value>
+    <value>157, 318</value>
   </data>
   <data name="tbRemixer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 20</value>
+    <value>295, 20</value>
   </data>
   <data name="chbAlbum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>146, 133</value>
+    <value>93, 133</value>
   </data>
   <data name="chbYear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>144, 158</value>
+    <value>91, 158</value>
   </data>
   <data name="chbYear.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 17</value>
@@ -668,7 +668,7 @@ Dvojtým pravým kliknutím smažete</value>
     <value>Datum:</value>
   </data>
   <data name="chbTrack.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 189</value>
+    <value>59, 189</value>
   </data>
   <data name="chbTrack.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 17</value>
@@ -677,7 +677,7 @@ Dvojtým pravým kliknutím smažete</value>
     <value>Číslo skladby:</value>
   </data>
   <data name="chbDisk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 214</value>
+    <value>70, 214</value>
   </data>
   <data name="chbDisk.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 17</value>
@@ -686,7 +686,7 @@ Dvojtým pravým kliknutím smažete</value>
     <value>Číslo disku:</value>
   </data>
   <data name="chbGenres.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 242</value>
+    <value>100, 242</value>
   </data>
   <data name="chbGenres.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 17</value>
@@ -695,7 +695,7 @@ Dvojtým pravým kliknutím smažete</value>
     <value>Žánr:</value>
   </data>
   <data name="chbAlbumArtists.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 268</value>
+    <value>63, 268</value>
   </data>
   <data name="chbAlbumArtists.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 17</value>
@@ -704,7 +704,7 @@ Dvojtým pravým kliknutím smažete</value>
     <value>Umělec alba:</value>
   </data>
   <data name="chbComposers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 294</value>
+    <value>78, 294</value>
   </data>
   <data name="chbComposers.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 17</value>
@@ -713,49 +713,46 @@ Dvojtým pravým kliknutím smažete</value>
     <value>Skladatel:</value>
   </data>
   <data name="chbRemixer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 320</value>
+    <value>18, 320</value>
   </data>
   <data name="chbRemixer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 17</value>
+    <value>133, 17</value>
   </data>
   <data name="chbRemixer.Text" xml:space="preserve">
-    <value>Autor míchání hudebních skladeb:</value>
+    <value>Autor hudebních mixů:</value>
   </data>
   <data name="lRatingYouTubeMusic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 528</value>
+    <value>33, 528</value>
   </data>
   <data name="lRatingYouTubeMusic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 13</value>
+    <value>118, 13</value>
   </data>
   <data name="lRatingYouTubeMusic.Text" xml:space="preserve">
-    <value>Hodnocení (YouTube Music):</value>
+    <value>Hodnocení (YT Music):</value>
   </data>
   <data name="numRatingYouTubeMusic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 526</value>
+    <value>157, 526</value>
   </data>
   <data name="numRatingYouTubeMusic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>98, 20</value>
   </data>
   <data name="tbSortArtist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 344</value>
+    <value>157, 344</value>
   </data>
   <data name="tbSortArtist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 20</value>
+    <value>295, 20</value>
   </data>
   <data name="tbSortTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 371</value>
+    <value>157, 371</value>
   </data>
   <data name="tbSortTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 20</value>
+    <value>295, 20</value>
   </data>
   <data name="tbSortAlbum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 398</value>
+    <value>157, 398</value>
   </data>
   <data name="tbSortAlbum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 20</value>
-  </data>
-  <data name="chbSortArtist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 346</value>
+    <value>295, 20</value>
   </data>
   <data name="chbSortArtist.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 17</value>
@@ -764,7 +761,7 @@ Dvojtým pravým kliknutím smažete</value>
     <value>Seřazení podle umělce:</value>
   </data>
   <data name="chbSortTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 373</value>
+    <value>36, 373</value>
   </data>
   <data name="chbSortTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 17</value>
@@ -773,7 +770,7 @@ Dvojtým pravým kliknutím smažete</value>
     <value>Třídit podle jména:</value>
   </data>
   <data name="chbSortAlbum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 400</value>
+    <value>26, 400</value>
   </data>
   <data name="chbSortAlbum.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 17</value>
